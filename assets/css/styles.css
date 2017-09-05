@@ -10,7 +10,7 @@
 /* ======= Base ======= */
 body {
   font-family: 'Roboto', sans-serif;
-  color: #545E6C;
+  color: black;
   background: #f5f5f5;
   font-size: 14px;
   padding: 30px;
@@ -49,7 +49,7 @@ p {
   position: relative;
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 5px 8px black;
 }
 .sidebar-wrapper {
   background: #2196f3;
@@ -156,7 +156,6 @@ p {
   background: #fff;
   padding: 60px;
   padding-right: 300px;
-  box-shadow: 13px 8px 13px 0px black;
 }
 .main-wrapper .section-title {
   text-transform: uppercase;
@@ -229,6 +228,7 @@ p {
 .skillset .item {
   margin-bottom: 15px;
   overflow: hidden;
+  text-align: left;
 }
 .skillset .level-title {
   font-size: 14px;
@@ -258,8 +258,9 @@ p {
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
   .sidebar-wrapper {
-    position: static;
+    position: relative;
     width: inherit;
+    text-align: center;
   }
   .main-wrapper {
     padding: 30px;
@@ -306,7 +307,7 @@ used for profile image
 
 /* Custom CSS */
 .accent {
-  color: #F44336;
+  color: black;
 }
 
 body {
@@ -324,4 +325,5 @@ body {
 
 .padding {
   padding: 30px;
+  box-shadow: 3px 5px 8px 0px black;
 }
