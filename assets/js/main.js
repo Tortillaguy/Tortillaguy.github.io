@@ -16,6 +16,20 @@ jQuery(document).ready(function($) {
 
     });
    
+   initCarousel();
+
+   function initCarousel(){
+    var carousel = $('.carousel').flickity({
+      cellAlign: 'center',
+      wrapAround: 'true',
+    })
+    carousel.on('staticClick.flickity', function(event, pointer, cellElement, cellIndex){
+      if (!cellElement)
+        return
+
+      console.log(cellIndex);
+    })
+   }
     
 
 });
