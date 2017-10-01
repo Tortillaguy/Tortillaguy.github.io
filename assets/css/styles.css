@@ -339,12 +339,16 @@ body {
   margin-right: 10px;
   height: 100%;
   overflow: hidden;
-  background: green;
+  background: white;
   height: 160px;
+  position: relative;
 }
 
 .carousel-cell img{
-  display: block;
-  width: 100%;
-  margin: auto;
+  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
 }
