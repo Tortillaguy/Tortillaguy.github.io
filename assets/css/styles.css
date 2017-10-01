@@ -345,10 +345,10 @@ body {
 }
 
 .carousel-cell img{
-  
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
+  width: 100%;
+  vertical-align:middle;
 }
