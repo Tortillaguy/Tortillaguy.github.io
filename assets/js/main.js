@@ -22,6 +22,7 @@ jQuery(document).ready(function($) {
     var carousel = $('.carousel').flickity({
       cellAlign: 'center',
       wrapAround: 'true',
+      imagesLoaded: true
     })
     carousel.on('staticClick.flickity', function(event, pointer, cellElement, cellIndex){
       if (!cellElement)

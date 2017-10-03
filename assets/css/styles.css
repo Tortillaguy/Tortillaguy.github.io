@@ -156,6 +156,7 @@ p {
   background: #fff;
   padding: 60px;
   padding-right: 300px;
+  padding-top: 20px;
 }
 .main-wrapper .section-title {
   text-transform: uppercase;
@@ -329,7 +330,6 @@ body {
 }
 
 .carousel {
-  height: 160px;
   margin-bottom: 50px;
   background: white;
 }
@@ -337,11 +337,13 @@ body {
 .carousel-cell {
   width: 66%;
   margin-right: 10px;
-  height: 100%;
   overflow: hidden;
-  background: white;
+  
   height: 160px;
+  margin-bottom: 50px;
   position: relative;
+  box-shadow: 3px 3px 5px 0px black;
+  transform: translate(0%, 20%);
 }
 
 .carousel-cell img{
@@ -351,4 +353,8 @@ body {
   transform: translate(-50%, -50%);
   width: 100%;
   vertical-align:middle;
+}
+
+.flickity-viewport {
+  height: 200px;
 }
