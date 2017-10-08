@@ -406,6 +406,6 @@ body {
   display: block !important;
 }
 
-/* .waves-effect .waves-ripple {
-  background: linear-gradient(to right, hsla(125, 96%, 71%, 0.61), hsla(262, 52%, 47%, 0.45), rgba(243, 81, 33, 0.48)) !important;
-} */
+.waves-effect .waves-ripple {
+  background: linear-gradient(to right, hsla(263, 80%, 58%, 0.14), hsla(42, 80%, 58%, 0.34), rgba(33, 150, 243, 0.68)) !important;
+}

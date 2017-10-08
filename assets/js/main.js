@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
    initCarousel();
 
    function initCards(){
-      var config = {duration: 1000, delay: 300};
+      var config = {duration: 500, delay: 200};
       Waves.init(config);
       Waves.attach('.card-header');
       return;
