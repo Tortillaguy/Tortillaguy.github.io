@@ -63,7 +63,8 @@ $(function() {
       cellAlign: 'center',
       wrapAround: 'true',
       imagesLoaded: true,
-      prevNextButtons: false
+      prevNextButtons: true,
+      pageDots: false
     };
 
     // enable prev/next buttons at 768px

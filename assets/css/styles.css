@@ -376,7 +376,7 @@ body {
 }
 
 .carousel {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   background: white;
 }
 
@@ -432,4 +432,8 @@ body {
   position: absolute; 
   right: 20px;
   bottom: 30px;
+}
+
+.flickity-page-dots {
+  margin-bottom:  10px !important;
 }
