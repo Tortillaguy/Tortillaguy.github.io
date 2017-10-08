@@ -264,7 +264,8 @@ p {
     text-align: center;
   }
   .main-wrapper {
-    padding: 30px;
+    padding: 0px;
+    margin-right: 0px;
   }
   .main-wrapper .time {
     position: static;
@@ -273,6 +274,22 @@ p {
   }
   .main-wrapper .upper-row {
     margin-bottom: 0;
+  }
+
+  #intel-cover{
+
+  }
+
+  #sees-cover{
+
+  }
+
+  #budlight-cover{
+
+  }
+
+  #heart-cover{
+    background-position: center;
   }
 }
 /* Small devices (tablets, 768px and up) */
@@ -290,6 +307,22 @@ p {
     float: left;
     position: relative;
     top: 1px;
+  }
+
+  #intel-cover{
+    background-position: 0% 17%;
+  }
+
+  #sees-cover{
+    background-position: 0% 25%;
+  }
+
+  #budlight-cover{
+    background-position: 0% 20%;
+  }
+
+  #heart-cover {
+    background-position: center;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
@@ -360,6 +393,19 @@ body {
 }
 
 .card-header {
-    background: linear-gradient(to right, hsla(263, 80%, 58%, 0.24), hsla(42, 80%, 58%, 0.24), rgba(33, 150, 243, 0.48));
-    
+  border-radius: 0px !important;
+  background: linear-gradient(to right, hsla(263, 80%, 58%, 0.24), hsla(42, 80%, 58%, 0.24), rgba(33, 150, 243, 0.48));
 }
+
+.carousel-cell div{
+  height: 100%;
+  background-size: cover;
+}
+
+.waves-effect {
+  display: block !important;
+}
+
+/* .waves-effect .waves-ripple {
+  background: linear-gradient(to right, hsla(125, 96%, 71%, 0.61), hsla(262, 52%, 47%, 0.45), rgba(243, 81, 33, 0.48)) !important;
+} */
