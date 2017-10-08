@@ -280,6 +280,10 @@ p {
     margin-bottom: 0;
   }
 
+  .collapsible{
+    box-shadow: inset 0px 6px 6px -6px black;
+  }
+
   #intel-cover{
 
   }
@@ -311,6 +315,10 @@ p {
     float: left;
     position: relative;
     top: 1px;
+  }
+
+  #chevron {
+    visibility: hidden;
   }
 
   #intel-cover{
@@ -417,7 +425,7 @@ body {
 
 .collapsible {
   padding-bottom: 10px;
-  box-shadow: inset 0px 6px 6px -6px black;
+  
 }
 
 #chevron {

@@ -51,6 +51,7 @@ $(function() {
 
         $(tappable).removeClass('waves-effect');
         $(tappable).attr('href', '');
+        $('.profile-container').attr('href', '');
       }
 
       return;
@@ -89,8 +90,13 @@ $(function() {
     initCards();
   });
 
-  //Rotate plugin
+
+
+});
+
+//Rotate plugin
   $.fn.rotate=function(options) {
+
     var $this=$(this), prefixes, opts, wait4css=0;
     prefixes=['-Webkit-', '-Moz-', '-O-', '-ms-', ''];
     opts=$.extend({
@@ -102,6 +108,7 @@ $(function() {
       animate: {},
       forceJS: false
     }, options);
+
 
     function supports(prop) {
       var can=false, style=document.createElement('div').style;
@@ -200,5 +207,3 @@ $(function() {
 
     return $this;
   };
-
-});
