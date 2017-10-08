@@ -34,6 +34,10 @@ $(function() {
 	        destination: bottomRight
 	    }
 		});
+
+	function initGradient(){
+		
+	}
 	
 	$(window).resize(function(){
 		$('#canvas-wrap').css({"width": $(window).width(), "height": $(document).height()});
