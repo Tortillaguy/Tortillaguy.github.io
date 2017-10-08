@@ -1,4 +1,6 @@
-jQuery(document).ready(function($) {
+$(function() {
+
+    initBackground();
 
     $('.level-bar-inner').css('width', '0');
     
@@ -28,8 +30,6 @@ jQuery(document).ready(function($) {
           Waves.init(config);
           Waves.attach('.card-header', 'waves-light');
           Waves.attach('#profile-img', 'waves-dark');
-
-
       }
       
 
@@ -67,7 +67,14 @@ jQuery(document).ready(function($) {
         return
       console.log(cellIndex);
     })
+  }
+
+   function initBackground(){
+    $('body').css("background", "linear-gradient(135deg, yellow, red, blue)");
    }
-    
+  
+  $(window).resize(function(){
+    initBackground();
+  });
 
 });
