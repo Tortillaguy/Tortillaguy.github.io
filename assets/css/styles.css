@@ -100,7 +100,7 @@ p {
   font-size: 14px;
 }
 .sidebar-wrapper .container-block {
-  padding: 30px;
+  padding: 20px;
 }
 .sidebar-wrapper .container-block-title {
   text-transform: uppercase;
@@ -154,8 +154,8 @@ p {
 }
 .main-wrapper {
   background: #fff;
-  padding: 60px;
-  padding-right: 300px;
+  padding: 0px;
+  margin-right: 240px;
   padding-top: 20px;
 }
 .main-wrapper .section-title {
@@ -357,4 +357,9 @@ body {
 
 .flickity-viewport {
   height: 200px;
+}
+
+.card-header {
+    background: linear-gradient(to right, hsla(263, 80%, 58%, 0.24), hsla(42, 80%, 58%, 0.24), rgba(33, 150, 243, 0.48));
+    
 }
