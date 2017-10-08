@@ -64,10 +64,9 @@ p {
 }
 .sidebar-wrapper .profile-container {
   padding: 30px;
-  background: linear-gradient(to bottom, rgb(219, 204, 242), rgb(146, 201, 244),rgb(33, 150, 243));
+  background: linear-gradient(to bottom, rgb(145, 201, 246), rgb(84, 173, 243),rgb(33, 150, 243));
   text-align: center;
   color: #fff;
-  box-shadow: 0 4px 3px -3px black;
 
 }
 .sidebar-wrapper .name {
@@ -414,4 +413,16 @@ body {
 
 .waves-effect .waves-ripple {
   background: linear-gradient(to bottom, transparent, rgba(160,0,96, .1), transparent) !important;
+}
+
+.openingChevron {
+  transition:  .4s ease-in;
+  -webkit-transform:  rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.closingChevron {
+  transition:  .4s ease-in;
+  -webkit-transform:  rotate(-180deg);
+  transform: rotate(-180deg);
 }
