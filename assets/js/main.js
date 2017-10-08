@@ -20,9 +20,28 @@ jQuery(document).ready(function($) {
    initCarousel();
 
    function initCards(){
-      var config = {duration: 500, delay: 200};
-      Waves.init(config);
-      Waves.attach('.card-header');
+      var tappable = $('.card-header, #profile-img');
+
+      //if mobile
+      if (matchMedia('screen and (max-width: 767px)').matches){
+          var config = {duration: 500, delay: 200};
+          Waves.init(config);
+          Waves.attach('.card-header', 'waves-light');
+          Waves.attach('#profile-img', 'waves-dark');
+
+
+      }
+      
+
+      if ( matchMedia('screen and (min-width: 767px)').matches ) {
+        $('.collapse').collapse('show');
+
+        $(tappable).on('click', function(e){
+          e.stopPropagation();
+        })
+
+    }
+
       return;
    }
 
