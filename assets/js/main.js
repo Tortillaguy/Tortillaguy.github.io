@@ -55,9 +55,9 @@ $(function() {
     };
 
     // enable prev/next buttons at 768px
-    if ( matchMedia('screen and (min-width: 1024px)').matches ) {
-      options.prevNextButtons = true;
-      options.pageDots = false;
+    if ( matchMedia('screen and (max-width: 767px)').matches ) {
+      options.prevNextButtons = false;
+      options.pageDots = true;
     }
 
     var carousel = $('.carousel').flickity(options);

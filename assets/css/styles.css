@@ -64,9 +64,11 @@ p {
 }
 .sidebar-wrapper .profile-container {
   padding: 30px;
-  background: rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, rgb(219, 204, 242), rgb(146, 201, 244),rgb(33, 150, 243));
   text-align: center;
   color: #fff;
+  box-shadow: 0 4px 3px -3px black;
+
 }
 .sidebar-wrapper .name {
   font-size: 32px;
@@ -410,6 +412,6 @@ body {
   display: block !important;
 }
 
-.section > .waves-effect .waves-ripple {
-  background: linear-gradient(to right, hsla(263, 80%, 58%, 0.14), hsla(42, 80%, 58%, 0.34), rgba(33, 150, 243, 0.68)) !important;
+.waves-effect .waves-ripple {
+  background: linear-gradient(to bottom, transparent, rgba(160,0,96, .1), transparent) !important;
 }
