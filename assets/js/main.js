@@ -19,15 +19,24 @@ jQuery(document).ready(function($) {
    initCarousel();
 
    function initCarousel(){
-    var carousel = $('.carousel').flickity({
+
+    var options = {
       cellAlign: 'center',
       wrapAround: 'true',
-      imagesLoaded: true
-    })
+      imagesLoaded: true,
+      prevNextButtons: false
+    };
+
+    // enable prev/next buttons at 768px
+    if ( matchMedia('screen and (min-width: 1024px)').matches ) {
+      options.prevNextButtons = true;
+    }
+
+    var carousel = $('.carousel').flickity(options);
+
     carousel.on('staticClick.flickity', function(event, pointer, cellElement, cellIndex){
       if (!cellElement)
         return
-
       console.log(cellIndex);
     })
    }

@@ -274,6 +274,22 @@ p {
   .main-wrapper .upper-row {
     margin-bottom: 0;
   }
+
+  #intel-cover{
+
+  }
+
+  #sees-cover{
+
+  }
+
+  #budlight-cover{
+
+  }
+
+  #heart-cover{
+    background-position: center;
+  }
 }
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
@@ -290,6 +306,22 @@ p {
     float: left;
     position: relative;
     top: 1px;
+  }
+
+  #intel-cover{
+    background-position: 0% 17%;
+  }
+
+  #sees-cover{
+    background-position: 0% 25%;
+  }
+
+  #budlight-cover{
+    background-position: 0% 20%;
+  }
+
+  #heart-cover {
+    background-position: center;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
@@ -357,4 +389,9 @@ body {
 
 .flickity-viewport {
   height: 200px;
+}
+
+.carousel-cell div{
+  height: 100%;
+  background-size: cover;
 }
