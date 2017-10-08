@@ -411,18 +411,17 @@ body {
   display: block !important;
 }
 
-.waves-effect .waves-ripple {
-  background: linear-gradient(to bottom, transparent, rgba(160,0,96, .1), transparent) !important;
+/* .waves-effect .waves-ripple {
+  background: rgba(255,104,0, 180) !important;
+} */
+
+.collapsible {
+  padding-bottom: 10px;
+  box-shadow: inset 0px 6px 6px -6px black;
 }
 
-.openingChevron {
-  transition:  .4s ease-in;
-  -webkit-transform:  rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.closingChevron {
-  transition:  .4s ease-in;
-  -webkit-transform:  rotate(-180deg);
-  transform: rotate(-180deg);
+#chevron {
+  position: absolute; 
+  right: 20px;
+  bottom: 30px;
 }

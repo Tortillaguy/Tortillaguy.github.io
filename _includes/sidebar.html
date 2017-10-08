@@ -2,13 +2,14 @@
 
                  
      <div class="sidebar-wrapper">
-            <div class="profile-container" data-toggle="collapse" href="#info" aria-expanded="true" aria-controls="info">
+            <div id="profile-img" class="profile-container" data-toggle="collapse" href="#info" aria-expanded="true" aria-controls="info">
                 <img class="profile-img" src="{{site.baseurl}}/assets/images/{% if site.pic %}{{ site.pic }}{% else %}profile.png{% endif %}" alt="profile picture" />
                 <h1 class="name">{% if site.name %}{{site.name}}{% else %}Alan Doe{% endif %}</h1>
                 <h3 class="tagline">{% if site.tagline %}{{site.tagline}}{% else %}Full Stack Developer{% endif %}</h3>
             </div><!--//profile-container-->
-            <i id="chevron" data-toggle="collapse" href="#info" aria-expanded="true" aria-controls="info" style="position: absolute; right: 20px; bottom: 10px;" class="fa fa-chevron-down" aria-hidden="true"></i>
+            <i id="chevron" data-toggle="collapse" href="#info" aria-expanded="true" aria-controls="info" class="fa fa-chevron-down" aria-hidden="true"></i>
             <div class="collapse hide" id="info">
+                <div class="collapsible">
             <div class="contact-container container-block">
                 <ul class="list-unstyled contact-list">
                    
@@ -49,6 +50,7 @@
            {% include education.html %}
            {% include language.html %}
            {% include interests.html %}
+       </div>
         
             </div>
         </div><!--//sidebar-wrapper-->

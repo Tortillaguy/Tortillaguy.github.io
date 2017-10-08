@@ -40,8 +40,8 @@ $(function() {
       if (matchMedia('screen and (max-width: 767px)').matches){
           var config = {duration: 500, delay: 200};
           Waves.init(config);
-          Waves.attach('.card-header', 'waves-light');
-          Waves.attach('#profile-img', 'waves-dark');
+          Waves.attach('.card-header', 'waves-dark');
+          Waves.attach('#profile-img', 'waves-light');
           $('.collapse').collapse('hide');
       }
 
