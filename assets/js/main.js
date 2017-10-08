@@ -30,6 +30,7 @@ jQuery(document).ready(function($) {
     // enable prev/next buttons at 768px
     if ( matchMedia('screen and (min-width: 1024px)').matches ) {
       options.prevNextButtons = true;
+      options.pageDots = false;
     }
 
     var carousel = $('.carousel').flickity(options);
