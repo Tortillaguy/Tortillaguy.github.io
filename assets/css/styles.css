@@ -34,7 +34,7 @@ a {
 }
 a:hover {
   text-decoration: underline;
-  color: #2196f3;
+  color: #2196F3 !important;
 }
 a:focus {
   text-decoration: none;
@@ -440,4 +440,8 @@ body {
 
 .flickity-page-dots {
   margin-bottom:  10px !important;
+}
+
+.link {
+  color:  #f203ff;
 }
