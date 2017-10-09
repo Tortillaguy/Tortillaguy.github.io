@@ -64,7 +64,7 @@ p {
 }
 .sidebar-wrapper .profile-container {
   padding: 30px;
-  background: linear-gradient(to bottom, rgb(145, 201, 246), rgb(84, 173, 243),rgb(33, 150, 243));
+  /* background: linear-gradient(to bottom, rgb(145, 201, 246), rgb(84, 173, 243),rgb(33, 150, 243)); */
   text-align: center;
   color: #fff;
 
@@ -302,7 +302,7 @@ p {
 }
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (min-width: 767px) {
   .skillset .level-title {
     display: inline-block;
     float: left;
@@ -315,6 +315,11 @@ p {
     float: left;
     position: relative;
     top: 1px;
+  }
+ 
+  .sidebar-wrapper {
+    box-shadow: -6px -1px 12px -2px #49556b;
+    z-index: 1;
   }
 
   #chevron {
