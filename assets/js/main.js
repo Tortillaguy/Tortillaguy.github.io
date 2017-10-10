@@ -4,11 +4,11 @@ $(function() {
 
 
     $('#info').on('show.bs.collapse', function(){
-      $('#chevron').rotate({endDeg: 180, duration: 0.5, persist: true});
+      $('#chevron').rotate({endDeg: 180, duration: 0.3, persist: true});
     });
 
     $('#info').on('hide.bs.collapse', function(){
-      $('#chevron').rotate({endDeg:0, duration: 0.5});
+      $('#chevron').rotate({endDeg:0, duration: 0.3});
       console.log('rotate counterclockwise');
     });
 
@@ -88,8 +88,7 @@ $(function() {
   
   $(window).resize(function(){
     initBackground();
-    initCards();
-  });
+    });
 
 
 
