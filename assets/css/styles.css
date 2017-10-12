@@ -169,7 +169,6 @@ p {
   color: #2196f3;
   position: relative;
   margin-top: 0;
-  margin-bottom: 20px;
 }
 .main-wrapper .section-title .fa {
   width: 30px;
@@ -457,4 +456,9 @@ body {
 
 .flickity-prev-next-button .arrow {
     fill: #fffdfd !important;
+}
+
+.card-body {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
 }
