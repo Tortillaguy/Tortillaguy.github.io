@@ -445,3 +445,15 @@ body {
 .link {
   color:  #f203ff;
 }
+
+.flickity-prev-next-button{
+  background: #2196F3 !important;
+  color: white;
+  fill: white;
+  stroke: black;
+  box-shadow: 3px 3px 0px -1px black;
+}
+
+.flickity-prev-next-button .arrow {
+    fill: #fffdfd !important;
+}
