@@ -34,14 +34,19 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+.project-title > a:hover {
   color: #2196F3 !important;
+}
+.contact-list a:hover {
+  color: #FE7FEE !important;
 }
 a:focus {
   text-decoration: none;
 }
 p {
   line-height: 1.5;
-  margin-bottom: 0 !important;
+  margin-bottom: 5px !important;
 }
 .wrapper {
   background: #42A8C0;
@@ -355,6 +360,7 @@ used for profile image
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 1;
+  box-shadow: 3px 3px 10px -1px black;
 }
 
 /* Custom CSS */
