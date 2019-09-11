@@ -1,7 +1,7 @@
 
 title: Adrian Cacho
-url: 'http://tortillaguy.github.io'
-baseurl: 'http://tortillaguy.github.io' #change it according to your repository name
+#url: 'http://tortillaguy.github.io'
+#baseurl: 'http://tortillaguy.github.io' #change it according to your repository name
 
 
 # Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.
