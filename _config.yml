@@ -1,27 +1,63 @@
-
+# Site settings
 title: Adrian Cacho
-#url: 'http://tortillaguy.github.io'
-#baseurl: 'http://tortillaguy.github.io' #change it according to your repository name
-
-
-# Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.
-#style: styles-2
-#style: styles-3
-#style: styles-4
-#style: styles-5
-#style: styles-6
-
-
-#Profile information
-name: Adrian Cacho
-tagline: Interactive Developer
-pic: profile.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
-
-#sidebar links
 email: agcacho22@gmail.com
-website: adriancacho.me
-phone: 209 628 6613
-linkedin: agcacho
-github: TortillaGuy
+url: https://tortillaguy.github.com
+description: ""
+keywords: "freelancer, software engineer, augmented reality, AR, VR, virtual reality, Unity, C#, programmer, javascript, los angeles, remote, contract, contractor"
+skills: "Software Engineer. VJ. Graphic Designer. Installations and Augmented Experiences."
+meta_author: LastName FirstName
 
-#Update all the sections by editing the files inside _includes folder.
+# Google webmaster tools
+google_verify:
+
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Contact form:
+# - static : pass through formspree.io to validate email sending
+# - disqus : replace contact form by disqus thread
+# - comment the line below if you want to stick with the default PHP contact form
+contact: static
+
+# If you use disqus you need disqus shortname
+# https://help.disqus.com/customer/portal/articles/466208
+disqus_shortname: myshortname
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 0000cc #80B3FF
+  primary-rgb: "24,288,156" #"128,179,255"
+  secondary: 2c3e50 #FD6E8A
+  secondary-dark: 233140 #A2122F
+
+# Footer settings
+footer:
+  copyright: Dr. Henry Jekyll
+  location: Location
+  social: Around the Web
+  credits: Credits
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/jekyllrb
+  - title: facebook
+    url:
+  - title: stack-overflow
+    url: http://stackoverflow.com/questions/tagged/jekyll
+  - title: bitbucket
+    url: http://bitbucket.org/jekyll
+  - title: github
+    url: http://github.com/jekyll
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: 3481 Melrose Place
+  - line: Beverly Hills, CA 90210
+
+# Credits content
+credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+
+# Build settings
+markdown: kramdown
+permalink: pretty
