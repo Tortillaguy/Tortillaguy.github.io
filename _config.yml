@@ -29,6 +29,9 @@ color:
   primary-rgb: 111111cc #"128,179,255"
   secondary: 2c3e50 #FD6E8A
   secondary-dark: 233140 #A2122F
+  dark: 484c7f
+  medium: ddb6c6
+  light: f1d4d4
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:

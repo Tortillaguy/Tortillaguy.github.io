@@ -6,6 +6,7 @@
 
 body {
     overflow-x: hidden;
+    background-color: #{{site.color.dark}};
 }
 
 p {
@@ -68,12 +69,13 @@ hr.star-light:after {
 }
 
 hr.star-primary {
-    border-color: #{{ site.color.secondary }};
+    border-color: #f1d4d4;
 }
 
 hr.star-primary:after {
-    color: #{{ site.color.secondary }};
-    background-color: #fff;
+    color:  #{{site.color.light}};
+    background-color: #{{site.color.dark}};
+
 }
 
 .img-centered {
@@ -193,6 +195,10 @@ section.success {
     section.first {
         padding-top: 75px;
     }
+}
+
+#portfolio h2 {
+    color: #f1d4d4;
 }
 
 #portfolio .portfolio-item {
