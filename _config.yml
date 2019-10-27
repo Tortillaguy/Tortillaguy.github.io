@@ -1,7 +1,7 @@
 # Site settings
 title: Adrian Cacho
 email: agcacho22@gmail.com
-#url: https://tortillaguy.github.com
+url: https://tortillaguy.github.com
 description: ""
 keywords: "freelancer, software engineer, augmented reality, AR, VR, virtual reality, Unity, C#, programmer, javascript, los angeles, remote, contract, contractor"
 skills: "Software Engineer. VJ. Graphic Designer. Installations and Augmented Experiences."
@@ -26,7 +26,7 @@ bing_verify:
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary: 0000cc #80B3FF
-  primary-rgb: "24,288,156" #"128,179,255"
+  primary-rgb: 111111cc #"128,179,255"
   secondary: 2c3e50 #FD6E8A
   secondary-dark: 233140 #A2122F
 
