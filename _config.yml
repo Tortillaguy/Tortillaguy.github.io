@@ -28,10 +28,15 @@ color:
   primary: 0000cc #80B3FF
   primary-rgb: 111111cc #"128,179,255"
   secondary: 2c3e50 #FD6E8A
-  secondary-dark: 233140 #A2122F
+  secondary-dark: 484C7F #A2122F
   dark: 484c7f
   medium: ddb6c6
   light: f1d4d4
+  one: ADA8BE;
+  two: F1D4D4;
+  three: A28497;
+  four: AC8DAF;
+  five: 484C7F;
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
