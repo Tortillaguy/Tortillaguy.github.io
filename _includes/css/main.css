@@ -23,7 +23,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #{{ site.color.primary }};
+    color: #{{ site.color.five }};
 }
 
 h1,
@@ -138,6 +138,7 @@ header .intro-text .skills {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
+        color:white;
     }
 
     .navbar-fixed-top.navbar-shrink {
@@ -146,7 +147,16 @@ header .intro-text .skills {
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
         font-size: 1.5em;
-    }
+    }  
+}
+
+a#brand-title {
+    color: white;
+}
+
+a#brand-title:hover, 
+a#brand-title:active {
+    color: #{{site.color.five}};
 }
 
 .navbar {
@@ -158,6 +168,15 @@ header .intro-text .skills {
 
 .navbar a:focus {
     outline: 0;
+    color: white;
+}
+
+.navbar a:hover {
+    color:white;
+}
+
+.navbar a:active {
+    color:white;
 }
 
 .navbar .navbar-nav {
@@ -168,10 +187,24 @@ header .intro-text .skills {
     outline: 0;
 }
 
+.navbar .navbar-nav li a:hover{
+    color: #{{site.color.five}};
+}
+
 .navbar-default,
 .navbar-inverse {
     border: 0;
+    color: white;
 }
+
+.navbar-default:hover {
+    color:white;
+}
+
+.navbar-toggle {
+    border-color: white;
+}
+
 
 section {
     padding: 100px 0;
@@ -183,7 +216,7 @@ section h2 {
 }
 
 section.success {
-    color: #fff;
+    color: #{{site.color.two}};
     background: #{{ site.color.primary }};
 }
 
@@ -272,8 +305,8 @@ section.success {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #{{ site.color.two }};
-    background: #fff;
+    color: #{{ site.color.one }};
+    
 }
 
 .floating-label-form-group {
@@ -381,6 +414,10 @@ footer .footer-below {
     outline: 0;
 }
 
+.btn-success {
+    background-color: #{{site.color.five}};
+}
+
 .scroll-top {
     z-index: 1049;
     position: fixed;
@@ -462,7 +499,7 @@ footer .footer-below {
 }
 
 .navbar-nav>.active>a {
-    background-color: #{{ site.color.secondary-dark }} !important;
+    background-color: #{{ site.color.one}} !important;
 }
 
 /* Fix modal mouse wheel issues */
@@ -488,9 +525,21 @@ section#contact label {
 }
 
 .form-control::placeholder{
-    color:#{{site.color.two}};
+    color:#{{site.color.five}};
 }
 
 .help-block {
     color:${{site.color.four}};
+}
+
+.navbar-default .navbar-toggle {
+    border: 0px;
+}
+
+.navbar-default .navbar-toggle:focus {
+    background-color: #{{site.color.four}};
+}
+
+a:hover {
+    color:white;
 }
