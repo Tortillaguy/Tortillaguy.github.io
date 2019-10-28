@@ -60,11 +60,11 @@ hr.star-primary:after {
 }
 
 hr.star-light {
-    border-color: #fff;
+    border-color: #{{site.color.five}};
 }
 
 hr.star-light:after {
-    color: #fff;
+    color: #{{site.color.five}};
    
 }
 
@@ -83,8 +83,8 @@ hr.star-primary:after {
 
 header {
     text-align: center;
-    color: #fff;
-    background: #{{site.color.five}};
+    color: #{{site.color.five}};
+    background: #{{site.color.one}};
 }
 
 header .container {
@@ -156,14 +156,14 @@ a#brand-title {
 
 a#brand-title:hover, 
 a#brand-title:active {
-    color: #{{site.color.five}};
+    color: #{{site.color.two}};
 }
 
 .navbar {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-    background-color: #{{site.color.four}};
+    background-color: #{{site.color.five}};
 }
 
 .navbar a:focus {
@@ -188,24 +188,16 @@ a#brand-title:active {
 .navbar .navbar-nav li a:active {
     outline: 0;
     color: white;
-    background-color: #{{site.color.four}};
 }
 
 .navbar .navbar-nav li a:hover {
-    color: #{{site.color.five}};
+    color: #{{site.color.two}};
 }
 
-.navbar .navbar-nav .active a:hover {
-    color: #{{site.color.five}};
-    background-color: #{{site.color.four}};
-}
-
-.navbar .navbar-nav .active a{
-    background-color: #{{site.color.four}};
-}
-
-.navbar .navbar-nav .active a:focus {
-    background-color:#{{site.color.four}};
+.navbar .navbar-nav .active a,
+.navbar .navbar-nav .active a:hover,
+.navbar .navbar-nav .active a:focus{
+    background-color: #{{site.color.five}};
 }
 
 .navbar .navbar-nav .page-scroll .active li {
@@ -407,7 +399,7 @@ footer h3 {
 
 footer .footer-above {
     padding-top: 50px;
-    background-color: #{{ site.color.secondary }};
+    background-color: #{{ site.color.five }};
 }
 
 footer .footer-col {
@@ -559,7 +551,7 @@ section#contact label {
 }
 
 .navbar-default .navbar-toggle:focus {
-    background-color: #{{site.color.four}};
+   background-color: rgba(0,0,0,0);
 }
 
 a:hover {
