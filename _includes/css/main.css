@@ -183,13 +183,35 @@ a#brand-title:active {
     letter-spacing: 1px;
 }
 
-.navbar .navbar-nav li a:focus {
+.navbar .navbar-nav li a,
+.navbar .navbar-nav li a:focus,
+.navbar .navbar-nav li a:active {
     outline: 0;
+    color: white;
+    background-color: #{{site.color.four}};
 }
 
-.navbar .navbar-nav li a:hover{
+.navbar .navbar-nav li a:hover {
     color: #{{site.color.five}};
 }
+
+.navbar .navbar-nav .active a:hover {
+    color: #{{site.color.five}};
+    background-color: #{{site.color.four}};
+}
+
+.navbar .navbar-nav .active a{
+    background-color: #{{site.color.four}};
+}
+
+.navbar .navbar-nav .active a:focus {
+    background-color:#{{site.color.four}};
+}
+
+.navbar .navbar-nav .page-scroll .active li {
+    background-color: red;
+}
+
 
 .navbar-default,
 .navbar-inverse {
