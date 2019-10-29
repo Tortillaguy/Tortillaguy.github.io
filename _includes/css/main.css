@@ -81,15 +81,17 @@ hr.star-primary:after {
     margin: 0 auto;
 }
 
+
 header {
-    text-align: center;
+    /*text-align: center;*/
     color: #{{site.color.five}};
-    background: #{{site.color.one}};
+   /* background: #{{site.color.one}};*/
 }
 
 header .container {
     padding-top: 100px;
     padding-bottom: 50px;
+    text-align: center;
 }
 
 header img {
@@ -556,4 +558,13 @@ section#contact label {
 
 a:hover {
     color:white;
+}
+
+#canvas {
+    position:absolute;
+    bottom: 0px;
+    background-color: white;
+    width: 100%;
+    height:100%;
+    display:block;
 }
