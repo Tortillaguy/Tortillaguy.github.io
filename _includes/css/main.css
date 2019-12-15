@@ -568,3 +568,7 @@ a:hover {
     height:100%;
     display:block;
 }
+
+.modal-body h2 {
+    color: #{{site.color.five}};
+}

@@ -1,0 +1,14 @@
+---
+layout: default
+modal-id: 1
+date: 2014-07-16
+img: midtown.png
+title: Music Midtown AR
+project-link: https://www.mobilemarketer.com/news/hyundai-revs-up-ar-experience-in-music-midtown-festival-app/562954/
+alt: image-alt
+project-date: July 2019
+client: Live Nation
+category: Augmented Reality
+description: An augmented reality experience produced in tandem with Live Nation, Hyundai, and the producers of the Music Midtown festival in Atlanta, Georgia. The mobile app boasted multiple AR features including livestreams presented via "AR Jumbotron", a spatially anchored portal leading to the festival grounds in an immersive 360 video environment, and an interactive sneak peak at the Hyundai Sonata 2020 model. 
+
+---

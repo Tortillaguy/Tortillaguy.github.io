@@ -1,0 +1,14 @@
+---
+layout: default
+modal-id: 6
+title: BUDLIGHT INTERACTIVE FITTING ROOM
+date: 2014-07-18
+img: budlight.png
+alt: image-alt
+project-date: August 2016
+project-link: https://vimeo.com/180105298
+client: Anheuser Busch
+category: Augmented Reality, Kinect
+description: When visitors stood in front of the enormous seven by seven-foot screen, Bud Light “swag” was digitally superimposed on their body, giving partygoers the opportunity to see themselves wearing the products, without having to physically try them on. Once satisfied with their selected item, visitors could snap a photo of themselves wearing the digital merchandise. The photo could then be shared on social media.
+
+---
