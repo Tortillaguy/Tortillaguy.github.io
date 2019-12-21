@@ -1,23 +1,17 @@
- <!-- jQuery Version 1.11.0 -->
-    <script src="{{ "/js/jquery-1.11.0.js" }}"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="{{ "/js/bootstrap.min.js" }}"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="{{ "/js/jquery.easing.min.js" }}"></script>
-    <script src="{{ "/js/classie.js" }}"></script>
-    <script src="{{ "/js/cbpAnimatedHeader.js" }}"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="{{ "/js/jqBootstrapValidation.js" }}"></script>
-    {% if site.contact == "static" %}
-    <script src="{{ "/js/contact_me_static.js" }}"></script>
-    {% else %}
-     <script src="{{ "/js/contact_me.js" }}"></script>
-    {% endif %}
-
-    <script type="x-shader/x-vertex" id="standardVertexShader">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reaction diffusion simulation</title>
+        <link rel="stylesheet" type="text/css" href="../css/experiments.css"/>
+        <link rel="stylesheet" type="text/css" href="../gradientui/gradientui.css"/>
+        <link type="text/css" href="../3rd/custom-theme/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+        <script type="text/javascript" src="../3rd/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="../3rd/jquery-ui-1.8.16.custom.min.js"></script>
+        <script type="text/javascript" src="../3rd/colorPicker.js"></script>
+        <script type="text/javascript" src="../3rd/three.min.js"></script>
+        <script type="text/javascript" src="../gradientui/gradientui.js"></script>
+        <!--script type="text/javascript" src="http://mrdoob.github.com/three.js/build/three.min.js"></script-->
+        <script type="x-shader/x-vertex" id="standardVertexShader">
             varying vec2 vUv;
             
             void main()
@@ -122,17 +116,12 @@
                 if(value > color5.a)
                     col = color5.rgb;
                 
-                gl_FragColor = vec4(col.r, col.g, col.b, 1.0);
+            	gl_FragColor = vec4(col.r, col.g, col.b, 1.0);
             }
         </script>
-    <script src="{{ "/js/gradientui/gradientui.js" }}"></script>
-    <script src="{{ "/js/three.min.js" }}"></script>
-    <script src="{{ "/js/grayscott.js" }}"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="{{ "/js/freelancer.js" }}"></script>
-
-    <style>
+        <script type="text/javascript" src="grayscott.js"></script>
+        <meta charset="UTF-8">
+        <style>
             #gradient
             {
                 height: 40px;
@@ -152,17 +141,85 @@
                                          [0.4, '#FF0000'],
                                          [0.6, '#FFFFFF']]});
                 
-               // KLUDGE!
-                //colorPicker.offsetX = -512;
-                //colorPicker.offsetY = -256;
+                // KLUDGE!
+                colorPicker.offsetX = -512;
+                colorPicker.offsetY = -256;
                 
                 document.getElementById("gradient").onselectstart = function () {return false;};
                 
                 init();
             });
         </script>
-
-    {% if site.contact == "disqus" %}
-    <!-- Disqus Stuff -->
-    {% include js_disqus.html %}
-    {% endif %}
+    </head>
+    <body>
+        <header>
+            <h1>Reaction diffusion system (Gray-Scott model)</h1>
+        </header>
+        <div id="simulation">
+        <canvas id="myCanvas" class="viewer" style="width:1024px;height:512px"></canvas>
+        <aside class="panel">
+            <section id="instructions">
+                <header><h4>Instructions</h4></header>
+                <ol>
+                    <li>Paint some strokes on the canvas.</li>
+                    <li>Choose the evolution settings with the controls below.</li>
+                    <li>Watch the evolution.</li>
+                </ol>
+            </section>
+            <section id="controls">
+                <!--header><h4>Controls</h4></header-->
+                <form name="ex">
+                    Presets:
+                    <select name="scene" style="width:100%"
+                        onchange="loadPreset(document.ex.scene.selectedIndex)">
+                        <option value="0" selected="selected">Default</option>
+                        <option value="1">Solitons</option>
+                        <option value="2">Pulsating solitons</option>
+                        <option value="3">Worms</option>
+                        <option value="4">Mazes</option>
+                        <option value="5">Holes</option>
+                        <option value="6">Chaos</option>
+                        <option value="7">Chaos and holes</option>
+                        <option value="8">Moving spots</option>
+                        <option value="9">Spots and loops</option>
+                        <option value="10">Waves</option>
+                        <option value="11">The U-Skate world</option>
+                    </select>
+                </form>
+                <p style="text-align:center">
+                    <button id="btn_clear" onclick="clean()">Clear</button>
+                    <button id="btn_snapshot" onclick="snapshot()">Take snapshot</button>
+                    <button id="btn_fullscreen" onclick="fullscreen()">Fullscreen mode</button>
+                <p/>
+                <h4 class="unsafe">Advanced settings</h4>
+                Feed rate:
+                <span class="remark" id="replenishment"></span><br/>
+                <div id="sld_replenishment" class="slider"></div>
+                
+                Death rate:
+                <span class ="remark" id="diminishment"></span><br/>
+                <div id="sld_diminishment" class="slider"></div>
+                Colors:
+                <div id="gradient" style=""></div>
+                <div style="font-size:x-small">Share (paste and press enter):</div>
+                <div style="text-align:center"><input id="share" style="width:85%"/></div>
+            </section>
+        </aside>
+        </div>
+        <footer>
+                <div id="copyright">
+                        &copy;2012
+                        <a href="https://twitter.com/pmneila">@pmneila</a>
+                        <a href="https://github.com/pmneila/jsexp">Github</a>
+                        <a id="notworking" href="#">Not working?</a>
+                </div>
+        </footer>
+        
+        <div id="requirement_dialog" title="Requirements">
+            <p>This simulation requires the GL extensions framebuffer_object and texture_float.
+            If you cannot see the simulation your system probably lacks at least one of these extensions.</p>
+            
+            <p>In Google Chrome, you can see the available GL extensions going to chrome://gpu.</p>
+        </div>
+    </body>
+</html>
