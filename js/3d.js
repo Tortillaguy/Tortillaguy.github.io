@@ -19,13 +19,16 @@ $(function(){
 
 	function resizeCanvas(){
 		canvas.width(window.innerWidth);
-
+		canvas.height(canvas.innerHeight);
+		renderer.setSize(canvas.width(), canvas.height());
+		camera.aspect = c.clientWidth / c.clientHeight;
+  		camera.updateProjectionMatrix();
 	}
 
 	resizeCanvas();
 
 	renderer.setClearColor("#28EE6A");
-	renderer.setSize(canvas.width(), canvas.height());
+	
 
 	// Create a Cube Mesh with basic material
 var geometry = new THREE.BoxGeometry( 1, 1, 1 );
@@ -43,9 +46,8 @@ var render = function () {
   cube.rotation.x += 0.01;
   cube.rotation.y += 0.01;
 
-  camera.aspect = c.clientWidth / c.clientHeight;
-  camera.updateProjectionMatrix();
-	resizeCanvas();
+ 
+//	resizeCanvas();
   // Render the scene
   renderer.render(scene, camera);
 

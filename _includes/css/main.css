@@ -89,7 +89,7 @@ header {
 }
 
 header .container {
-    padding-top: 50px;
+  //  padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
 }
@@ -127,6 +127,10 @@ header .intro-text .skills {
     }
 }
 
+#TitleHeader {
+    top:25px;
+}
+
 @media(min-width:768px) {
     .navbar-fixed-top {
         padding: 25px 0;
@@ -150,6 +154,10 @@ header .intro-text .skills {
     .navbar-fixed-top.navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }  
+
+    #TitleHeader {
+        top:25px;
+    }
 }
 
 a#brand-title {
