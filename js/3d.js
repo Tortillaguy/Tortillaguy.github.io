@@ -23,8 +23,8 @@ $(function(){
 
 	var materialShaders = [];
 	var speed = 10;			
-	scene.background = new THREE.Color(0xADA8BE);
-	scene.fog = new THREE.Fog(scene.background, 42.5, 50);
+	scene.background = new THREE.Color(0x000000);
+	scene.fog = new THREE.Fog(scene.background, 15, 45);
 
 
 	// GROUND AND ROAD
@@ -47,7 +47,7 @@ $(function(){
 	      vec2 tuv = uv;
 	      float t = time * 0.01 * ${speed}.; 
 	      tuv.y += t;
-	      transformed.y = snoise(vec3(tuv * 5., 0.)) * 5.;
+	      transformed.y = snoise(vec3(tuv * 5., 0.)) * 8.;
 	      transformed.y *= smoothstep(5., 15., abs(transformed.x)); // road stripe
 	      vPos = transformed;
 	    `
@@ -74,7 +74,7 @@ $(function(){
 	  shader.fragmentShader = shader.fragmentShader.replace(
 	    `gl_FragColor = vec4( outgoingLight, diffuseColor.a );`,
 	    `
-	    float l = line(vPos, 2.0, vec3(2.0));
+	    float l = line(vPos, 1.0, vec3(1.0));
 	    vec3 base = mix(vec3(0, 0.75, 1), vec3(0), smoothstep(5., 7.5, abs(vPos.x)));
 	    vec3 c = mix(outgoingLight, base, l);
 	    gl_FragColor = vec4(c, diffuseColor.a);
