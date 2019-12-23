@@ -472,7 +472,7 @@ footer .footer-below {
 }
 
 .portfolio-modal .modal-content {
-    /*padding: 100px 0;*/
+    padding: 100px 0;
     min-height: 100%;
     border: 0;
     border-radius: 0;
@@ -588,4 +588,8 @@ a:hover {
 
 .modal-body h2 {
     color: #{{site.color.five}};
+}
+.modal-body {
+    position: relative;
+    padding: 20px;
 }
