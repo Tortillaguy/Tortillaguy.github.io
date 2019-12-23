@@ -84,7 +84,8 @@ hr.star-primary:after {
 
 header {
     /*text-align: center;*/
-    color: #{{site.color.five}};
+   /* color: #{{site.color.five}};*/
+   color:white;
    /* background: #{{site.color.one}};*/
 }
 
@@ -97,6 +98,11 @@ header .container {
 header img {
     display: block;
     margin: 0 auto 20px;
+}
+
+header .intro-text {
+    padding-top: 40px;
+    padding-bottom: 200px;
 }
 
 header .intro-text .name {
