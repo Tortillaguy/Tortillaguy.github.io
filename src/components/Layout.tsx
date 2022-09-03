@@ -1,11 +1,9 @@
-import Navbar from "./Navbar";
-import * as React from "react";
-
+import Navbar from './Navbar'
 export default function Layout({ children }) {
-  return (
-    <main>
-      <Navbar />
-      {children}
-    </main>
-  );
+    return (
+        <main>
+            <Navbar />
+            <div className="container max-w-screen-xl">{children}</div>
+        </main>
+    )
 }
