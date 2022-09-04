@@ -17,26 +17,24 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     const { name, image, link, role } = project
     return (
         <Link to={link} target="_blank">
-            <CardBase className="w-56 h-72 glass transform transition duration-300 hover:-translate-y-4 hover:glow">
-                <CardHeader floated={false} className=" h-32 w-32 mx-auto">
+            <CardBase className="w-56 glass transform transition duration-300 hover:-translate-y-4">
+                <CardHeader
+                    floated={false}
+                    className=" h-48 mx-auto w-full mt-0 rounded-none rounded-t-2xl"
+                >
                     <img
-                        className="object-cover w-full h-full object-top"
+                        className="object-cover w-full h-full object-center"
                         src={`/images/${image}`}
                         alt="profile-picture"
                     />
                 </CardHeader>
-                <CardBody className="text-center">
-                    <Typography
-                        variant="h4"
-                        color="blue-gray"
-                        className="mb-2 text-white"
-                    >
+                <CardBody className="text-center p-2 py-6 gap-5 flex flex-col">
+                    <Typography variant="h5" className="">
                         {name}
                     </Typography>
                     {role && (
                         <Typography
-                            color="blue"
-                            className="font-medium"
+                            className="font-medium text-purple-200"
                             textGradient
                         >
                             {role}

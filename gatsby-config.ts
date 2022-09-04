@@ -47,6 +47,15 @@ const config: GatsbyConfig = {
             {
                 name: 'AR/VR',
             },
+            {
+                name: 'Notch',
+            },
+            {
+                name: 'TouchDesigner',
+            },
+            {
+                name: 'Resolume',
+            },
         ],
         projects: [
             {
@@ -87,6 +96,21 @@ const config: GatsbyConfig = {
             },
         ],
         art: [
+            {
+                name: 'Letting Go',
+                image: 'hand_pyro.jpg',
+                link: 'https://www.instagram.com/p/CfDQL0IDLom/',
+            },
+            {
+                name: 'Pyro Loop Demo',
+                image: 'sword_pyro.jpg',
+                link: 'https://www.instagram.com/p/Ca838TdjdLt/',
+            },
+            {
+                name: 'Hardstyle Visuals',
+                image: 'hardstyle.jpg',
+                link: 'https://www.instagram.com/p/CWyubrnhLOb/',
+            },
             {
                 name: 'Oblivion - Fadead',
                 image: 'oblivion.jpg',

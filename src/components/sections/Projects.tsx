@@ -28,7 +28,7 @@ export default function Projects() {
     return (
         <section
             id="projects"
-            className="flex items-center flex-col w-full max-w-xxl mx-auto mt-8"
+            className="flex items-center flex-col w-full max-w-xxl mx-auto mt-20"
         >
             <Typography variant="h2" className="self-start">
                 Projects

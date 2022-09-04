@@ -32,7 +32,7 @@ export default function Navbar() {
     }, [])
 
     const navList = (
-        <ul className="mb-4 mt-2 items-end sm:px-14 flex flex-col gap-2 md:mb-0 md:mt-0 md:flex-row md:items-center md:gap-6 text-white">
+        <ul className="mb-4 mt-2 items-end sm:px-4 flex flex-col gap-2 md:mb-0 md:mt-0 md:flex-row md:items-center md:gap-6 text-white">
             <Typography as="li" className="NavLink">
                 <a href="#skills" className="flex items-center">
                     Skills
