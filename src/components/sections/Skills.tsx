@@ -27,14 +27,20 @@ export default function Skills() {
     } = data
 
     return (
-        <section className="flex items-center flex-col mx-auto max-w-xl w-full gap-3 mt-8">
+        <section
+            id="skills"
+            className="flex items-center flex-col mx-auto max-w-xl w-full gap-3 mt-8"
+        >
             <Typography className="self-start" variant="h2">
                 Skills
             </Typography>
             <Flip cascade bottom delay={1000}>
-                <div className="flex gap-4 flex-wrap">
+                <div className="flex gap-4 flex-wrap max-w-xl">
                     {skills.map(({ name }) => (
-                        <Chip className="normal-case text-md" value={name} />
+                        <Chip
+                            className="normal-case text-md bg-[#3B8EA5]"
+                            value={name}
+                        />
                     ))}
                 </div>
             </Flip>

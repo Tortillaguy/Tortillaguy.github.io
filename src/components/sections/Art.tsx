@@ -3,18 +3,17 @@ import { graphql, useStaticQuery } from 'gatsby'
 import { Project } from '../../types/Project'
 import ProjectCard from '../ProjectCard'
 
-export default function Projects() {
+export default function Art() {
     const data = useStaticQuery<{
-        site: { siteMetadata: { projects: Project[] } }
+        site: { siteMetadata: { art: Project[] } }
     }>(graphql`
-        query ProjectsQuery {
+        query ArtQuery {
             site {
                 siteMetadata {
-                    projects {
+                    art {
                         name
                         image
                         link
-                        role
                     }
                 }
             }
@@ -22,19 +21,19 @@ export default function Projects() {
     `)
     const {
         site: {
-            siteMetadata: { projects },
+            siteMetadata: { art },
         },
     } = data
     return (
         <section
-            id="projects"
+            id="art"
             className="flex items-center flex-col w-full max-w-xxl mx-auto mt-8"
         >
             <Typography variant="h2" className="self-start">
-                Projects
+                Art
             </Typography>
             <div className="cardList">
-                {projects.map((project) => (
+                {art.map((project) => (
                     <ProjectCard project={project} />
                 ))}
             </div>

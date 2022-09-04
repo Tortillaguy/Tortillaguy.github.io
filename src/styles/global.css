@@ -3,6 +3,24 @@
 @tailwind utilities;
 
 .cardList {
-    @apply flex flex-nowrap overflow-x-auto w-full gap-5 py-4 md:grid md:gap-y-6 md:w-full md:justify-around md:justify-items-center;
+    @apply flex flex-nowrap overflow-x-auto w-full gap-5 py-6 px-3 md:grid md:gap-y-10 md:w-full md:justify-around md:justify-items-center;
     grid-template-columns: repeat(auto-fit, minmax(218px, 227px));
+}
+
+.text-inherit {
+    color: white;
+}
+
+.glass {
+    /* From https://css.glass */
+    background: rgba(33, 85, 177, 0.38);
+    border-radius: 16px;
+    /* box-shadow: 0 2px 8px rgba(238, 232, 232, 0.485); */
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    border: 1px solid rgba(33, 85, 177, 0.75);
+}
+
+.glass:hover {
+    box-shadow: 0 2px 16px rgba(46, 64, 255, 0.727);
 }

@@ -52,7 +52,7 @@ export default function HeroSection() {
     `)
 
     return (
-        <section className="flex justify-center flex-col items-center mt-8 gap-6 mx-auto w-full md:flex-row ">
+        <section className="flex justify-center flex-col items-center mt-8 gap-6 mx-auto w-full md:flex-row md:gap-10 ">
             <Fade bottom distance="60px">
                 <Avatar
                     src="/headshot.jpg"
@@ -60,12 +60,12 @@ export default function HeroSection() {
                     className="w-52 h-52"
                 />
             </Fade>
-            <div className="flex flex-col items-start text-center gap-2 md:text-left">
+            <div className="flex flex-col items-start gap-2 md:text-left">
                 <Fade cascade right>
-                    <Typography variant="h3">Hey There!👋</Typography>
+                    <Typography variant="h3">Hey there!👋</Typography>
                     <Typography variant="h2">I'm Adrian Cacho</Typography>
                     <Fade cascade right delay={400}>
-                        <div className="flex flex-wrap flex-col items-start md:flex-row ">
+                        <div className="flex flex-wrap flex-col items-start md:flex-row md:justify-around md:gap-6 ">
                             <Typography variant="h4">Engineer 🛠️</Typography>
                             <Typography variant="h4">Designer 🧩</Typography>
                             <Typography variant="h4">Artist 🎨</Typography>
@@ -79,10 +79,10 @@ export default function HeroSection() {
                                 <Link
                                     to={value}
                                     target="_blank"
-                                    className="flex items-center gap-2"
+                                    className="flex items-center gap-2 px-2"
                                 >
                                     {getLogo(name, {
-                                        color: 'black',
+                                        color: 'white',
                                         size: 16,
                                     })}
                                     <Typography

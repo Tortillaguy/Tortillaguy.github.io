@@ -32,45 +32,30 @@ export default function Navbar() {
     }, [])
 
     const navList = (
-        <ul className="mb-4 mt-2 items-end sm:px-14 flex flex-col gap-2 md:mb-0 md:mt-0 md:flex-row md:items-center md:gap-6">
-            <Typography
-                as="li"
-                variant="small"
-                color="blue-gray"
-                className="p-1 font-normal"
-            >
-                <a href="#" className="flex items-center">
-                    Pages
+        <ul className="mb-4 mt-2 items-end sm:px-14 flex flex-col gap-2 md:mb-0 md:mt-0 md:flex-row md:items-center md:gap-6 text-white">
+            <Typography as="li" className="p-1 font-bold">
+                <a href="#skills" className="flex items-center">
+                    Skills
                 </a>
             </Typography>
-            <Typography
-                as="li"
-                variant="small"
-                color="blue-gray"
-                className="p-1 font-normal"
-            >
-                <a href="#" className="flex items-center">
-                    Account
+            <Typography as="li" className="p-1 font-bold">
+                <a href="#about" className="flex items-center">
+                    About
                 </a>
             </Typography>
-            <Typography
-                as="li"
-                variant="small"
-                color="blue-gray"
-                className="p-1 font-normal"
-            >
-                <a href="#" className="flex items-center">
-                    Blocks
+            <Typography as="li" className="p-1 font-bold">
+                <a href="#projects" className="flex items-center">
+                    Projects
                 </a>
             </Typography>
-            <Typography
-                as="li"
-                variant="small"
-                color="blue-gray"
-                className="p-1 font-normal"
-            >
-                <a href="#" className="flex items-center">
-                    Docs
+            <Typography as="li" className="p-1 font-bold">
+                <a href="#art" className="flex items-center">
+                    Art
+                </a>
+            </Typography>
+            <Typography as="li" className="p-1 font-bold">
+                <a href="#contact" className="flex items-center">
+                    Say Hello
                 </a>
             </Typography>
         </ul>
@@ -78,13 +63,12 @@ export default function Navbar() {
 
     return (
         <header>
-            <NavbarBase className="mx-auto max-w-screen-xl py-2 px-4 md:px-8 md:py-4">
+            <NavbarBase className="mx-auto max-w-screen-xl py-2 px-4 md:px-8 md:py-4 border-none rounded-none rounded-b-lg bg-gray-900">
                 <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
                     <Typography
                         as="a"
                         href="#"
-                        variant="large"
-                        className="mr-4 cursor-pointer py-1.5 font-bold"
+                        className="mr-4 cursor-pointer py-1.5 font-bold text-xl"
                     >
                         <span>{title}</span>
                     </Typography>
@@ -94,7 +78,7 @@ export default function Navbar() {
                         size="sm"
                         className="hidden md:inline-block bg-gradient-to-tr from-indigo-900 to-purple-400"
                     >
-                        <span>Buy Now</span>
+                        <span>Get the Resume</span>
                     </Button>
                     <IconButton
                         variant="text"
@@ -142,7 +126,7 @@ export default function Navbar() {
                         fullWidth
                         className="mb-2"
                     >
-                        <span>Buy Now</span>
+                        <span>Get the Resume</span>
                     </Button>
                 </MobileNav>
             </NavbarBase>

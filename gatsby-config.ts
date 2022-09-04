@@ -86,6 +86,33 @@ const config: GatsbyConfig = {
                 role: 'Project Lead',
             },
         ],
+        art: [
+            {
+                name: 'Oblivion - Fadead',
+                image: 'oblivion.jpg',
+                link: 'https://open.spotify.com/album/3zX3v6VEdFIFBqIuWUMEri?si=fM2K0ASZR7SQyiSG7DscOA',
+            },
+            {
+                name: 'Spinning - Stryer & Fadead',
+                image: 'spinning.jpg',
+                link: 'https://open.spotify.com/track/6Qbp4oB4pTBFLHeuUp9Gic?si=968498fab2304bf5',
+            },
+            {
+                name: 'Light It Up',
+                image: 'light_it_up.jpg',
+                link: 'https://www.instagram.com/p/CDzUCLdpSgX/',
+            },
+            {
+                name: 'Chapas Mix Vol 4',
+                image: 'chapas.jpg',
+                link: 'https://soundcloud.com/chapas-music/chapas-mix-vol-4',
+            },
+            {
+                name: 'Crystals',
+                image: 'crystals.jpg',
+                link: 'https://www.instagram.com/p/B_tTLXiJ_P2/',
+            },
+        ],
     },
     // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
     // If you use VSCode you can also use the GraphQL plugin
