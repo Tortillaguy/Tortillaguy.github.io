@@ -1,9 +1,11 @@
 import Navbar from './Navbar'
 export default function Layout({ children }) {
     return (
-        <main>
+        <div className="overflow-hidden">
             <Navbar />
-            <div className="container max-w-screen-xl">{children}</div>
-        </main>
+            <main className="container max-w-screen-xl mx-auto pb-20 px-4">
+                {children}
+            </main>
+        </div>
     )
 }
