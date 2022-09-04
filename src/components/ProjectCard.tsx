@@ -17,10 +17,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     const { name, image, link, role } = project
     return (
         <Link to={link}>
-            <CardBase className=" w-56">
+            <CardBase className="w-56">
                 <CardHeader floated={false} className=" h-32 w-32 mx-auto">
                     <img
-                        className="object-cover w-full h-full object-center"
+                        className="object-cover w-full h-full object-top"
                         src={`/images/${image}`}
                         alt="profile-picture"
                     />

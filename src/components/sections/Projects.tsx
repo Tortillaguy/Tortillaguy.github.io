@@ -26,9 +26,17 @@ export default function Projects() {
         },
     } = data
     return (
-        <section className="">
-            <Typography variant="h2">Projects</Typography>
-            <div className="flex flex-nowrap gap-4 overflow-x-auto md:flex-wrap md:overflow-x-hidden">
+        <section className="flex items-center flex-col w-full max-w-xxl mx-auto">
+            <Typography variant="h2" className="self-start">
+                Projects
+            </Typography>
+            <div
+                className="flex flex-nowrap overflow-x-auto w-full gap-5 py-4 md:grid md:gap-y-6 md:w-full md:justify-center md:justify-items-center"
+                style={{
+                    gridTemplateColumns:
+                        'repeat(auto-fit, minmax(250px, 277px))',
+                }}
+            >
                 {projects.map((project) => (
                     <ProjectCard project={project} />
                 ))}

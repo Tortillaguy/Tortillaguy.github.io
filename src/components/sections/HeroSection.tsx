@@ -62,8 +62,8 @@ export default function HeroSection() {
             </Fade>
             <div className="flex flex-col items-start text-center gap-2 md:text-left">
                 <Fade cascade right>
-                    <Typography variant="h2">Hey There!👋</Typography>
-                    <Typography variant="h3">I'm Adrian Cacho</Typography>
+                    <Typography variant="h3">Hey There!👋</Typography>
+                    <Typography variant="h2">I'm Adrian Cacho</Typography>
                     <Fade cascade right delay={400}>
                         <div className="flex flex-wrap flex-col items-start md:flex-row ">
                             <Typography variant="h4">Engineer 🛠️</Typography>
