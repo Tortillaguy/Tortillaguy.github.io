@@ -30,13 +30,7 @@ export default function Projects() {
             <Typography variant="h2" className="self-start">
                 Projects
             </Typography>
-            <div
-                className="flex flex-nowrap overflow-x-auto w-full gap-5 py-4 md:grid md:gap-y-6 md:w-full md:justify-center md:justify-items-center"
-                style={{
-                    gridTemplateColumns:
-                        'repeat(auto-fit, minmax(250px, 277px))',
-                }}
-            >
+            <div className="cardList">
                 {projects.map((project) => (
                     <ProjectCard project={project} />
                 ))}

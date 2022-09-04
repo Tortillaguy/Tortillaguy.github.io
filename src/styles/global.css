@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.cardList {
+    @apply flex flex-nowrap overflow-x-auto w-full gap-5 py-4 md:grid md:gap-y-6 md:w-full md:justify-around md:justify-items-center;
+    grid-template-columns: repeat(auto-fit, minmax(218px, 227px));
+}
