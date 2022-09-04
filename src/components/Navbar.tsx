@@ -7,6 +7,8 @@ import {
     IconButton,
 } from '@material-tailwind/react'
 import { graphql, useStaticQuery } from 'gatsby'
+//@ts-ignore
+import Resume from '../../static/resume.pdf'
 
 const NavLink = ({ name, id }: any) => {
     return (
@@ -75,7 +77,7 @@ export default function Navbar() {
                         size="sm"
                         className="hidden md:inline-block bg-gradient-to-tr from-indigo-600 to-purple-400 hover:shadow-bone hover:shadow-sm"
                     >
-                        <a target={'_blank'} href="/resume.pdf">
+                        <a target={'_blank'} href={Resume}>
                             Get the Resume
                         </a>
                     </Button>
@@ -125,7 +127,7 @@ export default function Navbar() {
                         fullWidth
                         className="mb-2 bg-gradient-to-tr from-indigo-600 to-purple-400 hover:shadow-bone hover:shadow-sm"
                     >
-                        <a target={'_blank'} href="/resume.pdf">
+                        <a target={'_blank'} href={Resume}>
                             Get the Resume
                         </a>
                     </Button>
