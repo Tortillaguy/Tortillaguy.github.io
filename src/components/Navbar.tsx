@@ -8,6 +8,23 @@ import {
 } from '@material-tailwind/react'
 import { graphql, useStaticQuery } from 'gatsby'
 
+const NavLink = ({ name, id }: any) => {
+    return (
+        <Typography as="li" className="NavLink">
+            <a
+                onClick={() => {
+                    document.getElementById(id)?.scrollIntoView({
+                        behavior: 'smooth',
+                    })
+                }}
+                className="flex items-center"
+            >
+                {name}
+            </a>
+        </Typography>
+    )
+}
+
 export default function Navbar() {
     const [openNav, setOpenNav] = useState(false)
     const {
@@ -33,31 +50,11 @@ export default function Navbar() {
 
     const navList = (
         <ul className="mb-4 mt-2 items-end sm:px-4 flex flex-col gap-2 md:mb-0 md:mt-0 md:flex-row md:items-center md:gap-6 text-white">
-            <Typography as="li" className="NavLink">
-                <a href="#skills" className="flex items-center">
-                    Skills
-                </a>
-            </Typography>
-            <Typography as="li" className="NavLink">
-                <a href="#about" className="flex items-center">
-                    About
-                </a>
-            </Typography>
-            <Typography as="li" className="NavLink">
-                <a href="#projects" className="flex items-center">
-                    Projects
-                </a>
-            </Typography>
-            <Typography as="li" className="NavLink">
-                <a href="#art" className="flex items-center">
-                    Art
-                </a>
-            </Typography>
-            <Typography as="li" className="NavLink">
-                <a href="#contact" className="flex items-center">
-                    Say Hello
-                </a>
-            </Typography>
+            <NavLink name="Skills" id="skills" />
+            <NavLink name="About" id="about" />
+            <NavLink name="Projects" id="projects" />
+            <NavLink name="Art" id="art" />
+            <NavLink name="Say Hello" id="contact" />
         </ul>
     )
 
@@ -68,7 +65,7 @@ export default function Navbar() {
                     <Typography
                         as="a"
                         href="#"
-                        className="mr-4 cursor-pointer py-1.5 font-bold text-xl"
+                        className="mr-4 cursor-pointer py-1.5 font-bold text-2xl"
                     >
                         <span>{title}</span>
                     </Typography>
@@ -76,9 +73,11 @@ export default function Navbar() {
                     <Button
                         variant="gradient"
                         size="sm"
-                        className="hidden md:inline-block bg-gradient-to-tr from-indigo-900 to-purple-400"
+                        className="hidden md:inline-block bg-gradient-to-tr from-indigo-600 to-purple-400 hover:shadow-bone hover:shadow-sm"
                     >
-                        <span>Get the Resume</span>
+                        <a target={'_blank'} href="/resume.pdf">
+                            Get the Resume
+                        </a>
                     </Button>
                     <IconButton
                         variant="text"
@@ -126,7 +125,9 @@ export default function Navbar() {
                         fullWidth
                         className="mb-2"
                     >
-                        <span>Get the Resume</span>
+                        <a target={'_blank'} href="/resume.pdf">
+                            Get the Resume
+                        </a>
                     </Button>
                 </MobileNav>
             </NavbarBase>

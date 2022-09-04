@@ -7,7 +7,7 @@ export default function Contact() {
             id="contact"
             className="w-full max-w-xxl mt-8 flex flex-col items-center"
         >
-            <Button>
+            <Button className="hover:shadow-bone bg-blueCore hover:shadow-md bg-gradient-to-tr from-indigo-600 to-purple-400">
                 <a
                     href="mailto:hello@vibelabz.xyz"
                     target="_blank"

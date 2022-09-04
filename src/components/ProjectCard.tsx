@@ -34,7 +34,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                     </Typography>
                     {role && (
                         <Typography
-                            className="font-medium text-purple-200"
+                            className="font-medium text-[#7effff]"
                             textGradient
                         >
                             {role}
