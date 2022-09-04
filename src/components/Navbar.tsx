@@ -123,7 +123,7 @@ export default function Navbar() {
                         variant="gradient"
                         size="sm"
                         fullWidth
-                        className="mb-2"
+                        className="mb-2 bg-gradient-to-tr from-indigo-600 to-purple-400 hover:shadow-bone hover:shadow-sm"
                     >
                         <a target={'_blank'} href="/resume.pdf">
                             Get the Resume
