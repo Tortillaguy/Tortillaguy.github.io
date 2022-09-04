@@ -8,7 +8,7 @@
 }
 
 .text-inherit {
-    color: white;
+    color: #eae0cc;
 }
 
 .glass {
@@ -23,4 +23,60 @@
 
 .glass:hover {
     box-shadow: 0 2px 16px rgba(46, 64, 255, 0.727);
+}
+
+.gradient-header {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+        20deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(2, 0, 36, 1) 46%,
+        rgba(59, 142, 165, 1) 100%
+    );
+}
+
+body {
+    --primary-color: #3b8ea5;
+    --secondary-color: #eae0cc;
+    --tertiary-color: #cfa2f6;
+    --text-color: #eae0cc;
+    --subtext-color: #aaaaaa;
+    --background-color: #121212;
+    --card-background-color: #1c1c1c;
+    --scroll-bar-color: rgba(255, 255, 255, 0.5);
+    --box-shadow-color: rgba(0, 0, 0, 0.16);
+    --box-shadow-hover-color: rgba(0, 0, 0, 0.32);
+    --base-font: 'Roboto', Arial, sans-serif;
+    --code-block-bg: #151f28;
+    --code-block-var: #ff39a7;
+    --code-block-num: #fed703;
+    --code-block-fun: #c653ff;
+    --code-block-keyword: #2bdcff;
+    --code-block-comment: #8292a2;
+    --code-block-tkimp: #fd971f;
+}
+
+.Profile {
+    background: var(--background-color);
+    background: linear-gradient(
+        to right,
+        var(--primary-color) 50%,
+        var(--background-color) 50%
+    );
+    background-size: 205% 100%;
+    background-position: right bottom;
+    transition: all 0.1s ease-out;
+}
+
+.Profile:hover {
+    background-position: left bottom;
+}
+
+.NavLink {
+    @apply p-1 font-bold hover:underline underline-offset-4;
+}
+
+.Profile svg {
+    height: 1rem;
+    width: 1rem;
 }

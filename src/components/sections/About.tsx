@@ -4,7 +4,7 @@ export default function About() {
     return (
         <section
             id="about"
-            className="w-full max-w-xl flex flex-col mx-auto mt-8"
+            className="w-full max-w-xl flex flex-col mx-auto mt-12"
         >
             <Typography variant="h2">About Me</Typography>
             <div className="max-w-xl w-full self-center">

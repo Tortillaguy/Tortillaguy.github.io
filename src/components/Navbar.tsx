@@ -33,27 +33,27 @@ export default function Navbar() {
 
     const navList = (
         <ul className="mb-4 mt-2 items-end sm:px-14 flex flex-col gap-2 md:mb-0 md:mt-0 md:flex-row md:items-center md:gap-6 text-white">
-            <Typography as="li" className="p-1 font-bold">
+            <Typography as="li" className="NavLink">
                 <a href="#skills" className="flex items-center">
                     Skills
                 </a>
             </Typography>
-            <Typography as="li" className="p-1 font-bold">
+            <Typography as="li" className="NavLink">
                 <a href="#about" className="flex items-center">
                     About
                 </a>
             </Typography>
-            <Typography as="li" className="p-1 font-bold">
+            <Typography as="li" className="NavLink">
                 <a href="#projects" className="flex items-center">
                     Projects
                 </a>
             </Typography>
-            <Typography as="li" className="p-1 font-bold">
+            <Typography as="li" className="NavLink">
                 <a href="#art" className="flex items-center">
                     Art
                 </a>
             </Typography>
-            <Typography as="li" className="p-1 font-bold">
+            <Typography as="li" className="NavLink">
                 <a href="#contact" className="flex items-center">
                     Say Hello
                 </a>
@@ -63,8 +63,8 @@ export default function Navbar() {
 
     return (
         <header>
-            <NavbarBase className="mx-auto max-w-screen-xl py-2 px-4 md:px-8 md:py-4 border-none rounded-none rounded-b-lg bg-gray-900">
-                <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
+            <NavbarBase className="mx-auto max-w-screen-xl py-2 px-4 md:px-8 md:py-4 border-none rounded-none rounded-b-lg bg-blueCore shadow-blue-gray-900 shadow-md">
+                <div className="container mx-auto flex items-center justify-between text-bone">
                     <Typography
                         as="a"
                         href="#"

@@ -52,7 +52,7 @@ export default function HeroSection() {
     `)
 
     return (
-        <section className="flex justify-center flex-col items-center mt-8 gap-6 mx-auto w-full md:flex-row md:gap-10 ">
+        <section className="flex justify-center flex-col items-center mt-8 gap-6 mx-auto w-full md:flex-row md:gap-10 md:h-96">
             <Fade bottom distance="60px">
                 <Avatar
                     src="/headshot.jpg"
@@ -61,21 +61,33 @@ export default function HeroSection() {
                 />
             </Fade>
             <div className="flex flex-col items-start gap-2 md:text-left">
-                <Fade cascade right>
+                <Fade right>
                     <Typography variant="h3">Hey there!👋</Typography>
-                    <Typography variant="h2">I'm Adrian Cacho</Typography>
-                    <Fade cascade right delay={400}>
-                        <div className="flex flex-wrap flex-col items-start md:flex-row md:justify-around md:gap-6 ">
-                            <Typography variant="h4">Engineer 🛠️</Typography>
-                            <Typography variant="h4">Designer 🧩</Typography>
-                            <Typography variant="h4">Artist 🎨</Typography>
-                        </div>
+                </Fade>
+                <div>
+                    <Fade right delay={600}>
+                        <Typography variant="h2">I'm Adrian</Typography>
                     </Fade>
+                    <Fade delay={3000} right>
+                        <Typography variant="h4">
+                            (But you can call me Cacho)
+                        </Typography>
+                    </Fade>
+                </div>
+                <Fade cascade right delay={1400}>
+                    <div className="flex flex-wrap flex-col items-start md:flex-row md:justify-around md:gap-6 ">
+                        <Typography variant="h4">Engineer 🛠️</Typography>
+                        <Typography variant="h4">Designer 🧩</Typography>
+                        <Typography variant="h4">Artist 🎨</Typography>
+                    </div>
                 </Fade>
                 <div className="flex gap-4 mt-4 flex-wrap mx-auto justify-start">
                     <Fade cascade right delay={500} duration={500}>
                         {socials.map(({ name, value }) => (
-                            <Button variant="outlined" className="p-2">
+                            <Button
+                                variant="outlined"
+                                className="p-2 Profile border-blueCore"
+                            >
                                 <Link
                                     to={value}
                                     target="_blank"

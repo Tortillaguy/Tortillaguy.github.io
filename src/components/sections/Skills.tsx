@@ -38,7 +38,7 @@ export default function Skills() {
                 <div className="flex gap-4 flex-wrap max-w-xl">
                     {skills.map(({ name }) => (
                         <Chip
-                            className="normal-case text-md bg-[#3B8EA5]"
+                            className="normal-case text-md border-purpleCore border-l-2 border-t-2 border-b-4 border-r-4 [border-style:outset] bg-inherit"
                             value={name}
                         />
                     ))}
