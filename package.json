@@ -13,7 +13,7 @@
         "serve": "gatsby serve",
         "clean": "gatsby clean",
         "typecheck": "tsc --noEmit",
-        "deploy": "gatsby build && gh-pages -d public"
+        "deploy": "gatsby clean && NODE_ENV=production gatsby build && gh-pages -d public"
     },
     "dependencies": {
         "@mdx-js/react": "^2.1.3",

@@ -60,7 +60,7 @@ export default function HeroSection() {
 
     return (
         <section className="z-0 relative flex justify-center flex-col items-center gap-6 mx-auto w-full md:flex-row md:gap-10 md:h-96">
-            <div className="absolute overflow-hidden bg-red-600 [width:100vw] h-full">
+            <div className="absolute overflow-hidden bg-black [width:100vw] h-full">
                 <video
                     autoPlay
                     muted
