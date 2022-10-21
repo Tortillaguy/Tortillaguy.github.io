@@ -63,21 +63,22 @@ export default function HeroSection() {
     return (
         <section className="z-0 relative flex justify-center flex-col items-center gap-6 mx-auto w-full md:flex-row md:gap-10 md:h-96">
             <div className="absolute overflow-hidden bg-black [width:100vw] h-full">
-                <Fade when={showVideo}>
-                    <video
-                        onCanPlay={canPlay}
-                        autoPlay
-                        muted
-                        loop
-                        className="[width:100vw] h-full object-center object-cover [transform:scale(1.2)]"
-                        src={
-                            mobile
-                                ? '/videos/letting_go.webm'
-                                : '/videos/oblivion.webm'
-                        }
-                    />
-                </Fade>
+                <video
+                    onLoadedData={canPlay}
+                    autoPlay
+                    muted
+                    loop
+                    className="[width:100vw] h-full object-center object-cover [transform:scale(1.2)]"
+                    src={
+                        mobile
+                            ? '/videos/letting_go.webm'
+                            : '/videos/oblivion.webm'
+                    }
+                />
             </div>
+            <Fade opposite when={!showVideo}>
+                <div className="absolute overflow-hidden bg-black [width:100vw] h-full" />
+            </Fade>
             <div className="absolute hero-gradient [width:100vw] h-full"></div>
             <Fade bottom distance="60px">
                 <Avatar
