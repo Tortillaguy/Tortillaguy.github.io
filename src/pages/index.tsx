@@ -29,4 +29,32 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>VibeLabz</title>
+const description = 'VJ. 3D Artist. Developer [AR/VR/Web3]'
+
+export const Head: HeadFC = () => (
+    <>
+        <title>VibeLabz</title>
+        <meta name="description" content={description} />
+        <meta name="image" content={'/headshot.jpg'} />
+        <meta name="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={'VibeLabz'} />
+        <meta name="og:title" content={'VibeLabz'} />
+        <meta name="twitter:url" content={'https://vibelabz.xyz'} />
+        <meta name="og:url" content={'https://vibelabz.xyz'} />
+        <meta name="twitter:description" content={description} />
+        <meta name="og:description" content={description} />
+        <meta name="twitter:image" content={'/headshot.jpg'} />
+        <meta name="og:image" content={'/headshot.jpg'} />
+        <meta name="twitter:creator" content={'@dot_vibez'} />
+        <script>
+            {`if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+      for (let registration of registrations) {
+        registration.unregister();
+      }
+    });
+  }`}
+        </script>
+    </>
+)
