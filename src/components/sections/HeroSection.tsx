@@ -7,6 +7,9 @@ import {
     EnvelopeOpen,
 } from 'phosphor-react'
 import { Fade } from 'react-reveal'
+import { useMediaPredicate } from 'react-media-hook'
+import { useEffect } from 'react'
+
 interface Social {
     name: string
     value: string
@@ -50,35 +53,78 @@ export default function HeroSection() {
             }
         }
     `)
+    const mobile = useMediaPredicate('(max-width: 720px)')
+    useEffect(() => {
+        console.log(mobile)
+    }, [mobile])
 
     return (
-        <section className="flex justify-center flex-col items-center mt-8 gap-6 mx-auto w-full md:flex-row md:gap-10 md:h-96">
+        <section className="z-0 relative flex justify-center flex-col items-center gap-6 mx-auto w-full md:flex-row md:gap-10 md:h-96">
+            <div className="absolute overflow-hidden bg-red-600 [width:100vw] h-full">
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    className="[width:100vw] h-full object-center object-cover [transform:scale(1.2)]"
+                    src={
+                        mobile
+                            ? '/videos/letting_go.webm'
+                            : '/videos/oblivion.webm'
+                    }
+                />
+            </div>
+            <div className="absolute hero-gradient [width:100vw] h-full"></div>
             <Fade bottom distance="60px">
                 <Avatar
                     src="/headshot.jpg"
                     variant="circular"
-                    className="w-52 h-52"
+                    className="lg:w-52 lg:h-52 w-40 h-40 mt-10 lg:mt-0 drop-shadow border-2 border-cyan-400 border-opacity-90"
                 />
             </Fade>
             <div className="flex flex-col items-start gap-2 md:text-left">
                 <Fade right>
-                    <Typography variant="h3">Hey there!👋</Typography>
+                    <Typography className="text-shadow" variant="h3">
+                        Hey there!👋
+                    </Typography>
                 </Fade>
                 <div>
                     <Fade right delay={600}>
-                        <Typography variant="h2">I'm Adrian</Typography>
+                        <Typography
+                            className="text-shadow color-white"
+                            variant="h2"
+                        >
+                            I'm Adrian
+                        </Typography>
                     </Fade>
                     <Fade delay={1400} right>
-                        <Typography variant="h4">
+                        <Typography
+                            className="text-shadow color-white"
+                            variant="h4"
+                        >
                             (But you can call me Cacho)
                         </Typography>
                     </Fade>
                 </div>
                 <Fade cascade right delay={2700}>
-                    <div className="flex flex-wrap flex-col items-start md:flex-row md:justify-around md:gap-6 ">
-                        <Typography variant="h4">Engineer 🛠️</Typography>
-                        <Typography variant="h4">Designer 🧩</Typography>
-                        <Typography variant="h4">Artist 🎨</Typography>
+                    <div className="flex flex-col items-start md:flex-row md:justify-around md:gap-6 md:flex-nowrap">
+                        <Typography
+                            className="text-shadow color-white"
+                            variant="h4"
+                        >
+                            Visual Artist 👾
+                        </Typography>
+                        <Typography
+                            className="text-shadow color-white"
+                            variant="h4"
+                        >
+                            Designer 🧩
+                        </Typography>
+                        <Typography
+                            className="text-shadow color-white"
+                            variant="h4"
+                        >
+                            Developer 🛠️
+                        </Typography>
                     </div>
                 </Fade>
                 <div className="flex gap-4 mt-4 flex-wrap mx-auto justify-start">

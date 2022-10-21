@@ -29,7 +29,10 @@ export default function Art() {
             id="art"
             className="flex items-center flex-col w-full max-w-xxl mx-auto mt-8"
         >
-            <Typography variant="h2" className="self-start">
+            <Typography
+                variant="h2"
+                className="self-center underline-offset-4 underline"
+            >
                 Art
             </Typography>
             <div className="cardList">

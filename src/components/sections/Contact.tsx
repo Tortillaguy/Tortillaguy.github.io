@@ -5,7 +5,7 @@ export default function Contact() {
     return (
         <section
             id="contact"
-            className="w-full max-w-xxl mt-8 flex flex-col items-center"
+            className="w-full max-w-xxl mt-20 flex flex-col items-center"
         >
             <Button className="hover:shadow-bone bg-blueCore hover:shadow-md bg-gradient-to-tr from-indigo-600 to-purple-400">
                 <a

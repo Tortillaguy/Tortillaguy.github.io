@@ -9,8 +9,13 @@ export default function About() {
         >
             <div className="flex w-full justify-center flex-col md:flex-row gap-8 mt-10">
                 <div className="flex flex-col gap-8 z-10 md:[width:30rem]">
-                    <Typography variant="h2">About Me</Typography>
-                    <Typography variant="lead" className="md:text-2xl">
+                    <Typography
+                        className="underline-offset-4 underline"
+                        variant="h2"
+                    >
+                        About Me
+                    </Typography>
+                    <Typography variant="lead" className="md:text-2xl text-lg">
                         I'm a software engineer and artist with over 7+ years
                         experience developing interactive installations and
                         apps.
@@ -26,7 +31,7 @@ export default function About() {
                     </Typography>
                 </div>
                 <StaticImage
-                    className="md:[width:20rem] rounded-xl"
+                    className="md:[width:20rem] rounded-xl [width: 13rem]"
                     src="../../images/wabi.jpg"
                     alt="casa-wabi"
                 />

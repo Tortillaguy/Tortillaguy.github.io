@@ -1,6 +1,7 @@
 import { Chip, Typography } from '@material-tailwind/react'
 import { graphql, useStaticQuery } from 'gatsby'
 import { Flip } from 'react-reveal'
+import { SkillChip } from '../SkillChip'
 
 interface Skill {
     name: string
@@ -29,18 +30,18 @@ export default function Skills() {
     return (
         <section
             id="skills"
-            className="flex items-center flex-col mx-auto max-w-xl w-full gap-3 mt-8"
+            className="flex items-center flex-col mx-auto max-w-xxl w-full gap-3 mt-8"
         >
-            <Typography className="self-start" variant="h2">
+            <Typography
+                className="self-center underline-offset-4 underline"
+                variant="h2"
+            >
                 Skills
             </Typography>
-            <Flip cascade bottom delay={1000}>
-                <div className="flex gap-4 flex-wrap max-w-xl">
-                    {skills.map(({ name }) => (
-                        <Chip
-                            className="normal-case text-md border-purpleCore border-l-2 border-t-2 border-b-4 border-r-4 [border-style:outset] bg-inherit"
-                            value={name}
-                        />
+            <Flip cascade bottom>
+                <div className="flex gap-4 flex-wrap max-w-2xl justify-evenly">
+                    {skills.map(({ name }, id) => (
+                        <SkillChip skill={name} />
                     ))}
                 </div>
             </Flip>

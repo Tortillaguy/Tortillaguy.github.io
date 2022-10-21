@@ -62,7 +62,7 @@ export default function Navbar() {
 
     return (
         <header>
-            <NavbarBase className="mx-auto max-w-screen-xl py-2 px-4 md:px-8 md:py-4 border-none rounded-none rounded-b-lg bg-blueCore shadow-blue-gray-900 shadow-md">
+            <NavbarBase className="mx-auto max-w-screen-xl py-2 px-4 md:px-8 md:py-4 border-none rounded-none rounded-b-lg bg-blueCore shadow-blue-gray-900 shadow-md z-10">
                 <div className="container mx-auto flex items-center justify-between text-bone">
                     <Typography
                         as="a"

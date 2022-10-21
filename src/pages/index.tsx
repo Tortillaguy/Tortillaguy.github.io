@@ -8,23 +8,20 @@ import Contact from '../components/sections/Contact'
 import HeroSection from '../components/sections/HeroSection'
 import Projects from '../components/sections/Projects'
 import Skills from '../components/sections/Skills'
+import config from 'react-reveal/globals'
+
+config({ ssrFadeout: true })
 
 const IndexPage = () => {
-    const [isloaded, setIsLoaded] = useState(false)
-    useEffect(() => {
-        setIsLoaded(true)
-    }, [])
     return (
         <ThemeProvider>
             <Layout>
-                <div style={{ visibility: isloaded ? 'visible' : 'hidden' }}>
-                    <HeroSection />
-                    <Skills />
-                    <About />
-                    <Projects />
-                    <Art />
-                    <Contact />
-                </div>
+                <HeroSection />
+                <Art />
+                <Projects />
+                <Skills />
+                <About />
+                <Contact />
             </Layout>
         </ThemeProvider>
     )
@@ -32,4 +29,4 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>Home Page</title>
+export const Head: HeadFC = () => <title>VibeLabz</title>
