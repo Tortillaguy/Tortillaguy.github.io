@@ -8,7 +8,7 @@ import {
 } from 'phosphor-react'
 import { Fade } from 'react-reveal'
 import { useMediaPredicate } from 'react-media-hook'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 interface Social {
     name: string
@@ -54,24 +54,29 @@ export default function HeroSection() {
         }
     `)
     const mobile = useMediaPredicate('(max-width: 720px)')
-    useEffect(() => {
-        console.log(mobile)
-    }, [mobile])
+    const [showVideo, setShowVideo] = useState(false)
+
+    const canPlay = () => {
+        setShowVideo(true)
+    }
 
     return (
         <section className="z-0 relative flex justify-center flex-col items-center gap-6 mx-auto w-full md:flex-row md:gap-10 md:h-96">
             <div className="absolute overflow-hidden bg-black [width:100vw] h-full">
-                <video
-                    autoPlay
-                    muted
-                    loop
-                    className="[width:100vw] h-full object-center object-cover [transform:scale(1.2)]"
-                    src={
-                        mobile
-                            ? '/videos/letting_go.webm'
-                            : '/videos/oblivion.webm'
-                    }
-                />
+                <Fade when={showVideo}>
+                    <video
+                        onCanPlay={canPlay}
+                        autoPlay
+                        muted
+                        loop
+                        className="[width:100vw] h-full object-center object-cover [transform:scale(1.2)]"
+                        src={
+                            mobile
+                                ? '/videos/letting_go.webm'
+                                : '/videos/oblivion.webm'
+                        }
+                    />
+                </Fade>
             </div>
             <div className="absolute hero-gradient [width:100vw] h-full"></div>
             <Fade bottom distance="60px">
