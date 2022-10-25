@@ -55,6 +55,11 @@ export default function HeroSection() {
     `)
     const mobile = useMediaPredicate('(max-width: 720px)')
     const [showVideo, setShowVideo] = useState(false)
+    const [mounted, setMounted] = useState(false)
+
+    useEffect(() => {
+        setMounted(true)
+    }, [])
 
     const canPlay = () => {
         setShowVideo(true)
@@ -80,7 +85,7 @@ export default function HeroSection() {
                 <div className="absolute overflow-hidden bg-black [width:100vw] h-full" />
             </Fade>
             <div className="absolute hero-gradient [width:100vw] h-full"></div>
-            <Fade bottom distance="60px">
+            <Fade when={mounted} bottom distance="60px">
                 <Avatar
                     src="/headshot.jpg"
                     variant="circular"
@@ -88,13 +93,13 @@ export default function HeroSection() {
                 />
             </Fade>
             <div className="flex flex-col items-start gap-2 md:text-left">
-                <Fade right>
+                <Fade when={mounted} right>
                     <Typography className="text-shadow" variant="h3">
                         Hey there!👋
                     </Typography>
                 </Fade>
                 <div>
-                    <Fade right delay={600}>
+                    <Fade when={mounted} right delay={600}>
                         <Typography
                             className="text-shadow color-white"
                             variant="h2"
@@ -102,7 +107,7 @@ export default function HeroSection() {
                             I'm Adrian
                         </Typography>
                     </Fade>
-                    <Fade delay={1400} right>
+                    <Fade when={mounted} delay={1400} right>
                         <Typography
                             className="text-shadow color-white"
                             variant="h4"
@@ -111,7 +116,7 @@ export default function HeroSection() {
                         </Typography>
                     </Fade>
                 </div>
-                <Fade cascade right delay={2700}>
+                <Fade when={mounted} cascade right delay={2700}>
                     <div className="flex flex-col items-start md:flex-row md:justify-around md:gap-6 md:flex-nowrap">
                         <Typography
                             className="text-shadow color-white"
@@ -134,7 +139,13 @@ export default function HeroSection() {
                     </div>
                 </Fade>
                 <div className="flex gap-4 mt-4 flex-wrap mx-auto justify-start">
-                    <Fade cascade right delay={500} duration={500}>
+                    <Fade
+                        when={mounted}
+                        cascade
+                        right
+                        delay={500}
+                        duration={500}
+                    >
                         {socials.map(({ name, value }) => (
                             <Button
                                 variant="outlined"
