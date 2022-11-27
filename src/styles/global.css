@@ -3,17 +3,25 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap");
+
 body {
   font-family: Verdana, sans-serif;
   margin: auto;
-  padding: 20px;
-  max-width: 1000px;
+  padding: 0px 0px;
+
   text-align: left;
   background-color: #fff;
   word-wrap: break-word;
   overflow-wrap: break-word;
   line-height: 1.5;
   color: #444;
+  background: rgb(228, 190, 245);
+  background: linear-gradient(
+    54deg,
+    rgba(228, 190, 245, 1) 24%,
+    rgba(81, 140, 255, 1) 81%
+  );
 }
 h1,
 h2,
@@ -64,4 +72,27 @@ blockquote {
   padding: 2px 0px 2px 20px;
   margin: 0px;
   font-style: italic;
+}
+
+.glass {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
