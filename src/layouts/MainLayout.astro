@@ -3,23 +3,26 @@ import { SITE_TITLE } from "../config";
 import Footer from "../components/Footer.astro";
 ---
 
-<body>
-  <div class="drawer drawer-end">
+<body class="w-full flex justify-center">
+  <div class="max-w-5xl w-full drawer drawer-end">
     <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content flex flex-col">
       <!-- Navbar -->
       <header>
-        <div class="w-full navbar bg-neutral-content glass">
+        <div class="navbar bg-neutral-content glass">
           <div class="flex-1 px-2 mx-2 prose font-oxygen">
-            <h2 class="text-neutral">{SITE_TITLE}</h2>
+            <h2 class="text-neutral nav-link">{SITE_TITLE}</h2>
           </div>
           <div class="flex-none lg:hidden">
-            <label for="my-drawer-3" class="btn btn-square btn-ghost">
+            <label
+              for="my-drawer-3"
+              class="btn btn-square btn-ghost text-white hover:bg-transparent"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                class="inline-block w-6 h-6 stroke-current"
+                class="inline-block w-8 h-8 stroke-current"
                 ><path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -46,10 +49,13 @@ import Footer from "../components/Footer.astro";
 
     <div class="drawer-side">
       <label for="my-drawer-3" class="drawer-overlay"></label>
-      <ul class="menu p-4 w-50 bg-base-100">
+      <ul class="menu p-4 w-50 glass text-white !shadow-none nav-link">
         <!-- Sidebar content here -->
-        <li><a>Sidebar Item 1</a></li>
-        <li><a>Sidebar Item 2</a></li>
+        <li><a>About</a></li>
+        <li><a>Art</a></li>
+        <li><a>Projects</a></li>
+        <li><a>Skills</a></li>
+        <li><a>Contact</a></li>
       </ul>
     </div>
   </div>

@@ -77,10 +77,10 @@ blockquote {
 .glass {
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
+  border-radius: 12px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -88,11 +88,23 @@ blockquote {
 
 .glass:hover {
   background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
+  border-radius: 12px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.drawer-toggle:checked ~ .drawer-side > .drawer-overlay {
+  opacity: 0;
+}
+.drawer.drawer-end > .drawer-toggle:checked ~ .drawer-content {
+  @apply translate-x-0;
+}
+
+.nav-link {
+  @apply text-white;
+  text-shadow: 2px 2px 8px #1a1a1a;
 }
