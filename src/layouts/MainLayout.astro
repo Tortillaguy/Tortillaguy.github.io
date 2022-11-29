@@ -8,7 +8,7 @@ import Footer from "../components/Footer.astro";
     <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content flex flex-col">
       <!-- Navbar -->
-      <header>
+      <header class="z-[1]">
         <div class="navbar bg-neutral-content glass">
           <div class="flex-1 px-2 mx-2 prose font-oxygen">
             <h2 class="text-neutral nav-link">{SITE_TITLE}</h2>
@@ -35,21 +35,26 @@ import Footer from "../components/Footer.astro";
           <div class="flex-none hidden lg:block">
             <ul class="menu menu-horizontal">
               <!-- Navbar menu content here -->
-              <li><a>Navbar Item 1</a></li>
+              <li><a onclick="alert('asdf')">Navbar Item 1</a></li>
               <li><a>Navbar Item 2</a></li>
             </ul>
           </div>
         </div>
       </header>
-      <main>
-        <slot />
-      </main>
-      <Footer />
+      <div class="overflow-auto hide-scrollbar px-8 mt-[-66px] pt-[66px]">
+        <main class="">
+          <slot />
+        </main>
+        <Footer />
+      </div>
     </div>
 
-    <div class="drawer-side">
+    <div class="drawer-side pointer-events-none pt-[80px]">
       <label for="my-drawer-3" class="drawer-overlay"></label>
-      <ul class="menu p-4 w-50 glass text-white !shadow-none nav-link">
+      <ul
+        style={{ borderRadius: "12px", height: "fit-content" }}
+        class="menu p-4 w-50 glass text-white !shadow-none nav-link pointer-events-auto"
+      >
         <!-- Sidebar content here -->
         <li><a>About</a></li>
         <li><a>Art</a></li>

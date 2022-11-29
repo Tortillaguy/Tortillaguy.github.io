@@ -4,15 +4,17 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 import MainLayout from "../layouts/MainLayout.astro";
-import Hero from "../components/Hero";
+import Hero from "../sections/Hero";
+import Projects from "../sections/Projects";
 ---
 
 <!DOCTYPE html>
 <html lang="en" data-theme="cmyk">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title={"Adrian Cacho "} description={SITE_DESCRIPTION} />
   </head>
   <MainLayout>
     <Hero client:load />
+    <Projects />
   </MainLayout>
 </html>

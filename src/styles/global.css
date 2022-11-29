@@ -81,8 +81,8 @@ blockquote {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -92,8 +92,8 @@ blockquote {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -111,4 +111,19 @@ blockquote {
 
 .fade-text {
   @apply m-0 transition-opacity animate-in fade-in-0 slide-in-from-right-[200px] duration-1000;
+}
+
+.hide-scrollbar {
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  display: none;
+}
+
+.drawer.drawer-end > .drawer-toggle:checked ~ .drawer-side > ul {
+  @apply mr-2;
 }
