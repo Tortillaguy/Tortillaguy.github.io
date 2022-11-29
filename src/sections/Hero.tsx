@@ -11,7 +11,7 @@ export default function () {
         </div>
       </Fade>
 
-      <div className="prose flex flex-col">
+      <div className="prose flex flex-col [&>*]:text-white text-shadow">
         <Fade right duration={1000} distance={"200px"}>
           <h3 className="m-0">Hey there!👋</h3>
         </Fade>
@@ -22,7 +22,7 @@ export default function () {
           <h3 className="m-0">(But you can call me Cacho)</h3>
         </Fade>
         <Fade cascade right delay={"3000"}>
-          <div className="flex flex-col  md:gap-[1ch]md:flex-row">
+          <div className="flex flex-col md:gap-[1ch]md:flex-row [&>*]:text-white text-shadow">
             <h3 className="m-0">Visual Artist 👾</h3>
             <h3 className="m-0">Designer 🧩</h3>
             <h3 className="m-0">Developer 🛠️</h3>

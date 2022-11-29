@@ -109,10 +109,6 @@ blockquote {
   text-shadow: 2px 2px 8px #1a1a1a;
 }
 
-.fade-text {
-  @apply m-0 transition-opacity animate-in fade-in-0 slide-in-from-right-[200px] duration-1000;
-}
-
 .hide-scrollbar {
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
@@ -126,4 +122,8 @@ blockquote {
 
 .drawer.drawer-end > .drawer-toggle:checked ~ .drawer-side > ul {
   @apply mr-2;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 8px #1a1a1a;
 }
