@@ -5,5 +5,9 @@ module.exports = {
     extend: {},
     fontFamily: { oxygen: ['"Oxygen Mono"', "monospace"] },
   },
-  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("daisyui"),
+    require("tailwindcss-animate"),
+  ],
 };

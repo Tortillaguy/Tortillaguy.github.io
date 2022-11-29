@@ -108,3 +108,7 @@ blockquote {
   @apply text-white;
   text-shadow: 2px 2px 8px #1a1a1a;
 }
+
+.fade-text {
+  @apply m-0 transition-opacity animate-in fade-in-0 slide-in-from-right-[200px] duration-1000;
+}

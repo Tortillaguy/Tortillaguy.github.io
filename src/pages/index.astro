@@ -4,6 +4,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 import MainLayout from "../layouts/MainLayout.astro";
+import Hero from "../components/Hero";
 ---
 
 <!DOCTYPE html>
@@ -12,10 +13,6 @@ import MainLayout from "../layouts/MainLayout.astro";
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <MainLayout>
-    <div class="avatar">
-      <div class="w-24 rounded-full brightness-[1.1] saturate=[1.1]">
-        <img src="/pfp.jpeg" />
-      </div>
-    </div>
+    <Hero client:load />
   </MainLayout>
 </html>
