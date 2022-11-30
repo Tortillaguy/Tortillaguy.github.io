@@ -135,7 +135,8 @@ blockquote {
   overflow-x: auto;
   padding: 1rem 0.75rem;
   padding-bottom: 2.5rem;
-  width: 100%;
+  width: 100vw;
+  /* width: 100%; */
   grid-template-columns: repeat(auto-fit, minmax(218px, 227px));
 }
 
@@ -155,4 +156,8 @@ blockquote {
 
 .gradient-border-3 {
   border: 3px solid transparent;
+}
+
+.skill-glow {
+  text-shadow: 1px 1px 13px #03bfffd4;
 }

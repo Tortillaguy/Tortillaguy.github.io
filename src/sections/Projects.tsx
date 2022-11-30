@@ -3,7 +3,10 @@ import projects from "../data/projects";
 
 export default function () {
   return (
-    <div className="w-full flex flex-col items-center justify-center prose gap-0">
+    <div
+      id={"projects"}
+      className="w-full flex flex-col items-center justify-center prose gap-0"
+    >
       <h2 className="m-0 text-white text-shadow">Projects</h2>
       <div className="card-list justify-start self-start gap-2">
         {projects.map((project, key) => (

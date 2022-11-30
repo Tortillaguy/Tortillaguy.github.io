@@ -43,7 +43,7 @@ import Footer from "../components/Footer.astro";
       </header>
       <div
         id="scroll-container"
-        class="overflow-auto hide-scrollbar px-8 mt-[-66px] pt-[66px]"
+        class="overflow-auto hide-scrollbar mt-[-66px] pt-[66px]"
       >
         <main class="">
           <slot />
@@ -59,22 +59,29 @@ import Footer from "../components/Footer.astro";
         class="menu p-4 w-50 glass text-white !shadow-none nav-link pointer-events-auto"
       >
         <!-- Sidebar content here -->
-        <li><a>About</a></li>
-        <li><a id="artlink">Art</a></li>
-        <li><a href="/#projects">Projects</a></li>
-        <li><a>Skills</a></li>
-        <li><a>Contact</a></li>
+        <!-- <li><a>About</a></li> -->
+        <li><a id="art-link">Art</a></li>
+        <li><a id="project-link">Projects</a></li>
+        <li><a id="skills-link">Skills</a></li>
+        <li><a id="contacts-link">Contact</a></li>
       </ul>
     </div>
   </div>
 </body>
 
 <script>
-  const artLink = document.getElementById("artlink");
-  artLink!.addEventListener("click", (event) => {
-    const art = document.getElementById("art");
-    const container = document.getElementById("scroll-container");
-    const scrollHeight = art!.offsetHeight - 50;
-    container!.scrollTo({ top: scrollHeight, behavior: "smooth" });
-  });
+  function scrollToElement(id: string) {
+    return () => {
+      const element = document.getElementById(id);
+      if (element) {
+        const top = element.offsetTop - 74;
+        const container = document.getElementById("scroll-container");
+        container!.scrollTo({ top, behavior: "smooth" });
+      }
+    };
+  }
+  const artLink = document.getElementById("art-link");
+  artLink!.addEventListener("click", scrollToElement("art"));
+  const projectLink = document.getElementById("project-link");
+  projectLink!.addEventListener("click", scrollToElement("projects"));
 </script>
