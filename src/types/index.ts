@@ -1,7 +1,7 @@
 export interface Project {
   name: string;
-  image: string;
+  filename: string;
   link: string;
   role?: string;
-  tags: string[];
+  tags?: string[];
 }

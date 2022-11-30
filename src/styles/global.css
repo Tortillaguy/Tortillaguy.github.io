@@ -127,3 +127,13 @@ blockquote {
 .text-shadow {
   text-shadow: 2px 2px 8px #1a1a1a;
 }
+
+.card-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.25rem;
+  overflow-x: auto;
+  padding: 1rem 0.75rem;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(218px, 227px));
+}

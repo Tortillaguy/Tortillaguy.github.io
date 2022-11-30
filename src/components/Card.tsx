@@ -1,14 +1,34 @@
-export default function () {
+import type { Project } from "../types";
+import Tag from "./Tag";
+
+interface ProjectProps {
+  project: Project;
+}
+
+export default function (props: ProjectProps) {
+  const { project } = props;
+  const { filename, name, role, tags } = project;
+
   return (
-    <div className="card w-full bg-base-100 shadow-xl not-prose">
+    <div className="card min-w-[16rem] h-min bg-base-100 shadow-xl not-prose flex-grow border-solid border-2 border-cyan-400">
       <figure>
-        <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+        <img
+          style={{ aspectRatio: "4/3" }}
+          className="object-cover object-top"
+          src={`/assets/${filename}`}
+          alt={filename}
+        />
       </figure>
-      <div className="card-body">
-        <h2 className="card-title">Shoes!</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
+      <div className="card-body p-4">
+        <h2 className="card-title">{name}</h2>
+        <p>{role}</p>
+        <div className="card-actions">
+          <button className="btn w-full btn-primary">{"Learn More"}</button>
+          <div className="flex flex-wrap gap-[10px] prose justify-center gap-y-0">
+            {tags?.map((tag) => (
+              <Tag title={tag} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
