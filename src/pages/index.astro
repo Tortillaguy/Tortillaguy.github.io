@@ -2,6 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import { SITE_DESCRIPTION } from "../config";
 import MainLayout from "../layouts/MainLayout.astro";
+import Art from "../sections/Art";
 import Hero from "../sections/Hero";
 import Projects from "../sections/Projects";
 ---
@@ -12,7 +13,8 @@ import Projects from "../sections/Projects";
     <BaseHead title={"Adrian Cacho "} description={SITE_DESCRIPTION} />
   </head>
   <MainLayout>
-    <!-- <Hero client:load /> -->
+    <Hero client:load />
+    <Art />
     <Projects />
   </MainLayout>
 </html>
