@@ -1,4 +1,5 @@
-import { Fade, Slide } from "react-reveal";
+import pkg from "react-reveal";
+const { Fade } = pkg;
 
 export default function () {
   return (
