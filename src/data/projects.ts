@@ -13,30 +13,35 @@ const projects: Project[] = [
     filename: "magicleap.png",
     link: "https://www.youtube.com/watch?v=Q89wSw-JUyM",
     role: "Lead Unity Developer",
+    tags: ["Python", "Unity", "AWS", "MagicLeap", "LuminSDK"],
   },
   {
     name: "Genies Prototype App",
     filename: "genies.jpg",
     link: "https://twitter.com/genies/status/1387108982179786753",
     role: "Unity Developer",
+    tags: ["Javascript", "Python", "Unity"],
   },
   {
     name: "Intel True VR",
     filename: "intel.png",
     link: "https://www.youtube.com/watch?v=-nWddbP-hgo",
     role: "Content Management Specialist",
+    tags: ["Python", "Unity", "AWS", "FFMPEG", "VR"],
   },
   {
     name: "2019 Coachella AR",
     filename: "coachella.png",
     link: "https://vrscout.com/news/coachella-ar-interactive-stage",
     role: "Project Lead",
+    tags: ["Unity", "Swift", "Java", "React Native", "AR"],
   },
   {
     name: "2019 Atlanta Music Midtown",
     filename: "midtown.png",
     link: "https://www.marketingdive.com/news/hyundai-revs-up-ar-experience-in-music-midtown-festival-app/562954/",
     role: "Project Lead",
+    tags: ["Unity", "Swift", "Java", "React Native", "AR"],
   },
 ];
 

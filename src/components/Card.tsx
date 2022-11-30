@@ -20,7 +20,13 @@ export default function (props: ProjectProps) {
         />
       </figure>
       <div className="card-body p-4">
-        <h2 className="card-title">{name}</h2>
+        <h2 className="card-title inline-block underline underline-offset-1">
+          {name}{" "}
+          <span className="material-symbols-outlined underline underline-offset-1">
+            north_east
+          </span>
+        </h2>
+
         <p>{role}</p>
         <div className="card-actions">
           {/* <button className="btn w-full btn-primary">Learn More</button> */}

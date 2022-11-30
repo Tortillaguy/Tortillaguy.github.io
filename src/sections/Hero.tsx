@@ -1,5 +1,5 @@
-import pkg from "react-reveal";
-const { Fade } = pkg;
+//@ts-ignore
+import Fade from "react-reveal/Fade";
 
 export default function () {
   return (

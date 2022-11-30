@@ -35,13 +35,16 @@ import Footer from "../components/Footer.astro";
           <div class="flex-none hidden lg:block">
             <ul class="menu menu-horizontal">
               <!-- Navbar menu content here -->
-              <li><a onclick="alert('asdf')">Navbar Item 1</a></li>
+              <li><a>Navbar Item 1</a></li>
               <li><a>Navbar Item 2</a></li>
             </ul>
           </div>
         </div>
       </header>
-      <div class="overflow-auto hide-scrollbar px-8 mt-[-66px] pt-[66px]">
+      <div
+        id="scroll-container"
+        class="overflow-auto hide-scrollbar px-8 mt-[-66px] pt-[66px]"
+      >
         <main class="">
           <slot />
         </main>
@@ -57,11 +60,21 @@ import Footer from "../components/Footer.astro";
       >
         <!-- Sidebar content here -->
         <li><a>About</a></li>
-        <li><a>Art</a></li>
-        <li><a>Projects</a></li>
+        <li><a id="artlink">Art</a></li>
+        <li><a href="/#projects">Projects</a></li>
         <li><a>Skills</a></li>
         <li><a>Contact</a></li>
       </ul>
     </div>
   </div>
 </body>
+
+<script>
+  const artLink = document.getElementById("artlink");
+  artLink!.addEventListener("click", (event) => {
+    const art = document.getElementById("art");
+    const container = document.getElementById("scroll-container");
+    const scrollHeight = art!.offsetHeight - 50;
+    container!.scrollTo({ top: scrollHeight, behavior: "smooth" });
+  });
+</script>
