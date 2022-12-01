@@ -9,8 +9,8 @@ import Footer from "../components/Footer.astro";
     <div class="drawer-content flex flex-col">
       <!-- Navbar -->
       <header class="z-[1]">
-        <div class="navbar bg-neutral-content glass">
-          <div class="flex-1 px-2 mx-2 prose font-oxygen">
+        <div class="navbar justify-between bg-neutral-content glass">
+          <div class="px-2 mx-2 prose font-oxygen">
             <h2 class="text-neutral nav-link">{SITE_TITLE}</h2>
           </div>
           <div class="flex-none lg:hidden">
@@ -84,4 +84,6 @@ import Footer from "../components/Footer.astro";
   artLink!.addEventListener("click", scrollToElement("art"));
   const projectLink = document.getElementById("project-link");
   projectLink!.addEventListener("click", scrollToElement("projects"));
+  const skillsLink = document.getElementById("skills-link");
+  skillsLink!.addEventListener("click", scrollToElement("skills"));
 </script>

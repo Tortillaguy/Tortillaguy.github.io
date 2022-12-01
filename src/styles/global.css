@@ -136,6 +136,7 @@ blockquote {
   padding: 1rem 0.75rem;
   padding-bottom: 2.5rem;
   width: 100vw;
+  @apply hide-scrollbar;
   /* width: 100%; */
   grid-template-columns: repeat(auto-fit, minmax(218px, 227px));
 }

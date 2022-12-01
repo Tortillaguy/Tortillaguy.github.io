@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade";
 
 export default function () {
   return (
-    <div className="w-full items-center justify-center flex gap-8 my-8 flex-col md:flex-row">
+    <div className="w-full items-center justify-center flex gap-8 my-8 flex-col md:flex-row overflow-hidden">
       <Fade bottom distance="50px">
         <div className="avatar">
           <div className="w-32 rounded-full brightness-[1.1] saturate-[1.1]">
