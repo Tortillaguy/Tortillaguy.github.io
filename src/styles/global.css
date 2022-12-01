@@ -135,21 +135,23 @@ blockquote {
   overflow-x: auto;
   padding: 1rem 0.75rem;
   padding-bottom: 2.5rem;
-  width: 100vw;
+  /* width: 100vw; */
   @apply hide-scrollbar;
-  /* width: 100%; */
+  width: 100%;
+
   grid-template-columns: repeat(auto-fit, minmax(218px, 227px));
 }
 
 .border-gradient {
-  background: linear-gradient(to right, #ffffff, #ffffff),
+  --card-bg: #262626;
+  background: linear-gradient(to right, var(--card-bg), var(--card-bg)),
     linear-gradient(to top right, #74e4cf, #e5c5ff);
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
 }
 
 .hover\:border-gradient-tl-blue-green-gray-900:hover {
-  background: linear-gradient(to right, #18181b, #18181b),
+  background: linear-gradient(to right, #272727, #272727),
     linear-gradient(to top left, #60a5fa, #4ade80);
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
@@ -161,4 +163,8 @@ blockquote {
 
 .skill-glow {
   text-shadow: 1px 1px 13px #03bfffd4;
+}
+
+.link-menu > li > a {
+  @apply nav-link;
 }
