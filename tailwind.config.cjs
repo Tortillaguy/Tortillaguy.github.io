@@ -9,6 +9,5 @@ module.exports = {
     require("@tailwindcss/typography"),
     require("daisyui"),
     require("tailwindcss-animate"),
-    require("tailwindcss-border-gradient-radius"),
   ],
 };
