@@ -1,9 +1,7 @@
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
 @import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
   font-family: Verdana, sans-serif;
@@ -161,10 +159,23 @@ blockquote {
   border: 3px solid transparent;
 }
 
-.skill-glow {
-  text-shadow: 1px 1px 13px #03bfffd4;
-}
-
 .link-menu > li > a {
   @apply nav-link;
+}
+
+@layer utilities {
+  /* Ripple effect */
+  .ripple {
+    background-position: center;
+    transition: background 0.8s;
+  }
+  .ripple:hover {
+    background: transparent radial-gradient(circle, transparent 1%, #47a7f5 1%)
+      center/15000%;
+  }
+  .ripple:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
+  }
 }

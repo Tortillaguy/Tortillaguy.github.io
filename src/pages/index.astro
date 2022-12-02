@@ -3,9 +3,11 @@ import BaseHead from "../components/BaseHead.astro";
 import { SITE_DESCRIPTION } from "../config";
 import MainLayout from "../layouts/MainLayout.astro";
 import Art from "../sections/Art";
+import Contact from "../sections/Contact.astro";
 import Hero from "../sections/Hero";
 import Projects from "../sections/Projects";
-import Skills from "../sections/Skills";
+import Skills from "../sections/Skills.astro";
+import "../styles/global.css";
 ---
 
 <!DOCTYPE html>
@@ -22,5 +24,6 @@ import Skills from "../sections/Skills";
     <Art />
     <Projects />
     <Skills />
+    <Contact />
   </MainLayout>
 </html>

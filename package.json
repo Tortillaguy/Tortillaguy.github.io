@@ -26,7 +26,8 @@
     "react-dom": "^18.0.0",
     "react-reveal": "^1.2.2",
     "tailwindcss": "^3.0.24",
-    "tailwindcss-border-gradient-radius": "^3.0.1"
+    "tailwindcss-border-gradient-radius": "^3.0.1",
+    "tailwindcss-ripple": "^0.7.1"
   },
   "devDependencies": {
     "tailwindcss-animate": "^1.0.5"

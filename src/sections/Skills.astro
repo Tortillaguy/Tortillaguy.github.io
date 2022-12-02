@@ -1,0 +1,13 @@
+---
+import LargeTag from "../components/LargeTag";
+import skills from "../data/skills";
+---
+
+<div class="w-full flex justify-center prose m-auto">
+  <h2 id={"skills"} class="text-white text-shadow">Skills</h2>
+</div>
+<div
+  class="m-auto mt-4 flex flex-wrap justify-center self-start gap-2 [&>*]:m-1 prose px-3"
+>
+  {skills.map((skill, key) => <LargeTag title={skill} />)}
+</div>
