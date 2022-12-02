@@ -4,10 +4,9 @@ import { SITE_DESCRIPTION } from "../config";
 import MainLayout from "../layouts/MainLayout.astro";
 import Art from "../sections/Art.astro";
 import Contact from "../sections/Contact.astro";
-import Hero from "../sections/Hero";
+import Hero from "../sections/Hero.astro";
 import Projects from "../sections/Projects.astro";
 import Skills from "../sections/Skills.astro";
-import "../styles/global.css";
 ---
 
 <!DOCTYPE html>
@@ -20,7 +19,7 @@ import "../styles/global.css";
     <BaseHead title={"Adrian Cacho "} description={SITE_DESCRIPTION} />
   </head>
   <MainLayout>
-    <Hero client:load />
+    <Hero />
     <Art />
     <Projects />
     <Skills />

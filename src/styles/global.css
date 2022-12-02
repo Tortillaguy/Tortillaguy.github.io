@@ -162,3 +162,9 @@ blockquote {
 .link-menu > li > a {
   @apply nav-link;
 }
+
+@layer utilities {
+  .slide-text {
+    @apply animate-in fade-in fill-mode-both slide-in-from-right-[200px];
+  }
+}
