@@ -6,7 +6,7 @@
       --background: #262626;
       background: linear-gradient(var(--background), var(--background))
           padding-box,
-        conic-gradient(from var(--angle), #e587ff, #51c9ff, #ebf9ab, #e587ff)
+        conic-gradient(from var(--angle), #51c9ff, #ebf9ab, #e587ff, #51c9ff)
           border-box;
       border-radius: 40px;
       border: 4px solid transparent;
@@ -29,11 +29,13 @@
     }
   </style>
   <div id="contact" class="w-full flex justify-center m-auto prose">
-    <button
-      class="text-white text-shadow text-3xl gradient-button transition-transform active:scale-110 p-6"
+    <a
+      href="mailto:hello@cacho.dev"
+      target="_blank"
+      class="display:block text-white text-shadow text-3xl gradient-button transition-transform active:scale-110 p-6 no-underline"
     >
       Let's Get In Touch 🤝
-    </button>
+    </a>
     <div class="flex"></div>
   </div>
 </div>
