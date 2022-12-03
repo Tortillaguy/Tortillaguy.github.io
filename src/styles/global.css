@@ -15,12 +15,7 @@ body {
   line-height: 1.5;
   color: #444;
   background: rgb(228, 190, 245);
-  background: linear-gradient(
-    54deg,
-    rgba(228, 190, 245, 1) 19%,
-    rgba(81, 201, 255, 1) 50%,
-    rgba(235, 249, 171, 1) 85%
-  );
+  background: linear-gradient(54deg, #e4bef5 19%, #51c9ff 50%, #ebf9ab 85%);
 }
 h1,
 h2,

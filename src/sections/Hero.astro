@@ -8,7 +8,17 @@
 >
   <div class="animate-in fade-in fill-mode-both delay-150 duration-1000">
     <div class="avatar">
-      <div class="w-32 md:w-40 rounded-full brightness-[1.1] saturate-[1.1]">
+      <style>
+        .avatar-border {
+          background: linear-gradient(white, white) padding-box,
+            linear-gradient(135deg, #ebf9ab, #51c9ff, #e4bef5) border-box;
+          border-radius: 50em;
+          border: 4px solid transparent;
+        }
+      </style>
+      <div
+        class="w-32 md:w-40 rounded-full brightness-[1.1] saturate-[1.1] avatar-border"
+      >
         <img src="/pfp.jpeg" />
       </div>
     </div>

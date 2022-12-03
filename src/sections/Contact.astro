@@ -1,12 +1,28 @@
 <div class="mt-14">
   <style>
     .gradient-button {
+      --angle: 0deg;
+      --shadow: #e4bef5;
       --background: #262626;
       background: linear-gradient(var(--background), var(--background))
           padding-box,
-        linear-gradient(to right, #e587ff, #1451ec) border-box;
+        conic-gradient(from var(--angle), #e587ff, #51c9ff, #ebf9ab, #e587ff)
+          border-box;
       border-radius: 40px;
       border: 4px solid transparent;
+      animation: 5s rotate linear infinite;
+      box-shadow: 1px 1px 10px var(--shadow);
+    }
+    @keyframes rotate {
+      to {
+        --angle: 360deg;
+      }
+    }
+
+    @property --angle {
+      syntax: "<angle>";
+      initial-value: 0deg;
+      inherits: false;
     }
   </style>
   <div class="w-full flex justify-center m-auto prose">
