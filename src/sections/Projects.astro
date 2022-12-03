@@ -1,11 +1,11 @@
 ---
-import Card from "../components/Card";
+import Card from "../components/Card.astro";
 import projects from "../data/projects";
 ---
 
-<div class="w-full flex justify-center prose m-auto">
+<div class="w-full flex justify-center prose m-auto mb-1">
   <h2 id={"projects"} class="m-0 text-white text-shadow">Projects</h2>
 </div>
 <div class="card-list justify-start self-start gap-2">
-  {projects.map((project, key) => <Card project={project} />)}
+  {projects.map((project) => <Card project={project} />)}
 </div>

@@ -37,10 +37,10 @@ import Footer from "../components/Footer.astro";
           <div class="flex-none hidden lg:block">
             <ul class="menu menu-horizontal link-menu">
               <!-- Navbar menu content here -->
-              <li><a id="art-link">Art</a></li>
-              <li><a id="project-link">Projects</a></li>
-              <li><a id="skills-link">Skills</a></li>
-              <li><a id="contacts-link">Contact</a></li>
+              <li><a class="art">Art</a></li>
+              <li><a class="project">Projects</a></li>
+              <li><a class="skills">Skills</a></li>
+              <li><a class="contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -64,10 +64,10 @@ import Footer from "../components/Footer.astro";
       >
         <!-- Sidebar content here -->
         <!-- <li><a>About</a></li> -->
-        <li><a id="art-link">Art</a></li>
-        <li><a id="project-link">Projects</a></li>
-        <li><a id="skills-link">Skills</a></li>
-        <li><a id="contacts-link">Contact</a></li>
+        <li><a class="art">Art</a></li>
+        <li><a class="projects">Projects</a></li>
+        <li><a class="skills">Skills</a></li>
+        <li><a class="contact">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -84,10 +84,12 @@ import Footer from "../components/Footer.astro";
       }
     };
   }
-  const artLink = document.getElementById("art-link");
-  artLink!.addEventListener("click", scrollToElement("art"));
-  const projectLink = document.getElementById("project-link");
-  projectLink!.addEventListener("click", scrollToElement("projects"));
-  const skillsLink = document.getElementById("skills-link");
-  skillsLink!.addEventListener("click", scrollToElement("skills"));
+  function sub(cls: string) {
+    const elements = document.querySelectorAll(`.${cls}`);
+    elements.forEach((e) => e.addEventListener("click", scrollToElement(cls)));
+  }
+  sub("art");
+  sub("projects");
+  sub("skills");
+  sub("contact");
 </script>

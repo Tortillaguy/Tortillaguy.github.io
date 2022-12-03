@@ -1,5 +1,5 @@
 ---
-import LargeTag from "../components/LargeTag";
+import LargeTag from "../components/LargeTag.astro";
 import skills from "../data/skills";
 ---
 
@@ -9,5 +9,5 @@ import skills from "../data/skills";
 <div
   class="m-auto mt-4 flex flex-wrap justify-center self-start gap-2 [&>*]:m-1 prose px-3"
 >
-  {skills.map((skill, key) => <LargeTag title={skill} />)}
+  {skills.map((skill) => <LargeTag title={skill} />)}
 </div>
