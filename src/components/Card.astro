@@ -3,7 +3,7 @@ import type { Project } from "../types";
 import Tag from "./Tag.astro";
 
 const { project } = Astro.props;
-const { filename, name, role, tags, link } = project as Project;
+const { filename, name, role, tags, link, imageStyle } = project as Project;
 ---
 
 <style>
@@ -18,8 +18,12 @@ const { filename, name, role, tags, link } = project as Project;
 >
   <figure class="rounded-t-[12px]">
     <img
-      style={{ aspectRatio: "4/3", objectPosition: "50% 20%" }}
-      class="object-cover"
+      style={{
+        aspectRatio: "4/3",
+        objectPosition: "50% 20%",
+        objectFit: "cover",
+        ...imageStyle,
+      }}
       src={`/assets/${filename}`}
       alt={filename}
     />

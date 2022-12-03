@@ -8,7 +8,7 @@ const art: Project[] = [
     tags: ["Octane", "Blender", "EmberGen"],
   },
   {
-    name: "Pyro Loop Demo",
+    name: "Pyro Demo",
     filename: "sword_pyro.jpg",
     link: "https://www.instagram.com/p/Ca838TdjdLt/",
     tags: ["Octane", "Cinema4D", "EmberGen"],
@@ -20,7 +20,13 @@ const art: Project[] = [
     tags: ["Notch"],
   },
   {
-    name: "Oblivion - Fadead",
+    name: "Oblivion V2",
+    filename: "oblivionV2.png",
+    link: "https://www.instagram.com/p/CWyuobGhx3O/",
+    tags: ["Notch", "Daz3D"],
+  },
+  {
+    name: "Oblivion",
     filename: "oblivion.jpg",
     link: "https://open.spotify.com/album/3zX3v6VEdFIFBqIuWUMEri?si=fM2K0ASZR7SQyiSG7DscOA",
     tags: ["Notch", "Daz3D"],

@@ -2,6 +2,18 @@ import type { Project } from "../types";
 
 const projects: Project[] = [
   {
+    name: "Parcel",
+    filename: "parcel.jpg",
+    link: "http://parcel.so",
+    role: "Frontend Engineer",
+    tags: ["React", "NextJS", "UI/UX Design", "Web3", "Storybook"],
+    imageStyle: {
+      transform: "scale(1.25)",
+      objectPosition: "50% 50%",
+      aspectRatio: "1/1",
+    },
+  },
+  {
     name: "Vertebrae + Snapchat Acquisition",
     filename: "snap.jpg",
     link: "https://telanganatoday.com/snap-acquires-3d-ar-solutions-provider-vertebrae",
