@@ -86,7 +86,6 @@ import Footer from "../components/Footer.astro";
   }
   function sub(cls: string) {
     const elements = document.querySelectorAll(`.${cls}`);
-    console.log(elements);
     elements.forEach((e) => e.addEventListener("click", scrollToElement(cls)));
   }
   sub("art");
