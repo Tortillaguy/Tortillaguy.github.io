@@ -1,10 +1,11 @@
 ---
 //@ts-ignore
 // import Fade from "react-reveal/Fade";
+import { Icon } from "astro-icon";
 ---
 
 <div
-  class="w-full items-center justify-center flex gap-8 my-8 flex-col md:flex-row md:my-20"
+  class="w-full items-center justify-center flex gap-4 md:gap-6 my-3 flex-col md:flex-row md:my-20"
 >
   <div class="animate-in fade-in fill-mode-both delay-150 duration-1000">
     <div class="avatar">
@@ -24,10 +25,12 @@
     </div>
   </div>
 
-  <div class="prose flex flex-col gap-2 [&>*]:text-white [&>*]:m-0 text-shadow">
-    <h3 class="slide-text animDuration-[1000]">Hey there!👋</h3>
-    <h2 class="slide-text animDuration-[1000] animDelay-[500]">I'm Adrian</h2>
-    <h4 class="slide-text animDuration-[1000] animDelay-[1450]">
+  <div class="prose flex flex-col gap-2 [&>*]:text-white text-shadow">
+    <h3 class="slide-text animDuration-[1000] m-0">Hey there!👋</h3>
+    <h2 class="slide-text animDuration-[1000] m-0 animDelay-[500]">
+      I'm Adrian
+    </h2>
+    <h4 class="slide-text animDuration-[1000] m-0 animDelay-[1450]">
       (But you can call me Cacho)
     </h4>
     <div
@@ -42,6 +45,29 @@
       <h3 class="slide-text animDuration-[1000] animDelay-[3750]">
         Developer 🛠️
       </h3>
+    </div>
+    <div class="flex gap-2 my-3">
+      <a
+        class="slide-icon animDelay-[4200] animDuration-[500]"
+        href="https://www.instagram.com/cacho.vibez/"
+        target="_blank"
+      >
+        <Icon color="white" size={"32px"} pack="mdi" name="instagram" />
+      </a>
+      <a
+        class="slide-icon animDelay-[4350] animDuration-[500]"
+        href="https://www.linkedin.com/in/agcacho/"
+        target="_blank"
+      >
+        <Icon color="white" size={"32px"} pack="mdi" name="linkedin" />
+      </a>
+      <a
+        class="slide-icon animDelay-[4650] animDuration-[500]"
+        href="mailto:hello@cacho.dev"
+        target="_blank"
+      >
+        <Icon color="white" size={"32px"} pack="mdi" name="email" />
+      </a>
     </div>
   </div>
 </div>

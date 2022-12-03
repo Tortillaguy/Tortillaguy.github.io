@@ -163,6 +163,9 @@ blockquote {
   .slide-text {
     @apply animate-in fade-in fill-mode-both slide-in-from-right-[200px];
   }
+  .slide-icon {
+    @apply animate-in fade-in fill-mode-both slide-in-from-bottom-[200px];
+  }
 }
 
 .skill-glow {
