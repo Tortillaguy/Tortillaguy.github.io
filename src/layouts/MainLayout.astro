@@ -38,7 +38,7 @@ import Footer from "../components/Footer.astro";
             <ul class="menu menu-horizontal link-menu">
               <!-- Navbar menu content here -->
               <li><a class="art">Art</a></li>
-              <li><a class="project">Projects</a></li>
+              <li><a class="projects">Projects</a></li>
               <li><a class="skills">Skills</a></li>
               <li><a class="contact">Contact</a></li>
             </ul>
@@ -86,6 +86,7 @@ import Footer from "../components/Footer.astro";
   }
   function sub(cls: string) {
     const elements = document.querySelectorAll(`.${cls}`);
+    console.log(elements);
     elements.forEach((e) => e.addEventListener("click", scrollToElement(cls)));
   }
   sub("art");
