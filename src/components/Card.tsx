@@ -20,7 +20,7 @@ export default function (props: ProjectProps) {
         />
       </figure>
       <div className="card-body p-4">
-        <h2 className="card-title inline-block underline underline-offset-1 text-white">
+        <h2 className="card-title inline-block underline underline-offset-1 text-[#f5f5f5]">
           {name}{" "}
           <span className="material-symbols-outlined underline underline-offset-1">
             north_east

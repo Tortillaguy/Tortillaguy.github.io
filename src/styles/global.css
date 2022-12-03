@@ -17,8 +17,9 @@ body {
   background: rgb(228, 190, 245);
   background: linear-gradient(
     54deg,
-    rgba(228, 190, 245, 1) 24%,
-    rgba(81, 140, 255, 1) 81%
+    rgba(228, 190, 245, 1) 19%,
+    rgba(81, 201, 255, 1) 50%,
+    rgba(235, 249, 171, 1) 85%
   );
 }
 h1,
@@ -74,7 +75,7 @@ blockquote {
 
 .glass {
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.2);
+  background: #6967735e;
   border-radius: 12px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -85,7 +86,7 @@ blockquote {
 }
 
 .glass:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: #6967735e;
   border-radius: 12px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -167,4 +168,8 @@ blockquote {
   .slide-text {
     @apply animate-in fade-in fill-mode-both slide-in-from-right-[200px];
   }
+}
+
+.skill-glow {
+  text-shadow: 1px 1px 8px #ddbff1;
 }
