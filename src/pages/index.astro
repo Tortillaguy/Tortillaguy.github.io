@@ -12,18 +12,6 @@ import Skills from "../sections/Skills.astro";
 <!DOCTYPE html>
 <html lang="en" data-theme="cmyk">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XE1HC0GB9L"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-XE1HC0GB9L");
-    </script>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
@@ -33,7 +21,19 @@ import Skills from "../sections/Skills.astro";
       description={SITE_DESCRIPTION}
       image="pfp.jpeg"
     />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XE1HC0GB9L"
+    ></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-XE1HC0GB9L");
+    </script>
   </head>
+
   <MainLayout>
     <Hero />
     <Art />
@@ -41,4 +41,5 @@ import Skills from "../sections/Skills.astro";
     <Skills />
     <Contact />
   </MainLayout>
+
 </html>
