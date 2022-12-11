@@ -3,9 +3,11 @@ import Card from "../components/Card.astro";
 import art from "../data/art";
 ---
 
-<div class="w-full flex justify-center prose m-auto mb-1">
-  <h2 id="art" class="m-0 text-white text-shadow">Art</h2>
-</div>
-<div class="card-list justify-start self-start gap-2">
-  {art.map((project, key) => <Card project={project} />)}
+<div class="my-7">
+  <div class="flex justify-center w-full m-auto mb-5 prose">
+    <h2 id="art" class="m-0 text-white text-shadow">Art</h2>
+  </div>
+  <div class="self-start justify-start gap-2 card-list">
+    {art.map((project) => <Card project={project} />)}
+  </div>
 </div>

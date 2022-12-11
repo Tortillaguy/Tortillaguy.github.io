@@ -1,95 +1,13 @@
 ---
 import { SITE_TITLE } from "../config";
 import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 ---
 
-<body class="w-full flex justify-center">
-  <div class="max-w-5xl w-full drawer drawer-end">
-    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-    <div class="drawer-content flex flex-col">
-      <!-- Navbar -->
-      <header class="z-[1]">
-        <div
-          class="navbar justify-between bg-neutral-content glass md:w-[90%] md:m-auto"
-        >
-          <div class="px-2 mx-2 prose font-oxygen">
-            <h2 class="text-neutral nav-link">{SITE_TITLE}</h2>
-          </div>
-          <div class="flex-none lg:hidden">
-            <label
-              for="my-drawer-3"
-              class="btn btn-square btn-ghost text-white hover:bg-transparent"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                class="inline-block w-8 h-8 stroke-current"
-                ><path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-            </label>
-          </div>
-
-          <div class="flex-none hidden lg:block">
-            <ul class="menu menu-horizontal link-menu">
-              <!-- Navbar menu content here -->
-              <li><a class="art">Art</a></li>
-              <li><a class="projects">Projects</a></li>
-              <li><a class="skills">Skills</a></li>
-              <li><a class="contact">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <div
-        id="scroll-container"
-        class="overflow-auto overflow-x-hidden hide-scrollbar mt-[-66px] pt-[66px]"
-      >
-        <main class="">
-          <slot />
-        </main>
-        <Footer />
-      </div>
-    </div>
-
-    <div class="drawer-side pointer-events-none pt-[80px]">
-      <label for="my-drawer-3" class="drawer-overlay"></label>
-      <ul
-        style={{ borderRadius: "12px", height: "fit-content" }}
-        class="menu p-4 w-50 glass text-white !shadow-none nav-link pointer-events-auto link-menu"
-      >
-        <!-- Sidebar content here -->
-        <!-- <li><a>About</a></li> -->
-        <li><a class="art">Art</a></li>
-        <li><a class="projects">Projects</a></li>
-        <li><a class="skills">Skills</a></li>
-        <li><a class="contact">Contact</a></li>
-      </ul>
-    </div>
+<body class="relative overflow-x-hidden">
+  <Header />
+  <div class="m-auto max-w-7xl">
+    <slot />
   </div>
+  <Footer />
 </body>
-
-<script>
-  function scrollToElement(id: string) {
-    return () => {
-      const element = document.getElementById(id);
-      if (element) {
-        const top = element.offsetTop - 84;
-        const container = document.getElementById("scroll-container");
-        container!.scrollTo({ top, behavior: "smooth" });
-      }
-    };
-  }
-  function sub(cls: string) {
-    const elements = document.querySelectorAll(`.${cls}`);
-    elements.forEach((e) => e.addEventListener("click", scrollToElement(cls)));
-  }
-  sub("art");
-  sub("projects");
-  sub("skills");
-  sub("contact");
-</script>

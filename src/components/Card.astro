@@ -7,6 +7,9 @@ const { filename, name, role, tags, link, imageStyle } = project as Project;
 ---
 
 <style>
+  .card {
+    max-height: 420px;
+  }
   .card:hover {
     box-shadow: 1px 1px 9px 1px #1aaad0;
   }
@@ -28,12 +31,12 @@ const { filename, name, role, tags, link, imageStyle } = project as Project;
       alt={filename}
     />
   </figure>
-  <div class="card-body p-4">
+  <div class="p-4 card-body">
     <h2
       class="card-title group-hover:text-[#82ddf6] inline-block underline underline-offset-1 text-[#f5f5f5]"
     >
       {name}{" "}
-      <span class="material-symbols-outlined underline underline-offset">
+      <span class="underline material-symbols-outlined underline-offset">
         north_east
       </span>
     </h2>
