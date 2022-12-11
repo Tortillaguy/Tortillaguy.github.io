@@ -131,10 +131,11 @@ blockquote {
   padding: 0.75rem 0.75rem;
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(218px, 227px));
+  @apply hide-scrollbar md:scrollbar-default;
 }
 
 ::-webkit-scrollbar {
-  height: 8px
+  height: 8px;
 }
 
 /* Track */
@@ -195,13 +196,13 @@ blockquote {
 
   .scrollbar-default {
     /* Hide scrollbar for IE, Edge and Firefox */
-    -ms-overflow-style: inherit; /* IE and Edge */
-    scrollbar-width: 10px; /* Firefox */
+    -ms-overflow-style: initial; /* IE and Edge */
+    scrollbar-width: initial; /* Firefox */
   }
 
   .scrollbar-default::-webkit-scrollbar {
     /* Hide scrollbar for Chrome, Safari and Opera */
-    display: block;
+    display: initial;
   }
 
   .slide-text {
