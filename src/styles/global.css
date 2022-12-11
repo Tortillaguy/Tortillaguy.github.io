@@ -7,6 +7,8 @@ body {
   font-family: Verdana, sans-serif;
   margin: auto;
   padding: 0px 0px;
+  overflow:auto;
+  @apply hide-scrollbar;
 
   text-align: left;
   background-color: #fff;
@@ -91,6 +93,16 @@ blockquote {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.nav-glass {
+  /* From https://css.glass */
+  background: #6967735e;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .drawer-toggle:checked ~ .drawer-side > .drawer-overlay {
   opacity: 0;
 }
@@ -103,37 +115,43 @@ blockquote {
   text-shadow: 2px 2px 8px #1a1a1a;
 }
 
-.hide-scrollbar {
-  /* Hide scrollbar for IE, Edge and Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
 
-.hide-scrollbar::-webkit-scrollbar {
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  display: none;
-}
 
 .drawer.drawer-end > .drawer-toggle:checked ~ .drawer-side > ul {
   @apply mr-2;
 }
 
-.text-shadow {
-  text-shadow: 2px 2px 8px #1a1a1a;
-}
+
 
 .card-list {
   display: flex;
   flex-wrap: nowrap;
   gap: 1.25rem;
   overflow-x: auto;
-  padding: 1rem 0.75rem;
-  padding-bottom: 2.5rem;
-  /* width: 100vw; */
-  @apply hide-scrollbar;
+  padding: 0.75rem 0.75rem;
   width: 100%;
-
   grid-template-columns: repeat(auto-fit, minmax(218px, 227px));
+}
+
+::-webkit-scrollbar {
+  height: 8px
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:#f3f7de;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cbbef4;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #cbbef4;
+  cursor: grabbing;
 }
 
 .border-gradient {
@@ -160,6 +178,32 @@ blockquote {
 }
 
 @layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 8px #1a1a1a;
+  }
+
+  .hide-scrollbar {
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    display: none;
+  }
+
+  .scrollbar-default {
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: inherit; /* IE and Edge */
+    scrollbar-width: 10px; /* Firefox */
+  }
+
+  .scrollbar-default::-webkit-scrollbar {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    display: block;
+  }
+
   .slide-text {
     @apply animate-in fade-in fill-mode-both slide-in-from-right-[200px];
   }

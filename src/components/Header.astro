@@ -1,0 +1,104 @@
+---
+import { SITE_TITLE } from "../config";
+---
+
+<style>
+  .toggle-test {
+    position: fixed;
+    margin-top: 20px;
+    z-index: 1;
+    right: 0px;
+    transform: translateX(100%);
+
+    transition: transform 0.25s ease-in-out;
+  }
+
+  .drawer-toggle:checked ~ .toggle-test {
+    transform: translateX(-10px);
+  }
+
+  ul {
+    white-space: nowrap;
+    @apply px-4 py-2;
+  }
+
+  li a {
+    @apply text-white text-shadow;
+  }
+  li a:active {
+    @apply text-blue-200;
+  }
+</style>
+<input id="drawer" type="checkbox" class="drawer-toggle !fixed" />
+
+<header class="sticky top-0 z-10 max-w-6xl m-auto">
+  <div
+    class="flex items-center justify-between pl-3 pr-2 md:pr-0 md:pl-5 min-h-16 glass"
+  >
+    <h1 class="text-2xl prose text-white font-oxygen text-shadow">
+      {SITE_TITLE}
+    </h1>
+    <label
+      for="drawer"
+      class="text-white btn btn-square btn-ghost hover:bg-transparent md:hidden"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        class="inline-block w-8 h-8 stroke-current"
+        ><path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </label>
+    <nav class="hidden md:block">
+      <ul class="flex items-center gap-4">
+        <!-- Navbar menu content here -->
+        <li><a class="home">Home</a></li>
+        <li><a class="art">Art</a></li>
+        <li><a class="projects">Projects</a></li>
+        <li><a class="skills">Skills</a></li>
+        <li><a class="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="toggle-test">
+  <nav class="relative py-1 rounded-sm flex-nowrap nav-glass">
+    <ul class="flex flex-col gap-5">
+      <!-- Navbar menu content here -->
+      <li><a class="home">Home</a></li>
+      <li><a class="art">Art</a></li>
+      <li><a class="projects">Projects</a></li>
+      <li><a class="skills">Skills</a></li>
+      <li><a class="contact">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+<script>
+  function scrollToElement(id: string) {
+    return () => {
+      const element = document.getElementById(id);
+      if (element) {
+        const top = element.offsetTop - 84;
+        const container = document.scrollingElement;
+        console.log({ container });
+        container!.scrollTo({ top, behavior: "smooth" });
+      }
+    };
+  }
+  function sub(cls: string) {
+    const elements = document.querySelectorAll(`.${cls}`);
+    elements.forEach((e) => e.addEventListener("click", scrollToElement(cls)));
+  }
+  sub("home");
+  sub("art");
+  sub("projects");
+  sub("skills");
+  sub("contact");
+</script>
