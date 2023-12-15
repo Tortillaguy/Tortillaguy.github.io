@@ -17,7 +17,7 @@ body {
   line-height: 1.5;
   color: #444;
   background: rgb(228, 190, 245);
-  background: linear-gradient(54deg, #e4bef5 19%, #51c9ff 50%, #ebf9ab 85%);
+  background: linear-gradient(45deg, #14041b 19%, #09171b 50%,  #07010f 75%, #515f02 200%);
 }
 h1,
 h2,
@@ -140,7 +140,8 @@ blockquote {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background:#f3f7de;
+  background:#54554d;
+  border-radius: 200px;
 }
 
 /* Handle */

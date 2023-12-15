@@ -9,6 +9,7 @@ const skills = [
   "AR/VR",
   "Web3",
   "Notch",
+  "Disguise",
   "TouchDesigner",
   "Resolume",
 ];

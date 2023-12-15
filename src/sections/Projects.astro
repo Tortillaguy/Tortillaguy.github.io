@@ -5,7 +5,7 @@ import projects from "../data/projects";
 
 <div class="my-[50px]">
   <div class="flex justify-center w-full m-auto mb-5 prose">
-    <h2 id={"projects"} class="m-0 text-white text-shadow">Projects</h2>
+    <h2 id={"projects"} class="m-0 text-white text-shadow">Projects + Software</h2>
   </div>
   <div
     id="project-list"
@@ -42,7 +42,7 @@ import projects from "../data/projects";
       if (!isDown) return;
       e.preventDefault();
       const x = e.pageX - slider.offsetLeft;
-      const walk = (x - startX) * 3; //scroll-fast
+      const walk = (x - startX) * 1.5; //scroll-fast
       slider.scrollLeft = scrollLeft - walk;
     });
   }
