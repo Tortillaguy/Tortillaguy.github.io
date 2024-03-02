@@ -1,31 +1,7 @@
 import type { Project } from "../types";
 
 const projects: Project[] = [
-  {
-    name: "Disguise Training",
-    filename: "disguise.jpg",
-    role: "VP Accelerator Program",
-    link: "https://www.instagram.com/p/CpwFlCIpFxs",
-    tags: ["Disguise", "Unreal Engine"],
-  },
-  {
-    name: "Seismic Events",
-    filename: "seismic.png",
-    role: "VJ",
-    link: "https://www.instagram.com/reel/CsvsjQZMKIQ/",
-    tags: ["Resolume"],
-    imageStyle: {
-      // transform: "scale(1)",
-      objectPosition: "50% 50%",
-    },
-  },
-  {
-    name: "SD Renegade",
-    filename: "renegade.png",
-    role: "Busking DMX",
-    link: "https://www.instagram.com/p/CpwDLGDpstc",
-    tags: ["ShowXpress"],
-  },
+
   {
     name: "Looking Glass Factory",
     filename: "lkg.jpg",

@@ -28,10 +28,10 @@ import { SITE_TITLE } from "../config";
     cursor: pointer;
   }
   li a:active {
-    @apply text-blue-200;
+    @apply text-purple-300;
   }
   li a:hover {
-    @apply text-green-200;
+    @apply text-purple-300;
   }
 </style>
 <input id="drawer" type="checkbox" class="drawer-toggle !fixed" />
@@ -40,7 +40,7 @@ import { SITE_TITLE } from "../config";
   <div
     class="flex items-center justify-between pl-3 pr-2 md:pr-0 md:pl-5 min-h-16 glass"
   >
-    <h1 class="text-2xl prose text-white font-oxygen text-shadow">
+    <h1 class="text-2xl prose text-white font-oxygen text-shadow hover:cursor-default">
       {SITE_TITLE}
     </h1>
     <label

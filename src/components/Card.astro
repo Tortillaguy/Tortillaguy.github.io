@@ -8,6 +8,8 @@ const { filename, name, role, tags, link, imageStyle } = project as Project;
 <style>
   .card {
     max-height: 420px;
+    width: 300px;
+    background: transparent;
   }
   .card:hover {
     box-shadow: 1px 1px 9px 1px #1aaad0;
@@ -17,7 +19,7 @@ const { filename, name, role, tags, link, imageStyle } = project as Project;
   href={link}
   onmousedown=""
   target="_blank"
-  class="display:block card group hover:hover-shadow transition-transform hover:-translate-y-3 duration-300 ease-in-out min-w-[16rem] h-min bg-base-100 shadow-xl not-prose flex-grow border-transparent border-solid border-2 border-gradient cursor-pointer"
+  class="display:block card group hover:hover-shadow transition-transform hover:-translate-y-3 duration-300 ease-in-out min-w-[16rem] h-min bg-base-100 shadow-xl not-prose flex-grow cursor-pointer overflow-hidden"
 >
   <figure class="rounded-t-[12px]">
     <img
@@ -31,7 +33,7 @@ const { filename, name, role, tags, link, imageStyle } = project as Project;
       alt={filename}
     />
   </figure>
-  <div class="p-4 card-body">
+  <div class="p-4 card-body bg-opacity-20 bg-[#c0e9ff] filter:blur-md">
     <h2
       class="card-title group-hover:text-[#82ddf6] inline-block underline underline-offset-1 text-[#f5f5f5]"
     >

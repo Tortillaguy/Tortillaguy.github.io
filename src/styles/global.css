@@ -16,8 +16,7 @@ body {
   overflow-wrap: break-word;
   line-height: 1.5;
   color: #444;
-  background: rgb(228, 190, 245);
-  background: linear-gradient(45deg, #14041b 19%, #09171b 50%,  #07010f 75%, #515f02 200%);
+  background: transparent;
 }
 h1,
 h2,
@@ -70,16 +69,34 @@ blockquote {
   font-style: italic;
 }
 
+.screen-gradient {
+  background: linear-gradient(135deg, #43afe1, #a258c4, #f3812a, #e7ff91);
+  background-size: 120% 120%;
+  animation: gradient-animation 10s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .glass {
   /* From https://css.glass */
-  background: #6967735e;
+  background: #8b98c15e;
   border-radius: 12px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgb(161, 226, 251);
 }
 
 .glass:hover {
@@ -129,19 +146,21 @@ blockquote {
   gap: 1.25rem;
   overflow-x: auto;
   padding: 0.75rem 0.75rem;
+  padding-bottom: 1.5rem;
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(218px, 227px));
   @apply hide-scrollbar md:scrollbar-default;
 }
 
 ::-webkit-scrollbar {
-  height: 8px;
+  height: 4px;
+  width: 8px;
+  background: transparent;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background:#54554d;
-  border-radius: 200px;
 }
 
 /* Handle */
