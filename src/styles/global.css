@@ -70,7 +70,7 @@ blockquote {
 }
 
 .screen-gradient {
-  background: linear-gradient(135deg, #43afe1, #a258c4, #f3812a, #e7ff91);
+  background: linear-gradient(135deg, #43afe1, #a258c4, #f3812a 70%, #e7ff91);
   background-size: 120% 120%;
   animation: gradient-animation 10s ease infinite;
 }
