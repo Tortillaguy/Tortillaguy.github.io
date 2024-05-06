@@ -7,7 +7,7 @@ body {
   font-family: Verdana, sans-serif;
   margin: auto;
   padding: 0px 0px;
-  overflow:auto;
+  overflow: auto;
   @apply hide-scrollbar;
 
   text-align: left;
@@ -87,37 +87,14 @@ blockquote {
   }
 }
 
-.glass {
+.panel {
   /* From https://css.glass */
   background: #8b98c15e;
   border-radius: 12px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
   /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgb(161, 226, 251);
-}
-
-.glass:hover {
-  background: #6967735e;
-  border-radius: 12px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.nav-glass {
-  /* From https://css.glass */
-  background: #6967735e;
-  border-radius: 10px;
-  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .drawer-toggle:checked ~ .drawer-side > .drawer-overlay {
@@ -132,13 +109,9 @@ blockquote {
   text-shadow: 2px 2px 8px #1a1a1a;
 }
 
-
-
 .drawer.drawer-end > .drawer-toggle:checked ~ .drawer-side > ul {
   @apply mr-2;
 }
-
-
 
 .card-list {
   display: flex;
@@ -160,7 +133,7 @@ blockquote {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background:#54554d;
+  background: #54554d;
 }
 
 /* Handle */
@@ -173,21 +146,6 @@ blockquote {
 ::-webkit-scrollbar-thumb:hover {
   background: #cbbef4;
   cursor: grabbing;
-}
-
-.border-gradient {
-  --card-bg: #262626;
-  background: linear-gradient(to right, var(--card-bg), var(--card-bg)),
-    linear-gradient(to top right, #74e4cf, #e5c5ff);
-  background-clip: padding-box, border-box;
-  background-origin: padding-box, border-box;
-}
-
-.hover\:border-gradient-tl-blue-green-gray-900:hover {
-  background: linear-gradient(to right, #272727, #272727),
-    linear-gradient(to top left, #60a5fa, #4ade80);
-  background-clip: padding-box, border-box;
-  background-origin: padding-box, border-box;
 }
 
 .gradient-border-3 {

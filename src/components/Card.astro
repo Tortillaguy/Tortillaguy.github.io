@@ -5,15 +5,13 @@ import Tag from "./Tag.astro";
 const { project } = Astro.props;
 const { filename, name, role, tags, link, imageStyle } = project as Project;
 ---
+
 <style>
   .card {
     max-height: 420px;
     width: 300px;
     background: transparent;
   }
-  /* .card:hover {
-    box-shadow: 1px 1px 9px 1px #1aaad0;
-  } */
 </style>
 <a
   href={link}
@@ -53,24 +51,23 @@ const { filename, name, role, tags, link, imageStyle } = project as Project;
 </a>
 
 <script>
-  const cards = document.querySelectorAll('a.card')
-  let time = 0
-  let dragheld = 0
+  const cards = document.querySelectorAll("a.card");
+  let time = 0;
+  let dragheld = 0;
   cards.forEach((card) => {
-    card.addEventListener('mousedown', () => {
-      time = Date.now()
-    })
-    card.addEventListener('mouseup', (e) => {
-      dragheld = Date.now() - time
-    })
-    card.addEventListener('click', (e) => {
-      console.log({dragheld})
+    card.addEventListener("mousedown", () => {
+      time = Date.now();
+    });
+    card.addEventListener("mouseup", (e) => {
+      dragheld = Date.now() - time;
+    });
+    card.addEventListener("click", (e) => {
+      console.log({ dragheld });
       if (dragheld > 100) {
-        e.stopPropagation()
-        e.preventDefault()
-        return false
+        e.stopPropagation();
+        e.preventDefault();
+        return false;
       }
-    })
-
-  })
+    });
+  });
 </script>

@@ -1,9 +1,10 @@
 ---
 import { SITE_TITLE } from "../config";
+import nav from "../data/nav";
 ---
 
 <style>
-  .toggle-test {
+  .side-drawer {
     position: fixed;
     margin-top: 20px;
     z-index: 1;
@@ -13,7 +14,7 @@ import { SITE_TITLE } from "../config";
     transition: transform 0.25s ease-in-out;
   }
 
-  .drawer-toggle:checked ~ .toggle-test {
+  .drawer-toggle:checked ~ .side-drawer {
     transform: translateX(-10px);
   }
 
@@ -36,11 +37,13 @@ import { SITE_TITLE } from "../config";
 </style>
 <input id="drawer" type="checkbox" class="drawer-toggle !fixed" />
 
-<header class="sticky top-0 z-10 max-w-6xl m-auto">
+<header class="top-0 z-10 max-w-6xl m-auto">
   <div
-    class="flex items-center justify-between pl-3 pr-2 md:pr-0 md:pl-5 min-h-16 glass"
+    class="flex items-center justify-between pl-3 pr-2 md:pr-0 md:pl-5 min-h-16"
   >
-    <h1 class="text-2xl prose text-white font-oxygen text-shadow hover:cursor-default">
+    <h1
+      class="text-2xl prose text-white font-oxygen text-shadow hover:cursor-default"
+    >
       {SITE_TITLE}
     </h1>
     <label
@@ -63,8 +66,9 @@ import { SITE_TITLE } from "../config";
       <ul class="flex items-center gap-4">
         <!-- Navbar menu content here -->
         <li><a class="home">Home</a></li>
-        <li><a class="art">Art</a></li>
         <li><a class="projects">Projects</a></li>
+        <li><a class="productions">Productions</a></li>
+        <li><a class="art">Art</a></li>
         <li><a class="skills">Skills</a></li>
         <li><a class="contact">Contact</a></li>
       </ul>
@@ -72,27 +76,31 @@ import { SITE_TITLE } from "../config";
   </div>
 </header>
 
-<div class="toggle-test">
-  <nav class="relative py-1 rounded-sm flex-nowrap nav-glass">
-    <ul class="flex flex-col gap-5">
-      <!-- Navbar menu content here -->
-      <li><a class="home">Home</a></li>
-      <li><a class="art">Art</a></li>
-      <li><a class="projects">Projects</a></li>
-      <li><a class="skills">Skills</a></li>
-      <li><a class="contact">Contact</a></li>
+<div class="side-drawer panel">
+  <nav class="relative py-1 rounded-sm flex-nowrap">
+    <ul class="flex flex-col gap-5 text-xs">
+      {
+        nav.map((key) => (
+          <li>
+            <a class={key}>
+              {key.substring(0, 1).toUpperCase() + key.substring(1)}
+            </a>
+          </li>
+        ))
+      }
     </ul>
   </nav>
 </div>
 
 <script>
+  import nav from "../data/nav";
+
   function scrollToElement(id: string) {
     return () => {
       const element = document.getElementById(id);
       if (element) {
-        const top = element.offsetTop - 84;
+        const top = element.offsetTop - 42;
         const container = document.scrollingElement;
-        console.log({ container });
         container!.scrollTo({ top, behavior: "smooth" });
       }
     };
@@ -101,9 +109,6 @@ import { SITE_TITLE } from "../config";
     const elements = document.querySelectorAll(`.${cls}`);
     elements.forEach((e) => e.addEventListener("click", scrollToElement(cls)));
   }
-  sub("home");
-  sub("art");
-  sub("projects");
-  sub("skills");
-  sub("contact");
+
+  nav.forEach(sub);
 </script>
