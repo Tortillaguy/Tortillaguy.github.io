@@ -1,17 +1,19 @@
 const skills = [
-  "Python",
   "React",
-  "Adobe Suite",
-  "Unity",
+  "Typescript",
+  "Notch",
+  "Resolume",
   "Blender",
-  "UI/UX Design",
-  "NodeJS",
+  "TouchDesigner",
+  "Disguise",
   "AR/VR",
   "Web3",
-  "Notch",
-  "Disguise",
-  "TouchDesigner",
-  "Resolume",
+  "Node.js",
+  "UI/UX Design",
+  "Adobe Suite",
+  "Python",
+  "Unity",
+  "Unreal",
 ];
 
 export default skills;

@@ -9,9 +9,10 @@ import Projects from "../sections/Projects.astro";
 import Skills from "../sections/Skills.astro";
 import Productions from "../sections/Productions.astro";
 import About from "../sections/About.astro";
+import ModalButton from "../components/ModalButton.svelte";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="cmyk">
   <head>
     <link
@@ -25,13 +26,18 @@ import About from "../sections/About.astro";
     />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XE1HC0GB9L"
-    ></script><script>
+    ></script>
+    <script>
+      // @ts-ignore
       window.dataLayer = window.dataLayer || [];
       function gtag() {
+        // @ts-ignore
         dataLayer.push(arguments);
       }
+      // @ts-ignore
       gtag("js", new Date());
 
+      // @ts-ignore
       gtag("config", "G-XE1HC0GB9L");
     </script>
   </head>
@@ -44,6 +50,7 @@ import About from "../sections/About.astro";
     <About />
     <Skills />
     <Contact />
+    <!-- <ModalButton client:only="svelte" /> -->
   </MainLayout>
 
 
