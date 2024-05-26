@@ -75,6 +75,13 @@ blockquote {
   animation: gradient-animation 10s ease infinite;
 }
 
+.screen-gradient-2 {
+  background: linear-gradient(43deg, #1faaeb, #bf4cf5, #e39997 70%, #f9f20e);
+  /* background-size: 120% 120%; */
+  animation: gradient-animation 10s ease infinite;
+  /* background-position-x: 10px; */
+}
+
 @keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
@@ -126,7 +133,7 @@ blockquote {
 }
 
 ::-webkit-scrollbar {
-  height: 4px;
+  height: 8px;
   width: 8px;
   background: transparent;
 }
@@ -134,6 +141,7 @@ blockquote {
 /* Track */
 ::-webkit-scrollbar-track {
   background: #54554d;
+  border-radius: 25%;
 }
 
 /* Handle */
@@ -144,6 +152,11 @@ blockquote {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
+  background: #cbbef4;
+  cursor: grab;
+}
+
+::-webkit-scrollbar-thumb:active {
   background: #cbbef4;
   cursor: grabbing;
 }
