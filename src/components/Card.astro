@@ -16,7 +16,9 @@ const { filename, name, role, tags, link, imageStyle } = project as Project;
 </style>
 
 <project-card data-project={JSON.stringify(project)}>
-  <div
+  <a
+    href={link}
+    target="_blank"
     class="display:block card group hover:hover-shadow transition-transform hover:-translate-y-3 duration-300 ease-in-out min-w-[16rem] bg-base-100 shadow-md not-prose flex-grow cursor-pointer overflow-hidden"
   >
     <figure class="rounded-t-[12px]">
@@ -48,11 +50,11 @@ const { filename, name, role, tags, link, imageStyle } = project as Project;
       <div class="flex-grow"></div>
       <button
         id="read-more"
-        class="p-2 rounded-lg bg-[#262626e7] text-white hover:text-pink-300 items-end"
+        class="p-2 rounded-lg bg-[#262626e7] text-white hover:text-pink-300 items-end md:hidden"
         >Read More</button
       >
     </div>
-  </div>
+  </a>
 </project-card>
 
 <script>
@@ -86,10 +88,10 @@ const { filename, name, role, tags, link, imageStyle } = project as Project;
       const project: Project = JSON.parse(this.dataset["project"]!);
 
       // Each time the button is clicked, update the count.
-      readMore!.addEventListener("click", () => {
-        modalData.set(project);
-        console.log(modalData.get());
-      });
+      // readMore!.addEventListener("click", () => {
+      //   modalData.set(project);
+      //   console.log(modalData.get());
+      // });
     }
   }
 
