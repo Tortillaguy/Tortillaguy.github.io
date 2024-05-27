@@ -24,7 +24,7 @@
     "@types/react-dom": "^18.0.6",
     "astro": "^4.0.0",
     "astro-icon": "^0.8.0",
-    "daisyui": "^2.42.1",
+    "daisyui": "^4.11.1",
     "nanostores": "^0.10.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",

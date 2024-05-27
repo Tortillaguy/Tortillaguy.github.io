@@ -1,27 +1,44 @@
 <script>
+  import { modalData } from "../lib/modalStore";
+
+  modalData.listen((data) => {
+    console.log({ data });
+    if (data) {
+      modal.showModal();
+    } else {
+      modal.close();
+    }
+  });
+
   //variable Init
   let isOpen = false;
   //function to be called on click
   function onClick() {
     //incremtent
-    document.getElementById("my_modal_1").showModal();
+    // document.getElementById("my_modal_1").showModal();
+    const modal = document.getElementById("modal");
+    modalData.set({ name: "TEST" });
+  }
+  function onClose() {
+    document.getElementById("modal").close();
+    modalData;
   }
 </script>
 
 <!-- the function will be called on click -->
 <button on:click={onClick}> Open </button>
 
-<dialog id="my_modal_1" class="modal">
-  <div class="modal-box w-[100px] h-[100px]">
-    <h3 class="font-bold text-lg">Hello!</h3>
-    <p class="py-4">Press ESC key or click the button below to close</p>
-    <div class="modal-action">
-      <form method="dialog">
-        <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close</button>
-      </form>
-    </div>
+<dialog
+  id="modal"
+  on:close={() => {
+    modalData.set(undefined);
+  }}
+>
+  <div class="rounded-md flex-col flex justify-center max-w-xl min-w-sm p-20">
+    <div>TEST</div>
+    <div>Some description</div>
   </div>
+  <button on:click={onClose}>Close</button>
 </dialog>
 
 <style>
