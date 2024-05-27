@@ -1,20 +1,40 @@
-<script>
-  export let isOpen = false;
-  export let onClose = () => {};
+<script lang="ts">
+  import { modalData } from "../lib/modalStore";
+  import type { Project } from "../types";
 
-  function handleClose() {
-    onClose();
+  export let renderData: Project | undefined;
+
+  modalData.listen((data) => {
+    renderData = data;
+    let modal = document.getElementById("modal") as HTMLDialogElement;
+    if (data) {
+      modal.showModal();
+    } else {
+      modal.close();
+    }
+  });
+
+  function onClose() {
+    let modal = document.getElementById("modal") as HTMLDialogElement;
+    modal.close();
   }
 </script>
 
-{#if isOpen}
-  <div class="modal-overlay" on:click={handleClose}>
-    <div class="modal" on:click|stopPropagation>
-      <button class="close" on:click={handleClose}>&times;</button>
-      <slot></slot>
+<dialog
+  id="modal"
+  class="transition-opacity fade-in-0"
+  on:close={() => {
+    modalData.set(undefined);
+  }}
+>
+  {#if renderData}
+    <div class="rounded-md flex-col flex justify-center max-w-xl min-w-sm p-20">
+      <div>{renderData.name}</div>
+      <div>{renderData.tags}</div>
     </div>
-  </div>
-{/if}
+    <button on:click={onClose}>Close</button>
+  {/if}
+</dialog>
 
 <style>
   .modal-overlay {

@@ -9,7 +9,7 @@ import Projects from "../sections/Projects.astro";
 import Skills from "../sections/Skills.astro";
 import Productions from "../sections/Productions.astro";
 import About from "../sections/About.astro";
-import ModalButton from "../components/ModalButton.svelte";
+import Modal from "../components/Modal.svelte";
 ---
 
 <!doctype html>
@@ -50,6 +50,7 @@ import ModalButton from "../components/ModalButton.svelte";
     <About />
     <Skills />
     <Contact />
+    <!-- <Modal client:only="svelte" /> -->
   </MainLayout>
 
 
