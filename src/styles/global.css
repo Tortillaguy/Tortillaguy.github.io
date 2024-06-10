@@ -246,10 +246,6 @@ dialog {
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.5s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 dialog[open] {
   opacity: 1;

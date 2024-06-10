@@ -2,37 +2,62 @@
   import { modalData } from "../lib/modalStore";
   import type { Project } from "../types";
 
-  export let renderData: Project | undefined;
+  export let renderData: Project | undefined = undefined;
+
+  function closeModal() {
+    let modal = document.getElementById("modal") as HTMLDialogElement;
+
+    modal.close();
+
+    const scrollY = document.body.style.top;
+    document.body.style.position = "";
+    document.body.style.top = "";
+    window.scrollTo(0, parseInt(scrollY || "0") * -1);
+  }
+
+  function lockWindow() {
+    document.body.style.top = `-${window.scrollY}px`;
+    document.body.style.position = "fixed";
+  }
 
   modalData.listen((data) => {
     renderData = data;
     let modal = document.getElementById("modal") as HTMLDialogElement;
     if (data) {
-      modal.showModal();
+      lockWindow()
+      modal.showModal();  
     } else {
-      modal.close();
+      closeModal();
     }
   });
 
   function onClose() {
-    let modal = document.getElementById("modal") as HTMLDialogElement;
-    modal.close();
+    closeModal();
   }
 </script>
 
 <dialog
   id="modal"
-  class="transition-opacity fade-in-0"
+  class="transition-opacity fade-in-0 relative my-auto p-5 md:max-w-2xl rounded-xl"
   on:close={() => {
     modalData.set(undefined);
   }}
 >
+  <button
+    on:click={() => modalData.set(undefined)}
+    class="p-5 cursor-pointer absolute top-0 right-0 outline-none"
+  >
+    <img class="w-8 h-8" alt="close" src={"close.svg"} />
+  </button>
   {#if renderData}
-    <div class="rounded-md flex-col flex justify-center max-w-xl min-w-sm p-20">
-      <div>{renderData.name}</div>
-      <div>{renderData.tags}</div>
+    <div class="w-full flex items-center">
+      <div class="flex-grow items-center flex justify-center text-xl mt-2">
+        {renderData.name}
+      </div>
     </div>
-    <button on:click={onClose}>Close</button>
+    <div class="rounded-md flex-col flex justify-center whitespace-pre-wrap">
+      <div>{renderData.description}</div>
+    </div>
   {/if}
 </dialog>
 
@@ -44,9 +69,6 @@
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 1000;
   }
 
