@@ -1,19 +1,13 @@
 import type { Project } from "../types";
 
 const projects: Project[] = [
-
   {
     name: "Looking Glass Factory",
     filename: "lkg.jpg",
     role: "Senior Full-Stack Developer",
     link: "https://lookingglassfactory.com/",
     tags: ["React", "Full-Stack", "AWS", "Postgres", "Typescript", "NextJS"],
-    description: `
-    During my time at Looking Glass Factory, I played a pivotal role in implementing payment processing services, which were essential for enabling our SaaS products and subscriptions through platforms like Webflow and Shopify. This project involved ensuring seamless transactions, enhancing the user experience, and providing robust support for recurring billing and subscription management. My work in this area significantly contributed to the company's revenue stream by facilitating smooth and reliable payment processes.
-
-    I also integrated large language model (LLM) services into our Liteforms platform, employing retrieval-augmented generation (RAG) techniques for efficient data retrieval among documents. This integration not only improved the platform's functionality but also enhanced the accuracy and relevance of information retrieval, leading to better user satisfaction and increased engagement. By leveraging advanced AI techniques, I helped the company stay at the forefront of technological innovation in our industry.
-
-    Additionally, I introduced Storybook and mobile-first design principles to our full-stack application, which, along with closer integration with Figma and Tailwind, streamlined our development process and improved design consistency. I also supported the inclusion of 3D renders and animations on the web using framer-motion, three.js, and React Three Fiber, enriching the visual experience for our users. Furthermore, I designed automated build pipelines for Unity C# code generation using OpenAPI and our Next.js codebase, which enhanced our development efficiency and reduced manual errors, ultimately accelerating our product release cycles.`
+    postID: "lkg",
   },
   {
     name: "Parcel",

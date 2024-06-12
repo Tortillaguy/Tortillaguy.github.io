@@ -7,5 +7,5 @@ export interface Project {
   role?: string;
   tags?: string[];
   imageStyle?: CSSProperties;
-  description?: string;
+  postID?: string;
 }

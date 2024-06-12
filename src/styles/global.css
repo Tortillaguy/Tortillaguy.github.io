@@ -3,6 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+:root .prose {
+  --tw-prose-bullets: white;
+}
 body {
   font-family: Verdana, sans-serif;
   margin: auto;
