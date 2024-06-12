@@ -10,7 +10,22 @@ module.exports = {
     "animation-delay": {
       1: "1",
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        "fade-in": {
+          "0%": { opacity: "0%" },
+          "100%": { opacity: "100%" },
+        },
+        "fade-out": {
+          "0%": { opacity: "100%" },
+          "100%": { opacity: "0%" },
+        },
+      },
+      animation: {
+        "fade-in": "fade-in 0.25s ease-in-out",
+        "fade-out": "fade-out 0.25s ease-in-out",
+      },
+    },
     fontFamily: { oxygen: ['"Oxygen Mono"', "monospace"] },
   },
   plugins: [

@@ -1,0 +1,67 @@
+<dialog
+  id="modal"
+  class="open:animate-fade-in relative my-auto p-5 w-full md:max-w-screen-xl rounded-2xl bg-gray-900"
+>
+  <button
+    id="close-modal"
+    class="p-5 cursor-pointer absolute top-0 right-0 outline-none"
+  >
+    <img class="w-8 h-8" alt="close" src={"close.svg"} />
+  </button>
+  <div class="w-full flex items-center">
+    <div
+      id="title"
+      class="flex-grow items-center flex justify-center text-xl mt-2 font-bold"
+    >
+    </div>
+  </div>
+  <div
+    class="rounded-md flex-col flex justify-center prose dark:prose-invert
+  prose-h1:font-bold text-white prose-h3:text-white
+  prose-a:text-blue-600 prose-p:text-justify prose-img:rounded-xl
+  prose-headings:underline m-auto max-w-none px-7"
+  >
+    <div id="content" class="p-8"></div>
+  </div>
+</dialog>
+
+<script>
+  import { modalData } from "../lib/modalStore";
+
+  const button = document.getElementById("close-modal") as HTMLButtonElement;
+  const modal = document.getElementById("modal") as HTMLDialogElement;
+  const contentContainer = document.getElementById("content") as HTMLDivElement;
+  const title = document.getElementById("title");
+
+  button.addEventListener("click", () => {
+    modalData.set(undefined);
+  });
+
+  modal.addEventListener("close", () => {
+    modalData.set(undefined);
+  });
+
+  modalData.listen(async (val) => {
+    if (!val) {
+      modal.close();
+      const scrollY = document.body.style.top;
+      document.body.style.position = "";
+      document.body.style.top = "";
+      window.scrollTo(0, parseInt(scrollY || "0") * -1);
+    } else {
+      document.body.style.top = `-${window.scrollY}px`;
+      document.body.style.position = "fixed";
+
+      const postId = val.postID;
+
+      const { compiledContent } = await import(`../posts/${postId}.md`);
+      const content = compiledContent();
+      contentContainer.innerHTML = content;
+      if (title) {
+        title.innerText = val.name;
+      }
+
+      modal.showModal();
+    }
+  });
+</script>

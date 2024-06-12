@@ -22,14 +22,13 @@ const productions: Project[] = [
     link: "https://www.instagram.com/reel/CsvsjQZMKIQ/",
     tags: ["Resolume"],
     imageStyle: {
-      // transform: "scale(1)",
       objectPosition: "50% 50%",
     },
   },
   {
     name: "SD Renegade",
     filename: "renegade.png",
-    role: "Busking DMX",
+    role: "LD",
     link: "https://www.instagram.com/p/CpwDLGDpstc",
     tags: ["ShowXpress"],
   },

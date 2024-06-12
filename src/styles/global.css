@@ -3,6 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+:root .prose {
+  --tw-prose-bullets: white;
+}
 body {
   font-family: Verdana, sans-serif;
   margin: auto;
@@ -246,10 +249,6 @@ dialog {
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.5s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 dialog[open] {
   opacity: 1;
