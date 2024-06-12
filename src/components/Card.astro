@@ -81,12 +81,17 @@ const { filename, name, role, tags, link, imageStyle } = project as Project;
     constructor() {
       super();
 
-      const readMore = this.querySelector(".card") || this.querySelector("button");
+      const readMore =
+        this.querySelector(".card") || this.querySelector("button");
       const project: Project = JSON.parse(this.dataset["project"]!);
 
       if (readMore) {
         readMore.addEventListener("click", () => {
-          modalData.set(project);
+          if (project.postID) {
+            modalData.set(project);
+          } else {
+            window.open(project.link, "_blank");
+          }
         });
       }
     }

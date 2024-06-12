@@ -22,8 +22,8 @@ module.exports = {
         },
       },
       animation: {
-        "fade-in": "fade-in 0.5s ease-in-out",
-        "fade-out": "fade-out 0.5s ease-in-out",
+        "fade-in": "fade-in 0.25s ease-in-out",
+        "fade-out": "fade-out 0.25s ease-in-out",
       },
     },
     fontFamily: { oxygen: ['"Oxygen Mono"', "monospace"] },

@@ -52,7 +52,9 @@
       document.body.style.top = `-${window.scrollY}px`;
       document.body.style.position = "fixed";
 
-      const { compiledContent } = await import("../posts/lkg.md");
+      const postId = val.postID;
+
+      const { compiledContent } = await import(`../posts/${postId}.md`);
       const content = compiledContent();
       contentContainer.innerHTML = content;
       if (title) {
