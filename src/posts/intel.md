@@ -1,4 +1,4 @@
-<iframe width="560" height="315" class="m-auto" src="https://www.youtube.com/embed/-nWddbP-hgo?si=WfZoy9QYlsnUCDwd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" class="m-auto w-full md:w-[560px]" src="https://www.youtube.com/embed/-nWddbP-hgo?si=WfZoy9QYlsnUCDwd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Web Application Development
 
