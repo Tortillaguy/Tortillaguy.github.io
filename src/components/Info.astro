@@ -1,0 +1,49 @@
+---
+import { Content as LKG } from "../data/lkg.md";
+---
+
+<dialog
+  id="modal"
+  class="transition-opacity fade-in-0 relative my-auto p-5 md:max-w-2xl rounded-xl"
+>
+  <button
+    id="close-modal"
+    class="p-5 cursor-pointer absolute top-0 right-0 outline-none"
+  >
+    <img class="w-8 h-8" alt="close" src={"close.svg"} />
+  </button>
+  <div class="w-full flex items-center">
+    <div class="flex-grow items-center flex justify-center text-xl mt-2">
+      Test
+    </div>
+  </div>
+  <div class="rounded-md flex-col flex justify-center">
+    <LKG />
+  </div>
+</dialog>
+
+<script>
+  import { modalData } from "../lib/modalStore";
+
+  const button = document.getElementById("close-modal") as HTMLButtonElement;
+
+  const modal = document.getElementById("modal") as HTMLDialogElement;
+
+  button.addEventListener("click", () => {
+    modalData.set(undefined);
+  });
+
+  modalData.listen(async (val) => {
+    if (!val) {
+      modal.close();
+      const scrollY = document.body.style.top;
+      document.body.style.position = "";
+      document.body.style.top = "";
+      window.scrollTo(0, parseInt(scrollY || "0") * -1);
+    } else {
+      document.body.style.top = `${window.scrollY}px`;
+      document.body.style.position = "fixed";
+      modal.showModal();
+    }
+  });
+</script>
