@@ -95,6 +95,8 @@ import nav from "../data/nav";
 <script>
   import nav from "../data/nav";
 
+  const drawer = document.getElementById("drawer") as HTMLInputElement;
+
   function scrollToElement(id: string) {
     return () => {
       const element = document.getElementById(id);
@@ -102,6 +104,7 @@ import nav from "../data/nav";
         const top = element.offsetTop - 42;
         const container = document.scrollingElement;
         container!.scrollTo({ top, behavior: "smooth" });
+        drawer.checked = false;
       }
     };
   }
