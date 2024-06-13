@@ -144,7 +144,7 @@ blockquote {
 /* Track */
 ::-webkit-scrollbar-track {
   background: #54554d;
-  border-radius: 25%;
+  border-radius: 20px;
 }
 
 /* Handle */
