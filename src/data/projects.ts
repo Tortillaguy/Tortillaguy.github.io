@@ -10,19 +10,6 @@ const projects: Project[] = [
     postID: "lkg",
   },
   {
-    name: "Parcel",
-    filename: "parcel.jpg",
-    link: "http://parcel.so",
-    role: "Frontend Engineer",
-    tags: ["React", "NextJS", "UI/UX Design", "Web3", "Storybook"],
-    imageStyle: {
-      transform: "scale(1.25)",
-      objectPosition: "50% 50%",
-      aspectRatio: "1/1",
-    },
-    postID: "parcel",
-  },
-  {
     name: "Vertebrae + Snapchat Acquisition",
     filename: "snap.jpg",
     link: "https://telanganatoday.com/snap-acquires-3d-ar-solutions-provider-vertebrae",
@@ -37,6 +24,22 @@ const projects: Project[] = [
     role: "Lead Unity Developer",
     tags: ["Python", "Unity", "AWS", "MagicLeap", "LuminSDK"],
     postID: "mpc",
+  },
+  {name: "Pokemoon NFTs", 
+    filename: "pokemoon.png", 
+    link: "", 
+    role: "Lead Developer", 
+    tags: ["Web3", "Three.js", "React", "GraphQL"], 
+    postID: "pokemoon"
+  }, 
+  {
+    name: "Parcel",
+    filename: "parcel3.jpg",
+    link: "http://parcel.so",
+    role: "Frontend Engineer",
+    tags: ["React", "NextJS", "UI/UX Design", "Web3", "Storybook"],
+    
+    postID: "parcel",
   },
   // {
   //   name: "Genies Prototype App",

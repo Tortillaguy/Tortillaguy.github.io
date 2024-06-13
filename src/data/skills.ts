@@ -7,6 +7,7 @@ const skills = [
   "TouchDesigner",
   "Disguise",
   "AR/VR",
+  "Three.js",
   "Web3",
   "Node.js",
   "UI/UX Design",
