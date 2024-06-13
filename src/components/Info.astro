@@ -27,7 +27,6 @@
 
 <script>
   import { modalData } from "../lib/modalStore";
-  import projects from "../data/projects";
 
   const button = document.getElementById("close-modal") as HTMLButtonElement;
   const modal = document.getElementById("modal") as HTMLDialogElement;
@@ -65,6 +64,4 @@
       modal.showModal();
     }
   });
-
-  modalData.set(projects[0]);
 </script>
