@@ -82,7 +82,7 @@ const { filename, name, role, tags, link, imageStyle } = project as Project;
       super();
 
       const readMore =
-        this.querySelector(".card") || this.querySelector("button");
+        this.querySelector("button") || this.querySelector(".card");
       const project: Project = JSON.parse(this.dataset["project"]!);
 
       if (readMore) {

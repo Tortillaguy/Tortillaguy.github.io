@@ -1,32 +1,33 @@
 <dialog
   id="modal"
-  class="open:animate-fade-in relative my-auto p-5 w-full md:max-w-screen-xl rounded-2xl bg-gray-900"
+  class="open:animate-fade-in relative my-auto w-full md:max-w-screen-xl rounded-2xl bg-gray-900 overflow-hidden"
 >
-  <button
-    id="close-modal"
-    class="p-2 md:p-5 cursor-pointer absolute top-0 right-0 outline-none"
-  >
-    <img class="w-8 h-8" alt="close" src={"close.svg"} />
-  </button>
-  <div class="w-full flex items-center">
-    <div
-      id="title"
-      class="flex-grow items-center flex justify-center text-xl font-bold"
-    >
+  <div class="flex w-full py-4 px-4">
+    <div class="flex-grow flex items-center">
+      <div
+        id="title"
+        class="flex-grow items-center flex justify-center text-xl font-bold"
+      >
+      </div>
     </div>
+    <button id="close-modal" class="cursor-pointer outline-none">
+      <img class="w-8 h-8" alt="close" src={"close.svg"} />
+    </button>
   </div>
+
   <div
-    class="rounded-md flex-col flex justify-center prose dark:prose-invert
+    id="content"
+    class="prose dark:prose-invert
   prose-h1:font-bold text-white prose-h3:text-white
   prose-a:text-blue-600 prose-p:text-justify prose-img:rounded-xl
-  prose-headings:underline m-auto w-full md:max-w-none px-1 md:px-7"
+  prose-headings:underline m-auto w-full md:max-w-none px-4 md:px-7 overflow-auto h-[90vh]"
   >
-    <div id="content" class="p-8"></div>
   </div>
 </dialog>
 
 <script>
   import { modalData } from "../lib/modalStore";
+  import projects from "../data/projects";
 
   const button = document.getElementById("close-modal") as HTMLButtonElement;
   const modal = document.getElementById("modal") as HTMLDialogElement;
@@ -64,4 +65,6 @@
       modal.showModal();
     }
   });
+
+  modalData.set(projects[0]);
 </script>
