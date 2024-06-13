@@ -49,9 +49,7 @@ const { filename, name, role, tags, link, imageStyle, postID } =
       <div class="flex-grow"></div>
       <button
         class="p-2 rounded-lg bg-[#262626e7] text-white hover:text-pink-300 gap-4 flex justify-center items-center [&>*]:hover:stroke-pink-300"
-        >{postID ? "Read" : "See"} More {
-          postID ? null : <Fragment set:html={external} />
-        }</button
+        >{postID ? "Read" : "See"} More</button
       >
     </div>
   </div>
