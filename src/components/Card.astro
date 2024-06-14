@@ -87,12 +87,14 @@ const { filename, name, role, tags, link, imageStyle, postID } =
 
       if (readMore) {
         readMore.addEventListener("click", () => {
-          // @ts-ignore
-          window.gtag("event", "project-click", {
-            event_category: "Project",
-            event_label: "Card Click",
-            value: project.name,
-          });
+          try {
+            // @ts-ignore
+            window.gtag("event", "project-click", {
+              event_category: "Project",
+              event_label: "Card Click",
+              value: project.name,
+            });
+          } catch {}
           if (project.postID) {
             modalData.set(project);
           } else {
