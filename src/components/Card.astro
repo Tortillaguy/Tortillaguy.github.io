@@ -88,7 +88,7 @@ const { filename, name, role, tags, link, imageStyle, postID } =
       if (readMore) {
         readMore.addEventListener("click", () => {
           // @ts-ignore
-          gtag("event", "click", {
+          window.gtag("event", "click", {
             event_category: "Project",
             event_label: "Card Click",
             value: project.name,
