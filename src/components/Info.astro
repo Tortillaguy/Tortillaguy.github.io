@@ -6,7 +6,7 @@
     <div class="flex-grow flex items-center">
       <div
         id="title"
-        class="flex-grow items-center flex justify-center text-xl font-bold"
+        class="flex-grow items-center flex justify-center text-xl font-bold text-white"
       >
       </div>
     </div>
@@ -17,10 +17,7 @@
 
   <div
     id="content"
-    class="prose dark:prose-invert
-  prose-h1:font-bold text-white prose-h3:text-white
-  prose-a:text-blue-600 prose-p:text-justify prose-img:rounded-xl
-  prose-headings:underline m-auto w-full md:max-w-none px-6 md:px-7 overflow-auto pb-4"
+    class="prose dark:prose-invert prose-h1:font-bold text-white prose-h3:text-white prose-a:text-blue-600 prose-p:text-justify prose-img:rounded-xl prose-headings:underline m-auto w-full md:max-w-none px-6 md:px-7 overflow-auto pb-4"
   >
   </div>
 </dialog>
@@ -41,7 +38,7 @@
     modalData.set(undefined);
   });
 
-  modalData.listen(async (val) => {
+  modalData.listen(async (val?: {postID: string; name: string}) => {
     if (!val) {
       modal.close();
       const scrollY = document.body.style.top;
