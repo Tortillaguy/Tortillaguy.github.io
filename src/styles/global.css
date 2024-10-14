@@ -100,11 +100,12 @@ blockquote {
 
 .screen-gradient-3 {
   background: radial-gradient(
-    at 25% 50%,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 52%,
-    rgba(92, 20, 80, 1) 72%,
-    rgb(183 103 169) 100%
+    at 25% 49%,
+    #2f4c6f 0%,
+    #2f4c6f 46%,
+    rgb(120, 206, 235) 55%,
+    rgb(215, 204, 83) 64%,
+    #cc168a 75%
   );
   background-size: 200% 100%;
 }

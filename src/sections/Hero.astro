@@ -12,7 +12,8 @@ import { Icon } from "astro-icon";
     <div class="avatar">
       <style>
         .avatar-border {
-          background: linear-gradient(white, white) padding-box,
+          background:
+            linear-gradient(white, white) padding-box,
             linear-gradient(135deg, #ebf9ab, #51c9ff, #e4bef5) border-box;
           border-radius: 50em;
           border: 4px solid transparent;
@@ -21,12 +22,14 @@ import { Icon } from "astro-icon";
       <div
         class="w-32 sm:w-36 md:w-40 rounded-full brightness-[1.1] saturate-[1.1] avatar-border"
       >
-        <img src="/pfp.jpeg" />
+        <img src="/assets/coffee.jpeg" />
       </div>
     </div>
   </div>
 
-  <div class="prose flex flex-col gap-[2px] [&>*]:text-white text-shadow self-start sm:self-auto ml-10 sm:ml-0">
+  <div
+    class="prose flex flex-col gap-[2px] [&>*]:text-white text-shadow self-start sm:self-auto ml-10 sm:ml-0"
+  >
     <h3 class="slide-text animDuration-[1000] m-0">Hey there!👋</h3>
     <h2 class="slide-text animDuration-[1000] m-0 animDelay-[500]">
       I'm Adrian

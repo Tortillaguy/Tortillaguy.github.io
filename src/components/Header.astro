@@ -25,14 +25,8 @@ import nav from "../data/nav";
 
   li a {
     text-shadow: 2px 2px 8px #1a1a1a;
-    @apply text-white;
+    @apply text-white transition-transform;
     cursor: pointer;
-  }
-  li a:active {
-    @apply text-purple-300;
-  }
-  li a:hover {
-    @apply text-purple-300;
   }
 </style>
 <input id="drawer" type="checkbox" class="drawer-toggle !fixed" />
@@ -63,7 +57,7 @@ import nav from "../data/nav";
       </svg>
     </label>
     <nav class="hidden md:block">
-      <ul class="flex items-center gap-4">
+      <ul class="flex items-center gap-4 transition-transform">
         <!-- Navbar menu content here -->
         <li><a class="home">Home</a></li>
         <li><a class="projects">Projects</a></li>
