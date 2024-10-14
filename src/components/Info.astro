@@ -38,8 +38,8 @@
     modalData.set(undefined);
   });
 
-  modalData.listen(async (val?: {postID: string; name: string}) => {
-    if (!val) {
+  modalData.listen(async (value) => {
+    if (!value) {
       modal.close();
       const scrollY = document.body.style.top;
       document.body.style.position = "";
@@ -49,13 +49,13 @@
       document.body.style.top = `-${window.scrollY}px`;
       document.body.style.position = "fixed";
 
-      const postId = val.postID;
+      const postId = value.postID;
 
       const { compiledContent } = await import(`../posts/${postId}.md`);
       const content = compiledContent();
       contentContainer.innerHTML = content;
       if (title) {
-        title.innerText = val.name;
+        title.innerText = value.name;
       }
 
       modal.showModal();

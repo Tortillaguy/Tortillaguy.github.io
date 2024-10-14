@@ -25,20 +25,20 @@ const projects: Project[] = [
     tags: ["Python", "Unity", "AWS", "MagicLeap", "LuminSDK"],
     postID: "mpc",
   },
-  {name: "Pokemoon NFTs", 
-    filename: "pokemoon.png", 
-    link: "", 
-    role: "Lead Developer", 
-    tags: ["Web3", "Three.js", "React", "GraphQL"], 
-    postID: "pokemoon"
-  }, 
+  // {name: "Pokemoon NFTs",
+  //   filename: "pokemoon.png",
+  //   link: "",
+  //   role: "Lead Developer",
+  //   tags: ["Web3", "Three.js", "React", "GraphQL"],
+  //   postID: "pokemoon"
+  // },
   {
     name: "Parcel",
     filename: "parcel3.jpg",
     link: "http://parcel.so",
     role: "Frontend Engineer",
     tags: ["React", "NextJS", "UI/UX Design", "Web3", "Storybook"],
-    
+
     postID: "parcel",
   },
   // {

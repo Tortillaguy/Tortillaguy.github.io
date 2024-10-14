@@ -69,7 +69,6 @@ const { filename, name, role, tags, link, imageStyle, postID } =
       dragheld = Date.now() - time;
     });
     card.addEventListener("click", (e) => {
-      console.log({ dragheld });
       if (dragheld > 100) {
         e.stopPropagation();
         e.preventDefault();

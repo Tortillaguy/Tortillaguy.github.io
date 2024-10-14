@@ -1,5 +1,6 @@
 ---
 import Card from "../components/Card.astro";
+import CardList from "../components/CardList.astro";
 import projects from "../data/projects";
 ---
 
@@ -8,7 +9,5 @@ import projects from "../data/projects";
     <h2 id={"projects"} class="m-0 text-white text-shadow">Projects</h2>
   </div>
 
-  <div id="project-list" class="self-start justify-start gap-2 card-list">
-    {projects.map((project) => <Card project={project} />)}
-  </div>
+  <CardList projects={projects} key="projects" />
 </div>

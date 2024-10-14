@@ -1,0 +1,52 @@
+---
+import type { Project } from "../types";
+import Card from "./Card.astro";
+
+const { projects, key } = Astro.props as { projects: Project[]; key: string };
+---
+
+<div class="flex justify-evenly gap-4 items-center">
+  <img
+    src="prev.svg"
+    id={key + "-back"}
+    class="fill-white w-5 h-5 scale-150 hover:scale-[2.5] transition-transform cursor-pointer"
+  />
+  <div id={key + "-list"} class="card-list">
+    {projects.map((project) => <Card project={project} />)}
+  </div>
+  <img
+    id={key + "-next"}
+    src="next.svg"
+    class="fill-white w-5 h-5 scale-150 hover:scale-[2.5] transition-transform cursor-pointer"
+  />
+</div>
+
+<script>
+  ["productions", "art", "projects"].forEach((key) => {
+    const list = document.getElementById(key + "-list")!;
+    const next = document.getElementById(key + "-next");
+    const back = document.getElementById(key + "-back");
+
+    const width = list?.scrollWidth ?? 1;
+    const cardWidth = 320;
+
+    const onNext = () => {
+      if (list.scrollLeft + cardWidth <= width) {
+        list.scrollBy({ left: cardWidth, behavior: "smooth" });
+      } else {
+        list.scrollTo({ left: list?.scrollWidth, behavior: "smooth" });
+      }
+    };
+
+    const onBack = () => {
+      if (list.scrollLeft - cardWidth * 2 >= 0) {
+        list.scrollBy({ left: -cardWidth, behavior: "smooth" });
+      } else {
+        list.scrollTo({ left: 0, behavior: "smooth" });
+      }
+    };
+
+    next?.addEventListener("click", onNext);
+    back?.addEventListener("click", onBack);
+  });
+</script>
