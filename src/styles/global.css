@@ -99,15 +99,8 @@ blockquote {
 }
 
 .screen-gradient-3 {
-  background: radial-gradient(
-    at 25% 49%,
-    #2f4c6f 0%,
-    #2f4c6f 46%,
-    rgb(120, 206, 235) 55%,
-    rgb(215, 204, 83) 64%,
-    #cc168a 75%
-  );
-  background-size: 200% 100%;
+  background: rgb(204,22,138);
+  background: linear-gradient(180deg, rgba(204,22,138,1) 0%, rgba(215,204,83,1) 8%, rgba(120,206,235,1) 14%, rgba(47,76,111,1) 21%, rgba(47,76,111,1) 79%, rgba(120,206,235,1) 86%, rgba(215,204,83,1) 92%, rgba(204,22,138,1) 100%);
 }
 
 @keyframes gradient-animation {
