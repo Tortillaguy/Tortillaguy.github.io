@@ -73,7 +73,7 @@ pre {
   padding: 1rem;
 }
 
-pre>code {
+pre > code {
   all: unset;
 }
 
@@ -99,7 +99,13 @@ blockquote {
 }
 
 .screen-gradient-3 {
-  background: radial-gradient(at 25% 50%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 52%, rgba(92, 20, 80, 1) 72%, rgb(183 103 169) 100%);
+  background: radial-gradient(
+    at 25% 50%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 52%,
+    rgba(92, 20, 80, 1) 72%,
+    rgb(183 103 169) 100%
+  );
   background-size: 200% 100%;
 }
 
@@ -127,11 +133,11 @@ blockquote {
   border: 1px solid rgb(161, 226, 251);
 }
 
-.drawer-toggle:checked~.drawer-side>.drawer-overlay {
+.drawer-toggle:checked ~ .drawer-side > .drawer-overlay {
   opacity: 0;
 }
 
-.drawer.drawer-end>.drawer-toggle:checked~.drawer-content {
+.drawer.drawer-end > .drawer-toggle:checked ~ .drawer-content {
   @apply translate-x-0;
 }
 
@@ -140,7 +146,7 @@ blockquote {
   text-shadow: 2px 2px 8px #1a1a1a;
 }
 
-.drawer.drawer-end>.drawer-toggle:checked~.drawer-side>ul {
+.drawer.drawer-end > .drawer-toggle:checked ~ .drawer-side > ul {
   @apply mr-2;
 }
 
@@ -149,7 +155,7 @@ blockquote {
   flex-wrap: nowrap;
   gap: 1.25rem;
   overflow-x: auto;
-  padding: 0.75rem 0.75rem;
+  /* padding: 0.75rem 0.75rem; */
   padding-bottom: 1.5rem;
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(218px, 227px));
@@ -189,7 +195,7 @@ blockquote {
   border: 3px solid transparent;
 }
 
-.link-menu>li>a {
+.link-menu > li > a {
   @apply nav-link;
 }
 
@@ -232,7 +238,7 @@ blockquote {
     @apply animate-in fade-in fill-mode-both slide-in-from-bottom-[200px];
   }
 
-  .slide-icon>svg {
+  .slide-icon > svg {
     filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.3));
   }
 }
@@ -250,7 +256,8 @@ blockquote {
   --shadow: #e4bef5;
   --background: #262626;
   background: linear-gradient(var(--background), var(--background)) padding-box,
-    conic-gradient(from var(--angle), #51c9ff, #ebf9ab, #e587ff, #51c9ff) border-box;
+    conic-gradient(from var(--angle), #51c9ff, #ebf9ab, #e587ff, #51c9ff)
+      border-box;
   border-radius: 40px;
   border: 4px solid transparent;
   animation: 5s rotate linear infinite;

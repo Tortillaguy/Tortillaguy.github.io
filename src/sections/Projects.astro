@@ -8,7 +8,29 @@ import projects from "../data/projects";
     <h2 id={"projects"} class="m-0 text-white text-shadow">Projects</h2>
   </div>
 
-  <div id="project-list" class="self-start justify-start gap-2 card-list">
-    {projects.map((project) => <Card project={project} />)}
+  <div class="flex gap-0 justify-evenly">
+    <button id="back" class="text-white bg-red-300">Back</button>
+    <div
+      id="project-list"
+      class="self-start flex-grow justify-start gap-2 card-list"
+    >
+      {projects.map((project) => <Card project={project} />)}
+    </div>
+    <button id="next" class="text-white bg-red-300">Next</button>
   </div>
 </div>
+
+<script>
+  const list = document.getElementById("project-list");
+  const next = document.getElementById("next");
+  const back = document.getElementById("back");
+
+  const width = list?.scrollWidth ?? 1;
+
+  next?.addEventListener("click", () => {
+    list?.scrollBy({ left: width / 6, behavior: "smooth" });
+  });
+  back?.addEventListener("click", () => {
+    list?.scrollBy({ left: -width / 6, behavior: "smooth" });
+  });
+</script>
