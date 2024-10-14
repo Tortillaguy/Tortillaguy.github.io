@@ -100,7 +100,7 @@ blockquote {
 
 .screen-gradient-3 {
   background: rgb(204,22,138);
-  background: linear-gradient(180deg, rgba(204,22,138,1) 0%, rgba(215,204,83,1) 8%, rgba(120,206,235,1) 14%, rgba(47,76,111,1) 21%, rgba(47,76,111,1) 79%, rgba(120,206,235,1) 86%, rgba(215,204,83,1) 92%, rgba(204,22,138,1) 100%);
+  background: linear-gradient(176deg,rgb(18,24,27) 50%,rgb(32,39,55) 100%);
 }
 
 @keyframes gradient-animation {
