@@ -5,7 +5,9 @@ import Card from "./Card.astro";
 const { projects, key } = Astro.props as { projects: Project[]; key: string };
 ---
 
-<div class="flex justify-evenly gap-4 items-center px-4">
+<div
+  class="flex justify-evenly gap-4 items-center px-4 max-w-screen-xl mx-auto"
+>
   <img
     src="prev.svg"
     id={key + "-back"}
