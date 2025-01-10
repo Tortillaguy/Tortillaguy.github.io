@@ -1,4 +1,4 @@
-<canvas class="absolute w-full h-full top-0 left-0 z-[-1]" id="particleCanvas"
+<canvas class="fixed w-full h-full top-0 left-0 z-[-1]" id="particleCanvas"
 ></canvas>
 <script>
   // Create the canvas element and append it to the document
@@ -8,6 +8,7 @@
   if (!ctx) {
     throw new Error("Canvas rendering context not available");
   }
+  ctx.filter = "blur(2px)";
 
   // Set canvas to full window size
   canvas.width = window.innerWidth;
@@ -34,13 +35,13 @@
     constructor(x: number, y: number) {
       this.position = { x, y };
       this.velocity = { x: 0, y: Math.random() * 0.1 + 1 }; // Downward velocity
-      this.maxSpeed = 2;
+      this.maxSpeed = 1;
     }
 
     // Update particle's position
     update(): void {
       // Add turbulence to the horizontal velocity
-      this.velocity.x += (Math.random() - 0.5) * 0.1; // Small random horizontal push
+      this.velocity.x += (Math.random() - 0.5) * 0.2; // Small random horizontal push
 
       // Constrain horizontal velocity to prevent excessive drift
       if (Math.abs(this.velocity.x) > this.maxSpeed) {
@@ -72,10 +73,11 @@
       if (!ctx) return;
       const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
       gradient.addColorStop(0, "#8ecae6"); // Light blue
+      gradient.addColorStop(0.5, "#5363e2"); // Light purple
       gradient.addColorStop(1, "#8338ec"); // Purple
 
       ctx.beginPath();
-      ctx.arc(this.position.x, this.position.y, 2, 0, Math.PI * 2);
+      ctx.arc(this.position.x, this.position.y, 0.8, 0, Math.PI * 2);
       ctx.fillStyle = gradient;
       ctx.fill();
       ctx.closePath();
@@ -84,7 +86,7 @@
 
   // Create particles
   const particles: Particle[] = [];
-  const numParticles = 600;
+  const numParticles = 4000;
   for (let i = 0; i < numParticles; i++) {
     particles.push(
       new Particle(Math.random() * canvas.width, Math.random() * canvas.height)
@@ -97,7 +99,7 @@
     requestAnimationFrame(animate);
 
     // Clear the canvas
-    ctx.fillStyle = "rgba(0, 0, 0, 0.08)"; // Trail effect
+    ctx.fillStyle = "rgba(0, 0, 0, 0.05)"; // Trail effect
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     // Update and draw particles
