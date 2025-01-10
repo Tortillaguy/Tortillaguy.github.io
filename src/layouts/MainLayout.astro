@@ -8,8 +8,19 @@ import Background from "../components/Background.astro";
 <body>
   <Background />
   <Header />
-  <div id="layout" class="m-auto max-w-7xl px-1 z-[1]">
-    <slot />
-  </div>
-  <Footer />
+  <div id="layout" class="m-auto max-w-7xl px-1 z-[1]"></div>
+  <slot />
 </body>
+<Footer />
+<script>
+  document.body.animate(
+    [
+      { backgroundColor: "rgba(0, 0, 0, 1)" },
+      { backgroundColor: "rgba(0, 0, 0, 0)" },
+    ],
+    {
+      duration: 500,
+      fill: "forwards",
+    }
+  );
+</script>
