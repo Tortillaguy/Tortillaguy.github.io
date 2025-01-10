@@ -5,11 +5,11 @@ import Card from "./Card.astro";
 const { projects, key } = Astro.props as { projects: Project[]; key: string };
 ---
 
-<div class="flex justify-evenly gap-4 items-center">
+<div class="flex justify-evenly gap-4 items-center px-4">
   <img
     src="prev.svg"
     id={key + "-back"}
-    class="fill-white w-5 h-5 scale-150 hover:scale-[2.5] transition-transform cursor-pointer"
+    class="fill-white w-5 h-5 scale-150 hover:scale-[2.5] transition-transform cursor-pointer hidden md:block"
   />
   <div id={key + "-list"} class="card-list">
     {projects.map((project) => <Card project={project} />)}
@@ -17,7 +17,7 @@ const { projects, key } = Astro.props as { projects: Project[]; key: string };
   <img
     id={key + "-next"}
     src="next.svg"
-    class="fill-white w-5 h-5 scale-150 hover:scale-[2.5] transition-transform cursor-pointer"
+    class="fill-white w-5 h-5 scale-150 hover:scale-[2.5] transition-transform cursor-pointer hidden md:block"
   />
 </div>
 
