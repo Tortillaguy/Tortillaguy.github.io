@@ -21,6 +21,11 @@ body {
   line-height: 1.5;
   color: #444;
   background: transparent;
+
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 h1,
@@ -99,8 +104,12 @@ blockquote {
 }
 
 .screen-gradient-3 {
-  background: rgb(204,22,138);
-  background: linear-gradient(176deg,rgb(18,24,27) 50%,rgb(32,39,55) 100%);
+  background: rgb(204, 22, 138);
+  background: linear-gradient(
+    176deg,
+    rgb(18, 24, 27) 50%,
+    rgb(32, 39, 55) 100%
+  );
 }
 
 @keyframes gradient-animation {
