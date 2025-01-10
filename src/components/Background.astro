@@ -14,10 +14,16 @@
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 
-  // Resize canvas on window resize
+  let numParticles = 4000;
+
+  //   // Resize canvas on window resize
   window.addEventListener("resize", () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    if (window.innerWidth > 768) {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    } else {
+      numParticles = 2000;
+    }
   });
 
   // Vector interface
@@ -86,7 +92,6 @@
 
   // Create particles
   const particles: Particle[] = [];
-  const numParticles = 4000;
   for (let i = 0; i < numParticles; i++) {
     particles.push(
       new Particle(Math.random() * canvas.width, Math.random() * canvas.height)
