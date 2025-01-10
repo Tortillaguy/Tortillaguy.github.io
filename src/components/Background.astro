@@ -1,0 +1,114 @@
+<canvas class="fixed w-full h-full top-0 left-0 z-[-1]" id="particleCanvas"
+></canvas>
+<script>
+  // Create the canvas element and append it to the document
+  const canvas = document.getElementById("particleCanvas") as HTMLCanvasElement;
+  const ctx = canvas.getContext("2d");
+
+  if (!ctx) {
+    throw new Error("Canvas rendering context not available");
+  }
+  ctx.filter = "blur(2px)";
+
+  // Set canvas to full window size
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  // Resize canvas on window resize
+  window.addEventListener("resize", () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  });
+
+  // Vector interface
+  interface Vector {
+    x: number;
+    y: number;
+  }
+
+  // Particle class
+  class Particle {
+    position: Vector;
+    velocity: Vector;
+    maxSpeed: number;
+
+    constructor(x: number, y: number) {
+      this.position = { x, y };
+      this.velocity = { x: 0, y: Math.random() * 0.1 + 1 }; // Downward velocity
+      this.maxSpeed = 1;
+    }
+
+    // Update particle's position
+    update(): void {
+      // Add turbulence to the horizontal velocity
+      this.velocity.x += (Math.random() - 0.5) * 0.2; // Small random horizontal push
+
+      // Constrain horizontal velocity to prevent excessive drift
+      if (Math.abs(this.velocity.x) > this.maxSpeed) {
+        this.velocity.x =
+          (this.velocity.x / Math.abs(this.velocity.x)) * this.maxSpeed;
+      }
+
+      // Update position
+      this.position.x += this.velocity.x;
+      this.position.y += this.velocity.y;
+
+      // Reset particle if it goes off-screen
+      if (this.position.y > canvas.height) {
+        this.position.y = 0;
+        this.position.x = Math.random() * canvas.width;
+      }
+
+      // Wrap particle horizontally to create seamless movement
+      if (this.position.x > canvas.width) {
+        this.position.x = 0;
+      } else if (this.position.x < 0) {
+        this.position.x = canvas.width;
+      }
+    }
+
+    // Draw the particle
+    // Draw the particle
+    draw(): void {
+      if (!ctx) return;
+      const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+      gradient.addColorStop(0, "#8ecae6"); // Light blue
+      gradient.addColorStop(0.5, "#5363e2"); // Light purple
+      gradient.addColorStop(1, "#8338ec"); // Purple
+
+      ctx.beginPath();
+      ctx.arc(this.position.x, this.position.y, 0.8, 0, Math.PI * 2);
+      ctx.fillStyle = gradient;
+      ctx.fill();
+      ctx.closePath();
+    }
+  }
+
+  // Create particles
+  const particles: Particle[] = [];
+  const numParticles = 4000;
+  for (let i = 0; i < numParticles; i++) {
+    particles.push(
+      new Particle(Math.random() * canvas.width, Math.random() * canvas.height)
+    );
+  }
+
+  // Animation loop
+  function animate(): void {
+    if (!ctx) return;
+    requestAnimationFrame(animate);
+
+    // Clear the canvas
+    ctx.fillStyle = "rgba(0, 0, 0, 0.05)"; // Trail effect
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // Update and draw particles
+    for (const particle of particles) {
+      particle.update();
+      particle.draw();
+    }
+  }
+
+  // Start animation
+  animate();
+</script>
