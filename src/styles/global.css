@@ -161,7 +161,7 @@ blockquote {
   flex-wrap: nowrap;
   gap: 1.25rem;
   overflow-x: auto;
-  padding-bottom: 1.5rem;
+  padding-top: 1rem;
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(218px, 227px));
   @apply hide-scrollbar;
