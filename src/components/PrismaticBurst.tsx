@@ -108,9 +108,10 @@ float bendAngle(vec3 q, float t){
 
 void main(){
     vec2 frag = gl_FragCoord.xy;
+    vec2 centerOffset = vec2(0.0, uResolution.y * -0.65);
     float t = uTime * uSpeed;
     float jitterAmp = 0.1 * clamp(uNoiseAmount, 0.0, 1.0);
-    vec3 dir = rayDir(frag, uResolution, uOffset, 1.0);
+    vec3 dir = rayDir(frag, uResolution, centerOffset, 1.0);
     float marchT = 0.0;
     vec3 col = vec3(0.0);
     float n = layeredNoise(frag);
@@ -184,7 +185,7 @@ void main(){
         marchT += stepLen;
     }
 
-    col *= edgeFade(frag, uResolution, uOffset);
+    col *= edgeFade(frag, uResolution, centerOffset);
     col *= uIntensity;
 
     fragColor = vec4(clamp(col, 0.0, 1.0), 1.0);
