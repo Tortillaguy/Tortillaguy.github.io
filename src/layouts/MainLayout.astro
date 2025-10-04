@@ -3,10 +3,14 @@ import { SITE_TITLE } from "../config";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Background from "../components/Background.astro";
+import Plasma from "../components/PrismaticBurst";
+import BG from "../components/BG";
 ---
 
 <body>
-  <Background />
+  <!-- <Background /> -->
+  <BG client:visible />
+
   <Header />
   <div id="layout" class="m-auto max-w-7xl px-1 z-[1]"></div>
   <slot />

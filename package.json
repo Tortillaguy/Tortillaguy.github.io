@@ -26,6 +26,7 @@
     "astro-icon": "^0.8.0",
     "daisyui": "^4.11.1",
     "nanostores": "^0.10.3",
+    "ogl": "^1.0.11",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-reveal": "^1.2.2",
