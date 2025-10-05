@@ -5,7 +5,7 @@ export default function Background() {
     <div className="fixed w-full h-full top-0 left-0 z-[-1]">
       <PrismaticBurst
         animationType="rotate3d"
-        intensity={2.5}
+        intensity={2}
         speed={0.5}
         // distort={1.0}
         // paused={false}
