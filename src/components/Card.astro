@@ -10,8 +10,8 @@ const { filename, name, role, tags, link, imageStyle, postID } =
 
 <style>
   .card {
-    max-height: 420px;
     width: 300px;
+    height: 100%;
     background: transparent;
   }
 </style>
@@ -19,9 +19,9 @@ const { filename, name, role, tags, link, imageStyle, postID } =
 <a
   href={link}
   target="_blank"
-  class="display:block card group hover:hover-shadow transition-transform hover:-translate-y-3 duration-300 ease-in-out min-w-[16rem] bg-base-100 shadow-md not-prose flex-grow cursor-pointer overflow-hidden"
+  class="display:block rounded-[12px] card group duration-300 ease-in-out min-w-[16rem] bg-base-100 shadow-md not-prose flex-grow cursor-pointer overflow-hidden"
 >
-  <figure class="rounded-t-[12px]">
+  <figure>
     <img
       style={{
         aspectRatio: "4/3",
