@@ -35,7 +35,7 @@ const projects: Project[] = [
   {
     name: "Parcel",
     filename: "parcel3.jpg",
-    link: "http://parcel.so",
+    link: "https://www.youtube.com/watch?v=U4Bv1Q-6laA",
     role: "Frontend Engineer",
     tags: ["React", "NextJS", "UI/UX Design", "Web3", "Storybook"],
 

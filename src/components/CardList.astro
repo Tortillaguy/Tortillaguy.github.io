@@ -30,7 +30,8 @@ const { projects, key } = Astro.props as { projects: Project[]; key: string };
     const back = document.getElementById(key + "-back");
 
     const width = list?.scrollWidth ?? 1;
-    const cardWidth = 320;
+    const cardWidth =
+      list.childElementCount > 0 ? list.children[0].clientWidth + 24 : 328;
 
     const onNext = () => {
       if (list.scrollLeft + cardWidth <= width) {
