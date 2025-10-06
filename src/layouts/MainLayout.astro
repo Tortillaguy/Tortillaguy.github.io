@@ -8,8 +8,13 @@ import BG from "../components/BG";
 ---
 
 <body>
-  <!-- <Background /> -->
-  <BG client:load />
+  <BG client:load>
+    <div
+      slot="fallback"
+      class="bg-gray-800 w-full h-full absolute top-0 left-0 z-[-1]"
+    >
+    </div>
+  </BG>
 
   <Header />
   <div id="layout" class="m-auto max-w-7xl px-1 z-[1]"></div>
