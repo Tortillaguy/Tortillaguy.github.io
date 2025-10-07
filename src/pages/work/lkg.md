@@ -1,7 +1,11 @@
+---
+layout: ../../layouts/BlogPost.astro
+---
 
 <iframe class="m-auto w-full md:w-[560px]" width="560" height="315" src="https://www.youtube.com/embed/wefvzabaxvY?si=qY3oWCb8fy3WrZbs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Summary
+
 During my time at Looking Glass Factory, I played a pivotal role in implementing payment processing services, which were essential for enabling our SaaS products and subscriptions through platforms like Webflow and Shopify. This project involved:
 
 - Ensuring seamless transactions

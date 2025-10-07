@@ -1,3 +1,7 @@
+---
+layout: ../../layouts/BlogPost.astro
+---
+
 <iframe width="560" height="315" class="m-auto w-full md:w-[560px]" src="https://www.youtube.com/embed/hpn2RiNkLWI?si=0rU_br-5OK6LYktZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Company Contributions

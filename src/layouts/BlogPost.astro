@@ -4,7 +4,15 @@ import { SITE_DESCRIPTION } from "../config";
 import MainLayout from "../layouts/MainLayout.astro";
 // 1. The frontmatter prop gives access to frontmatter and other data
 const { frontmatter } = Astro.props;
+const { title, author } = frontmatter;
 ---
+
+<style>
+  #blog-post a {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+</style>
 
 <html>
   <head>
@@ -14,5 +22,12 @@ const { frontmatter } = Astro.props;
       image="assets/coffee.jpeg"
     />
   </head>
-  <MainLayout> TEst </MainLayout>
+  <MainLayout>
+    <div
+      id="blog-post"
+      class="prose prose-lg prose-h3:text-[#77d3ec] prose-invert text-slate-200 m-auto my-10 max-w-3xl rounded-xl border border-slate-700 bg-slate-800/50 p-6 backdrop-blur-lg sm:p-10"
+    >
+      <slot />
+    </div>
+  </MainLayout>
 </html>

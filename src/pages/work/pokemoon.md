@@ -1,5 +1,8 @@
-<iframe src="https://www.loom.com/embed/9ea39108a5f54634b5733bb5d2a0e839?sid=26880711-b962-4cda-87fb-89103ea0832c" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen  width="560" class="m-auto w-full md:w-[560px]" height="315"></iframe></div>
+---
+layout: ../../layouts/BlogPost.astro
+---
 
+<iframe src="https://www.loom.com/embed/9ea39108a5f54634b5733bb5d2a0e839?sid=26880711-b962-4cda-87fb-89103ea0832c" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen  width="560" class="m-auto w-full md:w-[560px]" height="315"></iframe></div>
 
 ### Overview
 
