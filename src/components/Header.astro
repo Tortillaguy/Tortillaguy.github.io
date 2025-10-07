@@ -59,12 +59,13 @@ import nav from "../data/nav";
     <nav class="hidden md:block">
       <ul class="flex items-center gap-4 transition-transform">
         <!-- Navbar menu content here -->
-        <li><a class="home">Home</a></li>
-        <li><a class="projects">Projects</a></li>
-        <li><a class="productions">Productions</a></li>
-        <li><a class="art">Art</a></li>
-        <li><a class="skills">Skills</a></li>
-        <li><a class="contact">Contact</a></li>
+        <li><a href="/" class="home">Home</a></li>
+        <li><a href="/#projects" class="projects">Projects</a></li>
+        <li><a href="/#productions" class="productions">Productions</a></li>
+        <li><a href="/#art" class="art">Art</a></li>
+        <li><a href="/#about" class="about">About</a></li>
+        <li><a href="/#skills" class="skills">Skills</a></li>
+        <li><a href="/#contact" class="contact">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -76,7 +77,11 @@ import nav from "../data/nav";
       {
         nav.map((key) => (
           <li>
-            <a class={key}>
+            <a
+              onclick="document.getElementById('drawer').checked = false;"
+              href={`/#${key === "home" ? "" : key}`}
+              class={`${key} text-xl`}
+            >
               {key.substring(0, 1).toUpperCase() + key.substring(1)}
             </a>
           </li>
@@ -85,29 +90,3 @@ import nav from "../data/nav";
     </ul>
   </nav>
 </div>
-
-<script>
-  import nav from "../data/nav";
-
-  const drawer = document.getElementById("drawer") as HTMLInputElement;
-
-  function scrollToElement(id: string) {
-    return () => {
-      const element = document.getElementById(id);
-      if (element) {
-        const top = element.offsetTop - 42;
-        const container = document.scrollingElement;
-        container!.scrollTo({ top, behavior: "smooth" });
-        drawer.checked = false;
-      }
-    };
-  }
-  function sub(cls: string) {
-    const elements = document.querySelectorAll(`.${cls}`);
-    elements.forEach((e) => e.addEventListener("click", scrollToElement(cls)));
-  }
-
-  if (drawer) {
-    nav.forEach(sub);
-  }
-</script>

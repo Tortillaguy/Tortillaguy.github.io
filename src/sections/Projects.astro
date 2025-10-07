@@ -1,12 +1,11 @@
 ---
-import Card from "../components/Card.astro";
 import CardList from "../components/CardList.astro";
 import projects from "../data/projects";
 ---
 
-<div class="md:my-[50px] my-[25px]">
-  <div class="flex justify-center w-full m-auto mb-5 prose">
-    <h2 id={"projects"} class="m-0 text-white text-shadow">Projects</h2>
+<div class="md:my-[16px] my-[16px]">
+  <div id={"projects"} class="flex justify-center w-full m-auto prose">
+    <h2 class="m-0 my-5 text-white text-shadow">Projects</h2>
   </div>
 
   <CardList projects={projects} key="projects" />
