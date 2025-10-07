@@ -25,13 +25,14 @@ const projects: Project[] = [
     tags: ["Python", "Unity", "AWS", "MagicLeap", "LuminSDK"],
     postID: "mpc",
   },
-  // {name: "Pokemoon NFTs",
-  //   filename: "pokemoon.png",
-  //   link: "",
-  //   role: "Lead Developer",
-  //   tags: ["Web3", "Three.js", "React", "GraphQL"],
-  //   postID: "pokemoon"
-  // },
+  {
+    name: "Pokemoon NFTs",
+    filename: "pokemoon.png",
+    link: "",
+    role: "Lead Developer",
+    tags: ["Web3", "Three.js", "React", "GraphQL"],
+    postID: "pokemoon",
+  },
   {
     name: "Parcel",
     filename: "parcel3.jpg",
@@ -41,13 +42,13 @@ const projects: Project[] = [
 
     postID: "parcel",
   },
-  // {
-  //   name: "Genies Prototype App",
-  //   filename: "genies.jpg",
-  //   link: "https://genies.com/",
-  //   role: "Unity Developer",
-  //   tags: ["Javascript", "Python", "Unity"],
-  // },
+  {
+    name: "Genies Prototype App",
+    filename: "genies.jpg",
+    link: "https://genies.com/",
+    role: "Unity Developer",
+    tags: ["Javascript", "Python", "Unity"],
+  },
   {
     name: "Intel True VR",
     filename: "intel.png",
@@ -56,13 +57,13 @@ const projects: Project[] = [
     tags: ["Python", "Unity", "AWS", "FFMPEG", "VR"],
     postID: "intel",
   },
-  // {
-  //   name: "2019 Coachella AR",
-  //   filename: "coachella.png",
-  //   link: "https://vrscout.com/news/coachella-ar-interactive-stage",
-  //   role: "Project Lead",
-  //   tags: ["Unity", "Swift", "Java", "React Native", "AR"],
-  // },
+  {
+    name: "2019 Coachella AR",
+    filename: "coachella.png",
+    link: "https://vrscout.com/news/coachella-ar-interactive-stage",
+    role: "Project Lead",
+    tags: ["Unity", "Swift", "Java", "React Native", "AR"],
+  },
   {
     name: "2019 Atlanta Music Midtown",
     filename: "midtown.png",
