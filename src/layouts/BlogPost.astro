@@ -1,56 +1,20 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-
-export interface Props {
-  content: {
-    title: string;
-    description: string;
-    pubDate?: string;
-    updatedDate?: string;
-    heroImage?: string;
-  };
-}
-
-const {
-  content: { title, description, pubDate, updatedDate, heroImage },
-} = Astro.props;
+// 1. The frontmatter prop gives access to frontmatter and other data
+const { frontmatter } = Astro.props;
 ---
 
-<html lang="en">
+<html>
   <head>
-    <BaseHead title={title} description={description} />
-    <style>
-      .title {
-        font-size: 2em;
-        margin: 0.25em 0 0;
-      }
-      hr {
-        border-top: 1px solid #ddd;
-        margin: 1rem 0;
-      }
-    </style>
+    <!-- Add other Head elements here, like styles and meta tags. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>{frontmatter.title}</title>
   </head>
-
   <body>
-    <Header />
-    <main>
-      <article>
-        {heroImage && <img width={720} height={360} src={heroImage} alt="" />}
-        <h1 class="title">{title}</h1>
-        {pubDate && <time>{pubDate}</time>}
-        {
-          updatedDate && (
-            <div>
-              Last updated on <time>{updatedDate}</time>
-            </div>
-          )
-        }
-        <hr />
-        <slot />
-      </article>
-    </main>
-    <Footer />
+    <!-- Add other UI components here, like common headers and footers. -->
+    <h1>{frontmatter.title} by {frontmatter.author}</h1>
+    <!-- 2. Rendered HTML will be passed into the default slot. -->
+    <slot />
+    <p>Written on: {frontmatter.date}</p>
   </body>
 </html>

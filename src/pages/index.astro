@@ -9,8 +9,7 @@ import Projects from "../sections/Projects.astro";
 import Skills from "../sections/Skills.astro";
 import Productions from "../sections/Productions.astro";
 import About from "../sections/About.astro";
-import Modal from "../components/Modal.svelte";
-import Info from "../components/Info.astro";
+import Scripts from "../components/Scripts.astro";
 ---
 
 <!doctype html>
@@ -25,24 +24,7 @@ import Info from "../components/Info.astro";
       description={SITE_DESCRIPTION}
       image="assets/coffee.jpeg"
     />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XE1HC0GB9L"
-    ></script>
-    <script>
-      // @ts-ignore
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        // @ts-ignore
-        dataLayer.push(arguments);
-      }
-      // @ts-ignore
-      gtag("js", new Date());
-
-      // @ts-ignore
-      gtag("config", "G-XE1HC0GB9L");
-      // @ts-ignore
-      window.gtag = gtag;
-    </script>
+    <Scripts />
   </head>
 
   <MainLayout>
@@ -53,6 +35,5 @@ import Info from "../components/Info.astro";
     <About />
     <Skills />
     <Contact />
-    <Info />
   </MainLayout>
 </html>
