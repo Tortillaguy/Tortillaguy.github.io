@@ -16,12 +16,11 @@ body {
   @apply hide-scrollbar;
 
   text-align: left;
-  background-color: #fff;
+  background-color: transparent;
   word-wrap: break-word;
   overflow-wrap: break-word;
   line-height: 1.5;
   color: #444;
-  background: black;
 
   margin: 0;
   padding: 0;

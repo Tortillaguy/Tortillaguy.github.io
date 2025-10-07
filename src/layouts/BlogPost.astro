@@ -1,20 +1,18 @@
 ---
+import BaseHead from "../components/BaseHead.astro";
+import { SITE_DESCRIPTION } from "../config";
+import MainLayout from "../layouts/MainLayout.astro";
 // 1. The frontmatter prop gives access to frontmatter and other data
 const { frontmatter } = Astro.props;
 ---
 
 <html>
   <head>
-    <!-- Add other Head elements here, like styles and meta tags. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <title>{frontmatter.title}</title>
+    <BaseHead
+      title={"Adrian Cacho – Creative Technologist"}
+      description={SITE_DESCRIPTION}
+      image="assets/coffee.jpeg"
+    />
   </head>
-  <body>
-    <!-- Add other UI components here, like common headers and footers. -->
-    <h1>{frontmatter.title} by {frontmatter.author}</h1>
-    <!-- 2. Rendered HTML will be passed into the default slot. -->
-    <slot />
-    <p>Written on: {frontmatter.date}</p>
-  </body>
+  <MainLayout> TEst </MainLayout>
 </html>

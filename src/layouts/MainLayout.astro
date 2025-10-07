@@ -1,35 +1,13 @@
 ---
-import { SITE_TITLE } from "../config";
+import BG from "../components/BG";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
-import Background from "../components/Background.astro";
-import Plasma from "../components/PrismaticBurst";
-import BG from "../components/BG";
 ---
 
 <body>
-  <BG client:load>
-    <div
-      slot="fallback"
-      class="bg-gray-800 w-full h-full absolute top-0 left-0 z-[-1]"
-    >
-    </div>
-  </BG>
+  <BG client:load />
 
   <Header />
-  <div id="layout" class="m-auto max-w-7xl px-1 z-[1]"></div>
   <slot />
 </body>
 <Footer />
-<script>
-  document.body.animate(
-    [
-      { backgroundColor: "rgba(0, 0, 0, 1)" },
-      { backgroundColor: "rgba(0, 0, 0, 0)" },
-    ],
-    {
-      duration: 500,
-      fill: "forwards",
-    }
-  );
-</script>

@@ -107,5 +107,7 @@ import nav from "../data/nav";
     elements.forEach((e) => e.addEventListener("click", scrollToElement(cls)));
   }
 
-  nav.forEach(sub);
+  if (drawer) {
+    nav.forEach(sub);
+  }
 </script>
