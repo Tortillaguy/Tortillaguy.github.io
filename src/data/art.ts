@@ -2,6 +2,27 @@ import type { Project } from "../types";
 
 const art: Project[] = [
   {
+    name: "Left With You",
+    filename: "left_with_you.png",
+    link: "https://www.instagram.com/p/DMqt5AIulwS/",
+    tags: ["ComfyUI", "Generative AI", "Davinci Resolve"],
+    imageStyle: { objectPosition: "50% 50%" },
+  },
+  {
+    name: "Adieu",
+    filename: "adieu.png",
+    link: "https://www.instagram.com/p/C77rjuayjYA/",
+    tags: ["ComfyUI", "Generative AI", "Davinci Resolve"],
+    imageStyle: { objectPosition: "50% 50%" },
+  },
+  {
+    filename: "red_room.png",
+    name: "Red Room",
+    link: "https://www.instagram.com/p/C6HAlbTuTT6/",
+    tags: ["ComfyUI", "Generative AI", "Davinci Resolve"],
+    imageStyle: { objectPosition: "50% 50%" },
+  },
+  {
     name: "Letting Go",
     filename: "hand_pyro.jpg",
     link: "https://www.instagram.com/p/CfDQL0IDLom/",

@@ -1,7 +1,7 @@
 import type { CSSProperties } from "react";
 
 export interface Project {
-  name: string;
+  name?: string;
   filename: string;
   link: string;
   role?: string;

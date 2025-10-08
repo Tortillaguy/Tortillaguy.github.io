@@ -1,3 +1,11 @@
-const nav = ["home", "projects", "productions", "art", "skills", "contact"];
+const nav = [
+  "home",
+  "projects",
+  "productions",
+  "art",
+  "about",
+  "skills",
+  "contact",
+];
 
 export default nav;

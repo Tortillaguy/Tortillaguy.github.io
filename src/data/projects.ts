@@ -2,6 +2,23 @@ import type { Project } from "../types";
 
 const projects: Project[] = [
   {
+    name: "Polkadot Blockchain Academy",
+    filename: "pba.jpg",
+    role: "Student",
+    link: "https://polkadot.academy/",
+    tags: ["Rust", "Substrate", "Blockchain", "Web3"],
+    // postID: "pba",
+  },
+  {
+    name: "Infinite Reality",
+    filename: "infinite-reality.jpg",
+    role: "Senior Full-Stack Developer",
+    link: "https://www.ccn.com/news/technology/infinite-reality-startup-bringing-metaverse-back-from-the-dead-in-2025/",
+    tags: ["React", "Full-Stack", "AWS", "Postgres", "Typescript", "NextJS"],
+    // postID: "infinite-reality",
+    imageStyle: { objectFit: "contain", background: "white" },
+  },
+  {
     name: "Looking Glass Factory",
     filename: "lkg.jpg",
     role: "Senior Full-Stack Developer",
