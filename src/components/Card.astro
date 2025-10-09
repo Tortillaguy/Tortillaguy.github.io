@@ -22,7 +22,7 @@ const { filename, name, role, tags, link, imageStyle, postID } =
 </style>
 
 <a
-  href={postID ? `/work/${postID}` : link}
+  href={postID && false ? `/work/${postID}` : link}
   target="_blank"
   class="display:block rounded-[12px] card group duration-300 ease-in-out min-w-[16rem] bg-base-100 shadow-md not-prose flex-grow cursor-pointer overflow-hidden"
 >

@@ -45,7 +45,7 @@ const projects: Project[] = [
   {
     name: "Pokemoon NFTs",
     filename: "pokemoon.png",
-    link: "",
+    link: "/#",
     role: "Lead Developer",
     tags: ["Web3", "Three.js", "React", "GraphQL"],
     postID: "pokemoon",
