@@ -13,7 +13,14 @@ import { Icon } from "astro-icon";
       <div
         class="w-32 sm:w-36 md:w-40 rounded-full brightness-[1.1] saturate-[1.1] avatar-border"
       >
-        <img src="/assets/coffee.jpeg" />
+        <img
+          src="/assets/gig_selfie.png"
+          style={{
+            objectPosition: "60% 50%",
+            objectFit: "contain",
+            scale: "1.5",
+          }}
+        />
       </div>
     </div>
   </div>
@@ -21,12 +28,18 @@ import { Icon } from "astro-icon";
   <div
     class="prose-lg flex flex-col gap-[4px] md:gap-[2px] text-shadow self-start sm:self-auto md:ml-10 md:w-auto mx-auto md:mx-0"
   >
-    <h2 class="slide-text animDuration-[1000] m-0 text-primary-light">Hey there!👋</h2>
-    <h2 class="slide-text animDuration-[1000] m-0 animDelay-[500] text-primary-light">
-      I'm Adrian
+    <h2 class="slide-text animDuration-[1000] m-0 text-primary-light">
+      Hey there!👋
     </h2>
-    <h4 class="slide-text animDuration-[1000] m-0 animDelay-[1450] text-primary-body">
-      (But you can call me Cacho)
+    <h2
+      class="slide-text animDuration-[1000] m-0 animDelay-[500] text-primary-light"
+    >
+      My name is Adrian Cacho
+    </h2>
+    <h4
+      class="slide-text animDuration-[1000] m-0 animDelay-[1450] text-primary-body"
+    >
+      But you can call me Cacho
     </h4>
     <div
       class="flex flex-col [&>*]:text-primary-body text-shadow md:gap-[2ch] [&>*]:m-0 sm:flex-row"
