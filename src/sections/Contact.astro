@@ -1,38 +1,9 @@
 <div class="mt-14">
-  <style>
-    .gradient-button {
-      --angle: 0deg;
-      --shadow: #e4bef5;
-      --background: #262626;
-      background:
-        linear-gradient(var(--background), var(--background)) padding-box,
-        conic-gradient(from var(--angle), #51c9ff, #ebf9ab, #e587ff, #51c9ff)
-          border-box;
-      border-radius: 40px;
-      border: 4px solid transparent;
-      animation: 5s rotate linear infinite;
-      box-shadow: 1px 1px 10px var(--shadow);
-    }
-    @keyframes rotate {
-      to {
-        --angle: 360deg;
-      }
-    }
-    .gradient-button:hover {
-      /* box-shadow: 1px 1px 9px 1px #1ad0b5; */
-    }
-
-    @property --angle {
-      syntax: "<angle>";
-      initial-value: 0deg;
-      inherits: false;
-    }
-  </style>
-  <div id="contact" class="w-full flex justify-center m-auto prose">
+  <div id="contact" class="prose-section-header">
     <a
       href="mailto:hello@cacho.dev"
       target="_blank"
-      class="display:block text-white text-shadow text-xl md:text-3xl gradient-button transition-transform active:scale-110 p-6 no-underline"
+      class="display:block hover:scale-105 text-primary-light text-shadow text-xl md:text-3xl gradient-button transition-transform active:scale-110 p-6 !no-underline"
     >
       Let's Get In Touch 🤝
     </a>

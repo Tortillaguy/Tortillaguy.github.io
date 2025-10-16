@@ -24,8 +24,7 @@ import nav from "../data/nav";
   }
 
   li a {
-    text-shadow: 2px 2px 8px #1a1a1a;
-    @apply text-white transition-transform hover:text-purple-400 hover:scale-110;
+    @apply text-primary-light text-shadow transition-transform hover:text-purple-400 hover:scale-110;
     cursor: pointer;
   }
 </style>
@@ -36,13 +35,13 @@ import nav from "../data/nav";
     class="flex items-center justify-between px-4 md:pr-0 md:pl-5 min-h-16 pt-5"
   >
     <h1
-      class="text-2xl prose text-white font-oxygen text-shadow hover:cursor-default"
+      class="text-3xl prose text-primary-light font-oxygen text-shadow hover:cursor-default"
     >
       {SITE_TITLE}
     </h1>
     <label
       for="drawer"
-      class="text-white btn btn-square btn-ghost hover:bg-transparent md:hidden"
+      class="text-primary-light btn btn-square btn-ghost hover:bg-transparent md:hidden"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

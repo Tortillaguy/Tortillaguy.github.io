@@ -7,12 +7,18 @@ html {
   scroll-behavior: smooth;
 }
 
-.prose-lg > h2 {
-  color: red;
-}
-
 :root .prose {
   --tw-prose-bullets: white;
+  --tw-prose-links: white;
+}
+
+/* Reusable prose classes for section headings */
+.prose-section-header {
+  @apply prose w-full flex justify-center mx-auto;
+}
+
+.prose-section-title {
+  @apply text-primary-light text-shadow m-0;
 }
 
 body {
@@ -153,8 +159,7 @@ blockquote {
 }
 
 .nav-link {
-  @apply text-white;
-  text-shadow: 2px 2px 8px #1a1a1a;
+  @apply text-primary-light text-shadow;
 }
 
 .drawer.drawer-end > .drawer-toggle:checked ~ .drawer-side > ul {
@@ -172,7 +177,7 @@ blockquote {
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(218px, 227px));
   padding: 16px;
-  @apply hide-scrollbar;
+  @apply hide-scrollbar items-center;
 }
 
 ::-webkit-scrollbar {
@@ -208,11 +213,92 @@ blockquote {
   border: 3px solid transparent;
 }
 
+.avatar-border {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(135deg, #ebf9ab, #51c9ff, #e4bef5) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+}
+
 .link-menu > li > a {
   @apply nav-link;
 }
 
 @layer utilities {
+  /* Color System - Text Colors */
+  .text-primary-light {
+    color: #ffffff;
+  }
+
+  .text-primary-body {
+    color: #e8eaeb;
+  }
+
+  .text-accent-cyan {
+    color: #5dfeff;
+  }
+
+  .text-accent-yellow {
+    color: #edff9f;
+  }
+
+  .text-accent-green {
+    color: #96eb5e;
+  }
+
+  .text-card-title {
+    color: #f5f5f5;
+  }
+
+  .text-blog-heading {
+    color: #77d3ec;
+  }
+
+  /* Background Colors */
+  .bg-dark {
+    background-color: #262626;
+  }
+
+  .bg-shadow-dark {
+    background-color: #1a1a1a;
+  }
+
+  /* Shadow Colors */
+  .shadow-dark {
+    box-shadow: 2px 2px 8px #1a1a1a;
+  }
+
+  .shadow-cyan-glow {
+    box-shadow: 0 0 8px rgba(95, 222, 255, 0.75);
+  }
+
+  .shadow-purple-glow {
+    box-shadow: 1px 1px 10px #e4bef5;
+  }
+
+  .shadow-skill-glow {
+    text-shadow: 1px 1px 8px #ddbff1;
+  }
+
+  /* Gradient Colors */
+  .gradient-skill {
+    background: linear-gradient(to right, #62ffea, #53dd58);
+  }
+
+  .gradient-avatar {
+    background: linear-gradient(135deg, #ebf9ab, #51c9ff, #e4bef5);
+  }
+
+  .gradient-button-colors {
+    background: conic-gradient(
+      from var(--angle, 0deg),
+      #51c9ff,
+      #ebf9ab,
+      #e587ff,
+      #51c9ff
+    );
+  }
+
   .text-shadow {
     text-shadow: 2px 2px 8px #1a1a1a;
   }
@@ -257,7 +343,7 @@ blockquote {
 }
 
 .skill-glow {
-  text-shadow: 1px 1px 8px #ddbff1;
+  @apply shadow-skill-glow;
 }
 
 .svg-shadow {
@@ -266,15 +352,13 @@ blockquote {
 
 .gradient-button {
   --angle: 0deg;
-  --shadow: #e4bef5;
-  --background: #262626;
-  background: linear-gradient(var(--background), var(--background)) padding-box,
+  background: linear-gradient(#262626, #262626) padding-box,
     conic-gradient(from var(--angle), #51c9ff, #ebf9ab, #e587ff, #51c9ff)
       border-box;
   border-radius: 40px;
   border: 4px solid transparent;
   animation: 5s rotate linear infinite;
-  box-shadow: 1px 1px 10px var(--shadow);
+  @apply shadow-purple-glow;
 }
 
 @keyframes rotate {
