@@ -16,7 +16,11 @@ const projects: Project[] = [
     link: "https://www.ccn.com/news/technology/infinite-reality-startup-bringing-metaverse-back-from-the-dead-in-2025/",
     tags: ["React", "Full-Stack", "AWS", "Postgres", "Typescript", "NextJS"],
     // postID: "infinite-reality",
-    imageStyle: { objectFit: "contain", background: "white" },
+    imageStyle: {
+      objectFit: "contain",
+      background: "white",
+      objectPosition: "50% 50%",
+    },
   },
   {
     name: "Looking Glass Factory",
