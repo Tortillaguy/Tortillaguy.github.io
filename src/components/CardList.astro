@@ -29,24 +29,41 @@ const { projects, key } = Astro.props as { projects: Project[]; key: string };
     const next = document.getElementById(key + "-next");
     const back = document.getElementById(key + "-back");
 
-    const width = list?.scrollWidth ?? 1;
-    const cardWidth =
-      list.childElementCount > 0 ? list.children[0].clientWidth + 24 : 328;
+    const getScrollAmount = () => {
+      // Get the actual first card element
+      const firstCard = list.children[0] as HTMLElement;
+      if (!firstCard) return list.clientWidth;
+
+      // Get the computed styles to find the actual gap
+      const listStyles = window.getComputedStyle(list);
+      const gap = parseFloat(listStyles.gap) || 20;
+
+      // Get the actual card width from the DOM
+      const cardWidth = firstCard.offsetWidth;
+      const cardWithGap = cardWidth + gap;
+
+      // Calculate how many cards fit in the visible area
+      const visibleWidth = list.clientWidth;
+      const cardsPerPage = Math.floor(visibleWidth / cardWithGap);
+
+      // Scroll by the width of cards that fit in one page
+      // Ensure at least 1 card scrolls if calculation results in 0
+      return Math.max(cardsPerPage, 1) * cardWithGap;
+    };
 
     const onNext = () => {
-      if (list.scrollLeft + cardWidth <= width) {
-        list.scrollBy({ left: cardWidth, behavior: "smooth" });
-      } else {
-        list.scrollTo({ left: list?.scrollWidth, behavior: "smooth" });
-      }
+      const scrollAmount = getScrollAmount();
+      const maxScroll = list.scrollWidth - list.clientWidth;
+      const newPosition = Math.min(list.scrollLeft + scrollAmount, maxScroll);
+
+      list.scrollTo({ left: newPosition, behavior: "smooth" });
     };
 
     const onBack = () => {
-      if (list.scrollLeft - cardWidth * 2 >= 0) {
-        list.scrollBy({ left: -cardWidth, behavior: "smooth" });
-      } else {
-        list.scrollTo({ left: 0, behavior: "smooth" });
-      }
+      const scrollAmount = getScrollAmount();
+      const newPosition = Math.max(list.scrollLeft - scrollAmount, 0);
+
+      list.scrollTo({ left: newPosition, behavior: "smooth" });
     };
 
     next?.addEventListener("click", onNext);
