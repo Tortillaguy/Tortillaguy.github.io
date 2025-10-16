@@ -7,7 +7,7 @@ export default function Background() {
         speed={7.6}
         scale={1}
         color="#5227FF"
-        noiseIntensity={5.5}
+        noiseIntensity={0.6}
         rotation={0}
       />
     </div>

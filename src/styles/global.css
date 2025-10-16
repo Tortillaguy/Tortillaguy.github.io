@@ -7,6 +7,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.prose-lg > h2 {
+  color: red;
+}
+
 :root .prose {
   --tw-prose-bullets: white;
 }
