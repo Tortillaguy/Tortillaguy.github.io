@@ -18,7 +18,9 @@ html {
 }
 
 .prose-section-title {
-  @apply text-primary-light text-shadow m-0;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px #1a1a1a;
+  @apply m-0;
 }
 
 body {
@@ -159,7 +161,8 @@ blockquote {
 }
 
 .nav-link {
-  @apply text-primary-light text-shadow;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px #1a1a1a;
 }
 
 .drawer.drawer-end > .drawer-toggle:checked ~ .drawer-side > ul {
