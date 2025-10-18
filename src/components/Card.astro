@@ -2,8 +2,9 @@
 import type { Project } from "../types";
 import Tag from "./Tag.astro";
 import external from "../icons/external.svg?raw";
+import { Image } from "astro:assets";
 
-const { project } = Astro.props as { project: Project };
+const { project, priority = false } = Astro.props as { project: Project; priority?: boolean };
 const { filename, name, role, tags, link, imageStyle, postID } =
   project as Project;
 ---
@@ -15,9 +16,9 @@ const { filename, name, role, tags, link, imageStyle, postID } =
     background: transparent;
   }
 </style>
-<style>
+<style is:global>
   .card:hover {
-    @apply shadow-purple-glow;
+    box-shadow: 1px 1px 10px #e4bef5;
   }
 </style>
 
@@ -36,7 +37,11 @@ const { filename, name, role, tags, link, imageStyle, postID } =
         ...imageStyle,
       }}
       src={`/assets/${filename}`}
-      alt={filename}
+      alt={name}
+      loading={priority ? "eager" : "lazy"}
+      fetchpriority={priority ? "high" : "auto"}
+      width="300"
+      height="225"
     />
   </figure>
   <div class="p-4 pb-2 flex flex-col gap-2 bg-slate-800 filter:blur-md">
