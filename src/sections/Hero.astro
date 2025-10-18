@@ -13,11 +13,12 @@ import { Icon } from "astro-icon";
       >
         <img
           src="/assets/gig_selfie.png"
-          alt="Adrian Cacho"
+          alt="Adrian Cacho - Creative Technologist and Visual Artist"
           width="160"
           height="160"
           loading="eager"
           fetchpriority="high"
+          decoding="sync"
           style={{
             objectPosition: "60% 50%",
             objectFit: "contain",
@@ -31,19 +32,19 @@ import { Icon } from "astro-icon";
   <div
     class="prose-lg flex flex-col gap-[4px] md:gap-[2px] text-shadow self-start sm:self-auto md:ml-10 md:w-auto mx-auto md:mx-0"
   >
-    <h2 class="slide-text animDuration-[1000] m-0 text-primary-light">
+    <p class="slide-text animDuration-[1000] m-0 text-primary-light text-2xl">
       Hey there!👋
-    </h2>
-    <h2
+    </p>
+    <h1
       class="slide-text animDuration-[1000] m-0 animDelay-[500] text-primary-light"
     >
       My name is Adrian Cacho
-    </h2>
-    <h4
-      class="slide-text animDuration-[1000] m-0 animDelay-[1450] text-primary-body"
+    </h1>
+    <p
+      class="slide-text animDuration-[1000] m-0 animDelay-[1450] text-primary-body text-xl"
     >
       But you can call me Cacho
-    </h4>
+    </p>
     <div
       class="flex flex-col [&>*]:text-primary-body text-shadow md:gap-[2ch] [&>*]:m-0 sm:flex-row"
     >
@@ -62,6 +63,8 @@ import { Icon } from "astro-icon";
         class="slide-icon animDelay-[4200] animDuration-[500]"
         href="https://www.instagram.com/cacho.vibez/"
         target="_blank"
+        aria-label="Follow Adrian Cacho on Instagram"
+        rel="noopener noreferrer"
       >
         <Icon color="#e8f4f8" size={"32px"} pack="mdi" name="instagram" />
       </a>
@@ -69,13 +72,15 @@ import { Icon } from "astro-icon";
         class="slide-icon animDelay-[4350] animDuration-[500]"
         href="https://www.linkedin.com/in/agcacho/"
         target="_blank"
+        aria-label="Connect with Adrian Cacho on LinkedIn"
+        rel="noopener noreferrer"
       >
         <Icon color="#e8f4f8" size={"32px"} pack="mdi" name="linkedin" />
       </a>
       <a
         class="slide-icon animDelay-[4650] animDuration-[500] [&>span]:shadow-md text-primary-light"
         href="mailto:hello@cacho.dev"
-        target="_blank"
+        aria-label="Email Adrian Cacho"
       >
         <Icon color="#e8f4f8" size={"32px"} pack="mdi" name="email" />
       </a>
