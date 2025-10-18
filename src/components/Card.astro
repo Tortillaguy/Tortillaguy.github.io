@@ -1,12 +1,26 @@
 ---
 import type { Project } from "../types";
+import type { ImageMetadata } from "astro";
 import Tag from "./Tag.astro";
 import external from "../icons/external.svg?raw";
 import { Image } from "astro:assets";
 
-const { project, priority = false } = Astro.props as { project: Project; priority?: boolean };
+const { project, priority = false } = Astro.props as {
+  project: Project;
+  priority?: boolean;
+};
 const { filename, name, role, tags, link, imageStyle, postID } =
   project as Project;
+
+// Dynamically import all images
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/*.{jpeg,jpg,png,gif,webp}"
+);
+
+const imagePath = `/src/assets/${filename}`;
+if (!images[imagePath]) {
+  throw new Error(`"${imagePath}" does not exist in glob: ${filename}`);
+}
 ---
 
 <style>
@@ -28,7 +42,12 @@ const { filename, name, role, tags, link, imageStyle, postID } =
   class="display:block rounded-[12px] hover:scale-[103%] card group duration-300 ease-in-out min-w-[16rem] bg-base-100 shadow-md not-prose flex-grow cursor-pointer overflow-hidden"
 >
   <figure>
-    <img
+    <Image
+      src={images[imagePath]()}
+      alt={name || ""}
+      loading={priority ? "eager" : "lazy"}
+      width={300}
+      height={225}
       style={{
         aspectRatio: "4/3",
         objectPosition: "50% 20%",
@@ -36,13 +55,6 @@ const { filename, name, role, tags, link, imageStyle, postID } =
         width: "100%",
         ...imageStyle,
       }}
-      src={`/assets/${filename}`}
-      alt={name}
-      loading={priority ? "eager" : "lazy"}
-      fetchpriority={priority ? "high" : "auto"}
-      width="300"
-      height="225"
-      decoding="async"
     />
   </figure>
   <div class="p-4 pb-2 flex flex-col gap-2 bg-slate-800 filter:blur-md">
