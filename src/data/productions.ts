@@ -11,13 +11,13 @@ const productions: Project[] = [
   },
   {
     name: "Love Oasis",
-    filename: "love_oasis.jpg",
+    filename: "love_oasis.webp",
     link: "https://www.instagram.com/p/DKZ4zDmxgoC",
     role: "Producer",
     imageStyle: { objectPosition: "50% 50%" },
   },
   {
-    filename: "crssd.jpg",
+    filename: "crssd.webp",
     link: "https://www.instagram.com/p/C2thFlaLviE/",
     name: "Proper NYE 2024",
     role: "VJ",
@@ -25,14 +25,14 @@ const productions: Project[] = [
   },
   {
     name: "Disguise Training",
-    filename: "disguise.jpg",
+    filename: "disguise.webp",
     role: "VP Accelerator Program",
     link: "https://www.instagram.com/p/CpwFlCIpFxs",
     tags: ["Disguise", "Unreal Engine"],
   },
   {
     name: "Seismic Events",
-    filename: "seismic.png",
+    filename: "seismic.webp",
     role: "VJ",
     link: "https://www.instagram.com/reel/CsvsjQZMKIQ/",
     tags: ["Resolume"],
@@ -42,7 +42,7 @@ const productions: Project[] = [
   },
   {
     name: "SD Renegade",
-    filename: "renegade.png",
+    filename: "renegade.webp",
     role: "Lighting Tech",
     link: "https://www.instagram.com/p/CpwDLGDpstc",
     tags: ["ShowXpress"],

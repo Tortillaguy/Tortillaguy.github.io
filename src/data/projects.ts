@@ -3,7 +3,7 @@ import type { Project } from "../types";
 const projects: Project[] = [
   {
     name: "Polkadot Blockchain Academy",
-    filename: "pba.jpg",
+    filename: "pba.webp",
     role: "Student",
     link: "https://polkadot.academy/",
     tags: ["Rust", "Substrate", "Blockchain", "Web3"],
@@ -11,7 +11,7 @@ const projects: Project[] = [
   },
   {
     name: "Infinite Reality",
-    filename: "infinite-reality.jpg",
+    filename: "infinite-reality.webp",
     role: "Senior Full-Stack Developer",
     link: "https://www.ccn.com/news/technology/infinite-reality-startup-bringing-metaverse-back-from-the-dead-in-2025/",
     tags: ["React", "Full-Stack", "AWS", "Postgres", "Typescript", "NextJS"],
@@ -24,7 +24,7 @@ const projects: Project[] = [
   },
   {
     name: "Looking Glass Factory",
-    filename: "lkg.jpg",
+    filename: "lkg.webp",
     role: "Senior Full-Stack Developer",
     link: "https://lookingglassfactory.com/",
     tags: ["React", "Full-Stack", "AWS", "Postgres", "Typescript", "NextJS"],
@@ -40,7 +40,7 @@ const projects: Project[] = [
   },
   {
     name: "Magic Leap + Spotify App",
-    filename: "magicleap.png",
+    filename: "magicleap.webp",
     link: "https://www.youtube.com/watch?v=Q89wSw-JUyM",
     role: "Lead Unity Developer",
     tags: ["Python", "Unity", "AWS", "MagicLeap", "LuminSDK"],
@@ -48,7 +48,7 @@ const projects: Project[] = [
   },
   {
     name: "Pokemoon NFTs",
-    filename: "pokemoon.png",
+    filename: "pokemoon.webp",
     link: "/#",
     role: "Lead Developer",
     tags: ["Web3", "Three.js", "React", "GraphQL"],
@@ -56,7 +56,7 @@ const projects: Project[] = [
   },
   {
     name: "Parcel",
-    filename: "parcel3.jpg",
+    filename: "parcel3.webp",
     link: "https://www.youtube.com/watch?v=U4Bv1Q-6laA",
     role: "Frontend Engineer",
     tags: ["React", "NextJS", "UI/UX Design", "Web3", "Storybook"],

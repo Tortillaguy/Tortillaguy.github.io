@@ -3,20 +3,20 @@ import type { Project } from "../types";
 const art: Project[] = [
   {
     name: "Left With You",
-    filename: "left_with_you.png",
+    filename: "left_with_you.webp",
     link: "https://www.instagram.com/p/DMqt5AIulwS/",
     tags: ["ComfyUI", "Generative AI", "Davinci Resolve"],
     imageStyle: { objectPosition: "50% 50%" },
   },
   {
     name: "Adieu",
-    filename: "adieu.png",
+    filename: "adieu.webp",
     link: "https://www.instagram.com/p/C77rjuayjYA/",
     tags: ["ComfyUI", "Generative AI", "Davinci Resolve"],
     imageStyle: { objectPosition: "50% 50%" },
   },
   {
-    filename: "red_room.png",
+    filename: "red_room.webp",
     name: "Red Room",
     link: "https://www.instagram.com/p/C6HAlbTuTT6/",
     tags: ["ComfyUI", "Generative AI", "Davinci Resolve"],
@@ -24,25 +24,25 @@ const art: Project[] = [
   },
   {
     name: "Letting Go",
-    filename: "hand_pyro.jpg",
+    filename: "hand_pyro.webp",
     link: "https://www.instagram.com/p/CfDQL0IDLom/",
     tags: ["Octane", "Blender", "EmberGen"],
   },
   {
     name: "Pyro Demo",
-    filename: "sword_pyro.jpg",
+    filename: "sword_pyro.webp",
     link: "https://www.instagram.com/p/Ca838TdjdLt/",
     tags: ["Octane", "Cinema4D", "EmberGen"],
   },
   {
     name: "Hardstyle Visuals",
-    filename: "hardstyle.jpg",
+    filename: "hardstyle.webp",
     link: "https://www.instagram.com/p/CWyubrnhLOb/",
     tags: ["Notch"],
   },
   {
     name: "Oblivion V2",
-    filename: "oblivionV2.png",
+    filename: "oblivionV2.webp",
     link: "https://www.instagram.com/p/CWyuobGhx3O/",
     tags: ["Notch", "Daz3D"],
   },
