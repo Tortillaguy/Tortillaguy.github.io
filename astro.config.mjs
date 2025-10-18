@@ -17,5 +17,22 @@ export default defineConfig({
     config: {
       applyBaseStyles: false
     }
-  }), react(), svelte()]
+  }), react(), svelte()],
+  vite: {
+    build: {
+      cssCodeSplit: true,
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            'three': ['three', '@react-three/fiber'],
+          }
+        }
+      }
+    }
+  },
+  compressHTML: true,
+  prefetch: {
+    prefetchAll: true,
+    defaultStrategy: 'viewport'
+  }
 });

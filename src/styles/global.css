@@ -32,7 +32,7 @@ body {
   @apply hide-scrollbar;
 
   text-align: left;
-  background-color: transparent;
+  background-color: black;
   word-wrap: break-word;
   overflow-wrap: break-word;
   line-height: 1.5;
