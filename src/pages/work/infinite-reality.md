@@ -10,13 +10,14 @@ When I joined Infinite Reality (which later became Napster Inc.) as a Senior Ful
 
 This wasn't about hyped-up virtual worlds with cartoon avatars. This was about creating **real utility**: virtual showrooms for retail, immersive event spaces for concerts, digital twins of physical locations, and platforms for genuine human connection in virtual environments.
 
-Coming fresh off my experience at Looking Glass Factory, where I'd built the first hologram CMS, I was excited to work on another frontier of immersive technology. And Napster's legacy in music made the mission even more compellingimagine experiencing live concerts in VR, or exploring artist worlds in 3D.
+Coming fresh off my experience at Looking Glass Factory, where I'd built the first hologram CMS, I was excited to work on another frontier of immersive technology. And Napster's legacy in music made the mission even more compellingimagine exploring worlds in 3D.
 
 ## The Mission: Bringing the Metaverse Back
 
 By 2025, the "metaverse" had become somewhat of a dirty word after years of overhype. But Infinite Reality was taking a pragmatic approach: **build real tools that solve real problems**, rather than chasing speculative future visions.
 
 The company was working with major brands to create:
+
 - **Virtual storefronts** - 3D shopping experiences with real product catalogs
 - **Event spaces** - Concerts, conferences, and gatherings in immersive environments
 - **Social platforms** - Places for people to actually hang out, not just pass through
@@ -29,12 +30,14 @@ My role was to help build the **full-stack infrastructure** that powered these e
 I worked across the entire stack, leveraging the same technologies I'd mastered at previous roles:
 
 ### Frontend
+
 - **React** for component-based UI
 - **Next.js** for server-side rendering and optimal performance
 - **TypeScript** for type safety across the codebase
-- **Three.js / React Three Fiber** for 3D web experiences (my specialty)
+- **Three.js / React Three Fiber** for 3D web experiences
 
 ### Backend
+
 - **Node.js** for API services
 - **Postgres** for relational data (users, virtual spaces, assets, events)
 - **AWS** for cloud infrastructure and scalability
@@ -42,6 +45,7 @@ I worked across the entire stack, leveraging the same technologies I'd mastered 
 ### The Challenge
 
 Building metaverse platforms means handling:
+
 - **Real-time multiplayer** - Users interacting in shared virtual spaces
 - **3D asset delivery** - Streaming optimized 3D models and environments
 - **User authentication** - Secure identity across virtual worlds
@@ -54,16 +58,19 @@ The technical complexity is significant, but the patterns I'd developed at Looki
 One of my key contributions was optimizing the platform for **scale**:
 
 ### Database Optimization
+
 - Designed efficient Postgres schemas for virtual worlds, user data, and asset management
 - Implemented caching strategies to reduce database load
 - Optimized queries for real-time data retrieval (who's in what space, what assets need loading)
 
 ### 3D Asset Pipeline
+
 - Built systems to process and optimize 3D assets for web delivery
 - Implemented progressive loading for complex virtual environments
 - Balanced visual quality with performance constraints
 
 ### API Design
+
 - Created RESTful and GraphQL endpoints for frontend and external integrations
 - Designed for extensibility (new features shouldn't break existing integrations)
 - Ensured APIs could handle spikes in traffic during live events
@@ -73,6 +80,7 @@ One of my key contributions was optimizing the platform for **scale**:
 Partway through my tenure, the company underwent a transformation, becoming **Napster Inc.** This pivot emphasized the **music and entertainment** aspects of the platform.
 
 Napster's legacy is iconicit revolutionized music distribution in the early 2000s. Now, the brand was being reimagined for immersive experiences:
+
 - Virtual concert venues
 - Artist meet-and-greets in VR
 - Immersive album launch experiences
@@ -109,6 +117,7 @@ The metaverse may have gone through a hype cycle, but the underlying technologie
 **Role:** Senior Full-Stack Engineer
 
 **Key Outcomes:**
+
 - Built full-stack platform infrastructure for immersive metaverse experiences
 - Optimized 3D asset delivery and progressive loading for virtual environments
 - Designed Postgres database architecture for virtual worlds, users, and assets

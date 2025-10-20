@@ -8,7 +8,7 @@ layout: ../../layouts/BlogPost.astro
 
 Looking back, my year at Moving Picture Company (MPC) was one of the most formative experiences of my career. This was 2018, and spatial computing was still largely experimental—Magic Leap had just released their first developer kits, and everyone was trying to figure out what the future of AR would actually look like.
 
-<iframe width="560" class="m-auto w-full md:w-[560px]" height="315" src="https://www.youtube.com/embed/Q89wSw-JUyM?si=EbB2b3G-DOroU-Fe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" class="m-auto w-full md:w-[560px] mt-4" height="315" src="https://www.youtube.com/embed/Q89wSw-JUyM?si=EbB2b3G-DOroU-Fe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## The Magic Leap + Spotify Project
 
@@ -27,6 +27,7 @@ The technical challenges were real. Spatial audio, gesture recognition, and main
 While the C++ work was fascinating, I also spent significant time designing reusable game modules and core system architecture in C# and Unity. The goal was to create building blocks that could be used across multiple AR/VR projects.
 
 I focused on:
+
 - **Performance-first architecture** - Every millisecond mattered when rendering in VR
 - **Scalable systems** - Code that could handle both simple demos and complex interactive experiences
 - **Reusability** - Components that could be mixed and matched for different use cases
@@ -38,6 +39,7 @@ This architectural work laid the foundation for efficient development processes,
 One of my favorite technical aspects was building custom shader effects using HLSL, ShaderLab, and ShaderGraph. Shaders are where the visual magic happens—they're what make surfaces look realistic, create atmospheric effects, and bring scenes to life.
 
 For the Spotify app, I created:
+
 - Dynamic music visualizations that responded to audio frequencies
 - Smooth animated transitions between UI states
 - Atmospheric effects that made the virtual elements feel like they belonged in your physical space
@@ -49,6 +51,7 @@ Writing shaders taught me to think about graphics at a fundamental level—how l
 Beyond the technical work, I had the opportunity to lead a small team of three developers. This was my first real leadership role, and it taught me that good code is only part of the equation.
 
 We practiced:
+
 - **Pair programming** - Two sets of eyes catch more bugs and share knowledge faster
 - **Rigorous QA** - VR bugs are particularly disorienting for users, so we tested everything extensively
 - **Look development optimization** - Making things look beautiful while maintaining performance
@@ -84,6 +87,7 @@ Plus, getting to work on bleeding-edge technology with passionate people? That's
 **Team:** Led 3 developers
 
 **Key Outcomes:**
+
 - Developed Spotify application for Magic Leap platform
 - Extended Lumin SDK with C++ enhancements for AR ecosystem
 - Built reusable Unity architecture for AR/VR projects

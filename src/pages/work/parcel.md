@@ -10,13 +10,14 @@ In early 2022, I joined Parcel as a Frontend Engineer during an exciting time fo
 
 The platform was serving **over 1,000 daily active users**, and I was brought on to help scale the frontend architecture, optimize backend performance, establish design systems, and deepen the Web3 integration. This was full-stack work in the truest sense, touching everything from database optimization to smart contract interactions.
 
-<iframe width="560" class="m-auto w-full md:w-[560px]" height="315" src="https://www.youtube.com/embed/UfuEfjeWgzY?si=oQmkj7XdWMrHp5Z1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" class="m-auto w-full md:w-[560px] mt-4" height="315" src="https://www.youtube.com/embed/UfuEfjeWgzY?si=oQmkj7XdWMrHp5Z1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Backend Optimization: GraphQL + Postgres + Node.js
 
 One of my first priorities was optimizing the backend. With 1,000+ DAU and growing, performance bottlenecks were starting to appear.
 
 ### The Stack
+
 - **GraphQL** for flexible API queries
 - **Postgres** for relational data storage (products, users, orders, NFT metadata)
 - **Node.js** for the backend runtime
@@ -51,6 +52,7 @@ On the frontend, I was responsible for building a component library and state ma
 ### Reusable Component Library
 
 I built a comprehensive library of reusable components:
+
 - **Product cards** (with NFT and physical product variants)
 - **Checkout flows** (supporting both fiat and crypto payments)
 - **Wallet connection UI** (MetaMask, WalletConnect, Coinbase Wallet)
@@ -58,6 +60,7 @@ I built a comprehensive library of reusable components:
 - **Loading states, error handling, modals, forms**
 
 Each component was:
+
 - **Typed with TypeScript** for better IDE support and fewer runtime errors
 - **Tested** to ensure reliability
 - **Documented** so other developers could use them confidently
@@ -66,6 +69,7 @@ Each component was:
 ### State Management
 
 I designed Redux stores for:
+
 - **User authentication** (wallet connection state, user profiles)
 - **Shopping cart** (mixed NFT + physical products)
 - **Product catalog** (filters, search, pagination)
@@ -80,6 +84,7 @@ One of the most rewarding aspects was working closely with our Head of Design to
 ### Figma to Code Workflow
 
 We used **Figma** as the source of truth for design:
+
 - Designers created components in Figma
 - I translated them to React components
 - We maintained consistency through design tokens (colors, spacing, typography)
@@ -88,6 +93,7 @@ We used **Figma** as the source of truth for design:
 ### UI/UX Patterns for Web3
 
 Web3 introduces unique UX challenges:
+
 - **Wallet connection** - Making blockchain authentication feel familiar
 - **Transaction states** - Pending, confirmed, failed transactions need clear UI
 - **Gas fees** - Communicating costs without overwhelming users
@@ -102,6 +108,7 @@ To support rapid development and deployment, I designed modern build pipelines.
 ### Storybook for Component Development
 
 I set up **Storybook** as our component playground:
+
 - Developers could build components in isolation
 - Designers could review components before they were integrated
 - We had a living style guide for the entire UI library
@@ -110,6 +117,7 @@ I set up **Storybook** as our component playground:
 ### Rollup + Next.js
 
 I configured **Rollup** bundlers for:
+
 - Optimized production builds
 - Tree shaking to minimize bundle size
 - Code splitting for faster page loads
@@ -120,11 +128,13 @@ I configured **Rollup** bundlers for:
 To accelerate release cycles, I automated the entire deployment pipeline:
 
 ### Docker Containerization
+
 - Consistent development and production environments
 - Isolated services (frontend, backend, database)
 - Easy local setup for new developers
 
 ### GitHub Actions CI/CD
+
 - **Automated testing** on every pull request
 - **Linting and type checking** to enforce code quality
 - **Automated builds** for staging and production
@@ -137,11 +147,13 @@ This meant developers could push code confidently, knowing that automated checks
 The core of Parcel's value proposition was seamless NFT purchasing. I integrated multiple Web3 libraries to make this work:
 
 ### Libraries
+
 - **web3-react** for wallet connection management
 - **web3.js** and **ethers.js** for blockchain interactions
 - Support for **Ethereum** and **Polygon** networks
 
 ### Features I Built
+
 - **Wallet connection flows** (MetaMask, WalletConnect, Coinbase Wallet)
 - **NFT minting** directly from the platform
 - **Smart contract interaction** for purchasing NFTs
@@ -154,6 +166,7 @@ The core of Parcel's value proposition was seamless NFT purchasing. I integrated
 The hardest part wasn't the technical integration—it was making blockchain interactions feel **normal**. Users shouldn't need to understand gas, nonces, or block confirmations. They just want to buy an NFT.
 
 I focused on:
+
 - Clear transaction status indicators
 - Helpful error messages (not raw blockchain errors)
 - Optimistic UI updates (assume success, handle failures gracefully)
@@ -187,6 +200,7 @@ Today, when I'm building immersive web experiences or working on creative tech p
 **Role:** Frontend Engineer (Full-Stack)
 
 **Key Outcomes:**
+
 - Optimized GraphQL + Postgres backend for 1,000+ daily active users
 - Built reusable component library and design system with Figma integration
 - Integrated Web3 libraries for seamless NFT purchasing (Ethereum, Polygon)

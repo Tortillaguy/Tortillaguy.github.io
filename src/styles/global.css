@@ -77,9 +77,12 @@
   }
 
   #blog-post h1,
-  #blog-post h2,
-  .prose-section-title {
+  #blog-post h2 {
     @apply text-blog-heading mb-1 text-3xl;
+  }
+
+  .prose-section-title {
+    @apply text-white text-shadow text-2xl;
   }
 
   #blog-post h1 {
@@ -135,7 +138,7 @@
   }
 
   .prose-section-header {
-    @apply w-full flex justify-center mx-auto text-3xl font-bold text-primary-light text-shadow-DEFAULT my-8;
+    @apply w-full flex justify-center mx-auto text-3xl font-bold text-primary-light text-shadow-DEFAULT mt-8 mb-4;
   }
 
   /* Gradient backgrounds */

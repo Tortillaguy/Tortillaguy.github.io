@@ -10,13 +10,14 @@ When I joined Looking Glass Factory as a Senior Full-Stack Engineer, I knew I wa
 
 Think of it as YouTube or Instagram, but for holographic 3D content. No one had done this before. There was no playbook.
 
-<iframe class="m-auto w-full md:w-[560px]" width="560" height="315" src="https://www.youtube.com/embed/wefvzabaxvY?si=qY3oWCb8fy3WrZbs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="m-auto w-full md:w-[560px] mt-4" width="560" height="315" src="https://www.youtube.com/embed/wefvzabaxvY?si=qY3oWCb8fy3WrZbs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## The Scale: 100,000+ Digital Assets
 
 Over the course of nearly two years, we deployed over **100,000 digital assets** through the platform. Holograms, 3D models, lightfield images, volumetric videos—all kinds of content that needed to be processed, stored, displayed, and delivered to holographic displays around the world.
 
 The technical challenges were fascinating:
+
 - How do you efficiently store and serve multi-gigabyte holographic files?
 - How do you create a content discovery system for 3D assets?
 - How do you handle IoT device management when users have holographic displays syncing content?
@@ -33,6 +34,7 @@ I dove deep into query optimization, indexing strategies, and database schema re
 A platform is nothing without a sustainable business model. I implemented our entire payment processing infrastructure, integrating with Webflow and Shopify to support SaaS subscriptions and product sales.
 
 This involved:
+
 - **Stripe integration** for recurring billing and subscription management
 - **Webhook handling** for real-time payment events
 - **User management** tied to subscription tiers
@@ -40,25 +42,52 @@ This involved:
 
 Getting payments right is critical—it's the foundation of the company's revenue. Every transaction had to be smooth, secure, and reliable.
 
-## AI Integration: RAG for Holographic Content
+## AI Integration: Two Groundbreaking Projects
 
-As AI started exploding in 2023-2024, we saw an opportunity to make content discovery more intelligent. I integrated large language model (LLM) services into our Liteforms platform using **retrieval-augmented generation (RAG)** techniques.
+As AI exploded in 2023-2024, we saw opportunities to push the boundaries of what holographic displays could do. I led the integration of two distinct AI systems:
 
-Imagine searching for "realistic ocean waves at sunset" and having the AI understand not just keywords, but the visual and aesthetic qualities you're looking for in 3D content. RAG allowed us to combine the power of LLMs with our existing content database, dramatically improving search relevance and user satisfaction.
+### 1. Liteforms: Conversational AI Holographic Assistants
 
-This was cutting-edge stuff—implementing RAG before it became mainstream, specifically tailored for 3D asset discovery.
+I integrated ChatGPT-powered conversational AI into our **[Liteforms platform](https://petapixel.com/2023/05/23/looking-glass-liteforms-are-holograms-you-can-talk-with/)**, creating interactive holographic characters that users could actually talk with. This wasn't just a gimmick—it combined:
+
+- **Large language models (LLMs)** for natural conversation
+- **Retrieval-augmented generation (RAG)** to ground responses in specific brand knowledge
+- **Real-time speech processing** for seamless voice interaction
+- **3D character rendering** synchronized with conversational flow
+
+The result? Holographic chatbots that brands could customize with their entire product catalog and service offerings. Imagine walking up to a holographic retail assistant that not only looks three-dimensional but can answer questions about products, make recommendations, and engage in natural dialogue—all without typing.
+
+This was cutting-edge stuff—implementing RAG for holographic conversational AI before it became mainstream.
+
+### 2. Text-to-Hologram: ComfyUI Generation Pipeline
+
+The second AI project was equally innovative: a **remote ComfyUI server** configured behind a FastAPI backend, creating a complete "text-to-hologram" pipeline.
+
+Here's what made it special:
+
+- **Dual output generation**: A single text prompt would generate both an image AND its corresponding depth map
+- **Depth map processing**: The depth maps were crucial for creating the parallax effect on Looking Glass's light-field displays
+- **API-driven workflow**: FastAPI wrapper made it easy for the web platform to request hologram-ready assets
+- **Remote GPU infrastructure**: ComfyUI server ran on dedicated hardware, scaling independently from the web app
+
+This system democratized hologram creation. Instead of needing 3D modeling skills or expensive equipment, users could simply describe what they wanted—"a cyberpunk city at night with neon reflections"—and get back a hologram-ready asset with proper depth information for the light-field display.
+
+It was a perfect intersection of generative AI, computer vision, and holographic display technology.
 
 ## Revolutionizing the Frontend: Design Systems & 3D Web
 
 I led a major overhaul of our frontend development process by introducing:
 
 ### Modern Design Workflow
+
 - **Storybook** for component development and documentation
 - **Mobile-first design principles** ensuring our platform worked beautifully on all devices
 - **Figma + Tailwind integration** creating a seamless designer-to-developer workflow
 
 ### 3D Web Experiences
+
 This is where my background in creative technology really shined. I integrated:
+
 - **Three.js** and **React Three Fiber** for real-time 3D rendering in the browser
 - **Framer Motion** for smooth, delightful animations
 - **WebGL optimizations** to ensure 3D content loaded quickly even on slower devices
@@ -70,6 +99,7 @@ Users could preview holographic content directly in their browser before syncing
 One of the most technically interesting problems was keeping our Unity SDK in sync with our web platform. We had APIs for content management, user authentication, device syncing—and all of it needed C# code on the Unity side.
 
 I designed an **automated build pipeline** that:
+
 1. Read our OpenAPI specifications from the Next.js codebase
 2. Automatically generated type-safe C# code for Unity
 3. Ran on every deployment, ensuring Unity developers always had up-to-date SDK code
@@ -81,6 +111,7 @@ This eliminated manual errors, reduced development friction, and accelerated our
 What made this project particularly complex was the **IoT dimension**. We weren't just building a web app—we were building a platform that had to communicate with thousands of holographic displays, each running custom firmware, each owned by individual users or businesses.
 
 This meant dealing with:
+
 - **Device authentication and pairing**
 - **Content synchronization** across unreliable networks
 - **Version management** when displays had different firmware
@@ -117,6 +148,7 @@ Today, when I'm building immersive installations or working on live visual produ
 **Team:** Senior Full-Stack Engineer
 
 **Impact:**
+
 - 100,000+ digital assets deployed
 - 70% reduction in page load times
 - First-ever hologram content sharing platform

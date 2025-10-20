@@ -12,7 +12,7 @@ We were working with major retail brands—over **100 vendors**—to convert the
 
 And then, mid-way through my time there, **Snap Inc. acquired the company**. Suddenly we weren't just building for retail—we were building for Snapchat's AR platform, reaching hundreds of millions of users.
 
-<iframe width="560" height="315" class="m-auto w-full md:w-[560px]" src="https://www.youtube.com/embed/hpn2RiNkLWI?si=0rU_br-5OK6LYktZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" class="m-auto w-full md:w-[560px] mt-4" src="https://www.youtube.com/embed/hpn2RiNkLWI?si=0rU_br-5OK6LYktZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## The Pipeline Challenge: 50,000 3D Assets
 
@@ -27,6 +27,7 @@ I built automated processing pipelines using:
 - **Node.js** for orchestration and API services
 
 The workflow looked like:
+
 1. Vendor uploads raw 3D asset (often multi-gigabyte CAD files)
 2. AWS Lambda triggers processing job
 3. Docker container spins up with all necessary 3D processing tools
@@ -43,17 +44,20 @@ Mobile AR has brutal constraints: limited processing power, smaller file sizes, 
 I built automation using **Blender's Python API** and **Node.js** to handle:
 
 #### Decimation (Polygon Reduction)
+
 - High-res models might have millions of polygons
 - Mobile AR needs thousands, not millions
 - Automated algorithms to reduce geometry while preserving visual quality
 - Different LOD (level of detail) versions for different use cases
 
 #### Re-meshing
+
 - Clean up topology for better rendering performance
 - Fix broken geometry from CAD conversions
 - Optimize UV mapping for texture efficiency
 
 #### Material Re-assignment
+
 - Convert complex material setups to mobile-friendly PBR (Physically Based Rendering)
 - Bake lighting and detail into texture maps
 - Ensure materials work in AR lighting conditions
@@ -63,6 +67,7 @@ The entire process was **fully automated**—upload a file, get back an optimize
 ### Quality at Scale
 
 Processing 50,000 assets automatically is one thing. Ensuring they all look good is another. I implemented:
+
 - **Automated quality checks** (polygon count validation, texture size limits, file format verification)
 - **Visual regression testing** (rendered previews compared against reference images)
 - **Manual review queues** for edge cases that needed artist input
@@ -83,6 +88,7 @@ I developed backend features using **Postgres** to handle:
 - **User permissions** - Role-based access for different vendor teams
 
 The database design needed to handle:
+
 - **High write throughput** (constant asset uploads and status updates)
 - **Complex queries** (vendors searching their catalogs, filtering by status, sorting by date)
 - **Reliability** (retail partners depend on accurate data)
@@ -92,6 +98,7 @@ Optimizing these queries—proper indexing, query planning, connection pooling�
 ### API Design
 
 I built RESTful APIs (and later GraphQL) to support:
+
 - Vendor dashboard applications
 - Internal processing tools
 - External integrations with retail systems
@@ -105,6 +112,7 @@ While much of my work was backend and DevOps, I also built **custom React applic
 ### The Challenge
 
 Tech artists were doing manual 3D work in Blender, but they needed:
+
 - Quick previews of how assets would look in AR
 - Batch processing tools for similar products
 - QA interfaces to approve or reject processed assets
@@ -119,6 +127,7 @@ I built **bespoke desktop applications** using:
 - **Node.js backend** - Integration with our processing pipelines
 
 Artists could:
+
 - Drag-and-drop 3D files for instant preview
 - See exactly how the asset would render on mobile
 - Adjust optimization settings and re-process
@@ -131,6 +140,7 @@ These tools **dramatically improved artist productivity**, reducing time from up
 Midway through my tenure, **Snap Inc. acquired Vertebrae**. This changed everything.
 
 Suddenly we weren't just building for retail websites—we were building for **Snapchat's AR platform**, with:
+
 - Hundreds of millions of potential users
 - Different technical constraints (Snapchat's AR engine vs. WebAR)
 - New use cases (virtual try-on, AR shopping within Snapchat)
@@ -167,6 +177,7 @@ Plus, seeing furniture you helped render in AR show up on a retail site or in Sn
 **Role:** Full-Stack & DevOps Engineer
 
 **Key Outcomes:**
+
 - Built automated pipelines processing 50,000+ 3D assets for mobile AR
 - Supported 100+ retail vendor partnerships (e-commerce brands)
 - Automated 3D optimization: decimation, re-meshing, material re-assignment
