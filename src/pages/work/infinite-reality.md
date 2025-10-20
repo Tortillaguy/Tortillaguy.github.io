@@ -104,15 +104,18 @@ The metaverse may have gone through a hype cycle, but the underlying technologie
 
 **Tech Stack:** React, Next.js, TypeScript, Node.js, PostgreSQL, AWS, Three.js, React Three Fiber, GraphQL, REST APIs
 
+**Company:** Infinite Reality (became Napster Inc.)
+
 **Role:** Senior Full-Stack Engineer
 
-**Company Evolution:** Infinite Reality ’ Napster Inc.
+**Key Outcomes:**
+- Built full-stack platform infrastructure for immersive metaverse experiences
+- Optimized 3D asset delivery and progressive loading for virtual environments
+- Designed Postgres database architecture for virtual worlds, users, and assets
+- Implemented real-time multiplayer systems for shared virtual spaces
+- Developed music and entertainment-focused virtual experiences post-Napster pivot
+- Created scalable APIs for frontend and external integrations
 
-**Focus Areas:**
-- Full-stack platform development for immersive experiences
-- 3D asset delivery and optimization
-- Database architecture and performance optimization
-- Real-time multiplayer systems
-- Music and entertainment-focused virtual experiences
+**Focus:** Virtual storefronts, event spaces, social platforms, creator tools
 
 **Industry:** Metaverse, Virtual Events, Immersive Technology, Music Tech

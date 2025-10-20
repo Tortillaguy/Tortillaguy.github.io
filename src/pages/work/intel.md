@@ -116,12 +116,18 @@ Plus, getting paid to watch NBA games in VR while "testing the user experience"?
 
 **Tech Stack:** Unity, C#, PHP, jQuery, Angular, Python, FFmpeg, AWS, VR (Android/iOS/Windows), Video Encoding, Content Pipelines
 
+**Company:** Intel Corporation - True VR
+
 **Role:** Content Management Specialist / VR Developer
 
 **Platforms:** Gear VR, Daydream, Oculus Rift, HTC Vive, iOS, Android, Windows
 
-**Impact:**
-- Led development team for enterprise CMS platform
-- Built VR applications across 3+ major platforms
+**Key Outcomes:**
+- Led development team for enterprise CMS platform managing live VR sports content
+- Built VR applications across 3+ major platforms (Android, iOS, Windows)
 - Automated content pipelines processing thousands of VR video assets
-- Enabled multi-platform social media distribution
+- Enabled multi-platform social media distribution (Facebook 360, YouTube VR)
+- Designed UX/UI for spatial interfaces and immersive experiences
+- Built AWS-powered automation for transcoding and distribution
+
+**Sports Partnerships:** NBA, NFL

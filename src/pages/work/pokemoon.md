@@ -128,14 +128,18 @@ The Pokemoon project taught me that the intersection of **art, technology, and e
 
 **Tech Stack:** React, Three.js, React Three Fiber, Web3, Solidity, Binance Smart Chain, IPFS, GraphQL, MetaMask, WalletConnect
 
+**Project:** Pokemoon NFTs
+
 **Role:** Lead Developer
 
-**Team:** Led remote team of artists, blockchain developers, and marketers
+**Team:** Led remote team of 3D artists, blockchain developers, and marketers
 
-**Impact:**
-- Built 3D interactive NFT platform on BSC
+**Key Outcomes:**
+- Built 3D interactive NFT platform with real-time browser rendering
 - Launched multiple tokens listed on Coingecko and AMMs
-- Created DEX and marketplace infrastructure
-- Designed and implemented Web3 UX/UI
+- Created DEX and marketplace infrastructure for decentralized trading
+- Designed and implemented Web3 UX/UI patterns
+- Led cross-functional remote team across multiple time zones
+- Implemented automated 3D asset pipeline (Blender to IPFS to Web)
 
 **Blockchain:** Binance Smart Chain (BSC)

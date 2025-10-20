@@ -162,13 +162,18 @@ Plus, seeing furniture you helped render in AR show up on a retail site or in Sn
 
 **Tech Stack:** AWS, Docker, Node.js, Postgres, SQL, React, Three.js, WebGL, Electron, Blender (Python API), Python, REST APIs, GraphQL
 
-**Role:** Full-Stack & DevOps Engineer (later: Asset Pipeline Engineer during Snap acquisition)
+**Company:** Vertebrae (acquired by Snap Inc.)
 
-**Impact:**
-- Built automated pipelines processing 50,000+ 3D assets
-- Supported 100+ retail vendor partnerships
-- Automated 3D optimization (decimation, re-meshing, material processing)
-- Created custom desktop tools for technical artists
-- Transitioned infrastructure during Snap Inc. acquisition
+**Role:** Full-Stack & DevOps Engineer
+
+**Key Outcomes:**
+- Built automated pipelines processing 50,000+ 3D assets for mobile AR
+- Supported 100+ retail vendor partnerships (e-commerce brands)
+- Automated 3D optimization: decimation, re-meshing, material re-assignment
+- Created custom Electron desktop tools for technical artists
+- Designed Postgres database architecture for asset management at scale
+- Transitioned infrastructure and pipelines during Snap Inc. acquisition
+
+**Scale:** 50,000+ 3D assets, 100+ retail vendors
 
 **Acquisition:** Acquired by Snap Inc. in 2021

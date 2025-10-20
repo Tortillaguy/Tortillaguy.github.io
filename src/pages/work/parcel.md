@@ -182,13 +182,18 @@ Today, when I'm building immersive web experiences or working on creative tech p
 
 **Tech Stack:** React, Next.js, TypeScript, Redux, GraphQL, Node.js, Postgres, Figma, Storybook, Rollup, Docker, GitHub Actions, Web3 (web3-react, web3.js, ethers.js), Ethereum, Polygon
 
-**Role:** Frontend Engineer (with full-stack responsibilities)
+**Company:** Parcel
 
-**Impact:**
-- Optimized backend for 1,000+ daily active users
-- Built reusable component library and design system
-- Integrated Web3 libraries for NFT purchasing
-- Automated CI/CD pipelines reducing deployment time
-- Collaborated with design to establish UI/UX patterns
+**Role:** Frontend Engineer (Full-Stack)
 
-**Users:** 1,000+ daily active users (DAU)
+**Key Outcomes:**
+- Optimized GraphQL + Postgres backend for 1,000+ daily active users
+- Built reusable component library and design system with Figma integration
+- Integrated Web3 libraries for seamless NFT purchasing (Ethereum, Polygon)
+- Automated CI/CD pipelines with Docker and GitHub Actions
+- Collaborated with Head of Design to establish UI/UX patterns
+- Configured modern build pipelines (Rollup, Next.js, Storybook)
+
+**Scale:** 1,000+ daily active users (DAU)
+
+**Blockchain Networks:** Ethereum, Polygon

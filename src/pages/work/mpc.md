@@ -77,6 +77,17 @@ Plus, getting to work on bleeding-edge technology with passionate people? That's
 
 **Tech Stack:** C++, C#, Unity, HLSL, ShaderLab, ShaderGraph, Magic Leap Lumin SDK, Spatial Audio, AR/VR
 
-**Team Size:** Led 3 developers
+**Company:** Moving Picture Company (MPC)
+
+**Role:** VR Engineer
+
+**Team:** Led 3 developers
+
+**Key Outcomes:**
+- Developed Spotify application for Magic Leap platform
+- Extended Lumin SDK with C++ enhancements for AR ecosystem
+- Built reusable Unity architecture for AR/VR projects
+- Created custom shader effects and music visualizations
+- Collaborated directly with Magic Leap's internal development team
 
 **Location:** Los Angeles, CA
