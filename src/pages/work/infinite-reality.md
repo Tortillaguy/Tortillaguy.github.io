@@ -2,7 +2,7 @@
 layout: ../../layouts/BlogPost.astro
 ---
 
-# Building the Metaverse at Napster (Infinite Reality)
+# Building the Metaverse at Napster Inc. <br> (Infinite Reality)
 
 **March 2025 - July 2025**
 

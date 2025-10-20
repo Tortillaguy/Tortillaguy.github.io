@@ -82,6 +82,10 @@
     @apply text-blog-heading mb-1 text-3xl;
   }
 
+  #blog-post h1 {
+    @apply mb-6;
+  }
+
   #blog-post h2:nth-child(n + 1) {
     @apply mt-10;
   }
