@@ -1,13 +1,26 @@
 ---
 import LargeTag from "../components/LargeTag.astro";
-import skills from "../data/skills";
+import { skillCategories } from "../data/skills";
 ---
 
 <div class="prose-section-header">
   <h2 id="skills" class="prose-section-title">Skills</h2>
 </div>
-<div
-  class="m-auto mt-4 flex flex-wrap justify-center self-start gap-2 [&>*]:m-1 px-3 prose"
->
-  {skills.map((skill) => <LargeTag title={skill} />)}
+<div class="max-w-screen-xl mx-auto px-10 mt-6 mb-12">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    {
+      skillCategories.map((category) => (
+        <div class="skill-category">
+          <h3 class="text-xl font-semibold text-primary-light mb-3 text-shadow">
+            {category.name}
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            {category.skills.map((skill) => (
+              <LargeTag title={skill} />
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </div>
 </div>

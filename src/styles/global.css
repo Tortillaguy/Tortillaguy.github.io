@@ -79,12 +79,21 @@
   #blog-post h1,
   #blog-post h2,
   .prose-section-title {
-    @apply text-primary-light text-shadow-DEFAULT m-0;
+    @apply text-blog-heading mb-1 text-3xl;
+  }
+
+  #blog-post h2:nth-child(n + 1) {
+    @apply mt-10;
   }
 
   #blog-post h3,
   #blog-post h4 {
-    @apply text-blog-heading;
+    @apply text-[#e0b4f4] my-2 text-xl;
+  }
+
+  #blog-post p,
+  li {
+    @apply my-3 text-primary-body text-shadow text-sm md:text-base;
   }
 
   #blog-post strong,
@@ -106,6 +115,15 @@
 
   #blog-post blockquote {
     @apply border-l-4 border-accent-cyan pl-4 italic text-primary-body;
+  }
+
+  #blog-post hr {
+    @apply my-6;
+  }
+
+  #blog-post ol,
+  ul {
+    @apply !my-2;
   }
 
   .prose-section-header {

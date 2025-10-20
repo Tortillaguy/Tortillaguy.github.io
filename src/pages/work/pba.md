@@ -2,11 +2,11 @@
 layout: ../../layouts/BlogPost.astro
 ---
 
-# Going Deep on Blockchain: Polkadot Academy in Bali
+# Polkadot Blockchain Academy in Bali
 
 **September 2025**
 
-After years of building Web3 applications—NFT platforms, token launches, wallet integrations—I realized I had a gap in my knowledge. I understood how to _use_ blockchain technology, but I didn't truly understand how it _worked_ at a fundamental level. Smart contracts, consensus mechanisms, cryptographic primitives—these were mostly black boxes to me.
+After stepping away from crypto after Pokemoon —I realized I had a gap in my knowledge. I understood how to _use_ blockchain technology, but I didn't truly understand how it _worked_ at a fundamental level. Smart contracts, consensus mechanisms, cryptographic primitives—these were mostly black boxes to me.
 
 So in September 2025, I flew to Bali, Indonesia, to attend the **Polkadot Blockchain Academy**, an intensive program focused on **D'Apps (Decentralized Applications) development** using **Rust** and **Substrate**.
 
@@ -39,13 +39,6 @@ Before the academy, I had limited Rust experience. By the end, I understood why 
 - **Concurrency** without data races (essential for distributed systems)
 - **Type system** that catches bugs at compile time
 - **Performance** comparable to C/C++
-
-We spent significant time on Rust fundamentals:
-
-- Ownership and borrowing (Rust's unique memory management model)
-- Traits and generics (Rust's approach to polymorphism)
-- Error handling with `Result` and `Option`
-- Async programming for networked systems
 
 ### Substrate Framework
 
