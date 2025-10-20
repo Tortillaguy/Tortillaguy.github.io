@@ -12,7 +12,7 @@ So in September 2025, I flew to Bali, Indonesia, to attend the **Polkadot Blockc
 
 This wasn't a casual workshop. This was a deep technical dive into the architecture of blockchain systems, taught by core developers from the Polkadot ecosystem. And it completely changed how I think about decentralized technology.
 
-<img src="/assets/pba.webp" alt="Polkadot Blockchain Academy" width="1200" height="800" loading="eager" fetchpriority="high" class="rounded-lg shadow-lg my-8">
+<img src="/assets/pba.webp" alt="Polkadot Blockchain Academy" width="1200" height="800" loading="eager" fetchpriority="high" class="rounded-lg shadow-lg my-8" transition:name="project-pba">
 
 ## Why Polkadot?
 

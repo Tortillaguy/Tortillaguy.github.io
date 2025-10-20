@@ -2,30 +2,24 @@
 import BaseHead from "../components/BaseHead.astro";
 import { SITE_DESCRIPTION } from "../config";
 import MainLayout from "../layouts/MainLayout.astro";
-// 1. The frontmatter prop gives access to frontmatter and other data
+import { ViewTransitions } from "astro:transitions";
 const { frontmatter } = Astro.props;
 const { title, author } = frontmatter;
 ---
 
-<style>
-  #blog-post a {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
-</style>
-
-<html>
+<html lang="en" data-theme="cmyk">
   <head>
     <BaseHead
       title={"Adrian Cacho – Creative Technologist"}
       description={SITE_DESCRIPTION}
       image="assets/coffee.jpeg"
     />
+    <ViewTransitions />
   </head>
   <MainLayout>
     <div
       id="blog-post"
-      class="prose prose-lg md:mx-auto md:my-[1.5rem] prose-h3:text-blog-heading prose-invert text-slate-200 m-auto my-10 max-w-3xl rounded-xl border border-slate-700 bg-slate-800/50 p-6 backdrop-blur-lg sm:p-10 mx-3"
+      class="prose prose-lg md:mx-auto md:my-[1.5rem] prose-invert text-primary-body m-auto my-10 max-w-4xl rounded-xl panel p-6 sm:p-10 mx-3"
     >
       <slot />
     </div>

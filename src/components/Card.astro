@@ -37,8 +37,8 @@ if (!images[imagePath]) {
 </style>
 
 <a
-  href={postID && false ? `/work/${postID}` : link}
-  target="_blank"
+  href={postID ? `/work/${postID}` : link}
+  target={postID ? undefined : "_blank"}
   class="display:block rounded-[12px] hover:scale-[103%] card group duration-300 ease-in-out min-w-[16rem] bg-base-100 shadow-md not-prose flex-grow cursor-pointer overflow-hidden"
 >
   <figure>
@@ -55,6 +55,7 @@ if (!images[imagePath]) {
         width: "100%",
         ...imageStyle,
       }}
+      transition:name={postID ? `project-${postID}` : undefined}
     />
   </figure>
   <div class="p-4 pb-2 flex flex-col gap-2 bg-slate-800 filter:blur-md">

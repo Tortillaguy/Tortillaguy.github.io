@@ -7,7 +7,7 @@ const projects: Project[] = [
     role: "Student",
     link: "https://polkadot.academy/",
     tags: ["Rust", "Substrate", "Blockchain", "Web3"],
-    // postID: "pba",
+    postID: "pba",
   },
   {
     name: "Infinite Reality",

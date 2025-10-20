@@ -10,6 +10,7 @@ import Skills from "../sections/Skills.astro";
 import Productions from "../sections/Productions.astro";
 import About from "../sections/About.astro";
 import Scripts from "../components/Scripts.astro";
+import { ViewTransitions } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -20,6 +21,7 @@ import Scripts from "../components/Scripts.astro";
       description={SITE_DESCRIPTION}
       image="assets/coffee.jpeg"
     />
+    <ViewTransitions />
   </head>
 
   <MainLayout>

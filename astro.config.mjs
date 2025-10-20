@@ -18,6 +18,9 @@ export default defineConfig({
       applyBaseStyles: false
     }
   }), react(), svelte()],
+  experimental: {
+    clientPrerender: true,
+  },
   vite: {
     build: {
       cssCodeSplit: true,

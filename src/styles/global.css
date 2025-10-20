@@ -13,6 +13,62 @@ html {
   --tw-prose-links: white;
 }
 
+/* Blog post prose overrides */
+#blog-post.prose a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: #5dfeff;
+  transition: color 0.2s ease;
+}
+
+#blog-post.prose a:hover {
+  color: #edff9f;
+}
+
+#blog-post.prose h1,
+#blog-post.prose h2 {
+  color: #ffffff;
+  text-shadow: 2px 2px 8px #1a1a1a;
+  margin: 0;
+}
+
+#blog-post.prose h3,
+#blog-post.prose h4 {
+  color: #77d3ec;
+}
+
+#blog-post.prose strong,
+#blog-post.prose b {
+  color: #ffffff;
+}
+
+#blog-post.prose code {
+  background-color: #262626;
+  border-radius: 0.25rem;
+  padding: 0.125rem 0.5rem;
+  color: #5dfeff;
+}
+
+#blog-post.prose pre {
+  background-color: #262626;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 2px 2px 8px #1a1a1a;
+}
+
+#blog-post.prose pre code {
+  background-color: transparent;
+  padding: 0;
+  color: #e8eaeb;
+}
+
+#blog-post.prose blockquote {
+  border-left: 4px solid #5dfeff;
+  padding-left: 1rem;
+  font-style: italic;
+  color: #e8eaeb;
+}
+
 /* Reusable prose classes for section headings */
 .prose-section-header {
   @apply prose w-full flex justify-center mx-auto;
@@ -145,10 +201,10 @@ blockquote {
 
 .panel {
   /* From https://css.glass */
-  background: #8b98c15e;
+  background: #091845a8;
   border-radius: 12px;
   /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgb(161, 226, 251);
 }
