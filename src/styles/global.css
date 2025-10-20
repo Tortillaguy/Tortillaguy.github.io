@@ -8,10 +8,6 @@
     @apply scroll-smooth bg-[#090909];
   }
 
-  :root .prose {
-    --tw-prose-bullets: white;
-    --tw-prose-links: white;
-  }
 
   body {
     @apply m-0 p-0 h-screen w-screen overflow-auto overflow-x-hidden;
@@ -68,46 +64,47 @@
   }
 }
 
+
 @layer components {
-  /* Prose styles */
-  #blog-post.prose a {
+  /* Blog post specific styles */
+  #blog-post a {
     @apply underline underline-offset-4 text-accent-cyan hover:text-accent-yellow transition-colors duration-200;
   }
 
-  #blog-post.prose h1,
-  #blog-post.prose h2,
+  #blog-post h1,
+  #blog-post h2,
   .prose-section-title {
     @apply text-primary-light text-shadow-DEFAULT m-0;
   }
 
-  #blog-post.prose h3,
-  #blog-post.prose h4 {
+  #blog-post h3,
+  #blog-post h4 {
     @apply text-blog-heading;
   }
 
-  #blog-post.prose strong,
-  #blog-post.prose b {
+  #blog-post strong,
+  #blog-post b {
     @apply text-primary-light;
   }
 
-  #blog-post.prose code {
+  #blog-post code {
     @apply bg-dark rounded px-2 py-0.5 text-accent-cyan;
   }
 
-  #blog-post.prose pre {
+  #blog-post pre {
     @apply bg-dark rounded-lg p-4 shadow-dark;
   }
 
-  #blog-post.prose pre code {
+  #blog-post pre code {
     @apply bg-transparent p-0 text-primary-body;
   }
 
-  #blog-post.prose blockquote {
+  #blog-post blockquote {
     @apply border-l-4 border-accent-cyan pl-4 italic text-primary-body;
   }
 
   .prose-section-header {
-    @apply prose w-full flex justify-center mx-auto;
+    @apply w-full flex justify-center mx-auto text-3xl font-bold text-primary-light text-shadow-DEFAULT;
   }
 
   /* Gradient backgrounds */

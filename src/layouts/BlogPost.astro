@@ -17,11 +17,19 @@ const { title, author } = frontmatter;
     <ViewTransitions />
   </head>
   <MainLayout>
-    <div
+    <article
       id="blog-post"
-      class="prose prose-lg md:mx-auto md:my-[1.5rem] prose-invert text-primary-body m-auto my-10 max-w-4xl rounded-xl panel p-6 sm:p-10 mx-3"
+      class="prose prose-sm sm:prose-base lg:prose-lg xl:prose-xl
+             prose-invert prose-p:text-white prose-li:text-white
+             prose-headings:text-blog-heading
+             prose-a:text-accent-cyan prose-a:no-underline hover:prose-a:underline
+             prose-strong:text-primary-light prose-code:text-accent-yellow
+             prose-pre:bg-dark prose-pre:shadow-dark
+             prose-img:rounded-lg prose-img:shadow-dark
+             md:mx-auto md:my-[1.5rem] m-auto my-10 max-w-4xl
+             rounded-xl panel p-6 sm:p-10 mx-3"
     >
       <slot />
-    </div>
+    </article>
   </MainLayout>
 </html>

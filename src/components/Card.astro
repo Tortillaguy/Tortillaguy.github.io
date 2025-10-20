@@ -39,7 +39,7 @@ if (!images[imagePath]) {
 <a
   href={postID ? `/work/${postID}` : link}
   target={postID ? undefined : "_blank"}
-  class="display:block rounded-[12px] hover:scale-[103%] card group duration-300 ease-in-out min-w-[16rem] bg-base-100 shadow-md not-prose flex-grow cursor-pointer overflow-hidden"
+  class="display:block rounded-[12px] hover:scale-[103%] card group duration-300 ease-in-out min-w-[16rem] bg-base-100 shadow-md flex-grow cursor-pointer overflow-hidden"
 >
   <figure>
     <Image
@@ -71,7 +71,7 @@ if (!images[imagePath]) {
 
     {role && <span class="text-accent-cyan">{role}</span>}
     <div class="card-actions">
-      <div class="flex flex-wrap gap-[10px] prose gap-y-0">
+      <div class="flex flex-wrap gap-[10px] gap-y-0">
         {tags?.map((tag: string) => <Tag title={tag} />)}
       </div>
     </div>
