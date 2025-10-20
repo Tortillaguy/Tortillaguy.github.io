@@ -1,12 +1,6 @@
 ---
-import Card from "../components/Card.astro";
-import CardList from "../components/CardList.astro";
+import Section from "./Section.astro";
 import art from "../data/art";
 ---
 
-<div class="my-7">
-  <div id="art" class="prose-section-header">
-    <h2 class="prose-section-title">Art</h2>
-  </div>
-  <CardList projects={art} key="art" />
-</div>
+<Section id="art" title="Art" projects={art} spacing="my-7" />

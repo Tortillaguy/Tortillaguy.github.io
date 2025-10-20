@@ -1,0 +1,19 @@
+---
+import CardList from "../components/CardList.astro";
+
+interface Props {
+  id: string;
+  title: string;
+  projects: any[];
+  spacing?: string;
+}
+
+const { id, title, projects, spacing = "my-[16px]" } = Astro.props;
+---
+
+<div class={spacing}>
+  <div id={id} class="prose-section-header">
+    <h2 class="prose-section-title">{title}</h2>
+  </div>
+  <CardList projects={projects} key={id} />
+</div>

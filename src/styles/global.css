@@ -8,14 +8,20 @@
     @apply scroll-smooth bg-[#090909];
   }
 
-
   body {
     @apply m-0 p-0 h-screen w-screen overflow-auto overflow-x-hidden;
     @apply text-left bg-transparent break-words leading-relaxed text-[#444];
     font-family: Verdana, sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6, strong, b {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
     @apply text-[#222];
   }
 
@@ -64,7 +70,6 @@
   }
 }
 
-
 @layer components {
   /* Blog post specific styles */
   #blog-post a {
@@ -104,7 +109,7 @@
   }
 
   .prose-section-header {
-    @apply w-full flex justify-center mx-auto text-3xl font-bold text-primary-light text-shadow-DEFAULT;
+    @apply w-full flex justify-center mx-auto text-3xl font-bold text-primary-light text-shadow-DEFAULT my-8;
   }
 
   /* Gradient backgrounds */
@@ -120,7 +125,11 @@
   }
 
   .screen-gradient-3 {
-    background: linear-gradient(176deg, rgb(18, 24, 27) 50%, rgb(32, 39, 55) 100%);
+    background: linear-gradient(
+      176deg,
+      rgb(18, 24, 27) 50%,
+      rgb(32, 39, 55) 100%
+    );
   }
 
   /* Panel component */
@@ -174,7 +183,8 @@
     @apply rounded-[40px] border-4 border-transparent shadow-purple-glow animate-[rotate_5s_linear_infinite];
     --angle: 0deg;
     background: linear-gradient(#262626, #262626) padding-box,
-      conic-gradient(from var(--angle), #51c9ff, #ebf9ab, #e587ff, #51c9ff) border-box;
+      conic-gradient(from var(--angle), #51c9ff, #ebf9ab, #e587ff, #51c9ff)
+        border-box;
   }
 
   /* Scrollbar styles */

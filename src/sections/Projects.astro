@@ -1,12 +1,6 @@
 ---
-import CardList from "../components/CardList.astro";
+import Section from "./Section.astro";
 import projects from "../data/projects";
 ---
 
-<div class="my-[16px]">
-  <div id="projects" class="prose-section-header">
-    <h2 class="prose-section-title">Engineering</h2>
-  </div>
-
-  <CardList projects={projects} key="projects" />
-</div>
+<Section id="projects" title="Engineering" projects={projects} />
