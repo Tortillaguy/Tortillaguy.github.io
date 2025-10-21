@@ -6,11 +6,11 @@ layout: ../../layouts/BlogPost.astro
 
 **March 2025 - July 2025**
 
-When I joined Infinite Reality (which later became Napster Inc.) as a Senior Full-Stack Engineer in early 2025, the company had an ambitious vision: build the infrastructure for the next generation of immersive digital experienceswhat many were calling the "metaverse."
+When I joined Infinite Reality (which later became Napster Inc.) as a Senior Full-Stack Engineer in early 2025, the company had an ambitious vision: build the infrastructure for the next generation of immersive digital experiences - what many were calling the "metaverse."
 
 This wasn't about hyped-up virtual worlds with cartoon avatars. This was about creating **real utility**: virtual showrooms for retail, immersive event spaces for concerts, digital twins of physical locations, and platforms for genuine human connection in virtual environments.
 
-Coming fresh off my experience at Looking Glass Factory, where I'd built the first hologram CMS, I was excited to work on another frontier of immersive technology. And Napster's legacy in music made the mission even more compellingimagine exploring worlds in 3D.
+Coming fresh off my experience at Looking Glass Factory, where I'd built the first hologram CMS, I was excited to work on another frontier of immersive technology. And Napster's legacy in music made the mission even more compelling - imagine exploring worlds in 3D.
 
 ## The Mission: Bringing the Metaverse Back
 
