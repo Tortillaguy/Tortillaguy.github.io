@@ -1,0 +1,64 @@
+---
+// Lightweight skeleton/placeholder for the 3D background
+// Shows while the heavy BG component loads
+---
+
+<div class="bg-skeleton fixed w-full h-full top-0 left-0 z-[-1]">
+  <div class="bg-gradient"></div>
+</div>
+
+<style>
+  .bg-skeleton {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    animation: pulse 3s ease-in-out infinite;
+  }
+
+  .bg-gradient {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      ellipse at 50% 50%,
+      rgba(82, 39, 255, 0.15) 0%,
+      rgba(82, 39, 255, 0.05) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    animation: float 8s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.9;
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-20px) scale(1.05);
+    }
+  }
+
+  /* Fade out skeleton when BG loads */
+  .bg-loaded .bg-skeleton {
+    animation: fadeOut 0.5s ease-out forwards;
+  }
+
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bg-skeleton,
+    .bg-gradient {
+      animation: none;
+    }
+  }
+</style>

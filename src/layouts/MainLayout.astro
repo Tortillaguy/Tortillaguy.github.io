@@ -1,5 +1,6 @@
 ---
-import BG from "../components/BG";
+import BGLoader from "../components/BGLoader";
+import BGSkeleton from "../components/BGSkeleton.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 ---
@@ -20,7 +21,10 @@ import Header from "../components/Header.astro";
       works without JavaScript but some interactive features may be limited.
     </div>
   </noscript>
-  <BG client:only="react" />
+  <!-- Lightweight skeleton shows immediately -->
+  <BGSkeleton />
+  <!-- Heavy BG component loads after page is interactive -->
+  <BGLoader client:idle />
   <Header />
   <slot />
   <Footer />
