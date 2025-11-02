@@ -41,6 +41,9 @@ const { title, description, image = "/placeholder-social.jpg" } = Astro.props;
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
+<meta name="keywords" content="Adrian Cacho, Full-Stack Engineer, React Developer, TypeScript, Three.js, WebGL, VJ, Visual Artist, Creative Technologist, blocks.glass, Resolume, Disguise, TouchDesigner, Live Production, Web3, Blockchain, AR, VR" />
+<meta name="author" content="Adrian Cacho" />
+<link rel="canonical" href={Astro.url} />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
@@ -55,5 +58,42 @@ const { title, description, image = "/placeholder-social.jpg" } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<!-- Structured Data (JSON-LD) for better AI/crawler understanding -->
+<script type="application/ld+json" is:inline>
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Adrian Cacho",
+  "alternateName": "Cacho",
+  "url": "https://cacho.dev",
+  "image": "https://cacho.dev/assets/gig_selfie.webp",
+  "sameAs": [
+    "https://linkedin.com/in/agcacho",
+    "https://instagram.com/cacho.vibez"
+  ],
+  "jobTitle": "Senior Full-Stack Engineer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Napster Inc."
+  },
+  "description": "Creative technologist, visual artist, and full-stack developer with 7+ years of experience building scalable web applications, immersive experiences, and 3D graphics. VJ for major events including Proper NYE hosted by CRSSD.",
+  "knowsAbout": [
+    "React", "TypeScript", "Next.js", "Three.js", "WebGL", "Node.js", "PostgreSQL", "AWS",
+    "VJ", "Resolume", "Disguise", "TouchDesigner", "Notch", "Blender", "Unity", "Unreal Engine",
+    "Web3", "Blockchain", "AR", "VR", "Live Events", "Visual Production"
+  ],
+  "alumni": [
+    {
+      "@type": "EducationalOrganization",
+      "name": "University of California, Davis"
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "Polkadot Blockchain Academy"
+    }
+  ]
+}
+</script>
 
 <Scripts />
