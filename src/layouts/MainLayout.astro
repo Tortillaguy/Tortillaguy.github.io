@@ -16,10 +16,11 @@ import Header from "../components/Header.astro";
       }
     </style>
     <div class="noscript-banner">
-      For the best experience, please enable JavaScript. This portfolio site works without JavaScript but some interactive features may be limited.
+      For the best experience, please enable JavaScript. This portfolio site
+      works without JavaScript but some interactive features may be limited.
     </div>
   </noscript>
-  <BG client:load />
+  <BG client:only="react" />
   <Header />
   <slot />
   <Footer />
