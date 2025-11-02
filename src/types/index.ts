@@ -5,6 +5,7 @@ export interface Project {
   filename: string;
   link: string;
   role?: string;
+  dates?: string;
   tags?: string[];
   imageStyle?: CSSProperties;
   postID?: string;
