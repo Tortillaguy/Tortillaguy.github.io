@@ -13,8 +13,12 @@ const { projects, key } = Astro.props as { projects: Project[]; key: string };
     id={key + "-back"}
     class="fill-white w-5 h-5 scale-150 hover:scale-[2.5] transition-transform cursor-pointer hidden md:block"
   />
-  <div id={key + "-list"} class="card-list">
-    {projects.map((project, index) => <Card project={project} priority={index === 0 && key === "projects"} />)}
+  <div id={key + "-list"} class="card-list hide-scrollbar">
+    {
+      projects.map((project, index) => (
+        <Card project={project} priority={index === 0 && key === "projects"} />
+      ))
+    }
   </div>
   <img
     id={key + "-next"}
