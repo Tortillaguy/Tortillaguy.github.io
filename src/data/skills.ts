@@ -26,6 +26,8 @@ const skillCategories: SkillCategory[] = [
       "Docker",
       "GraphQL",
       "FastAPI",
+      "Rust",
+      "Substrate",
     ],
   },
   {
@@ -50,6 +52,8 @@ const skillCategories: SkillCategory[] = [
       "CI/CD",
       "DevOps",
       "Live Events",
+      "RAG",
+      "LangChain",
     ],
   },
 ];
@@ -71,6 +75,10 @@ const skills = [
   "Python",
   "Unity",
   "Unreal",
+  "Rust",
+  "Substrate",
+  "RAG",
+  "LangChain",
 ];
 
 export { skillCategories };

@@ -10,12 +10,21 @@ const projects: Project[] = [
     postID: "pba",
   },
   {
-    name: "Infinite Reality",
+    name: "Napster Inc.",
     filename: "infinite-reality.webp",
     role: "Senior Full-Stack Developer",
     dates: "March 2025 - July 2025",
     link: "https://www.ccn.com/news/technology/infinite-reality-startup-bringing-metaverse-back-from-the-dead-in-2025/",
-    tags: ["React", "Full-Stack", "AWS", "Postgres", "Typescript", "NextJS"],
+    tags: [
+      "React",
+      "Full-Stack",
+      "AWS",
+      "Postgres",
+      "Typescript",
+      "NextJS",
+      "RAG",
+      "LangChain",
+    ],
     postID: "infinite-reality",
     imageStyle: {
       objectFit: "contain",
