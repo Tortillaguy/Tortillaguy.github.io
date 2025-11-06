@@ -545,9 +545,9 @@ class ResumeDocxGenerator {
         for (const bullet of job.bullets) {
           paragraphs.push(
             new Paragraph({
-              indent: { left: convertInchesToTwip(0.25) },
+              indent: { left: convertInchesToTwip(0.125) },
               spacing: { after: 40 },
-              children: [new TextRun({ text: `• ${bullet}`, size: 20 })],
+              children: [new TextRun({ text: `• ${bullet}`, size: 18 })],
             })
           );
         }
@@ -862,7 +862,12 @@ class ResumePdfGenerator {
         const categoryWidth = this.boldFont.widthOfTextAtSize(categoryText, 9);
 
         // Draw category (bold)
-        this.drawText(categoryText, this.margin + skillsIndent, 9, this.boldFont);
+        this.drawText(
+          categoryText,
+          this.margin + skillsIndent,
+          9,
+          this.boldFont
+        );
 
         // Calculate remaining width for skills
         const skillsX = this.margin + skillsIndent + categoryWidth;
@@ -877,7 +882,7 @@ class ResumePdfGenerator {
         // Draw skills lines
         for (let i = 0; i < skillsLines.length; i++) {
           if (i > 0) this.checkNewPage(this.lineHeight); // Check for subsequent lines
-          const xPos = i === 0 ? skillsX : this.margin + skillsIndent + 15; // First line next to title, others indented
+          const xPos = i === 0 ? skillsX : skillsX; // First line next to title, others indented
           this.drawText(skillsLines[i], xPos, 9, this.regularFont);
           if (i < skillsLines.length - 1 || skillsLines.length === 1) {
             this.yPosition -= this.lineHeight - 2;
@@ -896,7 +901,7 @@ class ResumePdfGenerator {
         // Calculate height of the job entry to avoid page breaks
         let bulletsHeight = 0;
         for (const bullet of exp.bullets) {
-          const textIndent = 22;
+          const textIndent = 11; // Indent for the text (and wrapped lines)
           const textMaxWidth = this.contentWidth - textIndent;
           const bulletLines = this.wrapText(
             bullet,
@@ -905,7 +910,7 @@ class ResumePdfGenerator {
             9
           );
           bulletsHeight += bulletLines.length * (this.lineHeight - 2);
-          bulletsHeight += 2; // space after each bullet
+          bulletsHeight += 3; // space after each bullet
         }
         const jobEntryHeight =
           this.lineHeight * 2 + // For company and title lines
@@ -944,8 +949,8 @@ class ResumePdfGenerator {
         // Bullets
         for (const bullet of exp.bullets) {
           const bulletPoint = "•";
-          const bulletIndent = 10; // Indent for the '•'
-          const textIndent = 22; // Indent for the text (and wrapped lines)
+          const bulletIndent = 5; // Indent for the '•'
+          const textIndent = 11; // Indent for the text (and wrapped lines)
           const textMaxWidth = this.contentWidth - textIndent;
 
           const bulletLines = this.wrapText(
@@ -975,7 +980,7 @@ class ResumePdfGenerator {
             );
             this.yPosition -= this.lineHeight - 2;
           }
-          this.yPosition -= 2; // Add space after each bullet point
+          this.yPosition -= 3; // Add space after each bullet point
         }
         this.yPosition -= 4;
       }

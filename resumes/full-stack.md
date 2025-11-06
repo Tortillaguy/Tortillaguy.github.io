@@ -25,7 +25,7 @@ Senior Full Stack Developer with 8+ years building production applications servi
 
 ## Professional Experience
 
-### Napster Inc. | Remote
+### Napster Inc. | Remote (Los Angeles)
 
 **Senior Full Stack Developer** | March 2025 - July 2025
 
@@ -35,7 +35,7 @@ Senior Full Stack Developer with 8+ years building production applications servi
 - Implemented multi-user chat and settings features supporting text/video communication while maintaining 60 FPS during simultaneous 3D scene navigation and UI interactions
 - Optimized Three.js rendering using custom shaders and instanced geometry patterns, enabling smooth avatar navigation and touch controls in complex 3D environments on mobile browsers
 
-### Looking Glass Factory | Remote
+### Looking Glass Factory | Remote (Los Angeles)
 
 **Senior Full Stack Developer** | May 2023 - March 2025
 
@@ -45,7 +45,7 @@ Senior Full Stack Developer with 8+ years building production applications servi
 - Spearheaded Gen AI text-to-3D hologram service using Python, Docker, FastAPI, and Modal, delivering months ahead of schedule
 - Established component library with Storybook, reducing UI regression bugs by 40% and accelerating development velocity
 
-### Parcel | Remote
+### Parcel | Remote (Los Angeles)
 
 **Senior Full Stack Developer** | March 2022 - January 2023
 
@@ -54,7 +54,7 @@ Senior Full Stack Developer with 8+ years building production applications servi
 - Automated CI/CD pipelines with GitHub Actions, cutting build and deployment times from 45 minutes to 15 minutes
 - Architected reusable component library (React, TypeScript, Storybook) to unify 3 disparate codebases into a single, cohesive design system, significantly reducing redundant CSS and accelerating development time
 
-### Vertebrae Inc. (acquired by Snap Inc.) | Remote
+### Vertebrae Inc. (acquired by Snap Inc.) | Remote (Los Angeles)
 
 **Full Stack Developer** | August 2020 - March 2022
 
@@ -87,6 +87,16 @@ Senior Full Stack Developer with 8+ years building production applications servi
 - Delivered interactive AR/VR experiences for high-profile clients, including National Geographic, building Unity applications with C# that drove measurable user engagement for multi-platform marketing campaigns
 - Collaborated with Magic Leap engineering team to extend SDK capabilities for spatial audio features in Spotify application prototype using C++
 - Engineered Python automation scripts to integrate high-volume digital content pipelines across VFX departments, orchestrating asset handoffs between Maya, Nuke, and proprietary rendering systems—reducing manual file operations by 50%
+
+### Intel Corporation | Santa Clara, CA
+
+**Full Stack Developer** | February 2017 - January 2018
+
+- Led team of 4 developers building internal CMS (PHP, jQuery, Angular) for Intel True VR, managing 300+ pieces of VR/360 media content across live sports events, with app adopted for 2014 Winter Olympics coverage on ABC
+- Architected full-stack VR content delivery system: designed database schema, built REST API (Python, PHP), and implemented Unity client-side logic (C#) enabling personalized content feeds based on user preferences and channel subscriptions
+- Engineered automated transcoding pipeline processing 500+ VR videos for multi-platform distribution (Facebook, YouTube, native app), reducing editor turnaround time by 95% and saving weeks of manual work using Python and FFmpeg
+- Designed UX, UI, and user stories for VR applications across Android, iOS, and Windows platforms
+- Integrated AWS services to automate content pipelines between Python and PHP backend frameworks, streamlining media archive and delivery workflows
 
 ## EDUCATION
 
