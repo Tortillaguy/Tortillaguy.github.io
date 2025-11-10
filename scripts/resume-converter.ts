@@ -898,28 +898,9 @@ class ResumePdfGenerator {
       this.drawSectionHeader("Professional Experience");
 
       for (const exp of data.experience) {
-        // Calculate height of the job entry to avoid page breaks
-        let bulletsHeight = 0;
-        for (const bullet of exp.bullets) {
-          const textIndent = 11; // Indent for the text (and wrapped lines)
-          const textMaxWidth = this.contentWidth - textIndent;
-          const bulletLines = this.wrapText(
-            bullet,
-            textMaxWidth,
-            this.regularFont,
-            9
-          );
-          bulletsHeight += bulletLines.length * (this.lineHeight - 2);
-          bulletsHeight += 3; // space after each bullet
-        }
-        const jobEntryHeight =
-          this.lineHeight * 2 + // For company and title lines
-          12 + // Space after company
-          14 + // Space after title
-          bulletsHeight +
-          4; // Space after all bullets
-
-        this.checkNewPage(jobEntryHeight);
+        // Check for space for company and title (keep them together)
+        const headerHeight = this.lineHeight * 2 + 12 + 14;
+        this.checkNewPage(headerHeight);
 
         // Company name and location
         this.drawText(exp.company, this.margin, 10, this.boldFont);
