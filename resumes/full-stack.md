@@ -1,15 +1,15 @@
 # Adrian Cacho
 
-## Senior Full Stack Developer
+## Senior Unity Developer | 3D Graphics Engineer
 
-Venice, CA | +1 (209) 628-6613 | agcacho22@gmail.com  
-LinkedIn - https://linkedin.com/in/agcacho  
-Portfolio - https://cacho.dev  
+Venice, CA | +1 (209) 628-6613 | agcacho22@gmail.com
+LinkedIn - https://linkedin.com/in/agcacho
+Portfolio - https://cacho.dev
 Github - https://github.com/Tortillaguy
 
 ## Summary
 
-Senior Full Stack Developer with 8+ years building production applications serving 100k+ users. Led engineering teams delivering AI-powered platforms, 3D web experiences, and blockchain solutions. Optimizes web and 3D graphics performance—reduced web-app load time by 75% and build times from 30 minutes to under 10 minutes. Expert across modern frontend (React, TypeScript, Three.js), backend (Python, FastAPI, Node.js), and cloud infrastructure (AWS, Docker, CI/CD).
+Senior Unity Developer with 8+ years building high-performance 3D applications, AR/VR experiences, and real-time graphics solutions for mobile and web platforms. Proven track record leading teams to deliver scalable 3D asset pipelines, interactive AR experiences for 100k+ users at live events, and optimized rendering systems achieving 60 FPS on mobile devices. Expert in Unity (C#), 3D graphics optimization, shader development (GLSL/HLSL), WebGL, and automated content pipelines using Blender and Python. Shipped 10+ applications to production, including Magic Leap AR experiences and mobile AR for Coachella.
 
 ## Technical Skills
 

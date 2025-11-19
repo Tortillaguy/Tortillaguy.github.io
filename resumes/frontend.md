@@ -26,79 +26,79 @@ Senior Frontend Developer with 8+ years building high-performance web applicatio
 
 **Senior Frontend Developer** | March 2025 - July 2025
 
-- Engineered WebGL instancing system rendering 10,000+ 3D objects at 60 FPS on mobile devices using Three.js and custom shaders
-- Built real-time 3D virtual concert platform supporting 50+ concurrent users with seamless interactions in React and TypeScript
-- Architected component library of 40+ React components with Storybook testing pipeline, reducing development time by 50% across 3 engineering teams and establishing consistent design patterns
-- Implemented multi-user chat and settings UI supporting text/video communication while maintaining 60 FPS during simultaneous 3D scene navigation, optimizing React render cycles and WebGL draw calls
-- Optimized Three.js rendering pipeline using instanced geometry patterns and custom GLSL shaders, delivering smooth touch controls and avatar navigation in complex 3D environments on mobile browsers
+- Built WebGL instancing system rendering 10k+ 3D objects at 60 FPS on mobile with Three.js and custom shaders
+- Developed real-time 3D virtual concert platform supporting 50+ concurrent users in React and TypeScript
+- Architected component library with 40+ React components and Storybook, reducing dev time by 50% across 3 teams
+- Built multi-user chat and settings UI maintaining 60 FPS during 3D navigation through optimized render cycles
+- Optimized Three.js pipeline with instanced geometry and GLSL shaders for smooth mobile 3D navigation
 
 ### Looking Glass Factory | Remote (Los Angeles)
 
 **Senior Frontend Developer** | May 2023 - March 2025
 
-- Scaled Next.js content management platform serving 100,000+ digital assets with GraphQL and tRPC, reducing page load times by 70% through code splitting, lazy loading, and optimized database queries
-- Built React frontends for RAG-powered AI assistants using streaming responses, delivering immersive chat experiences for enterprise clients including Accenture and Marriott
-- Led frontend architecture for the company's first subscription service, integrating Stripe and Shopify checkout flows to secure 100+ paying subscribers at launch with seamless payment UX
-- Developed responsive UI for Gen AI text-to-3D hologram service using React, TypeScript, and Tailwind, delivering months ahead of schedule with real-time generation previews
-- Established component library with Storybook, TypeScript, and design tokens, reducing UI regression bugs by 40% and accelerating development velocity across teams
+- Scaled Next.js CMS serving 100k+ assets with GraphQL/tRPC, reducing page load times by 70%
+- Built React frontends for RAG-powered AI chat experiences for Accenture and Marriott using streaming responses
+- Led frontend for subscription service integrating Stripe and Shopify, securing 100+ paying subscribers at launch
+- Developed Gen AI text-to-3D UI with React, TypeScript, and Tailwind, delivering months ahead of schedule
+- Built component library with Storybook and design tokens, reducing UI bugs by 40%
 
 ### Parcel | Remote (Los Angeles)
 
 **Senior Frontend Developer** | March 2022 - January 2023
 
-- Integrated Web3 libraries (ethers.js) with React, implementing multi-wallet support (MetaMask, Coinbase, Magic) supporting 10k+ wallet connections with error handling and transaction state management
-- Designed and implemented checkout UI/UX workflows in React for cross-metaverse asset management and NFT transactions, supporting major platforms including Decentraland and The Sandbox with responsive design
-- Optimized CI/CD pipelines with GitHub Actions, cutting frontend build and deployment times from 45 minutes to 15 minutes through parallel builds and caching strategies
-- Architected reusable React component library (TypeScript, Storybook) to unify 3 disparate codebases into a single, cohesive design system with shared CSS-in-JS patterns, significantly reducing bundle size and accelerating development
+- Integrated Web3 (ethers.js) multi-wallet support (MetaMask, Coinbase, Magic) with 10k+ wallet connections
+- Built checkout UI/UX for cross-metaverse NFT transactions supporting Decentraland and The Sandbox
+- Optimized CI/CD with GitHub Actions, reducing build times from 45 to 15 minutes
+- Unified 3 codebases into shared React component library with TypeScript and Storybook
 
 ### Vertebrae Inc. (acquired by Snap Inc.) | Remote (Los Angeles)
 
 **Frontend Developer** | August 2020 - March 2022
 
-- Built React admin dashboard and CMS frontend managing 50,000+ 3D assets with virtualized lists, infinite scroll, and optimized render performance for 1,000+ concurrent users
-- Developed responsive UI components for AR virtual try-on experiences, integrating real-time 3D previews with Three.js and React Three Fiber for retail brand partners
-- Created frontend workflows for automated retail vendor onboarding, reducing manual steps by 95% through progressive form UIs, validation, and file upload optimization
-- Implemented complex filtering and search UIs for high-volume asset management, including custom controls for export formats, polygon counts, and iframe embedding with real-time previews
-- Built and shipped Electron-based React desktop application with drag-and-drop interfaces for automated asset processing, saving art team 15 hours per week through intuitive batch operations UI
+- Built React CMS managing 50k+ 3D assets with virtualized lists for 1,000+ concurrent users
+- Developed AR virtual try-on UI with real-time 3D previews using Three.js and React Three Fiber
+- Created automated vendor onboarding workflows reducing manual steps by 95%
+- Implemented filtering and search UIs with custom controls for asset management and iframe embedding
+- Shipped Electron React app with drag-and-drop batch processing, saving art team 15 hours/week
 
 ### Genies | Los Angeles, CA
 
 **Senior Frontend Developer** | January 2020 - August 2020
 
-- Architected React Native mobile app structure, establishing component patterns, navigation flows, and state management for 3D avatar customization system with real-time rendering
-- Built e-commerce cosmetic shop UI with React, implementing product catalogs, shopping cart, and checkout flows optimized for mobile-first responsive design
-- Designed cross-platform sharing functionality with React Native, enabling SMS-based avatar sharing with deep linking and dynamic preview generation
-- Established frontend architecture patterns including API fetching strategies, client-side caching layers, and optimistic UI updates for seamless user experience
-- Reduced 3D asset loading times from minutes to under 30 seconds through lazy loading, progressive asset streaming, and optimized Unity WebGL integration
+- Architected React Native app with component patterns and state management for 3D avatar customization
+- Built e-commerce cosmetic shop UI with product catalogs, cart, and checkout flows
+- Designed cross-platform avatar sharing with SMS deep linking and dynamic preview generation
+- Established frontend patterns including API fetching, client-side caching, and optimistic UI updates
+- Reduced 3D asset loading from minutes to under 30 seconds through lazy loading and Unity WebGL optimization
 
 ### PortalsXR | Los Angeles, CA
 
 **Lead Frontend Developer** | January 2019 - January 2020
 
-- Led frontend development for 6 mobile applications using React Native, delivering AR experiences for high-traffic live events including Coachella with 100% uptime
-- Built location-based AR interfaces with real-time 3D content rendering, integrating Unity WebGL views within React Native for seamless native-to-web transitions
-- Implemented time-coded content delivery systems with React, coordinating live event schedules with AR experience triggers and real-time user notifications
-- Optimized React Native performance for high-concurrency scenarios, ensuring smooth UI interactions during peak traffic at major festivals and concerts
-- Developed responsive mobile-first interfaces with gesture controls, camera integration, and real-time 3D overlays for immersive AR experiences
+- Led frontend for 6 React Native mobile apps delivering AR experiences for Coachella with 100% uptime
+- Built location-based AR interfaces with real-time 3D rendering, integrating Unity WebGL within React Native
+- Implemented time-coded content delivery coordinating live event schedules with AR triggers
+- Optimized React Native performance for peak traffic at major festivals and concerts
+- Developed mobile-first interfaces with gesture controls, camera integration, and real-time 3D overlays
 
 ### Moving Picture Company | Los Angeles, CA
 
 **Frontend Developer** | February 2018 - February 2019
 
-- Built interactive AR/VR web experiences for high-profile clients including National Geographic using React and Three.js, driving measurable user engagement for multi-platform campaigns
-- Developed responsive 3D web applications with Unity WebGL integration, creating seamless experiences across desktop, mobile, and VR headsets
-- Implemented UI components for spatial audio controls in experimental Spotify application prototype, working closely with design to create intuitive 3D audio visualization interfaces
-- Created React-based content management interfaces for VFX pipelines, streamlining artist workflows and reducing manual operations by 50% through intuitive drag-and-drop UIs
+- Built AR/VR web experiences for National Geographic using React and Three.js
+- Developed responsive 3D web apps with Unity WebGL across desktop, mobile, and VR headsets
+- Implemented UI for spatial audio controls in experimental Spotify prototype with 3D audio visualization
+- Created React CMS interfaces for VFX pipelines, reducing manual operations by 50%
 
 ### Intel Corporation | Santa Clara, CA
 
 **Frontend Developer** | February 2017 - January 2018
 
-- Led frontend development for internal CMS built with Angular and jQuery, managing 300+ VR/360 media content pieces with optimized data tables, filters, and batch operations for Intel True VR
-- Architected responsive web interfaces for VR content delivery across Android, iOS, and Windows platforms, implementing adaptive layouts and touch-optimized controls
-- Built personalized content feed UIs with infinite scroll and lazy loading, integrating REST APIs for user preferences and channel subscriptions with real-time updates
-- Designed UX flows and UI components for VR video players, implementing custom controls for 360° navigation, quality selection, and playback optimization
-- Developed admin interfaces for automated video transcoding workflows, creating progress tracking UIs and batch processing dashboards that reduced editor turnaround time by 95%
+- Led frontend for internal CMS with Angular/jQuery managing 300+ VR/360 media pieces for Intel True VR
+- Architected responsive VR content delivery across Android, iOS, and Windows with adaptive layouts
+- Built personalized content feeds with infinite scroll and REST API integration for user preferences
+- Designed VR video player UI with custom controls for 360° navigation and quality selection
+- Developed admin interfaces for video transcoding, reducing editor turnaround time by 95%
 
 ## EDUCATION
 
