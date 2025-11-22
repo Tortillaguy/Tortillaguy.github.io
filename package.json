@@ -10,7 +10,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "optimize-images": "node optimize-images.cjs",
-    "resume": "npx tsx ./scripts/resume-converter.ts --pdf resumes/frontend.md -o ./resumes/Cacho-Frontend-Developer.pdf"
+    "resume": "npx tsx ./scripts/resume-converter.ts --pdf resumes/full-stack.md -o ./resumes/Cacho-Full-Stack-Developer.pdf"
   },
   "dependencies": {
     "@astrojs/mdx": "^0.12.0",
