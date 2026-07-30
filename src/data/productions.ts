@@ -5,7 +5,7 @@ const productions: Project[] = [
     name: "Proper NYE 2025",
     filename: "proper_2025.webp",
     link: "https://www.instagram.com/p/DFBVHfZTqrD",
-    role: "VJ — Resolume / Disguise · Hosted by CRSSD · Also NYE '24",
+    role: "VJ — Resolume / Disguise · Hosted by CRSSD · Also NYE ’24",
     tags: ["Resolume", "Disguise"],
     imageStyle: { objectPosition: "50% 70%" },
     year: "2025",
