@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Anton&family=Space+Grotesk:wght@500;700&family=Space+Mono:wght@400;700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   html {
-    @apply scroll-smooth bg-[#090909];
+    @apply scroll-smooth bg-encore-bg;
   }
 
   body {
@@ -303,6 +303,14 @@
       #e587ff,
       #51c9ff
     );
+  }
+
+  /* Encore: chromatic fringe (hero LIGHT, line only) */
+  .fringe {
+    text-shadow: -2px 0 rgba(79, 227, 255, 0.5), 2px 0 rgba(255, 75, 216, 0.5);
+  }
+  .fringe-sm {
+    text-shadow: -1px 0 rgba(79, 227, 255, 0.5), 1px 0 rgba(255, 75, 216, 0.5);
   }
 }
 
