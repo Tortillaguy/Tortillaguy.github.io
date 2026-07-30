@@ -305,12 +305,16 @@
     );
   }
 
-  /* Encore: chromatic fringe (hero LIGHT, line only) */
+  /* Encore: chromatic fringe — hero lockup (LIGHT,/MOTION,) and section header titles.
+     Offset scales with type size: -sm ~36px, base ~64px, -lg ~140px display. */
   .fringe {
     text-shadow: -2px 0 rgba(79, 227, 255, 0.5), 2px 0 rgba(255, 75, 216, 0.5);
   }
   .fringe-sm {
     text-shadow: -1px 0 rgba(79, 227, 255, 0.5), 1px 0 rgba(255, 75, 216, 0.5);
+  }
+  .fringe-lg {
+    text-shadow: -4px 0 rgba(79, 227, 255, 0.5), 4px 0 rgba(255, 75, 216, 0.5);
   }
 }
 

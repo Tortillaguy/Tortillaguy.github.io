@@ -29,7 +29,7 @@ const cards = ["Disguise Training", "Seismic Events", "SD Renegade"]
                   <Image
                     src={img(f)}
                     alt={`${featured.name} — ${featured.role}`}
-                    class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-200"
+                    class="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-200 ease-in-out"
                     widths={[390, 800]}
                     sizes="(min-width: 768px) 33vw, 33vw"
                   />
@@ -40,7 +40,7 @@ const cards = ["Disguise Training", "Seismic Events", "SD Renegade"]
             <Image
               src={img(featured.filename)}
               alt={`${featured.name} — ${featured.role}`}
-              class="w-full h-[320px] md:h-[560px] object-cover group-hover:scale-[1.02] transition-transform duration-200"
+              class="w-full h-[320px] md:h-[560px] object-cover group-hover:scale-[1.04] transition-transform duration-200 ease-in-out"
               style={featured.imageStyle}
               widths={[390, 800, 1440]}
               sizes="100vw"
@@ -69,7 +69,7 @@ const cards = ["Disguise Training", "Seismic Events", "SD Renegade"]
             <Image
               src={img(p.filename)}
               alt={`${p.name} — ${p.role}`}
-              class="w-full h-[220px] md:h-[260px] object-cover group-hover:scale-[1.02] transition-transform duration-200"
+              class="w-full h-[220px] md:h-[260px] object-cover group-hover:scale-[1.04] transition-transform duration-200 ease-in-out"
               style={p.imageStyle}
               widths={[390, 800]}
               sizes="(min-width: 768px) 33vw, 100vw"
