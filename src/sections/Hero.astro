@@ -1,14 +1,18 @@
 ---
+import { Image } from "astro:assets";
+import heroImage from "../assets/hero.jpg";
 ---
 
 <section
   id="home"
   class="relative flex flex-col justify-between min-h-[760px] md:min-h-[880px] overflow-hidden"
 >
-  <img
-    src="/assets/hero.jpg"
+  <Image
+    src={heroImage}
     alt="Festival stage under light beams with crowd silhouettes"
     class="absolute inset-0 w-full h-full object-cover"
+    widths={[390, 800, 1440, 2400]}
+    sizes="100vw"
     loading="eager"
     fetchpriority="high"
   />
