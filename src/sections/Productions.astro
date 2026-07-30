@@ -31,6 +31,7 @@ const cards = ["Disguise Training", "Seismic Events", "SD Renegade"]
                     alt={`${featured.name} — ${featured.role}`}
                     class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-200"
                     widths={[390, 800]}
+                    sizes="(min-width: 768px) 33vw, 33vw"
                   />
                 </div>
               ))}
@@ -42,6 +43,7 @@ const cards = ["Disguise Training", "Seismic Events", "SD Renegade"]
               class="w-full h-[320px] md:h-[560px] object-cover group-hover:scale-[1.02] transition-transform duration-200"
               style={featured.imageStyle}
               widths={[390, 800, 1440]}
+              sizes="100vw"
             />
           )}
         </div>
@@ -70,6 +72,7 @@ const cards = ["Disguise Training", "Seismic Events", "SD Renegade"]
               class="w-full h-[220px] md:h-[260px] object-cover group-hover:scale-[1.02] transition-transform duration-200"
               style={p.imageStyle}
               widths={[390, 800]}
+              sizes="(min-width: 768px) 33vw, 100vw"
             />
           </div>
           <div class="flex items-center justify-between pt-3">

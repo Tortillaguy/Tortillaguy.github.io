@@ -12,9 +12,9 @@ const img = (filename: string) => images[`../assets/${filename}`]?.default;
 const pick = (n: string) => art.find((p) => p.name === n);
 // Desktop mosaic rows: [wide, narrow], [narrow, wide], [half, half]
 const rows = [
-  { pieces: [pick("Letting Go"), pick("Pyro Demo")], cols: "md:grid-cols-[2fr_1fr]" },
-  { pieces: [pick("Hardstyle Visuals"), pick("Oblivion V2")], cols: "md:grid-cols-[1fr_2fr]" },
-  { pieces: [pick("Light It Up"), pick("Crystals")], cols: "md:grid-cols-2" },
+  { pieces: [pick("Letting Go"), pick("Pyro Demo")], cols: "md:grid-cols-[2fr_1fr]", sizes: ["(min-width: 768px) 66vw, 100vw", "(min-width: 768px) 33vw, 100vw"] },
+  { pieces: [pick("Hardstyle Visuals"), pick("Oblivion V2")], cols: "md:grid-cols-[1fr_2fr]", sizes: ["(min-width: 768px) 33vw, 100vw", "(min-width: 768px) 66vw, 100vw"] },
+  { pieces: [pick("Light It Up"), pick("Crystals")], cols: "md:grid-cols-2", sizes: ["(min-width: 768px) 50vw, 100vw", "(min-width: 768px) 50vw, 100vw"] },
 ];
 ---
 
@@ -25,7 +25,7 @@ const rows = [
     {
       rows.map((row) => (
         <div class={`grid grid-cols-1 gap-8 md:gap-5 ${row.cols}`}>
-          {row.pieces.filter(Boolean).map((p) => (
+          {row.pieces.filter(Boolean).map((p, i) => (
             <a href={p.link} target="_blank" rel="noopener noreferrer" class="block group">
               <div class="overflow-hidden border border-encore-line">
                 <Image
@@ -34,6 +34,7 @@ const rows = [
                   class="w-full h-[300px] md:h-[420px] object-cover group-hover:scale-[1.02] transition-transform duration-200"
                   style={p.imageStyle}
                   widths={[390, 900, 1440]}
+                  sizes={row.sizes[i]}
                 />
               </div>
               <div class="flex items-center justify-between pt-3">
