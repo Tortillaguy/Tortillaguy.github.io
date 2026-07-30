@@ -1,13 +1,13 @@
 <header class="flex items-center justify-between px-5 py-4 md:px-12 md:py-7">
-  <a href="#home" class="font-plex font-semibold text-sm tracking-[2px] text-encore-fg">CACHO.DEV</a>
+  <a href="/#home" class="font-plex font-semibold text-sm tracking-[2px] text-encore-fg">CACHO.DEV</a>
   <nav class="hidden md:flex items-center gap-9">
     {
       [
-        ["LIVE", "#home"],
-        ["SHOWS", "#shows"],
-        ["ART", "#art"],
-        ["ENGINEERING", "#engineering"],
-        ["CONTACT", "#contact"],
+        ["LIVE", "/#home"],
+        ["SHOWS", "/#shows"],
+        ["ART", "/#art"],
+        ["ENGINEERING", "/#engineering"],
+        ["CONTACT", "/#contact"],
       ].map(([label, href]) => (
         <a href={href} class="font-plex text-xs tracking-[2px] text-encore-dim hover:text-encore-fg transition-colors">
           {label}
@@ -15,5 +15,5 @@
       ))
     }
   </nav>
-  <a href="#contact" class="md:hidden font-plex text-xs tracking-[2px] text-encore-accent">CONTACT</a>
+  <a href="/#contact" class="md:hidden font-plex text-xs tracking-[2px] text-encore-accent">CONTACT</a>
 </header>
