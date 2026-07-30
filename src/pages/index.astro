@@ -2,14 +2,11 @@
 import BaseHead from "../components/BaseHead.astro";
 import { SITE_DESCRIPTION } from "../config";
 import MainLayout from "../layouts/MainLayout.astro";
-import Art from "../sections/Art.astro";
-import Contact from "../sections/Contact.astro";
 import Hero from "../sections/Hero.astro";
-import Projects from "../sections/Projects.astro";
-import Skills from "../sections/Skills.astro";
 import Productions from "../sections/Productions.astro";
-import About from "../sections/About.astro";
-import Scripts from "../components/Scripts.astro";
+import Art from "../sections/Art.astro";
+import Engineering from "../sections/Engineering.astro";
+import Contact from "../sections/Contact.astro";
 import { ViewTransitions } from "astro:transitions";
 ---
 
@@ -17,20 +14,18 @@ import { ViewTransitions } from "astro:transitions";
 <html lang="en" data-theme="cmyk">
   <head>
     <BaseHead
-      title={"Adrian Cacho – Creative Technologist"}
+      title={"Adrian Cacho – Live Visuals, Motion & Code"}
       description={SITE_DESCRIPTION}
-      image="assets/coffee.jpeg"
+      image="assets/hero.jpg"
     />
     <ViewTransitions />
   </head>
 
   <MainLayout>
     <Hero />
-    <Projects />
     <Productions />
     <Art />
-    <About />
-    <Skills />
+    <Engineering />
     <Contact />
   </MainLayout>
 </html>

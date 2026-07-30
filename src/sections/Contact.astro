@@ -1,12 +1,26 @@
-<div class="mt-14">
-  <div id="contact" class="prose-section-header">
+---
+import SectionHeader from "../components/SectionHeader.astro";
+---
+
+<section class="px-5 md:px-12 pt-16 md:pt-32">
+  <SectionHeader id="contact" index="04" title="LET’S TALK" meta="BOOKING SPRING 2026" />
+
+  <div class="md:flex md:items-center md:justify-between md:gap-12 pt-2">
+    <p class="font-inter text-encore-dim text-sm md:text-base leading-[1.6] max-w-[440px] m-0">
+      Festivals, clubs, tours, installations — or software that doesn't exist yet.
+      Based in Venice, CA. Working everywhere.
+    </p>
     <a
       href="mailto:hello@cacho.dev"
-      target="_blank"
-      class="display:block hover:scale-105 text-primary-light text-shadow text-xl md:text-3xl gradient-button transition-transform active:scale-110 p-6 !no-underline"
+      class="mt-8 md:mt-0 flex md:inline-flex items-center justify-center bg-encore-accent text-encore-bg font-grotesk font-bold text-sm md:text-base tracking-[1px] px-8 py-4 hover:opacity-90 transition-opacity w-full md:w-auto shrink-0"
     >
-      Let's Get In Touch 🤝
+      HELLO@CACHO.DEV →
     </a>
-    <div class="flex"></div>
   </div>
-</div>
+
+  <div class="flex flex-col md:flex-row gap-4 md:gap-12 pt-12 md:pt-16 font-smono text-xs tracking-[2px]">
+    <a href="https://www.instagram.com/cacho.vibez/" target="_blank" rel="noopener noreferrer" class="text-encore-dim hover:text-encore-fg transition-colors">INSTAGRAM — @CACHO.VIBEZ</a>
+    <a href="https://www.linkedin.com/in/agcacho/" target="_blank" rel="noopener noreferrer" class="text-encore-dim hover:text-encore-fg transition-colors">LINKEDIN — /IN/AGCACHO</a>
+    <a href="/assets/Resume.pdf" target="_blank" class="text-encore-dim hover:text-encore-fg transition-colors">RESUME ↓</a>
+  </div>
+</section>
