@@ -9,4 +9,6 @@ export interface Project {
   tags?: string[];
   imageStyle?: CSSProperties;
   postID?: string;
+  year?: string;
+  featured?: boolean;
 }
