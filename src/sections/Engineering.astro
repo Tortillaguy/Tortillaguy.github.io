@@ -1,0 +1,33 @@
+---
+import SectionHeader from "../components/SectionHeader.astro";
+import engineering, { engQuote, engMeta } from "../data/engineering";
+---
+
+<section class="px-5 md:px-12 pt-16 md:pt-28">
+  <SectionHeader id="engineering" index="03" title="ENGINEERING" meta={engMeta} />
+
+  <p class="font-inter font-medium text-encore-fg text-base md:text-[19px] leading-[1.6] max-w-[640px] mx-auto text-center py-6 md:py-10 m-0">
+    {engQuote}
+  </p>
+
+  <div>
+    {
+      engineering.map((row) => (
+        <div class="border-t border-encore-line py-6 md:py-8 md:flex md:items-center md:justify-between md:gap-8">
+          <div>
+            <div class="flex items-baseline justify-between md:block">
+              <h3 class="font-grotesk font-bold text-encore-fg text-base md:text-xl m-0">{row.company}</h3>
+              <span class="md:hidden font-smono text-encore-accent text-xs">{row.years}</span>
+            </div>
+            <p class="font-smono text-encore-dim text-[10px] md:text-xs tracking-[1px] m-0 pt-2">{row.role}</p>
+          </div>
+          <div class="hidden md:flex md:flex-col md:items-end md:shrink-0">
+            <span class="font-smono text-encore-accent text-sm">{row.years}</span>
+            <span class="font-smono text-encore-dim text-xs tracking-[1px] pt-2">{row.tags.join(" / ")}</span>
+          </div>
+          <span class="md:hidden block font-smono text-encore-dim text-[10px] tracking-[1px] pt-1">{row.tags.join(" / ")}</span>
+        </div>
+      ))
+    }
+  </div>
+</section>
