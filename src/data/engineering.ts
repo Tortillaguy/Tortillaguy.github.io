@@ -3,6 +3,7 @@ export interface EngRow {
   role: string;
   years: string;
   tags: string[];
+  href?: string;
 }
 
 export const engQuote =
@@ -11,12 +12,12 @@ export const engQuote =
 export const engMeta = "7+ YRS FULL-STACK / REALTIME";
 
 const engineering: EngRow[] = [
-  { company: "NAPSTER", role: "SENIOR FULL-STACK DEVELOPER", years: "2025", tags: ["REACT", "NEXTJS", "AWS"] },
-  { company: "LOOKING GLASS FACTORY", role: "SENIOR FULL-STACK — BUILT BLOCKS.GLASS, 100K+ HOLOGRAMS", years: "2023 — 2025", tags: ["REACT", "WEBGL", "POSTGRES"] },
-  { company: "VERTEBRAE → SNAPCHAT", role: "ASSET PIPELINE ENGINEER — ACQUIRED 2021", years: "2020 — 2022", tags: ["PYTHON", "BLENDER", "WEBGL"] },
-  { company: "MAGIC LEAP × SPOTIFY", role: "LEAD UNITY DEVELOPER", years: "2019", tags: ["UNITY", "LUMIN SDK"] },
-  { company: "INTEL TRUE VR", role: "CONTENT MANAGEMENT SPECIALIST", years: "2018", tags: ["UNITY", "FFMPEG", "VR"] },
-  { company: "MUSIC MIDTOWN AR", role: "PROJECT LEAD — HYUNDAI AR STAGE", years: "2019", tags: ["UNITY", "AR", "REACT NATIVE"] },
+  { company: "NAPSTER", role: "SENIOR FULL-STACK DEVELOPER", years: "2025", tags: ["REACT", "NEXTJS", "AWS"], href: "/work/infinite-reality" },
+  { company: "LOOKING GLASS FACTORY", role: "SENIOR FULL-STACK — BUILT BLOCKS.GLASS, 100K+ HOLOGRAMS", years: "2023 — 2025", tags: ["REACT", "WEBGL", "POSTGRES"], href: "/work/lkg" },
+  { company: "VERTEBRAE → SNAPCHAT", role: "ASSET PIPELINE ENGINEER — ACQUIRED 2021", years: "2020 — 2022", tags: ["PYTHON", "BLENDER", "WEBGL"], href: "/work/vertebrae" },
+  { company: "MPC × MAGIC LEAP", role: "VR ENGINEER — SPOTIFY APP FOR MAGIC LEAP", years: "2018 — 2019", tags: ["C++", "MAGIC LEAP SDK"], href: "/work/mpc" },
+  { company: "INTEL TRUE VR", role: "CONTENT MANAGEMENT SPECIALIST", years: "2018", tags: ["UNITY", "FFMPEG", "VR"], href: "/work/intel" },
+  { company: "COACHELLA AR", role: "LEAD SOFTWARE ENGINEER — PORTALSXR, TEAM OF 6", years: "2019", tags: ["UNITY", "AR", "MOBILE"] },
 ];
 
 export default engineering;
