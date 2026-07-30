@@ -11,4 +11,6 @@ export interface Project {
   postID?: string;
   year?: string;
   featured?: boolean;
+  /** Multi-image feature (e.g. vertical triptych); overrides filename in featured cards */
+  images?: string[];
 }

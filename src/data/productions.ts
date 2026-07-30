@@ -10,6 +10,7 @@ const productions: Project[] = [
     imageStyle: { objectPosition: "50% 70%" },
     year: "2025",
     featured: true,
+    images: ["proper_2025.webp", "proper_2025_b.jpg", "proper_2025_c.jpg"],
   },
   {
     name: "Love Oasis",
