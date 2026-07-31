@@ -316,6 +316,11 @@
     @apply font-smono text-encore-accent bg-encore-surface px-1.5 py-0.5 text-sm;
   }
 
+  #case-study em,
+  #case-study i {
+    font-style: normal;
+  }
+
   #case-study pre {
     @apply bg-encore-surface border border-encore-line p-4 my-6 overflow-x-auto;
   }
