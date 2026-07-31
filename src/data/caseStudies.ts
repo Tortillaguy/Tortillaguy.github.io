@@ -21,6 +21,38 @@ export interface CaseStudy {
 // Ordered reverse-chronologically (newest first). Index 0 renders as "01".
 const caseStudies: CaseStudy[] = [
   {
+    slug: "twelvelabs",
+    title: "TEACHING AN AGENT TO CUT VIDEO",
+    subtitle: "TWELVE LABS — RODEO",
+    shortTitle: "TWELVE LABS",
+    role: "SENIOR FULL-STACK ENGINEER",
+    timeline: "APRIL 2026 — AUGUST 2026",
+    stack: ["REACT", "NEXTJS", "GRAPHQL", "FFMPEG"],
+    outcomes: [
+      "Built the agentic video editor UI for Rodeo, TwelveLabs' first application-layer product, in React, Next.js, and Tailwind with a Storybook component layer",
+      "Built the backend agent tool layer and GraphQL integrations, including server-side video export via ffmpeg",
+      "Built evaluation systems for both agentic surfaces — the video editor and the Rodeo chatbot",
+      "Hired as a frontend engineer and grew the role across the full vertical: UI surface, agent tools, and evals",
+    ],
+    outcomeStack: "REACT · NEXT.JS · TAILWIND · STORYBOOK · GRAPHQL · FFMPEG",
+  },
+  {
+    slug: "first-resonance",
+    title: "BUILDING THE CONTEXT LAYER FOR A FACTORY OS",
+    subtitle: "FIRST RESONANCE — FIRST AI ENGINEERING HIRE",
+    shortTitle: "FIRST RESONANCE",
+    role: "AI CONTEXT ENGINEER",
+    timeline: "DECEMBER 2025 — APRIL 2026",
+    stack: ["MCP", "PYTHON", "LANGCHAIN"],
+    outcomes: [
+      "Joined as the company's first AI engineer, establishing the AI engineering practice from scratch",
+      "Built an MCP server exposing manufacturing and supply-chain operations, used to help identify production bottlenecks",
+      "Built internal Claude Code infrastructure — skills, rules, and automated tooling — for company-wide AI-assisted engineering",
+      "Shipped a Python/LangChain agent for the company website, running on that same custom MCP server",
+    ],
+    outcomeStack: "PYTHON · LANGCHAIN · MCP · CLAUDE CODE · LLM AGENTS",
+  },
+  {
     slug: "pba",
     title: "POLKADOT BLOCKCHAIN ACADEMY IN BALI",
     shortTitle: "POLKADOT ACADEMY",

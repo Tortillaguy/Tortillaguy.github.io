@@ -9,9 +9,11 @@ export interface EngRow {
 export const engQuote =
   "I don't just run the show — I build the software behind it. Holographic content platforms, AR festival stages, realtime asset pipelines.";
 
-export const engMeta = "7+ YRS FULL-STACK / REALTIME";
+export const engMeta = "8+ YRS FULL-STACK / REALTIME / AI";
 
 const engineering: EngRow[] = [
+  { company: "TWELVE LABS", role: "SENIOR FULL-STACK ENGINEER — AGENTIC VIDEO EDITOR (RODEO)", years: "2026", tags: ["REACT", "GRAPHQL", "FFMPEG"], href: "/work/twelvelabs" },
+  { company: "FIRST RESONANCE", role: "AI CONTEXT ENGINEER — FIRST AI HIRE, MCP + AGENT TOOLING", years: "2025 — 2026", tags: ["MCP", "PYTHON", "LANGCHAIN"], href: "/work/first-resonance" },
   { company: "NAPSTER", role: "SENIOR FULL-STACK ENGINEER", years: "2025", tags: ["REACT", "NEXTJS", "AWS"], href: "/work/infinite-reality" },
   { company: "LOOKING GLASS FACTORY", role: "SENIOR FULL-STACK — BUILT BLOCKS.GLASS, 100K+ HOLOGRAMS", years: "2023 — 2025", tags: ["REACT", "WEBGL", "POSTGRES"], href: "/work/lkg" },
   { company: "VERTEBRAE → SNAPCHAT", role: "FULL-STACK & DEVOPS ENGINEER — ACQUIRED 2021", years: "2020 — 2022", tags: ["PYTHON", "BLENDER", "WEBGL"], href: "/work/vertebrae" },
