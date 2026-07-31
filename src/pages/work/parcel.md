@@ -2,10 +2,6 @@
 layout: ../../layouts/BlogPost.astro
 ---
 
-# Building Web3 Commerce at Parcel
-
-**March 2022 - January 2023**
-
 In early 2022, I joined Parcel as a Frontend Engineer during an exciting time for Web3. Parcel was building a platform that bridged traditional e-commerce with blockchain technology—enabling creators and brands to sell NFTs alongside physical products, all in one seamless checkout experience.
 
 The platform was serving **over 1,000 daily active users**, and I was brought on to help scale the frontend architecture, optimize backend performance, establish design systems, and deepen the Web3 integration. This was full-stack work in the truest sense, touching everything from database optimization to smart contract interactions.

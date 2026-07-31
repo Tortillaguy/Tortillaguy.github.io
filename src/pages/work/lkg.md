@@ -2,10 +2,6 @@
 layout: ../../layouts/BlogPost.astro
 ---
 
-# Building the World's First Hologram CMS at Looking Glass Factory
-
-**May 2023 - March 2025**
-
 When I joined Looking Glass Factory as a Senior Full-Stack Engineer, I knew I was stepping into something unique. This wasn't just another SaaS company—they were building holographic displays and trying to create an entire ecosystem around 3D content. My mission? Architect and build [blocks.glass](https://blocks.glass), the first-ever content sharing platform for holograms.
 
 Think of it as YouTube or Instagram, but for holographic 3D content. No one had done this before. There was no playbook.

@@ -12,7 +12,7 @@ export const engQuote =
 export const engMeta = "7+ YRS FULL-STACK / REALTIME";
 
 const engineering: EngRow[] = [
-  { company: "NAPSTER", role: "SENIOR FULL-STACK DEVELOPER", years: "2025", tags: ["REACT", "NEXTJS", "AWS"], href: "/work/infinite-reality" },
+  { company: "NAPSTER", role: "SENIOR FULL-STACK ENGINEER", years: "2025", tags: ["REACT", "NEXTJS", "AWS"], href: "/work/infinite-reality" },
   { company: "LOOKING GLASS FACTORY", role: "SENIOR FULL-STACK — BUILT BLOCKS.GLASS, 100K+ HOLOGRAMS", years: "2023 — 2025", tags: ["REACT", "WEBGL", "POSTGRES"], href: "/work/lkg" },
   { company: "VERTEBRAE → SNAPCHAT", role: "ASSET PIPELINE ENGINEER — ACQUIRED 2021", years: "2020 — 2022", tags: ["PYTHON", "BLENDER", "WEBGL"], href: "/work/vertebrae" },
   { company: "MPC × MAGIC LEAP", role: "VR ENGINEER — SPOTIFY APP FOR MAGIC LEAP", years: "2018 — 2019", tags: ["C++", "MAGIC LEAP SDK"], href: "/work/mpc" },

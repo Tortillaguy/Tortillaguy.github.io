@@ -2,10 +2,6 @@
 layout: ../../layouts/BlogPost.astro
 ---
 
-# Polkadot Blockchain Academy in Bali
-
-**September 2025**
-
 After stepping away from crypto after Pokemoon —I realized I had a gap in my knowledge. I understood how to _use_ blockchain technology, but I didn't truly understand how it _worked_ at a fundamental level. Smart contracts, consensus mechanisms, cryptographic primitives—these were mostly black boxes to me.
 
 So in September 2025, I flew to Bali, Indonesia, to attend the **Polkadot Blockchain Academy**, an intensive program focused on **D'Apps (Decentralized Applications) development** using **Rust** and **Substrate**.

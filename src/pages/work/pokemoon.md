@@ -2,10 +2,6 @@
 layout: ../../layouts/BlogPost.astro
 ---
 
-# Building 3D NFTs in the Wild West of Web3
-
-**~2021 - 2022**
-
 The NFT boom of 2021 was chaotic, exciting, and full of opportunity. Everyone was trying to figure out what digital ownership really meant and how to create value in this new decentralized world. I jumped in as Lead Developer for Pokemoon NFTs, leading a fully remote team to build something genuinely unique: **3D interactive NFTs** that stood out in a market flooded with static JPEGs.
 
 This project was a crash course in Web3 development, token economics, team leadership, and the reality that in crypto, things move *fast*.

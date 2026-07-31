@@ -2,10 +2,6 @@
 layout: ../../layouts/BlogPost.astro
 ---
 
-# Building the Future with Magic Leap at MPC
-
-**February 2018 - February 2019**
-
 Looking back, my year at Moving Picture Company (MPC) was one of the most formative experiences of my career. This was 2018, and spatial computing was still largely experimental—Magic Leap had just released their first developer kits, and everyone was trying to figure out what the future of AR would actually look like.
 
 <iframe width="560" class="m-auto w-full md:w-[560px] mt-4" height="315" src="https://www.youtube.com/embed/Q89wSw-JUyM?si=EbB2b3G-DOroU-Fe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

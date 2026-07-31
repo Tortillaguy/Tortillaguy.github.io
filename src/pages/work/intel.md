@@ -2,10 +2,6 @@
 layout: ../../layouts/BlogPost.astro
 ---
 
-# Bringing VR to Live Sports: Intel True VR
-
-**~2017 - 2018**
-
 Before VR headsets became household items, Intel had a bold vision: what if you could watch live NBA and NFL games from courtside seats—without leaving your couch? I joined the Intel True VR team as a Content Management Specialist to help make that vision a reality.
 
 This wasn't just streaming video. We were capturing live sports events with multi-camera VR rigs, processing massive amounts of 360-degree footage in real-time, and delivering immersive experiences to VR headsets across multiple platforms. The technical challenges were enormous, and honestly, some of the most fun I've had in my career.
