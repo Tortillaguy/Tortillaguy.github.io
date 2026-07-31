@@ -8,14 +8,14 @@ import portrait from "../assets/iceland_portrait.webp";
   <SectionHeader id="about" index="04" title="ABOUT" meta="VENICE, CA" />
 
   <div class="md:flex md:items-start md:gap-14">
-    <div class="md:w-[320px] lg:w-[380px] md:shrink-0">
+    <div class="md:w-[380px] lg:w-[420px] md:shrink-0">
       <div class="overflow-hidden border border-encore-line">
         <Image
           src={portrait}
           alt="Adrian Cacho in Iceland"
-          class="w-full h-[380px] md:h-[500px] object-cover"
-          widths={[390, 760]}
-          sizes="(min-width: 768px) 380px, 100vw"
+          class="w-full h-[380px] md:h-[560px] object-cover"
+          widths={[390, 840]}
+          sizes="(min-width: 768px) 420px, 100vw"
           loading="lazy"
         />
       </div>
@@ -24,43 +24,32 @@ import portrait from "../assets/iceland_portrait.webp";
       </p>
     </div>
 
-    <div class="pt-8 md:pt-0 md:flex-1 max-w-[620px]">
-      <p class="font-inter text-encore-fg text-base md:text-[17px] leading-[1.7] m-0">
-        I'm a Senior Full-Stack Engineer with over 8 years of experience building
-        scalable, high-performance web applications and immersive experiences.
-        I've led engineering teams to deliver high-impact products including <a
+    <div class="pt-8 md:pt-0 md:flex-1 max-w-[820px]">
+      <p class="font-grotesk font-medium text-encore-fg text-lg md:text-2xl leading-[1.5] m-0">
+        I run light for rooms of thousands and build software for platforms of
+        millions. For eight years I've moved between the booth and the codebase
+        — VJing stages like <a
+          href="/#shows"
+          class="text-encore-accent no-underline hover:text-encore-fg transition-colors"
+          >Proper NYE</a
+        > while shipping the platforms behind immersive tech: <a
           href="https://blocks.glass"
           target="_blank"
           rel="noopener noreferrer"
           class="text-encore-accent no-underline hover:text-encore-fg transition-colors"
           >blocks.glass</a
-        > — the first-ever content sharing platform for holograms, serving 100,000+
-        digital assets — and Vertebrae, a 3D asset pipeline acquired by Snapchat.
+        >, the first hologram CMS, serving 100,000+ assets; and the 3D pipeline
+        Snap acquired with Vertebrae.
       </p>
 
-      <p class="font-inter text-encore-dim text-base md:text-[17px] leading-[1.7] m-0 pt-5 md:pt-6">
-        My technical expertise spans full-stack development (React, TypeScript,
-        Next.js, Node.js, PostgreSQL, AWS) and 3D web graphics (Three.js, WebGL).
-        I've optimized complex database queries to achieve 70% performance
-        improvements, architected payment systems processing thousands of
-        transactions, and integrated AI/ML services using RAG techniques with
-        LangChain. Most recently I've been working at the frontier of agentic AI
-        — building MCP servers, agent tools, and the eval systems that measure
-        them — as First Resonance's first AI engineer and on the agentic video
-        editor at TwelveLabs. I combine strong engineering fundamentals with
-        product thinking to deliver solutions that drive both user satisfaction
-        and business outcomes.
-      </p>
+      <hr class="border-0 h-px bg-encore-line my-6 md:my-8" />
 
-      <p class="font-inter text-encore-dim text-base md:text-[17px] leading-[1.7] m-0 pt-5 md:pt-6">
-        Notable projects include building a Spotify app for Magic Leap using
-        Unity and C++, developing mobile AR experiences for Coachella that
-        reached millions of festival attendees, and completing the Polkadot
-        Blockchain Academy to expand my expertise into Web3 and distributed
-        systems using Rust and Substrate. As a visual artist, I also VJ major
-        events using professional tools like Resolume, Disguise, and
-        TouchDesigner, bringing a unique creative perspective to technical
-        problem-solving.
+      <p class="font-inter text-encore-dim text-base md:text-[17px] leading-[1.7] m-0">
+        Lately that frontier is agentic AI — MCP servers, agent tools, and the
+        evals that measure them as First Resonance's first AI engineer, and
+        TwelveLabs' agentic video editor. The thread through all of it: systems
+        that turn creative intent into something running live, whether the
+        runtime is a render pipeline or a stage.
       </p>
     </div>
   </div>
