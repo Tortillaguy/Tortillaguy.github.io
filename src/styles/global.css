@@ -398,7 +398,8 @@
   .fuzzy-lg {
     text-shadow: calc(-1 * var(--fxb) * var(--fuzz-k)) 0 rgba(79, 227, 255, 0.5),
       calc(var(--fxb) * var(--fuzz-k)) 0 rgba(255, 75, 216, 0.5);
-    animation: fuzz 1.9s steps(1, end) infinite;
+    animation: fuzz 3.4s steps(1, end) infinite;
+    filter: url(#fuzz);
   }
   .fuzzy-sm {
     --fxb: 1px;
@@ -415,6 +416,7 @@
     .fuzzy,
     .fuzzy-lg {
       animation: none;
+      filter: none;
     }
   }
   .fringe-md {
@@ -460,60 +462,30 @@
 }
 
 @keyframes fuzz {
+  /* Calm baseline ~80% of the 3.4s cycle; fringe spikes only inside the
+     0.7s glitch window, aligned with the SVG displacement burst. */
   0% {
     --fuzz-k: 1;
     transform: translateX(0);
   }
-  7% {
-    --fuzz-k: 1.5;
+  79.5% {
+    --fuzz-k: 1.6;
     transform: translateX(0.5px);
   }
-  9% {
-    --fuzz-k: 0.8;
-    transform: translateX(0);
-  }
-  23% {
-    --fuzz-k: 1.2;
+  84% {
+    --fuzz-k: 0.7;
     transform: translateX(-0.5px);
   }
-  26% {
-    --fuzz-k: 1;
-    transform: translateX(0);
-  }
-  38% {
-    --fuzz-k: 0.6;
-    transform: translateX(0);
-  }
-  41% {
-    --fuzz-k: 1.4;
-    transform: translateX(0.5px);
-  }
-  44% {
-    --fuzz-k: 1;
-    transform: translateX(0);
-  }
-  61% {
-    --fuzz-k: 1.8;
+  88% {
+    --fuzz-k: 1.9;
     transform: translateX(-1px);
   }
-  63% {
-    --fuzz-k: 0.9;
-    transform: translateX(0);
-  }
-  77% {
-    --fuzz-k: 1.25;
-    transform: translateX(0);
-  }
-  80% {
-    --fuzz-k: 1;
-    transform: translateX(0);
-  }
-  92% {
-    --fuzz-k: 0.7;
+  93% {
+    --fuzz-k: 1.2;
     transform: translateX(0.5px);
   }
-  94% {
-    --fuzz-k: 1;
+  97% {
+    --fuzz-k: 0.85;
     transform: translateX(0);
   }
   100% {

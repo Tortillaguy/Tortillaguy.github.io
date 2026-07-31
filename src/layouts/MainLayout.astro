@@ -4,6 +4,34 @@ import Header from "../components/Header.astro";
 ---
 
 <body class="bg-encore-bg">
+  <!-- Fuzzy-text displacement filter: horizontal-only scanline jitter.
+       Base fuzz ~3.4px, glitch burst ~8px for 0.7s every 3.4s (SMIL, no JS). -->
+  <svg width="0" height="0" aria-hidden="true" style="position:absolute">
+    <defs>
+      <filter id="fuzz" x="-10%" y="-10%" width="120%" height="120%">
+        <feTurbulence type="fractalNoise" baseFrequency="0 0.9" numOctaves="1" seed="1" result="noise">
+          <animate
+            attributeName="seed"
+            values="1;3;5;7;2;4;6;8"
+            dur="0.35s"
+            calcMode="discrete"
+            repeatCount="indefinite"></animate>
+        </feTurbulence>
+        <feComponentTransfer in="noise" result="noiseX">
+          <feFuncG type="linear" slope="0" intercept="0.5"></feFuncG>
+        </feComponentTransfer>
+        <feDisplacementMap in="SourceGraphic" in2="noiseX" scale="3.4" xChannelSelector="R" yChannelSelector="G">
+          <animate
+            attributeName="scale"
+            values="3.4;8"
+            keyTimes="0;0.795"
+            dur="3.4s"
+            calcMode="discrete"
+            repeatCount="indefinite"></animate>
+        </feDisplacementMap>
+      </filter>
+    </defs>
+  </svg>
   <Header />
   <slot />
   <Footer />
