@@ -2,10 +2,6 @@
 layout: ../../layouts/BlogPost.astro
 ---
 
-# Building the Future with Magic Leap at MPC
-
-**February 2018 - February 2019**
-
 Looking back, my year at Moving Picture Company (MPC) was one of the most formative experiences of my career. This was 2018, and spatial computing was still largely experimental—Magic Leap had just released their first developer kits, and everyone was trying to figure out what the future of AR would actually look like.
 
 <iframe width="560" class="m-auto w-full md:w-[560px] mt-4" height="315" src="https://www.youtube.com/embed/Q89wSw-JUyM?si=EbB2b3G-DOroU-Fe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -75,23 +71,3 @@ While Magic Leap's first generation didn't achieve mainstream adoption, the work
 Today, when I'm working on web-based 3D experiences with Three.js or building immersive installations for live events, I still draw on the fundamentals I learned during that year at MPC. Understanding how to optimize rendering pipelines, create performant shaders, and architect scalable systems—those skills are timeless.
 
 Plus, getting to work on bleeding-edge technology with passionate people? That's what makes this industry exciting.
-
----
-
-**Tech Stack:** C++, C#, Unity, HLSL, ShaderLab, ShaderGraph, Magic Leap Lumin SDK, Spatial Audio, AR/VR
-
-**Company:** Moving Picture Company (MPC)
-
-**Role:** VR Engineer
-
-**Team:** Led 3 developers
-
-**Key Outcomes:**
-
-- Developed Spotify application for Magic Leap platform
-- Extended Lumin SDK with C++ enhancements for AR ecosystem
-- Built reusable Unity architecture for AR/VR projects
-- Created custom shader effects and music visualizations
-- Collaborated directly with Magic Leap's internal development team
-
-**Location:** Los Angeles, CA

@@ -29,6 +29,16 @@ module.exports = {
         },
         dark: "#262626",
         "shadow-dark": "#1a1a1a",
+        encore: {
+          bg: "#0B0B0E",
+          surface: "#121217",
+          line: "#26262E",
+          fg: "#F2F0E9",
+          dim: "#8E8E98",
+          accent: "#BFFF38",
+          cyan: "#4FE3FF",
+          magenta: "#FF4BD8",
+        },
       },
       boxShadow: {
         dark: "2px 2px 8px #1a1a1a",
@@ -59,7 +69,14 @@ module.exports = {
         "fade-out": "fade-out 0.25s ease-in-out",
       },
     },
-    fontFamily: { oxygen: ['"Oxygen Mono"', "monospace"] },
+    fontFamily: {
+      oxygen: ['"Oxygen Mono"', "monospace"],
+      display: ["Anton", "sans-serif"],
+      grotesk: ['"Space Grotesk"', "sans-serif"],
+      smono: ['"Space Mono"', "monospace"],
+      plex: ['"IBM Plex Mono"', "monospace"],
+      inter: ["Inter", "sans-serif"],
+    },
   },
   plugins: [
     plugin(function ({ matchUtilities, theme }) {

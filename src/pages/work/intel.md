@@ -2,10 +2,6 @@
 layout: ../../layouts/BlogPost.astro
 ---
 
-# Bringing VR to Live Sports: Intel True VR
-
-**~2017 - 2018**
-
 Before VR headsets became household items, Intel had a bold vision: what if you could watch live NBA and NFL games from courtside seats—without leaving your couch? I joined the Intel True VR team as a Content Management Specialist to help make that vision a reality.
 
 This wasn't just streaming video. We were capturing live sports events with multi-camera VR rigs, processing massive amounts of 360-degree footage in real-time, and delivering immersive experiences to VR headsets across multiple platforms. The technical challenges were enormous, and honestly, some of the most fun I've had in my career.
@@ -111,23 +107,3 @@ Intel True VR was ahead of its time. While the service eventually wound down, th
 Today, when I'm working on live visual productions or building content pipelines for creative projects, I still draw on the automation and video processing skills I developed during this period. And understanding how to optimize content for different platforms? That's become even more valuable as the landscape has grown more fragmented.
 
 Plus, getting paid to watch NBA games in VR while "testing the user experience"? Not a bad gig.
-
----
-
-**Tech Stack:** Unity, C#, PHP, jQuery, Angular, Python, FFmpeg, AWS, VR (Android/iOS/Windows), Video Encoding, Content Pipelines
-
-**Company:** Intel Corporation - True VR
-
-**Role:** Content Management Specialist / VR Developer
-
-**Platforms:** Gear VR, Daydream, Oculus Rift, HTC Vive, iOS, Android, Windows
-
-**Key Outcomes:**
-- Led development team for enterprise CMS platform managing live VR sports content
-- Built VR applications across 3+ major platforms (Android, iOS, Windows)
-- Automated content pipelines processing thousands of VR video assets
-- Enabled multi-platform social media distribution (Facebook 360, YouTube VR)
-- Designed UX/UI for spatial interfaces and immersive experiences
-- Built AWS-powered automation for transcoding and distribution
-
-**Sports Partnerships:** NBA, NFL

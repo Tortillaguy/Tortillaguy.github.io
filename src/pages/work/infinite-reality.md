@@ -2,10 +2,6 @@
 layout: ../../layouts/BlogPost.astro
 ---
 
-# Building the Metaverse at Napster Inc. <br> (Infinite Reality)
-
-**March 2025 - July 2025**
-
 When I joined Infinite Reality (which later became Napster Inc.) as a Senior Full-Stack Engineer in early 2025, the company had an ambitious vision: build the infrastructure for the next generation of immersive digital experiences - what many were calling the "metaverse."
 
 This wasn't about hyped-up virtual worlds with cartoon avatars. This was about creating **real utility**: virtual showrooms for retail, immersive event spaces for concerts, digital twins of physical locations, and platforms for genuine human connection in virtual environments.
@@ -107,24 +103,3 @@ Working on this project between Looking Glass Factory and what came next showed 
 While my time at Napster was relatively brief, it added another dimension to my expertise in building platforms that blend **3D technology, social interaction, and creative expression**skills that continue to inform my work in live visual production, immersive installations, and creative technology.
 
 The metaverse may have gone through a hype cycle, but the underlying technologies3D web, real-time graphics, spatial computingare here to stay. And I'm excited to keep building at that intersection.
-
----
-
-**Tech Stack:** React, Next.js, TypeScript, Node.js, PostgreSQL, AWS, Three.js, React Three Fiber, GraphQL, REST APIs
-
-**Company:** Infinite Reality (became Napster Inc.)
-
-**Role:** Senior Full-Stack Engineer
-
-**Key Outcomes:**
-
-- Built full-stack platform infrastructure for immersive metaverse experiences
-- Optimized 3D asset delivery and progressive loading for virtual environments
-- Designed Postgres database architecture for virtual worlds, users, and assets
-- Implemented real-time multiplayer systems for shared virtual spaces
-- Developed music and entertainment-focused virtual experiences post-Napster pivot
-- Created scalable APIs for frontend and external integrations
-
-**Focus:** Virtual storefronts, event spaces, social platforms, creator tools
-
-**Industry:** Metaverse, Virtual Events, Immersive Technology, Music Tech

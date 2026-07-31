@@ -2,10 +2,6 @@
 layout: ../../layouts/BlogPost.astro
 ---
 
-# Building 3D NFTs in the Wild West of Web3
-
-**~2021 - 2022**
-
 The NFT boom of 2021 was chaotic, exciting, and full of opportunity. Everyone was trying to figure out what digital ownership really meant and how to create value in this new decentralized world. I jumped in as Lead Developer for Pokemoon NFTs, leading a fully remote team to build something genuinely unique: **3D interactive NFTs** that stood out in a market flooded with static JPEGs.
 
 This project was a crash course in Web3 development, token economics, team leadership, and the reality that in crypto, things move *fast*.
@@ -123,23 +119,3 @@ The market eventually cooled, as hype cycles do. But the technical skills I gain
 Plus, building 3D interactive experiences in the browser? That skill translates directly to the immersive web work I do today, whether it's for NFTs, product visualization, or live visual installations.
 
 The Pokemoon project taught me that the intersection of **art, technology, and economics** can create genuinely new experiences. And sometimes, jumping into the chaos of an emerging field is the best way to learn.
-
----
-
-**Tech Stack:** React, Three.js, React Three Fiber, Web3, Solidity, Binance Smart Chain, IPFS, GraphQL, MetaMask, WalletConnect
-
-**Project:** Pokemoon NFTs
-
-**Role:** Lead Developer
-
-**Team:** Led remote team of 3D artists, blockchain developers, and marketers
-
-**Key Outcomes:**
-- Built 3D interactive NFT platform with real-time browser rendering
-- Launched multiple tokens listed on Coingecko and AMMs
-- Created DEX and marketplace infrastructure for decentralized trading
-- Designed and implemented Web3 UX/UI patterns
-- Led cross-functional remote team across multiple time zones
-- Implemented automated 3D asset pipeline (Blender to IPFS to Web)
-
-**Blockchain:** Binance Smart Chain (BSC)

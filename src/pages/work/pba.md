@@ -2,10 +2,6 @@
 layout: ../../layouts/BlogPost.astro
 ---
 
-# Polkadot Blockchain Academy in Bali
-
-**September 2025**
-
 After stepping away from crypto after Pokemoon —I realized I had a gap in my knowledge. I understood how to _use_ blockchain technology, but I didn't truly understand how it _worked_ at a fundamental level. Smart contracts, consensus mechanisms, cryptographic primitives—these were mostly black boxes to me.
 
 So in September 2025, I flew to Bali, Indonesia, to attend the **Polkadot Blockchain Academy**, an intensive program focused on **D'Apps (Decentralized Applications) development** using **Rust** and **Substrate**.
@@ -140,19 +136,4 @@ And having the skills to build at that level? That's empowering, whether I'm bui
 
 Plus, learning Rust in Bali with an amazing cohort of global developers? Not a bad way to spend September.
 
----
-
-**Tech Stack:** Rust, Substrate, Polkadot, Blockchain Architecture, Cryptography, Consensus Mechanisms, Pallet Development, Runtime Engineering, Web3
-
-**Program:** D'Apps Development Track - Polkadot Blockchain Academy
-
-**Key Outcomes:**
-- Deep technical understanding of blockchain systems at the runtime level
-- Ability to build custom blockchains with Substrate framework
-- Proficiency in Rust for systems programming
-- Global blockchain developer network and community connections
-- Foundation for building decentralized applications and Web3 projects
-
-**Location:** Bali, Indonesia
-
-**Link:** [polkadot.academy](https://polkadot.academy/)
+[polkadot.academy →](https://polkadot.academy/)
