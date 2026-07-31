@@ -86,7 +86,7 @@ const caseStudies: CaseStudy[] = [
     title: "BUILDING 3D NFTS IN THE WILD WEST OF WEB3",
     subtitle: "POKEMOON",
     shortTitle: "POKEMOON",
-    role: "CREATOR — 3D NFT PROJECT",
+    role: "LEAD DEVELOPER — 3D NFT PROJECT",
     timeline: "2021 — 2022",
     stack: ["BLENDER", "WEB3"],
     outcomes: [
