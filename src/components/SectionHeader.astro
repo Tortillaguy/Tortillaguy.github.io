@@ -13,7 +13,7 @@ const { index, title, meta, id } = Astro.props;
   <div class="flex items-end justify-between pt-7 pb-6 md:pb-11">
     <div class="flex items-end gap-3 md:gap-5">
       <span class="font-smono text-encore-accent text-sm md:text-base leading-none pb-2 md:pb-4">{index}</span>
-      <h2 class="fringe md:fringe-lg font-display text-encore-fg leading-none text-[52px] md:text-[clamp(80px,9.7vw,140px)]">{title}</h2>
+      <h2 class="fuzzy md:fuzzy-lg font-display text-encore-fg leading-none text-[52px] md:text-[clamp(80px,9.7vw,140px)]">{title}</h2>
     </div>
     {meta && <span class="hidden md:block font-smono text-encore-dim text-xs tracking-[2px] pb-4">{meta}</span>}
   </div>
