@@ -103,7 +103,7 @@
   }
 
   #blog-post p,
-  li {
+  #blog-post li {
     @apply my-2 text-primary-body text-shadow text-sm md:text-base;
   }
 
@@ -133,7 +133,7 @@
   }
 
   #blog-post ol,
-  ul {
+  #blog-post ul {
     @apply !my-2;
   }
 
@@ -259,6 +259,74 @@
     @apply pointer-events-none;
     background-color: rgba(0, 0, 0, 0.43);
   }
+
+  /* Encore case-study prose (markdown rendered into #case-study) */
+  #case-study {
+    counter-reset: cs-section;
+  }
+
+  #case-study p {
+    @apply font-inter text-encore-fg text-base md:text-[18px] leading-[1.65] my-5;
+  }
+
+  #case-study strong,
+  #case-study b {
+    @apply font-semibold text-encore-fg;
+  }
+
+  #case-study a {
+    @apply text-encore-accent no-underline hover:text-encore-fg transition-colors;
+  }
+
+  #case-study h2 {
+    counter-increment: cs-section;
+    @apply font-display font-normal text-encore-fg text-[26px] md:text-[38px] leading-tight border-t border-encore-line mt-12 md:mt-14 pt-[18px] md:pt-6 mb-5;
+    text-shadow: -1px 0 rgba(79, 227, 255, 0.5), 1px 0 rgba(255, 75, 216, 0.5);
+  }
+
+  #case-study h2::before {
+    content: counter(cs-section, decimal-leading-zero);
+    @apply block font-smono text-encore-accent text-xs md:text-sm tracking-[1px] mb-2 md:mb-3;
+    text-shadow: none;
+  }
+
+  #case-study h3 {
+    @apply font-smono font-normal text-encore-fg text-[13px] tracking-[3px] uppercase mt-10 mb-4;
+    text-shadow: none;
+  }
+
+  #case-study ul {
+    @apply list-none p-0 my-6 space-y-3 md:space-y-4;
+  }
+
+  #case-study li {
+    @apply border-l-2 border-encore-line pl-[14px] font-inter text-encore-dim text-sm md:text-base leading-relaxed m-0;
+    text-shadow: none;
+  }
+
+  #case-study li strong {
+    @apply font-grotesk font-bold uppercase tracking-[1px] text-encore-fg text-[13px] md:text-[15px];
+  }
+
+  #case-study img {
+    @apply w-full border border-encore-line my-8;
+  }
+
+  #case-study code {
+    @apply font-smono text-encore-accent bg-encore-surface px-1.5 py-0.5 text-sm;
+  }
+
+  #case-study pre {
+    @apply bg-encore-surface border border-encore-line p-4 my-6 overflow-x-auto;
+  }
+
+  #case-study pre code {
+    @apply bg-transparent p-0 text-encore-fg;
+  }
+
+  #case-study blockquote {
+    @apply border-0 border-l-2 border-solid border-encore-accent pl-4 my-6 not-italic text-encore-fg;
+  }
 }
 
 @layer utilities {
@@ -315,6 +383,15 @@
   }
   .fringe-lg {
     text-shadow: -4px 0 rgba(79, 227, 255, 0.5), 4px 0 rgba(255, 75, 216, 0.5);
+  }
+  .fringe-md {
+    text-shadow: -3px 0 rgba(79, 227, 255, 0.5), 3px 0 rgba(255, 75, 216, 0.5);
+  }
+}
+
+@media (min-width: 768px) {
+  #case-study h2 {
+    text-shadow: -2px 0 rgba(79, 227, 255, 0.5), 2px 0 rgba(255, 75, 216, 0.5);
   }
 }
 
