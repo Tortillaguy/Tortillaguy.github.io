@@ -7,7 +7,7 @@
 
 import * as fs from "fs";
 import * as path from "path";
-import { fileURLToPath } from "url";
+import { fileURLToPath, pathToFileURL } from "url";
 import {
   Document,
   Packer,
@@ -879,14 +879,12 @@ class ResumePdfGenerator {
           9
         );
 
-        // Draw skills lines
+        // Draw skills lines (advance once per line, so wrapped values never
+        // overlap the next category label)
         for (let i = 0; i < skillsLines.length; i++) {
           if (i > 0) this.checkNewPage(this.lineHeight); // Check for subsequent lines
-          const xPos = i === 0 ? skillsX : skillsX; // First line next to title, others indented
-          this.drawText(skillsLines[i], xPos, 9, this.regularFont);
-          if (i < skillsLines.length - 1 || skillsLines.length === 1) {
-            this.yPosition -= this.lineHeight - 2;
-          }
+          this.drawText(skillsLines[i], skillsX, 9, this.regularFont);
+          this.yPosition -= this.lineHeight - 2;
         }
         this.yPosition -= 2; // Gutter between categories
       }
@@ -1138,8 +1136,8 @@ async function main(): Promise<void> {
   }
 }
 
-// Run if executed directly (ES module check)
-if (import.meta.url === `file://${process.argv[1]}`) {
+// Run if executed directly (ES module check; pathToFileURL keeps this working on Windows)
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   main().catch((error) => {
     console.error("Unexpected error:", error);
     process.exit(1);
