@@ -136,17 +136,3 @@ What made it special was the intersection of **cutting-edge hardware** (holograp
 It reinforced something I've always believed: the most interesting work happens at the intersections—where technology meets art, where web meets hardware, where engineering meets creativity.
 
 Today, when I'm building immersive installations or working on live visual productions, the systems thinking and full-stack expertise I developed at Looking Glass Factory continue to inform how I approach complex technical challenges.
-
----
-
-**Tech Stack:** React, Next.js, TypeScript, PostgreSQL, AWS, Three.js, React Three Fiber, Framer Motion, Tailwind CSS, Figma, Storybook, Unity (C#), OpenAPI, Stripe, RAG/LLMs, IoT, WebGL
-
-**Team:** Senior Full-Stack Engineer
-
-**Impact:**
-
-- 100,000+ digital assets deployed
-- 70% reduction in page load times
-- First-ever hologram content sharing platform
-
-**Location:** Remote / San Francisco

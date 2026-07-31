@@ -119,23 +119,3 @@ The market eventually cooled, as hype cycles do. But the technical skills I gain
 Plus, building 3D interactive experiences in the browser? That skill translates directly to the immersive web work I do today, whether it's for NFTs, product visualization, or live visual installations.
 
 The Pokemoon project taught me that the intersection of **art, technology, and economics** can create genuinely new experiences. And sometimes, jumping into the chaos of an emerging field is the best way to learn.
-
----
-
-**Tech Stack:** React, Three.js, React Three Fiber, Web3, Solidity, Binance Smart Chain, IPFS, GraphQL, MetaMask, WalletConnect
-
-**Project:** Pokemoon NFTs
-
-**Role:** Lead Developer
-
-**Team:** Led remote team of 3D artists, blockchain developers, and marketers
-
-**Key Outcomes:**
-- Built 3D interactive NFT platform with real-time browser rendering
-- Launched multiple tokens listed on Coingecko and AMMs
-- Created DEX and marketplace infrastructure for decentralized trading
-- Designed and implemented Web3 UX/UI patterns
-- Led cross-functional remote team across multiple time zones
-- Implemented automated 3D asset pipeline (Blender to IPFS to Web)
-
-**Blockchain:** Binance Smart Chain (BSC)

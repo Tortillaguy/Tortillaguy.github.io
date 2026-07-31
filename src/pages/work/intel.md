@@ -107,23 +107,3 @@ Intel True VR was ahead of its time. While the service eventually wound down, th
 Today, when I'm working on live visual productions or building content pipelines for creative projects, I still draw on the automation and video processing skills I developed during this period. And understanding how to optimize content for different platforms? That's become even more valuable as the landscape has grown more fragmented.
 
 Plus, getting paid to watch NBA games in VR while "testing the user experience"? Not a bad gig.
-
----
-
-**Tech Stack:** Unity, C#, PHP, jQuery, Angular, Python, FFmpeg, AWS, VR (Android/iOS/Windows), Video Encoding, Content Pipelines
-
-**Company:** Intel Corporation - True VR
-
-**Role:** Content Management Specialist / VR Developer
-
-**Platforms:** Gear VR, Daydream, Oculus Rift, HTC Vive, iOS, Android, Windows
-
-**Key Outcomes:**
-- Led development team for enterprise CMS platform managing live VR sports content
-- Built VR applications across 3+ major platforms (Android, iOS, Windows)
-- Automated content pipelines processing thousands of VR video assets
-- Enabled multi-platform social media distribution (Facebook 360, YouTube VR)
-- Designed UX/UI for spatial interfaces and immersive experiences
-- Built AWS-powered automation for transcoding and distribution
-
-**Sports Partnerships:** NBA, NFL

@@ -71,23 +71,3 @@ While Magic Leap's first generation didn't achieve mainstream adoption, the work
 Today, when I'm working on web-based 3D experiences with Three.js or building immersive installations for live events, I still draw on the fundamentals I learned during that year at MPC. Understanding how to optimize rendering pipelines, create performant shaders, and architect scalable systems—those skills are timeless.
 
 Plus, getting to work on bleeding-edge technology with passionate people? That's what makes this industry exciting.
-
----
-
-**Tech Stack:** C++, C#, Unity, HLSL, ShaderLab, ShaderGraph, Magic Leap Lumin SDK, Spatial Audio, AR/VR
-
-**Company:** Moving Picture Company (MPC)
-
-**Role:** VR Engineer
-
-**Team:** Led 3 developers
-
-**Key Outcomes:**
-
-- Developed Spotify application for Magic Leap platform
-- Extended Lumin SDK with C++ enhancements for AR ecosystem
-- Built reusable Unity architecture for AR/VR projects
-- Created custom shader effects and music visualizations
-- Collaborated directly with Magic Leap's internal development team
-
-**Location:** Los Angeles, CA

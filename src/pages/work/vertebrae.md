@@ -163,24 +163,3 @@ But the real lesson was about **building flexible systems**. When Snap acquired 
 Today, when I'm optimizing 3D assets for web experiences or building content pipelines for creative projects, I still use the automation patterns I developed at Vertebrae. And understanding the full stack—from Blender Python scripts to Docker containers to React frontends to Postgres databases—that holistic view is invaluable.
 
 Plus, seeing furniture you helped render in AR show up on a retail site or in Snapchat? That's a pretty cool "I built that" moment.
-
----
-
-**Tech Stack:** AWS, Docker, Node.js, Postgres, SQL, React, Three.js, WebGL, Electron, Blender (Python API), Python, REST APIs, GraphQL
-
-**Company:** Vertebrae (acquired by Snap Inc.)
-
-**Role:** Full-Stack & DevOps Engineer
-
-**Key Outcomes:**
-
-- Built automated pipelines processing 50,000+ 3D assets for mobile AR
-- Supported 100+ retail vendor partnerships (e-commerce brands)
-- Automated 3D optimization: decimation, re-meshing, material re-assignment
-- Created custom Electron desktop tools for technical artists
-- Designed Postgres database architecture for asset management at scale
-- Transitioned infrastructure and pipelines during Snap Inc. acquisition
-
-**Scale:** 50,000+ 3D assets, 100+ retail vendors
-
-**Acquisition:** Acquired by Snap Inc. in 2021

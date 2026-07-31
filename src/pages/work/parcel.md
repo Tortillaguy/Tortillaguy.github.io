@@ -186,24 +186,3 @@ Parcel was at the intersection of **e-commerce, Web3, and modern frontend develo
 The Web3 integration work was particularly valuable. Understanding how to build crypto-native features while maintaining a seamless user experience has informed every blockchain project I've worked on since.
 
 Today, when I'm building immersive web experiences or working on creative tech projects, I still use the component architecture patterns, build pipelines, and design system thinking I developed at Parcel. And the TypeScript + React + GraphQL stack? That's become my go-to for any serious web application.
-
----
-
-**Tech Stack:** React, Next.js, TypeScript, Redux, GraphQL, Node.js, Postgres, Figma, Storybook, Rollup, Docker, GitHub Actions, Web3 (web3-react, web3.js, ethers.js), Ethereum, Polygon
-
-**Company:** Parcel
-
-**Role:** Frontend Engineer (Full-Stack)
-
-**Key Outcomes:**
-
-- Optimized GraphQL + Postgres backend for 1,000+ daily active users
-- Built reusable component library and design system with Figma integration
-- Integrated Web3 libraries for seamless NFT purchasing (Ethereum, Polygon)
-- Automated CI/CD pipelines with Docker and GitHub Actions
-- Collaborated with Head of Design to establish UI/UX patterns
-- Configured modern build pipelines (Rollup, Next.js, Storybook)
-
-**Scale:** 1,000+ daily active users (DAU)
-
-**Blockchain Networks:** Ethereum, Polygon
