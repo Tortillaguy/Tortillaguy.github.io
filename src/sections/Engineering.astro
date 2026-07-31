@@ -1,16 +1,12 @@
 ---
 import SectionHeader from "../components/SectionHeader.astro";
-import engineering, { engQuote, engMeta } from "../data/engineering";
+import engineering, { engMeta } from "../data/engineering";
 ---
 
 <section class="px-5 md:px-12 pt-16 md:pt-28">
   <SectionHeader id="engineering" index="03" title="ENGINEERING" meta={engMeta} />
 
-  <p class="font-inter font-medium text-encore-fg text-base md:text-[19px] leading-[1.6] max-w-[640px] mx-auto text-center py-6 md:py-10 m-0">
-    {engQuote}
-  </p>
-
-  <div>
+  <div class="pt-2 md:pt-4">
     {
       engineering.map((row) => {
         const Tag = row.href ? "a" : "div";
