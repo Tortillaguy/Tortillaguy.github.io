@@ -418,6 +418,9 @@
       animation: none;
       filter: none;
     }
+    #home video {
+      display: none;
+    }
   }
   .fringe-md {
     text-shadow: -3px 0 rgba(79, 227, 255, 0.5), 3px 0 rgba(255, 75, 216, 0.5);

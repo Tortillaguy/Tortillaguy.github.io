@@ -16,6 +16,35 @@ import heroImage from "../assets/hero.jpg";
     loading="eager"
     fetchpriority="high"
   />
+  <video
+    id="hero-reel"
+    class="absolute inset-0 w-full h-full object-cover"
+    autoplay
+    muted
+    loop
+    playsinline
+    aria-hidden="true"
+  ></video>
+  <script is:inline>
+    {
+      const reel = document.getElementById("hero-reel");
+      const portrait = window.matchMedia("(max-width: 639px)");
+      const motionOk = window.matchMedia("(prefers-reduced-motion: no-preference)");
+      const apply = () => {
+        if (!motionOk.matches) return;
+        const src = portrait.matches
+          ? "/assets/sizzle-portrait.mp4"
+          : "/assets/sizzle-wide.mp4";
+        if (!reel.src.endsWith(src)) {
+          reel.src = src;
+          reel.play().catch(() => {});
+        }
+      };
+      apply();
+      portrait.addEventListener("change", apply);
+      motionOk.addEventListener("change", apply);
+    }
+  </script>
   <div
     class="absolute inset-0"
     style="background: linear-gradient(180deg, rgba(10,10,10,0) 35%, rgba(10,10,10,0.8) 80%, #0A0A0A 100%);"

@@ -96,7 +96,7 @@ Adrian Cacho (also known as "Cacho") is an innovative creative technologist with
 ## Site Architecture
 
 ### Technology Stack
-- **Framework:** Astro 4 (Static Site Generator) — zero client JS on the homepage
+- **Framework:** Astro 4 (Static Site Generator) — no framework JS on the homepage (one inline hero-reel script)
 - **Styling:** Tailwind CSS with custom `encore.*` design tokens (`tailwind.config.cjs`); DaisyUI remains a dependency but is visually overridden on all pages
 - **Images:** `astro:assets` with responsive `widths`/`sizes` throughout
 - **Content:** Markdown case studies rendered through a data-driven layout
@@ -162,7 +162,7 @@ Adrian Cacho (also known as "Cacho") is an innovative creative technologist with
    - All data-driven from `src/data/`
 
 4. **Performance**
-   - Zero client JS on the homepage; no 3D background
+   - No framework/bundled JS on the homepage (only the inline hero-reel script); no 3D background
    - `astro:assets` responsive images with explicit `widths` AND `sizes` everywhere (missing `sizes` defeats srcset — this was a real shipped bug, keep it)
    - Sitemap generated; dev server serves unoptimized images — judge performance from `pnpm build && pnpm preview`, never dev
 
@@ -171,7 +171,7 @@ Adrian Cacho (also known as "Cacho") is an innovative creative technologist with
 ## Site Sections
 
 ### Hero
-Full-bleed festival photo + scrim; mono meta (`VENICE, CA`); the `LIGHT, / MOTION, / & CODE.` lockup (fringe on LIGHT, and MOTION,; green & CODE.); monumental ADRIAN CACHO at the fold. Creative-first positioning: visuals lead, engineering is the depth.
+Full-bleed autoplay sizzle reel (muted/looped/playsinline; `public/assets/sizzle-wide.mp4` + `sizzle-portrait.mp4`) layered over the festival photo, which stays underneath as the LCP paint and the fallback for blocked autoplay (iOS Low Power Mode) and `prefers-reduced-motion`. A small inline script in `Hero.astro` — the homepage's only client JS — picks the crop at the `sm` breakpoint (≤639px = portrait), swaps live on breakpoint change, and skips the video download entirely under `prefers-reduced-motion`; scrim; mono meta (`VENICE, CA`); the `LIGHT, / MOTION, / & CODE.` lockup (fringe on LIGHT, and MOTION,; green & CODE.); monumental ADRIAN CACHO at the fold. Creative-first positioning: visuals lead, engineering is the depth. Reel edit masters (`sizzle_*.mov`) are gitignored — re-encode via two-pass ffmpeg (H.264, `-an`, `+faststart`; ~3.3 Mbps wide / 1.5 Mbps portrait at 720×1280).
 
 ### 01 PRODUCTIONS
 Featured Proper NYE '25 triptych (three vertical photos) + Disguise VP Accelerator / Seismic / SD Renegade cards. Captions below images, never overlaid; green years.
