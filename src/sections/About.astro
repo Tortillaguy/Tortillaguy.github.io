@@ -8,20 +8,22 @@ import portrait from "../assets/iceland_portrait.webp";
   <SectionHeader id="about" index="04" title="ABOUT" meta="VENICE, CA" />
 
   <div class="mx-auto w-full max-w-[1280px] md:flex md:items-center md:gap-14">
-    <div class="md:w-[380px] lg:w-[420px] md:shrink-0">
-      <div class="overflow-hidden border border-encore-line">
+    <div class="flex justify-center md:block md:w-[380px] lg:w-[420px] md:shrink-0">
+      <div
+        class="w-fit overflow-hidden border border-encore-line mb-3 mr-3 shadow-[8px_8px_0_0_theme(colors.encore.accent)] md:w-full"
+      >
         <Image
           src={portrait}
           alt="Adrian Cacho in Iceland"
-          class="w-full h-[380px] md:h-[560px] object-cover object-top aspect-square lg:aspect-auto"
-          widths={[390, 840]}
-          sizes="(min-width: 768px) 420px, 100vw"
+          class="block max-h-[40vh] w-auto h-auto md:max-h-none md:w-full md:h-[560px] md:object-cover md:object-top md:aspect-square lg:aspect-auto"
+          widths={[240, 390, 840]}
+          sizes="(min-width: 768px) 420px, 240px"
           loading="lazy"
         />
       </div>
     </div>
 
-    <div class="pt-8 md:pt-0 md:min-w-0 md:flex-1 md:max-w-[820px]">
+    <div class="pt-8 text-center md:pt-0 md:text-left md:min-w-0 md:flex-1 md:max-w-[820px]">
       <p
         class="font-grotesk font-medium text-encore-fg text-lg md:text-2xl leading-[1.5] m-0"
       >
