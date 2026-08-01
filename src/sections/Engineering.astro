@@ -13,20 +13,28 @@ import engineering, { engMeta } from "../data/engineering";
         return (
           <Tag
             href={row.href}
-            class={`border-t border-encore-line py-6 md:py-8 md:flex md:items-center md:justify-between md:gap-8 ${row.href ? "block hover:bg-encore-surface transition-colors" : ""}`}
+            class={`border-t border-encore-line py-6 md:py-8 md:flex md:items-center md:justify-between md:gap-8 ${row.href ? "group block hover:bg-encore-surface transition-colors" : ""}`}
           >
             <div>
               <div class="flex items-baseline justify-between md:block">
-                <h3 class="font-grotesk font-bold text-encore-fg text-base md:text-xl m-0">{row.company}</h3>
+                <h3 class="font-grotesk font-bold text-encore-fg text-base md:text-xl m-0 transition-colors duration-200 ease-in-out group-hover:text-encore-accent">{row.company}</h3>
                 <span class="md:hidden font-smono text-encore-accent text-xs">{row.years}</span>
               </div>
               <p class="font-smono text-encore-dim text-[10px] md:text-xs tracking-[1px] m-0 pt-2">{row.role}</p>
             </div>
-            <div class="hidden md:flex md:flex-col md:items-end md:shrink-0">
-              <span class="font-smono text-encore-accent text-sm">{row.years}</span>
-              <span class="font-smono text-encore-dim text-xs tracking-[1px] pt-2">{row.tags.join(" / ")}</span>
+            <div class="hidden md:flex md:items-center md:gap-8 md:shrink-0">
+              <div class="flex flex-col items-end">
+                <span class="font-smono text-encore-accent text-sm">{row.years}</span>
+                <span class="font-smono text-encore-dim text-xs tracking-[1px] pt-2">{row.tags.join(" / ")}</span>
+              </div>
+              {row.href && (
+                <span class="font-grotesk text-encore-accent text-2xl leading-none transition-transform duration-200 ease-in-out group-hover:translate-x-1.5" aria-hidden="true">&rarr;</span>
+              )}
             </div>
-            <span class="md:hidden block font-smono text-encore-dim text-[10px] tracking-[1px] pt-1">{row.tags.join(" / ")}</span>
+            <div class="md:hidden flex items-center justify-between pt-1">
+              <span class="font-smono text-encore-dim text-[10px] tracking-[1px]">{row.tags.join(" / ")}</span>
+              {row.href && <span class="font-grotesk text-encore-accent text-base leading-none" aria-hidden="true">&rarr;</span>}
+            </div>
           </Tag>
         );
       })

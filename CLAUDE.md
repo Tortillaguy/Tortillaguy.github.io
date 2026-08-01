@@ -171,7 +171,7 @@ Adrian Cacho (also known as "Cacho") is an innovative creative technologist with
 ## Site Sections
 
 ### Hero
-Full-bleed autoplay sizzle reel (muted/looped/playsinline; `public/assets/sizzle-wide.mp4` + `sizzle-portrait.mp4`) layered over the festival photo, which stays underneath as the LCP paint and the fallback for blocked autoplay (iOS Low Power Mode) and `prefers-reduced-motion`. A small inline script in `Hero.astro` — the homepage's only client JS — picks the crop at the `sm` breakpoint (≤639px = portrait), swaps live on breakpoint change, and skips the video download entirely under `prefers-reduced-motion`; scrim; mono meta (`VENICE, CA`); the `LIGHT, / MOTION, / & CODE.` lockup (fringe on LIGHT, and MOTION,; green & CODE.); monumental ADRIAN CACHO at the fold. Creative-first positioning: visuals lead, engineering is the depth. Reel edit masters (`sizzle_*.mov`) are gitignored — re-encode via two-pass ffmpeg (H.264, `-an`, `+faststart`; ~3.3 Mbps wide / 1.5 Mbps portrait at 720×1280).
+Full-bleed autoplay sizzle reel (muted/looped/playsinline; AV1-only: `public/assets/sizzle-wide.av1.mp4` + `sizzle-portrait.av1.mp4`) layered over the festival photo, which stays underneath as the LCP paint and the fallback for browsers without AV1 decode (Safari needs A17/M3+ hardware — those users get the photo), blocked autoplay (iOS Low Power Mode), and `prefers-reduced-motion`. A small inline script in `Hero.astro` — the homepage's only client JS — gates on `canPlayType` AV1 support, picks the crop at the `sm` breakpoint (≤639px = portrait), swaps live on breakpoint change, skips the download entirely under `prefers-reduced-motion` or Data Saver, crossfades the video in over the photo on first `playing`, and pauses it offscreen via IntersectionObserver; scrim; mono meta (`VENICE, CA`); the `LIGHT, / MOTION, / & CODE.` lockup (fringe on LIGHT, and MOTION,; green & CODE.); monumental ADRIAN CACHO at the fold. Creative-first positioning: visuals lead, engineering is the depth. Reel edit masters (`sizzle_*.mov`) and retired H.264 encodes are gitignored in the repo root — re-encode via ffmpeg libsvtav1 (`-an`, `+faststart`, yuv420p; ~1.7 Mbps wide / 800 kbps portrait at 720×1280). When replacing the reel, use new filenames (GitHub Pages caches at `max-age=600` with no immutable control).
 
 ### 01 PRODUCTIONS
 Featured Proper NYE '25 triptych (three vertical photos) + Disguise VP Accelerator / Seismic / SD Renegade cards. Captions below images, never overlaid; green years.
@@ -180,7 +180,7 @@ Featured Proper NYE '25 triptych (three vertical photos) + Disguise VP Accelerat
 Six pieces in an asymmetric mosaic (Letting Go, Pyro Demo, Hardstyle Visuals, Oblivion, Light It Up, Crystals); tags from `art.ts`.
 
 ### 03 ENGINEERING
-Centered quote + credibility rows (company/role left, green years + tags right) linking to `/work/*` case studies. Framing: "the VJ who builds the software behind the show."
+Centered quote + credibility rows (company/role left, green years + tags right) linking to `/work/*` case studies. Linked rows carry an always-visible green `→` (far right; nudges right on hover while the company name lerps to accent) — rows without an arrow have no case study. Framing: "the VJ who builds the software behind the show."
 
 ### 04 LET'S TALK
 Straight copy, green `HELLO@CACHO.DEV →` CTA, socials (Instagram/LinkedIn/Resume), three-item mono footer.

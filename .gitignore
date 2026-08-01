@@ -18,5 +18,6 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
-# sizzle reel edit masters (delivery MP4s live in public/assets/)
-sizzle_*.mov
+# sizzle reel edit masters + retired H.264 encodes (delivery AV1 lives in public/assets/)
+/sizzle_*.mov
+/sizzle-*.mp4
