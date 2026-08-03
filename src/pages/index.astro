@@ -8,18 +8,18 @@ import Art from "../sections/Art.astro";
 import Engineering from "../sections/Engineering.astro";
 import About from "../sections/About.astro";
 import Contact from "../sections/Contact.astro";
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 ---
 
 <!doctype html>
-<html lang="en" data-theme="cmyk" class="bg-encore-bg">
+<html lang="en" class="bg-encore-bg">
   <head>
     <BaseHead
       title={"Adrian Cacho – Live Visuals, Motion & Code"}
       description={SITE_DESCRIPTION}
       image="assets/hero.jpg"
     />
-    <ViewTransitions />
+    <ClientRouter />
   </head>
 
   <MainLayout>

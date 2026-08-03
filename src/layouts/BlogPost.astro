@@ -2,7 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import { SITE_DESCRIPTION } from "../config";
 import MainLayout from "../layouts/MainLayout.astro";
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 import { Image } from "astro:assets";
 import caseStudies from "../data/caseStudies";
 
@@ -28,14 +28,14 @@ const meta = cs
   : [];
 ---
 
-<html lang="en" data-theme="cmyk" class="bg-encore-bg">
+<html lang="en" class="bg-encore-bg">
   <head>
     <BaseHead
       title={cs ? `Adrian Cacho – ${cs.title}` : "Adrian Cacho – Case Study"}
       description={SITE_DESCRIPTION}
       image="/assets/hero.jpg"
     />
-    <ViewTransitions />
+    <ClientRouter />
   </head>
   <MainLayout>
     {

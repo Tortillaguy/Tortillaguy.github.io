@@ -1,4 +1,4 @@
-import type { CSSProperties } from "react";
+type CSSProperties = Record<string, string | number>;
 
 export interface Project {
   name?: string;

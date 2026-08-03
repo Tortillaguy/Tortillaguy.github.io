@@ -14,37 +14,17 @@
     "resume:site": "npx tsx ./scripts/resume-converter.ts --pdf resumes/site.md -o ./public/assets/Resume.pdf"
   },
   "dependencies": {
-    "@astrojs/mdx": "^0.12.0",
-    "@astrojs/react": "^1.2.2",
-    "@astrojs/sitemap": "^1.0.0",
-    "@astrojs/svelte": "^5.4.0",
-    "@astrojs/tailwind": "^3.0.0-beta.1",
-    "@emotion/react": "^11.10.5",
-    "@nanostores/react": "^0.7.2",
-    "@react-three/fiber": "8",
-    "@tailwindcss/typography": "^0.5.8",
-    "@types/react": "^18.0.21",
-    "@types/react-dom": "^18.0.6",
-    "@types/three": "^0.180.0",
-    "astro": "^4.0.0",
-    "astro-icon": "^0.8.0",
-    "daisyui": "^4.11.1",
-    "nanostores": "^0.10.3",
-    "ogl": "^1.0.11",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "sharp": "^0.34.4",
-    "svelte": "^4.2.17",
-    "tailwindcss": "^3.0.24",
-    "tailwindcss-ripple": "^0.7.1",
-    "three": "^0.180.0",
-    "typescript": "^5.4.5"
+    "@astrojs/sitemap": "^3.7.3",
+    "astro": "^7.1.6",
+    "sharp": "^0.35.3",
+    "tailwindcss": "^3.4.18",
+    "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "@types/node": "^24.10.0",
+    "@types/node": "^26.1.2",
+    "autoprefixer": "^10.5.4",
     "docx": "^9.5.1",
     "pdf-lib": "^1.17.1",
-    "serve": "^14.2.5",
     "tailwindcss-animate": "^1.0.5"
   }
 }

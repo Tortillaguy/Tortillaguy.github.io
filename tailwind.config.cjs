@@ -109,8 +109,6 @@ module.exports = {
         { values: theme("textShadow") }
       );
     }),
-    require("@tailwindcss/typography"),
-    require("daisyui"),
     require("tailwindcss-animate"),
   ],
 };
