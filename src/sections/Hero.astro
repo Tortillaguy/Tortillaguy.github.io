@@ -34,8 +34,8 @@ import heroImage from "../assets/hero.jpg";
       const apply = () => {
         if (!av1 || !motionOk.matches || navigator.connection?.saveData) return;
         const src = portrait.matches
-          ? "/assets/sizzle-portrait.av1.mp4"
-          : "/assets/sizzle-wide.av1.mp4";
+          ? "/assets/sizzle2-portrait.av1.mp4"
+          : "/assets/sizzle2-wide.av1.mp4";
         if (!reel.src.endsWith(src)) {
           reel.src = src;
           reel.play().catch(() => {});

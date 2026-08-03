@@ -19,5 +19,5 @@ pnpm-debug.log*
 .DS_Store
 
 # sizzle reel edit masters + retired H.264 encodes (delivery AV1 lives in public/assets/)
-/sizzle_*.mov
-/sizzle-*.mp4
+/sizzle*.mov
+/sizzle*.mp4
