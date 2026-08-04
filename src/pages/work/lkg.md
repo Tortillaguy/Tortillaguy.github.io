@@ -53,6 +53,8 @@ I integrated ChatGPT-powered conversational AI into our **[Liteforms platform](h
 
 The result? Holographic chatbots that brands could customize with their entire product catalog and service offerings. Imagine walking up to a holographic retail assistant that not only looks three-dimensional but can answer questions about products, make recommendations, and engage in natural dialogue—all without typing.
 
+The stack underneath was Python, LangChain, and GPT-4, and it went out to real enterprise clients—**Accenture** and **Marriott** among them. That changed the job in ways I didn't fully anticipate. A demo can hallucinate charmingly; an assistant standing in a client's lobby cannot. Most of my time went into the retrieval side rather than the generation side—getting each client's own material indexed properly, tuning how much context the model saw, and making sure the thing said "I don't know" instead of inventing an answer when the knowledge base didn't cover a question.
+
 This was cutting-edge stuff—implementing RAG for holographic conversational AI before it became mainstream.
 
 ### 2. Text-to-Hologram: ComfyUI Generation Pipeline

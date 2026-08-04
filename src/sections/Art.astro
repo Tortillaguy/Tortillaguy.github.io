@@ -26,7 +26,7 @@ const rows = [
       rows.map((row) => (
         <div class={`grid grid-cols-1 gap-8 md:gap-5 ${row.cols}`}>
           {row.pieces.filter(Boolean).map((p, i) => (
-            <a href={p.link} target="_blank" rel="noopener noreferrer" class="block group">
+            <a href={p.link} class="block group">
               <div class="overflow-hidden border border-encore-line">
                 <Image
                   src={img(p.filename)}

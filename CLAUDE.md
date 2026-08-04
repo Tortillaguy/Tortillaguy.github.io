@@ -41,7 +41,7 @@ Adrian Cacho (also known as "Cacho") is an innovative creative technologist with
 - **Full-Stack & DevOps Engineer** at Vertebrae (acquired by Snap Inc.) - August 2020 to March 2022
   - Scaled pipelines to deliver 50,000 digital media assets
 - **Lead Software Engineer** at PortalsXR - January 2019 to January 2020
-  - Led team of 6 to launch mobile AR experiences for Coachella
+  - Led team of 6 to launch 6 mobile AR apps for high-traffic live events; on-site production support at Coachella and Music Midtown, 100% uptime for localized, time-coded AR
 - **VR Engineer** at Moving Picture Company - February 2018 to February 2019
   - Collaborated with Magic Leap to develop a Spotify application
 
@@ -129,12 +129,15 @@ Adrian Cacho (also known as "Cacho") is an innovative creative technologist with
          Contact.astro   # 05 - LET'S TALK + green CTA
       layouts/
          MainLayout.astro     # Header + slot + Footer (no 3D background)
-         BlogPost.astro       # Encore case-study layout (hero, spec strip, outcomes, prev/next, CTA)
+         BlogPost.astro       # Encore engineering case-study layout (hero, spec strip, outcomes, prev/next, CTA)
+         ArtPost.astro        # Encore art case-study layout (hero, MEDIUM/TOOLS strip, WATCH THE PIECE release link, prev/next, CTA)
       pages/
          index.astro     # Homepage: Hero -> Productions -> Art -> Engineering -> About -> Contact
-         work/*.md       # Case-study content (content-only; title/meta rendered by layout)
+         work/*.md       # Engineering case-study content (content-only; title/meta rendered by layout)
+         art/*.md        # Art & motion case-study content (content-only; same rule)
       data/
-         caseStudies.ts  # ORDERED case-study registry: slug/title/role/timeline/stack/outcomes -> crumbs + prev/next
+         caseStudies.ts  # ORDERED engineering case-study registry: slug/title/role/timeline/stack/outcomes -> crumbs + prev/next
+         artCaseStudies.ts  # ORDERED art case-study registry: slug/title/medium/tools/heroImage/releaseUrl -> crumbs + prev/next
          engineering.ts  # Homepage credibility rows (source of truth for roles/years where they overlap)
          productions.ts  # Production cards (featured triptych via images[])
          art.ts          # Art mosaic pieces + tags
@@ -152,7 +155,8 @@ Adrian Cacho (also known as "Cacho") is an innovative creative technologist with
    - Hover language: images scale 1.04 and card titles lerp to accent green, 0.2s ease-in-out
 
 2. **Case-Study System**
-   - `src/data/caseStudies.ts` is the single ordered registry (reverse-chronological) driving crumb numbers (`CASE STUDY — NN / NN`), prev/next nav, and the ROLE/TIMELINE/STACK spec strip
+   - TWO independent registries, deliberately kept separate so art pieces never renumber the engineering crumbs: `src/data/caseStudies.ts` (jobs, `/work/*`, `BlogPost.astro`, `CASE STUDY — NN / NN`) and `src/data/artCaseStudies.ts` (art, `/art/*`, `ArtPost.astro`, `PIECE — NN / NN`). Each layout imports only its own registry, so prev/next never crosses between the two
+   - `src/data/caseStudies.ts` is the ordered registry (reverse-chronological) driving crumb numbers (`CASE STUDY — NN / NN`), prev/next nav, and the ROLE/TIMELINE/STACK spec strip
    - Markdown bodies are content-only; the layout renders title, metadata, KEY OUTCOMES panel, and CTA band
    - Prose styling via `#case-study` in `global.css`: CSS-counter numbered H2s, mono-caps H3s, left-ruled lists
 
@@ -177,10 +181,10 @@ Full-bleed autoplay sizzle reel (muted/looped/playsinline; AV1-only: `public/ass
 Featured Proper NYE '25 triptych (three vertical photos) + Disguise VP Accelerator / Seismic / SD Renegade cards. Captions below images, never overlaid; green years.
 
 ### 02 ART & MOTION
-Six pieces in an asymmetric mosaic (Letting Go, Pyro Demo, Hardstyle Visuals, Oblivion, Light It Up, Crystals); tags from `art.ts`.
+Six pieces in an asymmetric mosaic (Letting Go, Pyro Demo, Hardstyle Visuals, Oblivion V2, Light It Up, Crystals); tags from `art.ts`. Cards link INTERNALLY to `/art/<slug>` case studies (no `target="_blank"`) — the outbound Instagram/Spotify/SoundCloud link now lives on the case-study page's WATCH THE PIECE panel, so a visitor lands on owned content first. All 12 entries in `art.ts` have a page; only these six are surfaced in the mosaic, the other six are reachable via prev/next.
 
 ### 03 ENGINEERING
-Centered quote + credibility rows (company/role left, green years + tags right) linking to `/work/*` case studies. Linked rows carry an always-visible green `→` (far right; nudges right on hover while the company name lerps to accent) — rows without an arrow have no case study. Framing: "the VJ who builds the software behind the show."
+Centered quote + credibility rows (company/role left, green years + tags right) linking to `/work/*` case studies. Linked rows carry an always-visible green `→` (far right; nudges right on hover while the company name lerps to accent). As of Aug 2026 every row is linked — Coachella AR was the last unlinked row and now points at `/work/coachella`. Framing: "the VJ who builds the software behind the show."
 
 ### 04 ABOUT
 Iceland portrait (top-anchored crop) beside the rewritten bio with pulled-lead treatment; mono meta `VENICE, CA`.
@@ -189,7 +193,10 @@ Iceland portrait (top-anchored crop) beside the rewritten bio with pulled-lead t
 Straight copy, green `HELLO@CACHO.DEV →` CTA, socials (Instagram/LinkedIn/Resume), three-item mono footer.
 
 ### /work/* Case Studies
-Ten markdown write-ups in the Encore case-study template (see Case-Study System above). Adding one = add the md file AND a registry entry in `caseStudies.ts` — unregistered slugs render without hero/crumb/nav.
+Eleven markdown write-ups in the Encore case-study template (see Case-Study System above). Adding one = add the md file AND a registry entry in `caseStudies.ts` — unregistered slugs render without hero/crumb/nav.
+
+### /art/* Case Studies
+Twelve markdown write-ups in the Encore art template, one per `art.ts` piece. Adding one = add `src/pages/art/<slug>.md` (layout `../../layouts/ArtPost.astro`) AND an `artCaseStudies.ts` entry AND point the matching `art.ts` `link` at `/art/<slug>`. Bodies carry `<!-- TODO(adrian): ... -->` placeholders wherever a statement of personal intent belongs — they were written from the image, the toolchain, and the release target only, so intent was deliberately left for Adrian rather than invented.
 
 ---
 
@@ -220,6 +227,7 @@ pnpm astro
 ### Development Notes
 
 1. **Adding a Case Study**
+   - Engineering goes in `src/pages/work/` + `caseStudies.ts`; art goes in `src/pages/art/` + `artCaseStudies.ts`. Never mix the two registries
    - Add `src/pages/work/<slug>.md` (content only — no H1, no date line; the layout renders those)
    - Add a registry entry in `src/data/caseStudies.ts` in the correct chronological position (crumb numbers and prev/next derive from array order)
    - If it's a job, add/update the matching `src/data/engineering.ts` row — roles/years must agree between the two files

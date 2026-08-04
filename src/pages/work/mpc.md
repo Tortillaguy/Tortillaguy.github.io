@@ -42,6 +42,14 @@ For the Spotify app, I created:
 
 Writing shaders taught me to think about graphics at a fundamental level—how light interacts with surfaces, how to optimize GPU performance, and how to create effects that look amazing while running efficiently on mobile hardware.
 
+## Brand Work: AR/VR for National Geographic and Beyond
+
+The Magic Leap project wasn't the only thing on my plate. MPC's clients came to us wanting interactive AR and VR experiences that would actually get people to stop and engage, and I built a number of those—including work for National Geographic.
+
+These were Unity applications written in C#, designed to run as part of larger multi-platform marketing campaigns rather than as one-off tech demos. That distinction mattered enormously. A demo can be finicky; a campaign piece has to work on the first try, on whatever hardware is in front of the user, in a loud room, with someone who has never worn a headset before and won't be given a tutorial.
+
+So the engineering priorities shifted: bulletproof onboarding, forgiving interaction targets, graceful degradation when tracking got confused. We measured what actually happened—how long people stayed in the experience, how far they got through it—and iterated against those numbers rather than against our own taste. Watching engagement move because of a change I'd made to a gesture threshold was a very different satisfaction than shipping a clever shader.
+
 ## Leading a Team
 
 Beyond the technical work, I had the opportunity to lead a small team of three developers. This was my first real leadership role, and it taught me that good code is only part of the equation.

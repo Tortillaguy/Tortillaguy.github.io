@@ -36,6 +36,8 @@ The cross-platform challenge was real:
 
 Each platform had its quirks, and maintaining feature parity while optimizing for each device's strengths was a constant balancing act. But seeing someone put on a headset and feel like they're sitting courtside at an NBA game? That made all the debugging worth it.
 
+The clearest signal that the app was solid: it was adopted for **NBC's coverage of the 2018 Winter Olympics**. I wasn't part of that broadcast myself, but a lot of what we'd hardened for weekly NBA and NFL games—the cross-platform build targets, the interaction models, the tolerance for flaky venue networks—was exactly what an event at that scale demands. There's a particular satisfaction in watching something you helped build get handed to a bigger audience than you designed it for and hold up anyway.
+
 ## Design Thinking: UX for Virtual Worlds
 
 VR UX design is fundamentally different from web or mobile design. You're not designing for a screen—you're designing for **presence**, for the feeling of actually being somewhere.

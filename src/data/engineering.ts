@@ -15,11 +15,11 @@ const engineering: EngRow[] = [
   { company: "TWELVE LABS", role: "SENIOR FULL-STACK ENGINEER — AGENTIC VIDEO EDITOR (RODEO)", years: "2026", tags: ["REACT", "GRAPHQL", "FFMPEG"], href: "/work/twelvelabs" },
   { company: "FIRST RESONANCE", role: "AI CONTEXT ENGINEER — FIRST AI HIRE, MCP + AGENT TOOLING", years: "2025 — 2026", tags: ["MCP", "PYTHON", "LANGCHAIN"], href: "/work/first-resonance" },
   { company: "NAPSTER", role: "SENIOR FULL-STACK ENGINEER", years: "2025", tags: ["REACT", "NEXTJS", "AWS"], href: "/work/infinite-reality" },
-  { company: "LOOKING GLASS FACTORY", role: "SENIOR FULL-STACK — BUILT BLOCKS.GLASS, 100K+ HOLOGRAMS", years: "2023 — 2025", tags: ["REACT", "WEBGL", "POSTGRES"], href: "/work/lkg" },
+  { company: "LOOKING GLASS FACTORY", role: "SENIOR FULL-STACK — BLOCKS.GLASS, 100K+ HOLOGRAMS; AI FOR ACCENTURE + MARRIOTT", years: "2023 — 2025", tags: ["REACT", "WEBGL", "POSTGRES"], href: "/work/lkg" },
   { company: "VERTEBRAE → SNAPCHAT", role: "FULL-STACK & DEVOPS ENGINEER — ACQUIRED 2021", years: "2020 — 2022", tags: ["PYTHON", "BLENDER", "WEBGL"], href: "/work/vertebrae" },
-  { company: "MPC × MAGIC LEAP", role: "VR ENGINEER — SPOTIFY APP FOR MAGIC LEAP", years: "2018 — 2019", tags: ["C++", "MAGIC LEAP SDK"], href: "/work/mpc" },
-  { company: "INTEL TRUE VR", role: "CONTENT MANAGEMENT SPECIALIST", years: "2017 — 2018", tags: ["UNITY", "FFMPEG", "VR"], href: "/work/intel" },
-  { company: "COACHELLA AR", role: "LEAD SOFTWARE ENGINEER — PORTALSXR, TEAM OF 6", years: "2019", tags: ["UNITY", "AR", "MOBILE"] },
+  { company: "MPC × MAGIC LEAP", role: "VR ENGINEER — SPOTIFY FOR MAGIC LEAP; AR/VR FOR NATIONAL GEOGRAPHIC", years: "2018 — 2019", tags: ["C++", "MAGIC LEAP SDK"], href: "/work/mpc" },
+  { company: "INTEL TRUE VR", role: "CONTENT MANAGEMENT SPECIALIST — VR SPORTS, ADOPTED FOR NBC'S 2018 OLYMPICS", years: "2017 — 2018", tags: ["UNITY", "FFMPEG", "VR"], href: "/work/intel" },
+  { company: "COACHELLA AR", role: "LEAD SOFTWARE ENGINEER — PORTALSXR, TEAM OF 6; COACHELLA + MUSIC MIDTOWN", years: "2019", tags: ["UNITY", "AR", "MOBILE"], href: "/work/coachella" },
 ];
 
 export default engineering;
