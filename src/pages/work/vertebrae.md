@@ -2,7 +2,7 @@
 layout: ../../layouts/BlogPost.astro
 ---
 
-When I joined Vertebrae as a Full-Stack & DevOps Engineer, the company was on a mission to transform e-commerce through 3D and augmented reality. Imagine shopping online, but instead of flat product photos, you could view items in photorealistic 3D, place them in your room with AR, and interact with them from every angle.
+When I joined Vertebrae as a full-stack developer, the company was on a mission to transform e-commerce through 3D and augmented reality. Imagine shopping online, but instead of flat product photos, you could view items in photorealistic 3D, place them in your room with AR, and interact with them from every angle.
 
 We were working with major retail brands—over **100 vendors**—to convert their product catalogs into immersive 3D experiences. The scale was massive: **over 50,000 3D assets** needed to be processed, optimized, and delivered for mobile AR.
 

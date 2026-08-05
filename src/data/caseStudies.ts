@@ -133,7 +133,7 @@ const caseStudies: CaseStudy[] = [
     slug: "vertebrae",
     title: "SCALING 3D COMMERCE: FROM VERTEBRAE TO SNAP INC.",
     shortTitle: "VERTEBRAE → SNAP",
-    role: "FULL-STACK & DEVOPS ENGINEER",
+    role: "FULL-STACK DEVELOPER",
     timeline: "AUGUST 2020 — MARCH 2022",
     stack: ["PYTHON", "BLENDER", "WEBGL"],
     outcomes: [
