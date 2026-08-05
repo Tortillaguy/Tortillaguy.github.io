@@ -4,7 +4,7 @@ layout: ../../layouts/ArtPost.astro
 
 A cluster of long, faceted spires erupts from the left edge of the frame and fans out like a shattered bouquet. The shards read pale blue-white at the tips and bruise into deep violet where they overlap, and each one carries a hard specular edge down its length that looks more like a drawn line of light than a surface. A bloom of magenta smoke sits behind and beneath them, soft and slow. One thin shard has broken free and floats mid-frame, tumbling.
 
-<!-- TODO(adrian): your intent / story for this piece goes here -->
+The same exploration down its other branch. Here the simulation is fracture and scatter rather than combustion, hard geometry breaking instead of gas burning, and part of what I was testing is whether a multi-app workflow holds together when you swap the solver out from under it. The magenta volume behind the shards is the pyro work coming along for the ride.
 
 ## What the frame is doing
 

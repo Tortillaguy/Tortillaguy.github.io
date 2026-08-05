@@ -6,7 +6,7 @@ A broadsword hangs point-down in a stone alcove, its blade swallowed by flame. T
 
 The composition leans. The sword runs diagonally from lower-right to upper-left and the flame follows, so the eye travels the blade and keeps going into the smoke.
 
-<!-- TODO(adrian): your intent / story for this piece goes here -->
+"Demo" is honest. This was an exploration into pyrodynamics and, just as much, into the multi-app workflow it demands: simulate the volume in EmberGen or Houdini, hold the scene in Cinema4D or Blender, resolve the light in Octane, finish in Photoshop where a frame needs it. A blade-mounted plume is the harder version of that problem, narrow and fast where smoke would rather be broad and slow. What I wanted out of the frame was fire's other register, the chaotic torsion and the intensity of it, rather than the calm.
 
 ## Three tools, three jobs
 

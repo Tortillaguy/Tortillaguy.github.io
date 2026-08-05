@@ -4,7 +4,7 @@ layout: ../../layouts/ArtPost.astro
 
 The jaw is the hottest thing in the frame, blown clean out to white. From there the fire climbs — hot orange and yellow eating the bottom two thirds of a skull that faces you straight on, sitting dead center in a square crop. The eye sockets and cheekbones survive only as darker gaps inside the flame. Above the crown the plume cools into smoke: grey-white, curling outward in soft lobes, the calmest thing in the picture. Over all of it sits a layer of dust and grain, faint horizontal scratches, a hairline seam running through the middle, and a scatter of small bright specks that reads as film dirt. The whole image looks scanned off a print more than rendered.
 
-<!-- TODO(adrian): your intent / story for this piece goes here -->
+The same client job, down its other pipeline. The DJ's Ghost Rider brief is at its most literal here, a burning skull head-on, and because this one did not have to run live it could be simulated, rendered offline and then finished as a flat image rather than performed. That let it be fire at full intensity instead of the ethereal register: a jaw blown out past white, the lower two thirds of the frame consumed, and the smoke above the crown left as the only calm in the picture.
 
 ## How this kind of frame gets built
 

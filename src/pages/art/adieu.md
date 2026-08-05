@@ -6,7 +6,7 @@ A diamond nested inside a diamond, and inside that, a flower. The frame is a set
 
 Outside the diamond, the corners are a different painting entirely: soft lozenges of red, cobalt, green and gold, some of them cross-hatched with a fabric-like weave, all of it going nearly black at the edges. The vignette does the work of a stage — everything falls off into darkness so the center reads.
 
-<!-- TODO(adrian): your intent / story for this piece goes here -->
+Machined stone and ceramic petals in the same frame is the kind of impossible object I want this pipeline for: expensive to model, a few minutes to steer here. Masking during generation keeps two ideas from averaging into each other, so the corners can go off and be their own painting while the centre stays a bloom. It is built to loop, which means the symmetry breathes without the piece ever arriving anywhere.
 
 ## Holding a symmetry still while it moves
 

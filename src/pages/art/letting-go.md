@@ -4,7 +4,7 @@ layout: ../../layouts/ArtPost.astro
 
 An open hand, palm up, floating in pure black. Nothing else in frame — no floor, no horizon, no second light source to explain the scene. Out of the cupped part of the palm a plume of smoke climbs and spreads, magenta where it's densest against the skin, warming into coral through the middle of the cloud, then cooling to a pale teal along its outer edges as it thins out and loses heat. The hand itself is lit almost entirely by that plume: violet rim light along the forearm, a hot pink bounce inside the fingers, the knuckles and fingertips fading down into the black rather than ending on a hard edge.
 
-<!-- TODO(adrian): your intent / story for this piece goes here -->
+Pyro is the thing I keep coming back to. There is an ethereal state that arrives from staring into a fire, and a cupped hand releasing a plume with nothing else in frame is the shortest route to it I have found. The looping version is where the piece actually lands: the plume never finishes, so watching it has the hypnotic pull of a campfire instead of the arc of a shot.
 
 ## The plume
 

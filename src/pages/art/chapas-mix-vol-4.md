@@ -6,7 +6,7 @@ A field of skulls, packed shoulder to shoulder until they stop reading as indivi
 
 The right edge breaks into a black vertical band carrying the mix's marks — an inverted pentagram, a dagger, a small flame — stacked above blackletter type set sideways, with the volume number beneath it. That band does the compositional work: it gives the chaos a hard stop and gives the eye somewhere to land.
 
-<!-- TODO(adrian): your intent / story for this piece goes here -->
+The mix series is where the crew's identity got its furniture: a pentagram, a dagger, a small flame, blackletter type, all stacked into a band on the right edge where every volume can carry the same marks in the same place. Skulls turn up again, flattened into terrain instead of given a face. The volume number is the giveaway that this was identity work rather than a one-off cover, because a layout meant to be reused has to survive being reused.
 
 ## How the pipeline gets there
 

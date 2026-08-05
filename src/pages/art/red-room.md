@@ -4,7 +4,7 @@ layout: ../../layouts/ArtPost.astro
 
 A bloom shot close enough that the frame can't hold it. Petals spiral out of a hot coral-pink center and open into long blades that run magenta, then violet, then cool to teal and acid green right where they leave the frame. Every leaf is veined like stained glass, backlit so the tissue between the veins glows while the veins themselves stay dark. Water beads sit scattered across the surfaces, each one carrying a small hard highlight. The plant is cropped past its own edges, so there's no way to tell how big it is or where it sits.
 
-<!-- TODO(adrian): your intent / story for this piece goes here -->
+This one is blending more than building. The leaf, the stained glass and the wet plant surface never existed as separate elements waiting to be combined, they arrive already fused, and that fusing is the part of generative work I actually came for. Masking lets a centre hold while everything past it drifts. Cropping past the plant's own edges takes scale out of the picture, so what is left is heat rather than botany.
 
 ## Holding one flower together across a sequence
 

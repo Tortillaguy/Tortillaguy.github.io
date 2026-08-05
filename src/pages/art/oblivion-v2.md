@@ -6,7 +6,7 @@ Two human figures hang upside down at the left and right edges of the frame, mir
 
 Behind them sits a landscape in magenta and purple: soft ridges low in the frame, a darker range above, small white specks scattered through it like stars. A band of stacked colour cuts horizontally across the middle — teal, green, gold, orange — wavering along its edges like a signal that won't quite lock. Two hard black bars slice the whole composition, one across the shoulders, one lower through the hands, flattening the depth and reminding you you're looking at a scan rather than through a window.
 
-<!-- TODO(adrian): your intent / story for this piece goes here -->
+Same client, same character, pushed further from its source. Across these frames the one thing that survives the Ghost Rider starting point is the head: always the brightest object in the picture, never a face. Here it is gone completely, a cold bloom standing where a face should be, on two bodies mirrored and hung upside down. That is about as far from a hero pose as I could get while still having anatomy left to light.
 
 ## Contours, not surfaces
 

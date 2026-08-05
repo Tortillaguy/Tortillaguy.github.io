@@ -4,7 +4,7 @@ layout: ../../layouts/ArtPost.astro
 
 The white goes first. Thin, hot lines sit along every petal edge, and they land before you work out you're looking at a lotus — glassy rather than botanical, petals in tight rings spiralling to a violet core wound as densely as a rose. Follow the colour down one petal and it travels: cyan at the tip, cobalt through the middle, magenta where it meets the centre. The same walk happens on the next petal, and the next, so the bloom reads as one gradient bent into a wheel. Look past it and the shapes return — larger, softer, mirrored into a diamond lattice carrying that run into the corners. The frame is all flower and its own blurred echo, which is why the eye keeps going back to those white edges to hold onto.
 
-<!-- TODO(adrian): your intent / story for this piece goes here -->
+I came to ComfyUI wanting loops, and wanting shapes that don't survive being modelled. A lotus that is also glass, wound tighter than a real bloom would allow, sitting in front of a blurred lattice of itself. Working inside a graph means I can blend one image toward another quickly instead of constructing that blend as a comp afterward, and attention masks let me push on the composition while the image is still forming rather than fixing it once it has landed. The target is never really a subject. It is a feeling, and the feeling comes out of the music I am listening to, which is mostly DJs.
 
 ## How the frames get made
 

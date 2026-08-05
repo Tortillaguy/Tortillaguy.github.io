@@ -4,7 +4,7 @@ layout: ../../layouts/ArtPost.astro
 
 A chrome figure stands barefoot on cracked earth, arms open, head tilted back toward a magenta sun that blows out to near-white at its core. Ribbons of cyan cut across the frame in long arcs — some wrapping the body like a lasso caught mid-rotation, others streaking off past the edges as pure highlight. Banks of pink and teal smoke sit low on the horizon, lit from behind. A thin white border frames it all, with the title in the corner and the two artist names anchoring the bottom edge.
 
-<!-- TODO(adrian): your intent / story for this piece goes here -->
+Identity work for a nascent EDM party crew, built fast. A chrome body, a blown-out sun, one saturated colour carrying the structure, and two artist names seated along the bottom edge. Holding a vocabulary still across several releases is what makes a crew read as a crew instead of a run of unrelated tracks, so the repetition is the deliverable rather than a shortcut. Speed mattered more than polish. A young party crew needs to look like something before it is something.
 
 ## One lighting budget, four things fighting over it
 

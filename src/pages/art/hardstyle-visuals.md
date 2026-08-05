@@ -4,7 +4,7 @@ layout: ../../layouts/ArtPost.astro
 
 Chrome, in profile, coming apart. The skull holds together well enough to read as a skull — brow, socket, cheekbone, a hard row of teeth — and then shreds sideways into horizontal bands of scanline noise, as if something in the signal path gave out halfway across the frame. A hot yellow-gold specular runs along the top of the cranium and cools through steel blue and lavender as it wraps down the jaw. Torn fragments of the same material drift off to the sides: a pink smear to the right, small woven-looking chips scattered top to bottom, all of it moving away from the silhouette.
 
-<!-- TODO(adrian): your intent / story for this piece goes here -->
+This came out of client work for a DJ. He arrived inspired by Ghost Rider, which handed me a character to build scenes around, and a character is a far better brief than a mood board. What I took from it was the head. Chrome instead of bone, and coming apart rather than burning.
 
 ## Why realtime, and why Notch
 
