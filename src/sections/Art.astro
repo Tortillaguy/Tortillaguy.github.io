@@ -2,6 +2,7 @@
 import SectionHeader from "../components/SectionHeader.astro";
 import { Image } from "astro:assets";
 import art from "../data/art";
+import artCaseStudies from "../data/artCaseStudies";
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "../assets/*.{webp,jpg,jpeg,png}",
@@ -9,12 +10,18 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
 );
 const img = (filename: string) => images[`../assets/${filename}`]?.default;
 
-const pick = (n: string) => art.find((p) => p.name === n);
+// Pick by slug, not by display name: names are copy and do change (two pieces are
+// both called "Oblivion"), and a renamed piece would silently vanish from the
+// mosaic here because the missing entry gets dropped by .filter(Boolean) below.
+const pick = (slug: string) => art.find((p) => p.link === `/art/${slug}`);
+// Provenance lines live in artCaseStudies so the card and the case study can't drift apart.
+const noteFor = (link: string) =>
+  artCaseStudies.find((c) => `/art/${c.slug}` === link)?.mosaicNote;
 // Desktop mosaic rows: [wide, narrow], [narrow, wide], [half, half]
 const rows = [
-  { pieces: [pick("Letting Go"), pick("Pyro Demo")], cols: "md:grid-cols-[2fr_1fr]", sizes: ["(min-width: 768px) 66vw, 100vw", "(min-width: 768px) 33vw, 100vw"] },
-  { pieces: [pick("Hardstyle Visuals"), pick("Oblivion V2")], cols: "md:grid-cols-[1fr_2fr]", sizes: ["(min-width: 768px) 33vw, 100vw", "(min-width: 768px) 66vw, 100vw"] },
-  { pieces: [pick("Light It Up"), pick("Crystals")], cols: "md:grid-cols-2", sizes: ["(min-width: 768px) 50vw, 100vw", "(min-width: 768px) 50vw, 100vw"] },
+  { pieces: [pick("letting-go"), pick("pyro-demo")], cols: "md:grid-cols-[2fr_1fr]", sizes: ["(min-width: 768px) 66vw, 100vw", "(min-width: 768px) 33vw, 100vw"] },
+  { pieces: [pick("hardstyle-visuals"), pick("oblivion-v2")], cols: "md:grid-cols-[1fr_2fr]", sizes: ["(min-width: 768px) 33vw, 100vw", "(min-width: 768px) 66vw, 100vw"] },
+  { pieces: [pick("light-it-up"), pick("crystals")], cols: "md:grid-cols-2", sizes: ["(min-width: 768px) 50vw, 100vw", "(min-width: 768px) 50vw, 100vw"] },
 ];
 ---
 
@@ -43,6 +50,11 @@ const rows = [
                   {(p.tags ?? []).join(" · ")}
                 </span>
               </div>
+              {noteFor(p.link) && (
+                <p class="font-inter text-encore-dim text-xs md:text-sm leading-snug m-0 pt-1.5 max-w-[52ch]">
+                  {noteFor(p.link)}
+                </p>
+              )}
             </a>
           ))}
         </div>

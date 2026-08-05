@@ -41,7 +41,7 @@ const art: Project[] = [
     tags: ["Notch"],
   },
   {
-    name: "Oblivion V2",
+    name: "Oblivion",
     filename: "oblivionV2.webp",
     link: "/art/oblivion-v2",
     tags: ["Notch", "Daz3D"],
