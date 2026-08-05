@@ -13,7 +13,7 @@ This is Adrian Cacho's personal portfolio website showcasing his work as a creat
 
 ## About Adrian
 
-Adrian Cacho (also known as "Cacho") is an innovative creative technologist with over 7 years of experience building scalable, high-performance web applications and immersive experiences. He has a proven track record of leading engineering teams to deliver high-impact products, including a content management platform that served over 100,000 digital assets at Looking Glass Factory (blocks.glass).
+Adrian Cacho (also known as "Cacho") is an innovative creative technologist with over 10 years of experience building scalable, high-performance web applications and immersive experiences. He has a proven track record of leading engineering teams to deliver high-impact products, including a content management platform that served over 100,000 digital assets at Looking Glass Factory (blocks.glass).
 
 ### Professional Identity
 
