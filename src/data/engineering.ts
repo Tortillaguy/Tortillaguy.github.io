@@ -18,7 +18,7 @@ const engineering: EngRow[] = [
   { company: "LOOKING GLASS FACTORY", role: "SENIOR FULL-STACK — BLOCKS.GLASS, 100K+ HOLOGRAMS; AI FOR ACCENTURE + MARRIOTT", years: "2023 — 2025", tags: ["REACT", "WEBGL", "POSTGRES"], href: "/work/lkg" },
   { company: "VERTEBRAE → SNAPCHAT", role: "FULL-STACK & DEVOPS ENGINEER — ACQUIRED 2021", years: "2020 — 2022", tags: ["PYTHON", "BLENDER", "WEBGL"], href: "/work/vertebrae" },
   { company: "MPC × MAGIC LEAP", role: "VR ENGINEER — SPOTIFY FOR MAGIC LEAP; AR/VR FOR NATIONAL GEOGRAPHIC", years: "2018 — 2019", tags: ["C++", "MAGIC LEAP SDK"], href: "/work/mpc" },
-  { company: "INTEL TRUE VR", role: "CONTENT MANAGEMENT SPECIALIST — VR SPORTS, ADOPTED FOR NBC'S 2018 OLYMPICS", years: "2017 — 2018", tags: ["UNITY", "FFMPEG", "VR"], href: "/work/intel" },
+  { company: "INTEL TRUE VR", role: "FULL-STACK ENGINEER — VR SPORTS, ADOPTED FOR NBC'S 2018 OLYMPICS", years: "2017 — 2018", tags: ["UNITY", "FFMPEG", "VR"], href: "/work/intel" },
   { company: "COACHELLA AR", role: "LEAD SOFTWARE ENGINEER — PORTALSXR, TEAM OF 6; COACHELLA + MUSIC MIDTOWN", years: "2019", tags: ["UNITY", "AR", "MOBILE"], href: "/work/coachella" },
 ];
 

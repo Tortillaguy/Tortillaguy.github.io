@@ -182,7 +182,7 @@ const caseStudies: CaseStudy[] = [
     slug: "intel",
     title: "BRINGING VR TO LIVE SPORTS: INTEL TRUE VR",
     shortTitle: "INTEL TRUE VR",
-    role: "CONTENT MANAGEMENT SPECIALIST",
+    role: "FULL-STACK ENGINEER",
     timeline: "2017 — 2018",
     stack: ["UNITY", "FFMPEG", "VR"],
     outcomes: [
