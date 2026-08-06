@@ -1,6 +1,18 @@
 ---
 import SectionHeader from "../components/SectionHeader.astro";
+import { Image } from "astro:assets";
 import engineering, { engMeta } from "../data/engineering";
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/*.{webp,jpg,jpeg,png}",
+  { eager: true }
+);
+const img = (filename: string) => images[`../assets/${filename}`]?.default;
+
+// A mask, not an overlay: the row's own background (and its hover surface) has to
+// show through the faded edges, which a solid gradient overlay can't do.
+const vignette =
+  "linear-gradient(to right, transparent, #000 25%, #000 75%, transparent)";
 ---
 
 <section class="px-5 md:px-12 pt-16 md:pt-28">
@@ -10,19 +22,31 @@ import engineering, { engMeta } from "../data/engineering";
     {
       engineering.map((row) => {
         const Tag = row.href ? "a" : "div";
+        const media = row.image ? img(row.image) : undefined;
         return (
           <Tag
             href={row.href}
-            class={`border-t border-encore-line py-6 md:py-8 md:flex md:items-center md:justify-between md:gap-8 ${row.href ? "group block hover:bg-encore-surface transition-colors" : ""}`}
+            class={`relative overflow-hidden border-t border-encore-line py-6 md:py-8 md:flex md:items-center md:justify-between md:gap-8 ${row.href ? "group block hover:bg-encore-surface transition-colors" : ""}`}
           >
-            <div>
+            {media && (
+              <Image
+                src={media}
+                alt=""
+                aria-hidden="true"
+                class="pointer-events-none absolute inset-0 w-full h-full md:left-[36.4%] md:right-auto md:w-[40%] object-cover brightness-[0.22] md:brightness-50 group-hover:brightness-[0.32] md:group-hover:brightness-[0.65] transition-[filter] duration-200 ease-in-out"
+                style={`mask-image: ${vignette}; -webkit-mask-image: ${vignette};`}
+                widths={[390, 800]}
+                sizes="(min-width: 768px) 40vw, 100vw"
+              />
+            )}
+            <div class="relative">
               <div class="flex items-baseline justify-between md:block">
                 <h3 class="font-grotesk font-bold text-encore-fg text-base md:text-xl m-0 transition-colors duration-200 ease-in-out group-hover:text-encore-accent">{row.company}</h3>
                 <span class="md:hidden font-smono text-encore-accent text-xs">{row.years}</span>
               </div>
               <p class="font-smono text-encore-dim text-[10px] md:text-xs tracking-[1px] m-0 pt-2">{row.role}</p>
             </div>
-            <div class="hidden md:flex md:items-center md:gap-8 md:shrink-0">
+            <div class="relative hidden md:flex md:items-center md:gap-8 md:shrink-0">
               <div class="flex flex-col items-end">
                 <span class="font-smono text-encore-accent text-sm">{row.years}</span>
                 <span class="font-smono text-encore-dim text-xs tracking-[1px] pt-2">{row.tags.join(" / ")}</span>
@@ -31,7 +55,7 @@ import engineering, { engMeta } from "../data/engineering";
                 <span class="font-grotesk text-encore-accent text-2xl leading-none transition-transform duration-200 ease-in-out group-hover:translate-x-1.5" aria-hidden="true">&rarr;</span>
               )}
             </div>
-            <div class="md:hidden flex items-center justify-between pt-1">
+            <div class="relative md:hidden flex items-center justify-between pt-1">
               <span class="font-smono text-encore-dim text-[10px] tracking-[1px]">{row.tags.join(" / ")}</span>
               {row.href && <span class="font-grotesk text-encore-accent text-base leading-none" aria-hidden="true">&rarr;</span>}
             </div>

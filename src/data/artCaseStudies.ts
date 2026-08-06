@@ -16,17 +16,6 @@ export interface ArtCaseStudy {
   /** Where the piece was published. */
   releaseLabel: string;
   releaseUrl: string;
-  /**
-   * Provenance line for the homepage mosaic card: was this commissioned client
-   * work, or an exploration? One self-contained sentence — the cards are read
-   * in any order, so a line must never depend on the one before it. Rendered
-   * in the dim body face, deliberately not the accent colour: the card's
-   * group-hover already turns the title accent, and a second accent on the
-   * same card competes with that signal.
-   * Only the six pieces picked into the mosaic in src/sections/Art.astro need
-   * one; the rest render as they always have.
-   */
-  mosaicNote?: string;
 }
 
 // Ordered to match src/data/art.ts. Index 0 renders as "01".
@@ -70,7 +59,6 @@ const artCaseStudies: ArtCaseStudy[] = [
     heroImage: "hand_pyro.webp",
     releaseLabel: "VIEW ON INSTAGRAM",
     releaseUrl: "https://www.instagram.com/p/CfDQL0IDLom/",
-    mosaicNote: "An exploration in pyrodynamics, built to loop.",
   },
   {
     slug: "pyro-demo",
@@ -81,7 +69,6 @@ const artCaseStudies: ArtCaseStudy[] = [
     heroImage: "sword_pyro.webp",
     releaseLabel: "VIEW ON INSTAGRAM",
     releaseUrl: "https://www.instagram.com/p/Ca838TdjdLt/",
-    mosaicNote: "Exploring a multi-app simulation and render workflow.",
   },
   {
     slug: "hardstyle-visuals",
@@ -92,7 +79,6 @@ const artCaseStudies: ArtCaseStudy[] = [
     heroImage: "hardstyle.webp",
     releaseLabel: "VIEW ON INSTAGRAM",
     releaseUrl: "https://www.instagram.com/p/CWyubrnhLOb/",
-    mosaicNote: "Commissioned realtime visuals for EDM concerts.",
   },
   {
     slug: "oblivion-v2",
@@ -104,7 +90,6 @@ const artCaseStudies: ArtCaseStudy[] = [
     heroImage: "oblivionV2.webp",
     releaseLabel: "VIEW ON INSTAGRAM",
     releaseUrl: "https://www.instagram.com/p/CWyuobGhx3O/",
-    mosaicNote: "Commissioned for EDM concerts, the figure reduced to contour and bloom.",
   },
   {
     slug: "oblivion",
@@ -141,7 +126,6 @@ const artCaseStudies: ArtCaseStudy[] = [
     heroImage: "light_it_up.jpg",
     releaseLabel: "VIEW ON INSTAGRAM",
     releaseUrl: "https://www.instagram.com/p/CDzUCLdpSgX/",
-    mosaicNote: "Commissioned alongside the EDM concert visuals, rendered offline as flat art.",
   },
   {
     slug: "chapas-mix-vol-4",
@@ -163,7 +147,6 @@ const artCaseStudies: ArtCaseStudy[] = [
     heroImage: "crystals.jpg",
     releaseLabel: "VIEW ON INSTAGRAM",
     releaseUrl: "https://www.instagram.com/p/B_tTLXiJ_P2/",
-    mosaicNote: "Exploring fracture simulation in Houdini.",
   },
 ];
 
