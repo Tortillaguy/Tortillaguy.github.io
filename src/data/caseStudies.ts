@@ -25,7 +25,7 @@ const caseStudies: CaseStudy[] = [
     title: "TEACHING AN AGENT TO CUT VIDEO",
     subtitle: "TWELVE LABS — RODEO",
     shortTitle: "TWELVE LABS",
-    role: "SENIOR FULL-STACK ENGINEER",
+    role: "STAFF FULL-STACK ENGINEER",
     timeline: "APRIL 2026 — AUGUST 2026",
     stack: ["REACT", "NEXTJS", "GRAPHQL", "FFMPEG"],
     outcomes: [
@@ -41,7 +41,7 @@ const caseStudies: CaseStudy[] = [
     title: "BUILDING THE CONTEXT LAYER FOR A FACTORY OS",
     subtitle: "FIRST RESONANCE — FIRST AI ENGINEERING HIRE",
     shortTitle: "FIRST RESONANCE",
-    role: "AI CONTEXT ENGINEER",
+    role: "STAFF AI ENGINEER",
     timeline: "DECEMBER 2025 — APRIL 2026",
     stack: ["MCP", "PYTHON", "LANGCHAIN"],
     outcomes: [

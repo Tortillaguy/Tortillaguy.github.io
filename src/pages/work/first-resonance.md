@@ -2,7 +2,7 @@
 layout: ../../layouts/BlogPost.astro
 ---
 
-"AI Context Engineer" was not a title I had seen before, and that turned out to be the point. First Resonance brought me on in December 2025 as the company's **first AI engineer**. There was no team to join, no existing practice to extend, no internal conventions to inherit — just a manufacturing software company with a great deal of hard-won operational knowledge locked inside its systems, and an open question about what an AI-native engineering org should actually look like.
+"AI Context Engineer" was the title on my offer letter, and not one I had seen before. That turned out to be the point. First Resonance brought me on in December 2025 as the company's **first AI engineer**. There was no team to join, no existing practice to extend, no internal conventions to inherit — just a manufacturing software company with a great deal of hard-won operational knowledge locked inside its systems, and an open question about what an AI-native engineering org should actually look like.
 
 The company builds **ION**, a factory operating system — a modern take on the manufacturing execution system (MES) — used by hardware companies in aerospace, space, defense, medical devices, and robotics. It was founded by SpaceX alumni, and it shows in the priorities: as-built traceability, real supply-chain constraints, compliance in industries where a mistake is not a bug report. When a rocket component moves through a factory, every step, every part, and every deviation has to be accounted for. The data is messy, high-stakes, and profoundly real-world.
 

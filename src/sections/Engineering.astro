@@ -3,6 +3,8 @@ import SectionHeader from "../components/SectionHeader.astro";
 import { Image } from "astro:assets";
 import engineering, { engMeta } from "../data/engineering";
 
+const { id = "engineering", index = "03", title = "WORK & EXPERIENCES" } = Astro.props;
+
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "../assets/*.{webp,jpg,jpeg,png}",
   { eager: true }
@@ -16,7 +18,7 @@ const vignette =
 ---
 
 <section class="px-5 md:px-12 pt-16 md:pt-28">
-  <SectionHeader id="engineering" index="03" title="WORK & EXPERIENCES" meta={engMeta} />
+  <SectionHeader id={id} index={index} title={title} meta={engMeta} />
 
   <div class="pt-2 md:pt-4">
     {
