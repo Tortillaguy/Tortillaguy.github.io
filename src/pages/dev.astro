@@ -21,8 +21,32 @@ const steps = [
     <BaseHead
       title={"Adrian Cacho – AI & Full-Stack Engineering"}
       description={"Staff-level full-stack and AI engineer. Agentic AI, MCP servers, agent evals, Claude Code rollouts for engineering teams, and video-AI ingestion and retrieval pipelines. Consulting through Vibe Labs."}
-      image="assets/hero.jpg"
+      image="/assets/og-dev.png"
     />
+    <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Vibe Labs",
+      "url": "https://cacho.dev/dev",
+      "email": "hello@cacho.dev",
+      "image": "https://cacho.dev/assets/og-dev.png",
+      "description": "AI and full-stack engineering consulting: MCP servers, agent evals, Claude Code rollouts for engineering teams, and video-AI ingestion and retrieval pipelines.",
+      "areaServed": "US",
+      "address": { "@type": "PostalAddress", "addressLocality": "Venice", "addressRegion": "CA", "addressCountry": "US" },
+      "founder": { "@type": "Person", "name": "Adrian Cacho", "url": "https://cacho.dev" },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Engagements",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "MCP server for your company's data" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Claude Code rollout for your engineering team" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Evals for your AI agent" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Video-AI ingestion and retrieval pipeline" } }
+        ]
+      }
+    }
+    </script>
     <ClientRouter />
   </head>
 
@@ -88,6 +112,11 @@ const steps = [
                 <span class="font-smono text-encore-accent text-xs tracking-[1px]">PROOF </span>
                 {offer.proof}
               </p>
+              {offer.href && (
+                <a href={offer.href} class="font-smono text-encore-accent text-xs tracking-[1px] pt-4 hover:text-encore-fg transition-colors">
+                  READ THE CASE STUDY →
+                </a>
+              )}
               <span class="font-smono text-encore-dim text-[10px] md:text-xs tracking-[1px] pt-4">{offer.tags.join(" / ")}</span>
             </article>
           ))

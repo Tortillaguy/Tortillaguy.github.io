@@ -16,6 +16,10 @@ export interface CaseStudy {
   outcomes?: string[];
   /** Optional mono stack line under the outcomes rows. */
   outcomeStack?: string;
+  /** Optional page-specific meta description (defaults to the site description). */
+  description?: string;
+  /** Optional page-specific social preview image path. */
+  ogImage?: string;
 }
 
 // Ordered reverse-chronologically (newest first). Index 0 renders as "01".
@@ -51,6 +55,24 @@ const caseStudies: CaseStudy[] = [
       "Shipped a Python/LangChain agent for the company website, running on that same custom MCP server",
     ],
     outcomeStack: "PYTHON · LANGCHAIN · MCP · CLAUDE CODE · LLM AGENTS",
+  },
+  {
+    slug: "claude-code-rollout",
+    description: "How I rolled out Claude Code to an engineering team as its first AI engineer: shared skills, rules and automated tooling, hands-on onboarding for 12 engineers, and the written standards the team worked from.",
+    ogImage: "/assets/og-dev.png",
+    title: "ROLLING OUT CLAUDE CODE TO AN ENGINEERING TEAM",
+    subtitle: "FIRST RESONANCE / AI-ASSISTED ENGINEERING ENABLEMENT",
+    shortTitle: "CLAUDE CODE ROLLOUT",
+    role: "STAFF AI ENGINEER",
+    timeline: "DECEMBER 2025 — APRIL 2026",
+    stack: ["CLAUDE CODE", "SKILLS", "RULES"],
+    outcomes: [
+      "Built the company's internal Claude Code infrastructure: skills, rules, and automated tooling for AI-assisted engineering",
+      "Personally onboarded 12 engineers, roughly 60% of an engineering org of about 20 (estimate)",
+      "Wrote the internal docs and guides the team worked from, and set the standards for AI-assisted engineering",
+      "Pull-request volume rose about tenfold after the rollout, over a period when the org was also shrinking",
+    ],
+    outcomeStack: "CLAUDE CODE · SKILLS · RULES · AUTOMATED TOOLING · ENABLEMENT",
   },
   {
     slug: "pba",

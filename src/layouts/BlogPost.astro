@@ -32,8 +32,8 @@ const meta = cs
   <head>
     <BaseHead
       title={cs ? `Adrian Cacho – ${cs.title}` : "Adrian Cacho – Case Study"}
-      description={SITE_DESCRIPTION}
-      image="/assets/hero.jpg"
+      description={cs?.description ?? SITE_DESCRIPTION}
+      image={cs?.ogImage ?? "/assets/hero.jpg"}
     />
     <ClientRouter />
   </head>

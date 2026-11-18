@@ -6,6 +6,8 @@ export interface Offer {
   proof: string;
   timeline: string;
   tags: string[];
+  /** Optional case-study link shown on the card. */
+  href?: string;
 }
 
 const offers: Offer[] = [
@@ -33,6 +35,7 @@ const offers: Offer[] = [
     proof: "Built First Resonance's Claude Code infrastructure and personally onboarded 12 engineers onto it.",
     timeline: "2 TO 3 WEEKS",
     tags: ["CLAUDE CODE", "SKILLS", "HOOKS"],
+    href: "/work/claude-code-rollout",
   },
   {
     name: "Evals for your AI agent",
