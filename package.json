@@ -14,17 +14,17 @@
     "resume:site": "npx tsx ./scripts/resume-converter.ts --pdf resumes/site.md -o ./public/assets/Resume.pdf"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.7.3",
-    "astro": "^7.1.6",
-    "sharp": "^0.35.3",
-    "tailwindcss": "^3.4.18",
+    "@astrojs/sitemap": "^3.7.5",
+    "astro": "^7.4.12",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^3.4.19",
     "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "@types/node": "^26.1.2",
-    "autoprefixer": "^10.5.4",
-    "docx": "^9.5.1",
+    "@types/node": "^26.6.6",
+    "autoprefixer": "^10.6.2",
+    "docx": "^9.15.4",
     "pdf-lib": "^1.17.1",
-    "tailwindcss-animate": "^1.0.5"
+    "tailwindcss-animate": "^1.0.7"
   }
 }
