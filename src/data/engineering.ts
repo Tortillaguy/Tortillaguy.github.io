@@ -8,9 +8,6 @@ export interface EngRow {
   image?: string;
 }
 
-export const engQuote =
-  "I build software people can see: an agentic video editor at TwelveLabs, MCP servers for factory floors, a hologram platform serving 100,000 assets, AR stages at Coachella.";
-
 export const engMeta = "8+ YRS FULL-STACK / REALTIME / AI";
 
 const engineering: EngRow[] = [
