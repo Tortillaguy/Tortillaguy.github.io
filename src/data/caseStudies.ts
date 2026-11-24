@@ -54,12 +54,12 @@ const caseStudies: CaseStudy[] = [
     timeline: "APRIL 2026 — AUGUST 2026",
     stack: ["REACT", "NEXTJS", "GRAPHQL", "FFMPEG"],
     outcomes: [
-      "Built the agentic video editor UI for Rodeo, TwelveLabs' first application-layer product, in React, Next.js, and Tailwind with a Storybook component layer",
-      "Built the backend agent tool layer and GraphQL integrations, including server-side video export via ffmpeg",
-      "Built evaluation systems for both agentic surfaces — the video editor and the Rodeo chatbot",
-      "Hired as a frontend engineer and grew the role across the full vertical: UI surface, agent tools, and evals",
+      "Built Rodeo's editor UI from scratch: 30+ components (playhead, clip segments, labels, clip panels) in React, Next.js, Tailwind and Storybook",
+      "Built the agent's OTIO timeline tools (cut, trim, move, split), the GraphQL integrations and server-side ffmpeg export",
+      "Built evals that grade the agent's edits against the expected timeline; pass rate rose from about 60% to about 90%",
+      "One of four full-stack engineers; 200+ sign-ups after Rodeo went public",
     ],
-    outcomeStack: "REACT · NEXT.JS · TAILWIND · STORYBOOK · GRAPHQL · FFMPEG",
+    outcomeStack: "REACT · NEXT.JS · TAILWIND · STORYBOOK · OTIO · GRAPHQL · FFMPEG",
   },
   {
     slug: "first-resonance",
