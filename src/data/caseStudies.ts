@@ -252,8 +252,9 @@ const caseStudies: CaseStudy[] = [
     heroVideo: "-nWddbP-hgo",
     heroCaption: "INTEL TRUE VR BRINGS YOU TO PYEONGCHANG — INTEL",
     outcomes: [
-      "Developed the Intel True VR app in Unity",
-      "Built a separate FFmpeg pipeline that produced and published the VR videos",
+      "Developed the Intel True VR app in Unity and C# for Android, iOS and Windows",
+      "Built the Python, FFmpeg and AWS pipeline that produced and published stereoscopic, adaptive-bitrate VR video to the app, Facebook 360 and YouTube VR",
+      "Led the team that built the CMS for live events, archived games and highlights",
       "Worked directly on NBC's live VR coverage of the 2018 PyeongChang Winter Olympics, the first VR coverage of a Winter Games",
     ],
     outcomeStack: "UNITY · C# · PHP · PYTHON · FFMPEG · AWS",

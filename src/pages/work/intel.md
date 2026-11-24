@@ -2,13 +2,19 @@
 layout: ../../layouts/BlogPost.astro
 ---
 
-Intel True VR put viewers inside live sports with 360-degree camera rigs at the venue. I worked on it in 2017 and 2018, across the app people watched in and the pipeline that fed it.
+Intel True VR put viewers inside live sports with 360-degree camera rigs at the venue: NBA and NFL games, and then the Winter Olympics. I worked on it in 2017 and 2018, across the app people watched in, the pipeline that fed it, and the system the content team ran it from.
 
-## The app and the pipeline
+## The app
 
-I developed the True VR app in Unity, the player viewers used to watch the games in VR.
+I developed the True VR app in Unity and C#, the player viewers used to watch games in VR. It shipped on Android, iOS and Windows.
 
-Separately, I built an FFmpeg pipeline that produced and published the videos: taking captured footage, transcoding it into the formats each platform needed, and pushing it out to the app.
+## The pipeline
+
+Separately, I built the pipeline that produced and published the videos, in Python and FFmpeg on AWS. It transcoded captured footage into the formats each platform needed, including stereoscopic video with a separate stream per eye and adaptive bitrate for viewers on slower connections. It published to the True VR app and also to Facebook 360 and YouTube VR.
+
+## The CMS
+
+I also led the team that built the CMS behind it, where the content team managed live events, archived games and highlight reels.
 
 ## PyeongChang 2018
 
