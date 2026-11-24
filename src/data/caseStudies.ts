@@ -95,10 +95,10 @@ const caseStudies: CaseStudy[] = [
     timeline: "DECEMBER 2025 — APRIL 2026",
     stack: ["CLAUDE CODE", "SKILLS", "RULES"],
     outcomes: [
-      "Built the company's internal Claude Code infrastructure: skills, rules, and automated tooling for AI-assisted engineering",
-      "Personally onboarded 12 engineers, roughly 60% of an engineering org of about 20 (estimate)",
+      "Built the internal Claude Code setup: skills for PR review, UI review, context management and CLAUDE.md upkeep, plus migration and CI rules",
+      "Onboarded 12 engineers team by team, roughly 60% of an engineering org of about 20 (estimate)",
       "Wrote the internal docs and guides the team worked from, and set the standards for AI-assisted engineering",
-      "Pull-request volume rose about tenfold after the rollout, over a period when the org was also shrinking",
+      "Pull-request volume rose about tenfold after the rollout (GitHub stats), over a period when the org was also shrinking",
     ],
     outcomeStack: "CLAUDE CODE · SKILLS · RULES · AUTOMATED TOOLING · ENABLEMENT",
   },
