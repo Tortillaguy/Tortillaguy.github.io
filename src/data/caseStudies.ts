@@ -181,6 +181,7 @@ const caseStudies: CaseStudy[] = [
     models: [
       { name: "Clobberilla", src: "/models/pokemoon/clobberilla.glb" },
       { name: "Ricky", src: "/models/pokemoon/ricky.glb" },
+      { name: "Chimpact", src: "/models/pokemoon/chimpact.glb" },
     ],
     outcomes: [
       "Lead developer on a team of 3 engineers for a 3D NFT trading-card project on Binance Smart Chain",
