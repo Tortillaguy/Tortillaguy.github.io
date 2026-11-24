@@ -5,7 +5,7 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   site: "https://cacho.dev",
-  integrations: [sitemap(), react()],
+  integrations: [sitemap({ filter: (page) => !page.endsWith("/lab/") }), react()],
   experimental: {
     clientPrerender: true,
   },
