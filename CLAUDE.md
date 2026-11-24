@@ -100,7 +100,8 @@ Adrian Cacho (also known as "Cacho") is an innovative creative technologist with
 ## Site Architecture
 
 ### Technology Stack
-- **Framework:** Astro 7 (Static Site Generator) — no framework JS on the homepage (one inline hero-reel script)
+- **Framework:** Astro 7 (Static Site Generator) — no framework JS on the homepage: the inline hero-reel script plus `src/scripts/shaderFringe.ts` (~4.5 KB)
+- **HTML-in-canvas hero:** `shaderFringe.ts` moves `#hero-type` (real DOM) into a `<canvas content="drawable">` and draws it via WebGL2 `texElementSubImage2D`, computing the cyan/magenta fringe per pixel (widens near the cursor and on pointer/scroll velocity, capped at 6 device px; rare glitch bands). Feature-detected — Chrome 157+ only as of Nov 2026; everyone else keeps the CSS `.fringe`/`.fuzzy` classes, which the script swaps for `data-fringe` when it enhances. Runs on `astro:page-load` so ClientRouter navigations re-enhance. The sizzle reel stays underneath, never distorted. `/lab` (noindex, out of the sitemap) is the sandbox for these experiments
 - **React island:** `@astrojs/react` exists ONLY for `src/components/CardViewer.tsx`, the React Three Fiber card viewer ported from `PokeMoon-DeFi/nft-frontend`. `BlogPost.astro` hydrates it `client:visible` when a `caseStudies.ts` entry has `models` (GLBs in `public/models/<slug>/`); ~300 KB gz, loaded on that page only. Never import React into homepage sections
 - **Styling:** Tailwind CSS 3 with custom `encore.*` design tokens (`tailwind.config.cjs`), wired via plain PostCSS (`postcss.config.cjs`) — the deprecated `@astrojs/tailwind` integration and DaisyUI were removed in the Astro 7 upgrade (Aug 2026)
 - **Images:** `astro:assets` with responsive `widths`/`sizes` throughout
