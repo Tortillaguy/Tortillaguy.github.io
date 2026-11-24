@@ -12,6 +12,8 @@ export interface CaseStudy {
   /** Optional hero image filename in src/assets. */
   heroImage?: string;
   heroCaption?: string;
+  /** Optional YouTube video ID embedded as the hero, in place of heroImage. */
+  heroVideo?: string;
   /** Optional KEY OUTCOMES panel rows. */
   outcomes?: string[];
   /** Optional mono stack line under the outcomes rows. */
@@ -53,6 +55,8 @@ const caseStudies: CaseStudy[] = [
     role: "STAFF FULL-STACK ENGINEER",
     timeline: "APRIL 2026 — AUGUST 2026",
     stack: ["REACT", "NEXTJS", "GRAPHQL", "FFMPEG"],
+    heroVideo: "AynkwDn2sXg",
+    heroCaption: "THIS IS RODEO — TWELVELABS LAUNCH VIDEO",
     outcomes: [
       "Built Rodeo's editor UI from scratch: 30+ components (playhead, clip segments, labels, clip panels) in React, Next.js, Tailwind and Storybook",
       "Built the agent's OTIO timeline tools (cut, trim, move, split), the GraphQL integrations and server-side ffmpeg export",

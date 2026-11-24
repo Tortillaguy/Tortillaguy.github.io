@@ -80,7 +80,28 @@ const meta = cs
     }
 
     {
-      cs && heroImg && (
+      cs?.heroVideo && (
+        <section class="px-5 pt-2 md:px-12">
+          <div class="overflow-hidden border border-encore-line aspect-video bg-black">
+            <iframe
+              src={`https://www.youtube-nocookie.com/embed/${cs.heroVideo}?rel=0`}
+              title={cs.heroCaption ?? cs.title}
+              class="w-full h-full"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            />
+          </div>
+          {cs.heroCaption && (
+            <p class="font-smono text-encore-dim text-[10px] md:text-xs tracking-[1px] m-0 pt-2 md:pt-3">{cs.heroCaption}</p>
+          )}
+        </section>
+      )
+    }
+
+    {
+      cs && heroImg && !cs.heroVideo && (
         <section class="px-5 pt-2 md:px-12">
           <div class="overflow-hidden border border-encore-line">
             <Image
