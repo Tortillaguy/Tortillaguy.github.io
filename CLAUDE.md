@@ -31,7 +31,7 @@ Adrian Cacho (also known as "Cacho") is an innovative creative technologist with
   - Built the agentic video editor UI for Rodeo, TwelveLabs' first application-layer product
   - Built backend agent tools, GraphQL integrations, and server-side ffmpeg video export
   - Built evaluation systems for the agentic editor and the Rodeo chatbot
-- **Staff AI Engineer** at First Resonance - December 2025 to April 2026
+- **Staff AI Context Engineer** at First Resonance - December 2025 to April 2026
   - The company's first AI engineer hire
   - Built an MCP server exposing manufacturing/supply-chain operations to identify production bottlenecks
   - Built internal Claude Code infrastructure (skills, rules, automated tooling) for company-wide AI-assisted engineering

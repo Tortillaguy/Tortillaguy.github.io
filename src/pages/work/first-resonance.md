@@ -10,11 +10,13 @@ The first thing I built was an MCP server that gave a model structured access to
 
 The main job was finding bottlenecks. The server could look across a factory for workstations with slack, meaning stations that had the capacity to take on work. It could also go through the steps of a process and point out the ones holding everything else up. A third use came from the same data: helping users improve their process documentation.
 
-It grew past 30 tools, and then a big part of the work was consolidating them into fewer, broader ones.
+We started with a one-to-one migration: every GraphQL operation in ION became an MCP tool. That left the server with more than 30 narrow tools, so a big part of the work after that was consolidating them into fewer, broader ones.
 
 ## An agent that drives the UI
 
 The second piece was an agent built in Python with LangChain, running on the same MCP server. It reads the UI state of the page the user has open and can update that state live. Instead of answering in a chat box, it changes what's on the screen.
+
+The model ran as its own service, and I put a guardrails LLM in front of it to catch prompt injection and other attempts to misuse it before a request reached the agent.
 
 Both pieces used the same server, so a tool added for one was available to the other.
 
