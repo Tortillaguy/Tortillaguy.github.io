@@ -124,13 +124,15 @@ const caseStudies: CaseStudy[] = [
     shortTitle: "NAPSTER INC.",
     role: "SENIOR FULL-STACK ENGINEER",
     timeline: "MARCH 2025 — JULY 2025",
-    stack: ["REACT", "NEXTJS", "AWS", "POSTGRES"],
+    stack: ["THREE.JS", "REACT", "TYPESCRIPT"],
+    heroVideo: "HN5HJmUdb6A",
+    heroCaption: "INFINITE REALITY × GOOGLE CLOUD — APRIL 2025",
     outcomes: [
       "Added instancing to the iR Engine, lowering GPU load and speeding up scene loads",
       "Built the glass-morphic UI 2.0 look for iR Studio",
       "One of a team of at most six engine engineers",
     ],
-    outcomeStack: "REACT · NEXT.JS · TYPESCRIPT · NODE.JS · POSTGRESQL · AWS",
+    outcomeStack: "THREE.JS · WEBGL · REACT · TYPESCRIPT",
   },
   {
     slug: "lkg",
