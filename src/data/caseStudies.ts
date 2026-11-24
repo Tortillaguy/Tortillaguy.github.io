@@ -25,6 +25,25 @@ export interface CaseStudy {
 // Ordered reverse-chronologically (newest first). Index 0 renders as "01".
 const caseStudies: CaseStudy[] = [
   {
+    slug: "othelia",
+    title: "TAKING A STORY PLATFORM TO GA",
+    subtitle: "OTHELIA — VIDEO INGESTION + LAUNCH",
+    shortTitle: "OTHELIA",
+    role: "STAFF FULL-STACK ENGINEER (CONTRACT)",
+    timeline: "SEPTEMBER 2026 — NOVEMBER 2026",
+    stack: ["TANSTACK", "NODE.JS", "GEMINI"],
+    outcomes: [
+      "Took over the existing video ingestion pipeline with little onboarding, removed its redundant stages, and made it faster and more accurate for the October 2026 GA launch",
+      "Built the TanStack server and web app, plus worker-processed jobs that turn footage into Gemini Vision frame descriptions for retrieval",
+      "Designed the upload flow: live pipeline-phase status, then a review page where users choose what the pipeline extracted",
+      "Set up rubric-based evals for pipeline accuracy and latency, tracked in Langfuse",
+      "Built the onboarding flow for new users and moved about 200 sign-ups onto Team plans at launch",
+      "Cut page load, navigation and API response times by about 75%",
+      "Halved CI deploy time with caching, parallel jobs and tiered unit tests",
+    ],
+    outcomeStack: "TANSTACK · NODE.JS · GEMINI VISION · LANGFUSE · WORKER QUEUES · RAG",
+  },
+  {
     slug: "twelvelabs",
     title: "TEACHING AN AGENT TO CUT VIDEO",
     subtitle: "TWELVE LABS — RODEO",
