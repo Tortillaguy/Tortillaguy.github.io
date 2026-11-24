@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is Adrian Cacho's personal portfolio website showcasing his work as a creative technologist, visual artist, and full-stack developer based in Venice, California. The site runs the **"Encore" design** (shipped July 2026): a near-black, poster-style landing page with monumental Anton typography, chromatic-fringe accents, and a disciplined acid-green highlight system, plus a matching case-study template for the `/work/*` pages. The design source of truth is the Pencil file at `~/Downloads/Portfolio Design/portfolio.pen` (frames: "Fable D — Encore", "Encore Mobile", "Encore Case Study" desktop/mobile) — keep code and canvas in sync when making visual changes.
+This is Adrian Cacho's personal portfolio website showcasing his work as a creative technologist, visual artist, and full-stack developer based in Venice, California. The site runs the **"Encore" design** (shipped July 2026): a near-black, poster-style landing page with monumental Anton typography, chromatic-fringe accents, and a disciplined acid-green highlight system, plus a matching case-study template for the `/work/*` pages. Pencil (`portfolio.pen`) was retired as the design spec in Nov 2026; Adrian is moving to Penpot (free, has an MCP server). Until a Penpot file exists, the code is the spec — don't sync to Pencil.
 
 **Live Site:** https://cacho.dev  
 **Contact:** hello@cacho.dev  
@@ -128,9 +128,9 @@ Adrian Cacho (also known as "Cacho") is an innovative creative technologist with
          SectionHeader.astro  # Poster-header anatomy: rule + green index + Anton title + meta
       sections/          # Homepage sections (mounted by index.astro)
          Hero.astro      # Full-bleed photo, LIGHT,/MOTION,/& CODE. lockup, monumental name at the fold
-         Productions.astro    # 01 - featured triptych + gallery cards
+         Productions.astro    # 03 - featured triptych + gallery cards
          Art.astro       # 02 - asymmetric mosaic
-         Engineering.astro    # 03 - quote + credibility rows (link to /work/*)
+         Engineering.astro    # 01 - quote + credibility rows (link to /work/*)
          About.astro     # 04 - portrait + bio
          Contact.astro   # 05 - LET'S TALK + green CTA
       layouts/
@@ -138,7 +138,7 @@ Adrian Cacho (also known as "Cacho") is an innovative creative technologist with
          BlogPost.astro       # Encore engineering case-study layout (hero, spec strip, outcomes, prev/next, CTA)
          ArtPost.astro        # Encore art case-study layout (hero, MEDIUM/TOOLS strip, WATCH THE PIECE release link, prev/next, CTA)
       pages/
-         index.astro     # Homepage: Hero -> Productions -> Art -> Engineering -> About -> Contact
+         index.astro     # Homepage: Hero -> Engineering (01) -> Art (02) -> Productions (03) -> About -> Contact
          work/*.md       # Engineering case-study content (content-only; title/meta rendered by layout)
          art/*.md        # Art & motion case-study content (content-only; same rule)
       data/
@@ -183,14 +183,14 @@ Adrian Cacho (also known as "Cacho") is an innovative creative technologist with
 ### Hero
 Full-bleed autoplay sizzle reel (muted/looped/playsinline; AV1-only: `public/assets/sizzle2-wide.av1.mp4` + `sizzle2-portrait.av1.mp4`) layered over the festival photo, which stays underneath as the LCP paint and the fallback for browsers without AV1 decode (Safari needs A17/M3+ hardware — those users get the photo), blocked autoplay (iOS Low Power Mode), and `prefers-reduced-motion`. A small inline script in `Hero.astro` — the homepage's only client JS — gates on `canPlayType` AV1 support, picks the crop at the `sm` breakpoint (≤639px = portrait), swaps live on breakpoint change, skips the download entirely under `prefers-reduced-motion` or Data Saver, crossfades the video in over the photo on first `playing`, and pauses it offscreen via IntersectionObserver; scrim; a `h-11 md:h-16` spacer where the `VENICE, CA` meta used to sit (it is load-bearing — the hero is `flex flex-col justify-between`, so removing the child outright snaps the lockup to the top of the viewport); the `LIGHT, / MOTION, / & CODE.` lockup (fringe on LIGHT, and MOTION,; green & CODE.); monumental ADRIAN CACHO at the fold. Creative-first positioning: visuals lead, engineering is the depth. Reel edit masters (`sizzle*.mov`) and retired H.264 encodes are gitignored in the repo root — re-encode via ffmpeg libsvtav1 (`-an`, `+faststart`, yuv420p; ~1.7 Mbps wide / 800 kbps portrait at 720×1280). When replacing the reel, use new filenames (GitHub Pages caches at `max-age=600` with no immutable control).
 
-### 01 PRODUCTIONS
+### 03 PRODUCTIONS
 Featured Proper NYE '25 triptych (three vertical photos) + Disguise VP Accelerator / Seismic / SD Renegade cards. Captions below images, never overlaid; green years.
 
 ### 02 ART & MOTION
 Six pieces in an asymmetric mosaic (Letting Go, Pyro Demo, Hardstyle Visuals, Oblivion V2, Light It Up, Crystals). Each card is two lines: the name, then the `art.ts` tags rendered in natural case as the card's blurb (`Octane · Blender · EmberGen`) — there is no separate right-aligned mono tags line, and no prose provenance note (`mosaicNote` was removed from `artCaseStudies.ts`). Cards link INTERNALLY to `/art/<slug>` case studies (no `target="_blank"`) — the outbound Instagram/Spotify/SoundCloud link now lives on the case-study page's WATCH THE PIECE panel, so a visitor lands on owned content first. All 12 entries in `art.ts` have a page; only these six are surfaced in the mosaic, the other six are reachable via prev/next.
 
-### 03 ENGINEERING
-Centered quote + credibility rows (company/role left, green years + tags right) linking to `/work/*` case studies. Rows with an optional `image` in `engineering.ts` render that asset as a background band: full row width on mobile, a `left-[36.4%] w-[40%]` band in the empty gutter on desktop. The horizontal vignette is a CSS `mask-image` (NOT a gradient overlay — the row's `hover:bg-encore-surface` has to show through the faded edges), and brightness is deliberately asymmetric — `0.22` on mobile, where text sits on top of the image, `0.5` on desktop, where it doesn't. All rows carry an asset except Othelia (newest, added Nov 2026; linked to `/work/othelia` but no `image` yet). TwelveLabs (`twelvelabs.png`) and First Resonance (`first-resonance.png`) are crops of the companies' own public marketing imagery — the Rodeo launch key art and an ION Factory OS dashboard shot — since neither case study ships a first-party photo. The band flatters near-black sources with a centred subject — `twelvelabs.png` is the reference (already ~3.8:1, background at the page's own black, so the vignette disappears and the subject reads as floating in the row) — and punishes light, text-dense screenshots: `first-resonance.png` and `infinite-reality.webp` are the two weak ones, sliced mid-glyph and lighter than the rows around them. Linked rows carry an always-visible green `→` (far right; nudges right on hover while the company name lerps to accent). Every row is linked (Coachella AR, the last unlinked row as of Aug 2026, now points at `/work/coachella`). Framing: "the VJ who builds the software behind the show."
+### 01 ENGINEERING (WORK)
+Centered quote + credibility rows (company/role left, green years + tags right) linking to `/work/*` case studies. Rows with an optional `image` in `engineering.ts` render that asset as a background band: full row width on mobile, a `left-[36.4%] w-[40%]` band in the empty gutter on desktop. The horizontal vignette is a CSS `mask-image` (NOT a gradient overlay — the row's `hover:bg-encore-surface` has to show through the faded edges), and brightness is deliberately asymmetric — `0.22` on mobile, where text sits on top of the image, `0.5` on desktop, where it doesn't. All rows carry an asset except Othelia (newest, added Nov 2026; linked to `/work/othelia` but no `image` yet). TwelveLabs (`twelvelabs.png`) and First Resonance (`first-resonance.png`) are crops of the companies' own public marketing imagery — the Rodeo launch key art and an ION Factory OS dashboard shot — since neither case study ships a first-party photo. The band flatters near-black sources with a centred subject — `twelvelabs.png` is the reference (already ~3.8:1, background at the page's own black, so the vignette disappears and the subject reads as floating in the row) — and punishes light, text-dense screenshots: `first-resonance.png` and `infinite-reality.webp` are the two weak ones, sliced mid-glyph and lighter than the rows around them. Linked rows carry an always-visible green `→` (far right; nudges right on hover while the company name lerps to accent). Every row is linked (Coachella AR, the last unlinked row as of Aug 2026, now points at `/work/coachella`). Framing (Nov 2026 repositioning, engineering-first): "I build software people can see." Nav is WORK · ART · SHOWS · ABOUT · CONTACT; the header view switch reads WORK / HIRE (/dev is the consulting page).
 
 ### 04 ABOUT
 Iceland portrait (top-anchored crop) beside the rewritten bio with pulled-lead treatment; mono meta `VENICE, CA`.
@@ -245,7 +245,6 @@ pnpm astro
 3. **Modifying Styles**
    - Tokens in `tailwind.config.cjs` (`encore.*`); utilities and `#case-study` prose in `src/styles/global.css`
    - Respect the green discipline and fringe scale rules (see Encore Design Tokens above)
-   - Sync visual changes back to the pen file (`portfolio.pen`) — it is the design spec
 
 4. **Claude Updates**
    - Update this CLAUDE.md accordingly when making notable changes to the codebase
@@ -261,7 +260,6 @@ Adrian's portfolio reflects his unique position at the intersection of technolog
 2. **Monumental Restraint** - huge Anton type contained within margins; darkness and scale without generic brutalism
 3. **Creative-First, Engineering as Depth** - visuals convert event/brand clients; the engineering section is the proof that closes
 4. **Performance** - static generation, zero homepage JS, responsive images
-5. **Spec Fidelity** - the Pencil frames are the contract; code and canvas stay in agreement
 
 ---
 
@@ -315,7 +313,7 @@ Augmented Reality, Virtual Reality, Web3, CI/CD, DevOps, LookDev, Art Pipelines,
 - **Add a case study:** md file in `src/pages/work/` + registry entry in `src/data/caseStudies.ts` (+ `engineering.ts` row if it's a job)
 - **Add a production/art piece:** `src/data/productions.ts` / `src/data/art.ts`
 - **Change colors/type:** `tailwind.config.cjs` tokens + `src/styles/global.css` utilities
-- **Change section layout:** the section file in `src/sections/` — then sync the pen file
+- **Change section layout:** the section file in `src/sections/`
 - **Update the resume:** the live `public/assets/Resume.pdf` is a Typst CV built in `~/repos/ai-job-search/cv/` and copied in. Do NOT run `pnpm resume:site` — it overwrites the PDF with the older markdown-converter output
 
 ---

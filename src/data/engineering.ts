@@ -9,7 +9,7 @@ export interface EngRow {
 }
 
 export const engQuote =
-  "I don't just run the show — I build the software behind it. Holographic content platforms, AR festival stages, realtime asset pipelines.";
+  "I build software people can see: an agentic video editor at TwelveLabs, MCP servers for factory floors, a hologram platform serving 100,000 assets, AR stages at Coachella.";
 
 export const engMeta = "8+ YRS FULL-STACK / REALTIME / AI";
 

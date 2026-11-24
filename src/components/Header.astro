@@ -8,16 +8,15 @@ const nav = isDev
       ["CONTACT", "/dev#contact"],
     ]
   : [
-      ["LIVE", "/#home"],
-      ["SHOWS", "/#shows"],
-      ["ART", "/#art"],
       ["WORK", "/#engineering"],
+      ["ART", "/#art"],
+      ["SHOWS", "/#shows"],
       ["ABOUT", "/#about"],
       ["CONTACT", "/#contact"],
     ];
 const views = [
-  ["LIVE", "/", !isDev],
-  ["DEV", "/dev", isDev],
+  ["WORK", "/", !isDev],
+  ["HIRE", "/dev", isDev],
 ] as const;
 ---
 
