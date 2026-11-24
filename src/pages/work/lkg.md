@@ -2,7 +2,7 @@
 layout: ../../layouts/BlogPost.astro
 ---
 
-Looking Glass Factory makes holographic displays. I joined in May 2023 and built blocks.glass, the company's site for sharing holograms, with a team of two and a half engineers and a project manager who split time with other projects.
+Looking Glass Factory makes holographic displays, and took a [strategic investment from Accenture Ventures](https://newsroom.accenture.com/news/2023/accenture-invests-in-looking-glass-to-accelerate-shift-from-2d-to-3d) in February 2023. I joined in May 2023 and built blocks.glass, the company's site for sharing holograms, with a team of two and a half engineers and a project manager who split time with other projects.
 
 ## blocks.glass
 
@@ -18,7 +18,7 @@ Blocks also got a generation pipeline: a remote ComfyUI server behind a FastAPI 
 
 ## Liteforms at Marriott
 
-Liteforms were Looking Glass's conversational holograms, characters on a display that you can talk to. I built the chatbot service behind them in Python with LangChain and GPT-4, using retrieval so answers came from a brand's own material.
+Liteforms were Looking Glass's conversational holograms, characters on a display that you can talk to. They [launched in May 2023](https://techcrunch.com/2023/05/23/looking-glass-taps-chatgpt-for-holograms-you-can-talk-to). I built the chatbot service behind them in Python with LangChain and GPT-4, using retrieval so answers came from a brand's own material.
 
 Accenture deployed it as an activation at Marriott locations. That's a different bar from a demo. A demo can get something wrong and nobody minds; a hologram talking to hotel guests can't.
 

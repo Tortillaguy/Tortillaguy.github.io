@@ -2,7 +2,7 @@
 layout: ../../layouts/BlogPost.astro
 ---
 
-First Resonance makes ION, a factory operating system used by hardware companies in aerospace, defense, medical devices and robotics. I joined in December 2025 as the company's first AI engineer. There was no AI team yet, so the job was to build the first pieces and show where AI was useful in a factory.
+First Resonance, [founded by former SpaceX engineers](https://techcrunch.com/2020/09/23/founded-by-former-spacex-engineers-first-resonance-pitches-tools-to-make-things-the-spacex-way/), makes ION, a factory operating system used by hardware companies such as [Joby Aviation and Astranis](https://techcrunch.com/2021/12/09/first-resonance-funding-spacex-manufacturing-software/). I joined in December 2025 as the company's first AI engineer. There was no AI team yet, so the job was to build the first pieces and show where AI was useful in a factory.
 
 ## The MCP server
 

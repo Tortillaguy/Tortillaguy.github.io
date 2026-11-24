@@ -36,7 +36,7 @@ Adrian Cacho (also known as "Cacho") is an innovative creative technologist with
   - Built an MCP server exposing manufacturing/supply-chain operations to identify production bottlenecks
   - Built internal Claude Code infrastructure (skills, rules, automated tooling) for company-wide AI-assisted engineering
   - Built a Python/LangChain LLM agent for the company website on that same MCP server
-- **Senior Full-Stack Engineer** at Napster Inc. (formerly Infinite Reality) - March 2025 to July 2025
+- **Senior Full-Stack Engineer** at Napster Corporation (formerly Infinite Reality) - March 2025 to July 2025
 - **Senior Full-Stack Engineer** at Looking Glass Factory - May 2023 to March 2025
   - Architected blocks.glass, the first-ever content sharing platform for holograms
   - Handled over 100,000 digital asset deployments

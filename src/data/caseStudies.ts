@@ -120,8 +120,8 @@ const caseStudies: CaseStudy[] = [
   {
     slug: "infinite-reality",
     title: "INSTANCING AND UI 2.0 FOR IR STUDIO",
-    subtitle: "INFINITE REALITY (NOW NAPSTER INC.) — IR STUDIO",
-    shortTitle: "NAPSTER INC.",
+    subtitle: "INFINITE REALITY (NOW NAPSTER CORPORATION) — IR STUDIO",
+    shortTitle: "NAPSTER",
     role: "SENIOR FULL-STACK ENGINEER",
     timeline: "MARCH 2025 — JULY 2025",
     stack: ["THREE.JS", "REACT", "TYPESCRIPT"],
@@ -235,11 +235,12 @@ const caseStudies: CaseStudy[] = [
     heroImage: "spotify-magic-leap.jpg",
     heroCaption: "SPOTIFY ON MAGIC LEAP — LAUNCH KEY ART, NOVEMBER 2019",
     outcomes: [
-      "Built the Unity app for Spotify on Magic Leap, wrapping a C++ plugin that streamed Spotify audio",
+      "Built the Unity app and all of its UI for Spotify on Magic Leap, extending the Lumin SDK in C++ to stream Spotify audio",
+      "Created custom shaders and music visualizations for the in-room interface",
       "Built a mobile and tablet AR app for National Geographic: a dinosaur placed on real surfaces as an interactive anatomy guide with audio cues and timelines",
-      "One of a team of fewer than ten",
+      "Led a group of 3 developers on a team of fewer than 10, working directly with Magic Leap's internal team",
     ],
-    outcomeStack: "UNITY · C# · C++ · MAGIC LEAP LUMIN SDK · MOBILE AR",
+    outcomeStack: "UNITY · C# · C++ · MAGIC LEAP LUMIN SDK · HLSL · MOBILE AR",
   },
   {
     slug: "intel",

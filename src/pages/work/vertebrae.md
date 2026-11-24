@@ -2,7 +2,7 @@
 layout: ../../layouts/BlogPost.astro
 ---
 
-Vertebrae turned retail product catalogs into 3D models that shoppers could view in AR on their phones. More than 100 retail vendors used it. I joined in August 2020, when the company was about 15 people, and Snap acquired it partway through my time there.
+Vertebrae turned retail product catalogs into 3D models that shoppers could view in AR on their phones. More than 100 retail vendors used it. I joined in August 2020, when the company was about 15 people, and Snap [acquired it in July 2021](https://insideretail.asia/2021/07/20/snap-bets-on-ar-shopping-in-latest-acquisition/) to build out AR shopping on Snapchat.
 
 ## The pipeline
 

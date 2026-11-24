@@ -26,6 +26,6 @@ Over the project, the agent's pass rate on those evals went from about 60% to ab
 
 ## Launch
 
-Rodeo went public in 2026, and more than 200 people signed up.
+TwelveLabs unveiled Rodeo at [NAB Show in April 2026](https://www.prweb.com/releases/twelvelabs-unveils-the-next-era-of-video-intelligence-at-nab-show-2026-302746715.html) and opened it to creators that June. More than 200 people signed up. A month later the company raised a [$100 million Series B](https://siliconangle.com/2026/07/01/twelvelabs-raises-100m-bring-superintelligence-ai-video-models/) co-led by NEA and NAVER Ventures.
 
 [twelvelabs.io →](https://www.twelvelabs.io/)

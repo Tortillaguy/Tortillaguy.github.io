@@ -2,7 +2,7 @@
 layout: ../../layouts/BlogPost.astro
 ---
 
-I joined Infinite Reality in March 2025 to work on iR Studio, the company's tool for building 3D experiences that run in the browser on its own iR Engine. The engine team was small, six engineers at most.
+I joined Infinite Reality in March 2025 to work on iR Studio, the company's tool for building 3D experiences that run in the browser on its own iR Engine. The engine team was small, six engineers at most. The company had signed a [five-year partnership with Google Cloud](https://www.globenewswire.com/news-release/2024/09/05/2941302/0/en/Infinite-Reality-and-Google-Cloud-Ink-Five-Year-Strategic-Partnership-to-Drive-Innovation-Adoption-and-Scale-of-Immersive-Digital-Experiences.html) the year before, and in April 2025 it went live on Google Cloud Marketplace.
 
 ## Instancing
 
@@ -14,4 +14,4 @@ I also built the UI 2.0 look for iR Studio, a glass-morphic redesign of the edit
 
 ## The pivot
 
-Infinite Reality later rebranded as Napster Inc. and changed direction. As part of that pivot, the company dropped the iR Engine team.
+In March 2025 Infinite Reality [bought Napster for $207 million](https://www.billboard.com/pro/napster-acquired-infinite-reality/), and in May it [renamed itself Napster Corporation](https://www.digitalcommerce360.com/2025/05/16/napster-relaunches-generative-ai-company-agentic/) and refocused on AI. As part of that pivot, the company dropped the iR Engine team.

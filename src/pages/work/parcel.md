@@ -2,7 +2,7 @@
 layout: ../../layouts/BlogPost.astro
 ---
 
-Parcel was a marketplace for virtual land. Every listing was an NFT pointing to a plot in a metaverse world, and Parcel was where people went to buy, sell and browse them. I joined in March 2022, on a team of fewer than five, while the site was serving more than 1,000 daily active users.
+Parcel was a marketplace for virtual land. Every listing was an NFT pointing to a plot in one of six worlds, including The Sandbox and Decentraland, and Parcel was where people went to buy, sell and browse them. It raised a [$4 million seed round led by Framework Ventures](https://www.businesswire.com/news/home/20220607005247/en/Virtual-Real-Estate-Marketplace-Parcel-Raises-4M-in-Round-Led-by-Framework-Ventures) in June 2022. I joined in March 2022, on a team of fewer than five, while the site was serving more than 1,000 daily active users.
 
 ## The design system
 
