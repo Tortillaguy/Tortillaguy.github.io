@@ -5,6 +5,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 import { ClientRouter } from "astro:transitions";
 import { Image } from "astro:assets";
 import caseStudies from "../data/caseStudies";
+import CardViewer from "../components/CardViewer";
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "../assets/*.{webp,jpg,jpeg,png}",
@@ -93,6 +94,16 @@ const meta = cs
           {cs.heroCaption && (
             <p class="font-smono text-encore-dim text-[10px] md:text-xs tracking-[1px] m-0 pt-2 md:pt-3">{cs.heroCaption}</p>
           )}
+        </section>
+      )
+    }
+
+    {
+      cs?.models && (
+        <section class="px-5 pt-2 md:px-12">
+          <div class="overflow-hidden border border-encore-line">
+            <CardViewer client:visible models={cs.models} />
+          </div>
         </section>
       )
     }

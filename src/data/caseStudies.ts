@@ -16,6 +16,8 @@ export interface CaseStudy {
   outcomes?: string[];
   /** Optional mono stack line under the outcomes rows. */
   outcomeStack?: string;
+  /** Optional GLB models rendered in the interactive 3D viewer in place of the hero image. */
+  models?: { name: string; src: string }[];
   /** Optional page-specific meta description (defaults to the site description). */
   description?: string;
   /** Optional page-specific social preview image path. */
@@ -162,6 +164,10 @@ const caseStudies: CaseStudy[] = [
     role: "LEAD DEVELOPER — 3D NFT PROJECT",
     timeline: "2021 — 2022",
     stack: ["BLENDER", "WEB3"],
+    models: [
+      { name: "Clobberilla", src: "/models/pokemoon/clobberilla.glb" },
+      { name: "Ricky", src: "/models/pokemoon/ricky.glb" },
+    ],
     outcomes: [
       "Built a 3D interactive NFT platform with real-time browser rendering using Three.js and React Three Fiber",
       "Launched multiple tokens listed on Coingecko and Binance Smart Chain AMMs",
