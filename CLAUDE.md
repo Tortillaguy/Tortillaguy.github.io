@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is Adrian Cacho's personal portfolio website showcasing his work as a creative technologist, visual artist, and full-stack developer based in Venice, California. The site runs the **"Encore" design** (shipped July 2026): a near-black, poster-style landing page with monumental Anton typography, chromatic-fringe accents, and a disciplined acid-green highlight system, plus a matching case-study template for the `/work/*` pages. Pencil (`portfolio.pen`) was retired as the design spec in Nov 2026; Adrian is moving to Penpot (free, has an MCP server). Until a Penpot file exists, the code is the spec — don't sync to Pencil.
+This is Adrian Cacho's personal portfolio website showcasing his work as a creative technologist, visual artist, and full-stack developer based in Venice, California. The site runs the **"Encore" design** (shipped July 2026): a near-black, poster-style landing page with monumental Anton typography, chromatic-fringe accents, and a disciplined acid-green highlight system, plus a matching case-study template for the `/work/*` pages. The design spec is the Penpot file **"cacho.dev"** (design.penpot.app; Penpot MCP server is configured in Claude Code, needs the file open with File → MCP Server → Connect). Page "Home" holds the "Home — Desktop" board (1440 wide) mirroring the Nov 2026 engineering-first homepage, plus an `encore` color library and typography styles. Pencil (`portfolio.pen`) is retired — never sync to it. When a visual change lands in code, update the Penpot board too.
 
 **Live Site:** https://cacho.dev  
 **Contact:** hello@cacho.dev  
