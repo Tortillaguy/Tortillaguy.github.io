@@ -124,7 +124,7 @@ Adrian Cacho (also known as "Cacho") is an innovative creative technologist with
    src/
       components/
          Header.astro    # Encore nav (root-relative /#anchors)
-         Footer.astro    # Three-item mono footer
+         Footer.astro    # Two-item mono footer
          SectionHeader.astro  # Poster-header anatomy: rule + green index + Anton title + meta
       sections/          # Homepage sections (mounted by index.astro)
          Hero.astro      # Full-bleed photo, LIGHT,/MOTION,/& CODE. lockup, monumental name at the fold
@@ -196,7 +196,7 @@ Credibility rows (company/role left, green years + tags right) linking to `/work
 Iceland portrait (top-anchored crop) beside Adrian's own bio (three paragraphs, all one style: Space Grotesk regular, fg, 16px with 17px at ≥1440 so the text block matches the 560px portrait). No header meta.
 
 ### 05 LET'S TALK
-No blurb: the green `HELLO@CACHO.DEV →` CTA sits right-aligned in the section-header row (SectionHeader takes an optional right-side slot; on mobile it wraps below the title, full width), then socials (Instagram/LinkedIn/Resume), three-item mono footer.
+No blurb: the green `HELLO@CACHO.DEV →` CTA sits right-aligned in the section-header row (SectionHeader takes an optional right-side slot; on mobile it wraps below the title, full width), then socials (Instagram/LinkedIn/Resume), two-item mono footer (stacked on mobile).
 
 ### /work/* Case Studies
 Thirteen markdown write-ups in the Encore case-study template (see Case-Study System above). Adding one = add the md file AND a registry entry in `caseStudies.ts` — unregistered slugs render without hero/crumb/nav.
