@@ -36,6 +36,8 @@ const caseStudies: CaseStudy[] = [
     role: "STAFF FULL-STACK ENGINEER (CONTRACT)",
     timeline: "SEPTEMBER 2026 — NOVEMBER 2026",
     stack: ["TANSTACK", "NODE.JS", "GEMINI"],
+    heroImage: "othelia-hero.jpg",
+    heroCaption: "OTHELIA.COM",
     outcomes: [
       "Took over the existing video ingestion pipeline with little onboarding, removed its redundant stages, and made it faster and more accurate for the October 2026 GA launch",
       "Built the TanStack server and web app, plus worker-processed jobs that turn footage into Gemini Vision frame descriptions for retrieval",

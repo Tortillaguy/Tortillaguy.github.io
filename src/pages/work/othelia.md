@@ -20,11 +20,19 @@ To check it was more accurate and not just different, I set up evals. They score
 
 I owned that path end to end, along with the TanStack server and web app on Node.js that sit in front of it.
 
+![Othelia adding a story: files become searchable, then extraction runs step by step while the story graph fills in](../../assets/othelia-pipeline.jpg)
+
+<p class="cs-caption">Ingestion and the story graph, from othelia.com</p>
+
 ## What the user sees
 
 Processing a video takes a while. I designed the upload flow so the UI shows which phase of the pipeline the job is in while it runs.
 
 When the job finishes, the user lands on a review page that lays out everything the pipeline picked up from the video, and they choose what to keep.
+
+![Ask Othelia answering a question about The Odyssey with character references](../../assets/othelia-ask.jpg)
+
+<p class="cs-caption">Ask Othelia, the retrieval chatbot, from othelia.com</p>
 
 ## Getting to launch
 
