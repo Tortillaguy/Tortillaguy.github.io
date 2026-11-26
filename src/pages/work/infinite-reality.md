@@ -6,11 +6,11 @@ I joined Infinite Reality in March 2025 to work on iR Studio, the company's tool
 
 ## Instancing
 
-My main engine work was instancing. When a scene repeats the same object many times, instancing lets the GPU draw all the copies in one call instead of one call per copy. I added it to the engine, which cut GPU load and made scenes load faster.
+My main engine work was instancing. When a scene repeats the same object many times, instancing lets the GPU draw all the copies in one call instead of one call per copy. I built it into the engine with custom Three.js shaders and instanced geometry, and it rendered more than 10,000 3D objects at 60 FPS on mobile while cutting GPU load and speeding up scene loads. That carried virtual concerts and e-commerce spaces with 50+ concurrent users, plus multi-user text and video chat that held 60 FPS while people moved around the scene.
 
 ## UI 2.0
 
-I also built the UI 2.0 look for iR Studio, a glass-morphic redesign of the editor's interface: translucent, blurred panels sitting over the 3D scene instead of solid ones blocking it.
+I also built the UI 2.0 look for iR Studio, a glass-morphic redesign of the editor's interface: translucent, blurred panels sitting over the 3D scene instead of solid ones blocking it. It came with a library of 40+ React components tested in Storybook, which cut development time about 50% across the full-stack, 3D and design teams.
 
 ## The pivot
 

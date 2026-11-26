@@ -12,7 +12,7 @@ The AR and 3D ran in Unity and C#. React Native held the app shells, with Java a
 
 ## Localized and time-coded
 
-The experiences depended on where you stood on the festival grounds and when. A moment had to fire in sync with what was happening on stage, on a schedule other people owned.
+The experiences depended on where you stood on the festival grounds and when. A moment had to fire in sync with what was happening on stage, on a schedule other people owned. For a live set by The Chainsmokers, every phone stayed on the same timeline through WebSocket events from a central server.
 
 ## On site
 

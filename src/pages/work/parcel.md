@@ -6,10 +6,10 @@ Parcel was a marketplace for virtual land. Every listing was an NFT pointing to 
 
 ## The design system
 
-I built Parcel's design system: the shared components, built from the team's Figma designs, that the marketplace was assembled from.
+I built Parcel's design system in React, TypeScript and Storybook, from the team's Figma designs. It unified three separate codebases into one set of components. I also moved CI to GitHub Actions, cutting builds and deploys from 45 minutes to 15.
 
 ## Wallets and transactions
 
-The other half of my work was the web3 layer. I built the wallet connections and the transaction UX, everything between a user clicking "buy" and the NFT landing in their wallet, using ethers.js and web3.js.
+The other half of my work was the web3 layer. I built the wallet connections (MetaMask, Coinbase Wallet and Magic, 10,000+ connections) and the transaction UX, everything between a user clicking "buy" and the NFT landing in their wallet, using ethers.js and web3.js.
 
 That part is mostly about waiting and explaining. A purchase needs the user to approve it in their wallet, pay a gas fee they may not understand, and then wait for the chain to confirm. The UI had to say what was happening at each step, show the cost before they committed, and make it clear when something failed and why.

@@ -31,7 +31,7 @@ Adrian Cacho (also known as "Cacho") is an innovative creative technologist with
   - Built the agentic video editor UI for Rodeo, TwelveLabs' first application-layer product
   - Built backend agent tools, GraphQL integrations, and server-side ffmpeg video export
   - Built evaluation systems for the agentic editor and the Rodeo chatbot
-- **Staff AI Context Engineer** at First Resonance - December 2025 to April 2026
+- **Staff Software Engineer** at First Resonance - December 2025 to April 2026
   - The company's first AI engineer hire
   - Built an MCP server exposing manufacturing/supply-chain operations to identify production bottlenecks
   - Built internal Claude Code infrastructure (skills, rules, automated tooling) for company-wide AI-assisted engineering
@@ -44,6 +44,8 @@ Adrian Cacho (also known as "Cacho") is an innovative creative technologist with
 - **Full-Stack Engineer** at Parcel - March 2022 to January 2023
 - **Full-Stack & DevOps Engineer** at Vertebrae (acquired by Snap Inc.) - August 2020 to March 2022
   - Scaled pipelines to deliver 50,000 digital media assets
+- **Senior Unity Developer** at Genies - March 2020 to August 2020
+  - Python microservices for the 3D asset pipeline (weeks to under 30 minutes), Unity Asset Bundle DLC, new mobile app architecture
 - **Lead Software Engineer** at PortalsXR - January 2019 to January 2020
   - Led team of 6 to launch 6 mobile AR apps for high-traffic live events; on-site production support at Coachella and Music Midtown, 100% uptime for localized, time-coded AR
 - **VR Engineer** at Moving Picture Company - February 2018 to February 2019
@@ -199,7 +201,7 @@ Iceland portrait (top-anchored crop) beside Adrian's own bio (three paragraphs, 
 No blurb: the green `HELLO@CACHO.DEV →` CTA sits right-aligned in the section-header row (SectionHeader takes an optional right-side slot; on mobile it wraps below the title, full width), then socials (Instagram/LinkedIn/Resume), two-item mono footer (stacked on mobile).
 
 ### /work/* Case Studies
-Thirteen markdown write-ups in the Encore case-study template (see Case-Study System above). Adding one = add the md file AND a registry entry in `caseStudies.ts` — unregistered slugs render without hero/crumb/nav.
+Fourteen markdown write-ups in the Encore case-study template (see Case-Study System above). Adding one = add the md file AND a registry entry in `caseStudies.ts` — unregistered slugs render without hero/crumb/nav.
 
 ### /art/* Case Studies
 Twelve markdown write-ups in the Encore art template, one per `art.ts` piece. Adding one = add `src/pages/art/<slug>.md` (layout `../../layouts/ArtPost.astro`) AND an `artCaseStudies.ts` entry AND point the matching `art.ts` `link` at `/art/<slug>`. Bodies carry `<!-- TODO(adrian): ... -->` placeholders wherever a statement of personal intent belongs — they were written from the image, the toolchain, and the release target only, so intent was deliberately left for Adrian rather than invented.
