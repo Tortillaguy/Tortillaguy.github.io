@@ -309,7 +309,19 @@
   }
 
   #case-study img {
-    @apply w-full border border-encore-line my-8;
+    @apply w-full h-auto border border-encore-line my-8;
+  }
+
+  #case-study .cs-video {
+    @apply aspect-video w-full border border-encore-line bg-black my-8;
+  }
+
+  #case-study .cs-video iframe {
+    @apply w-full h-full;
+  }
+
+  #case-study .cs-caption {
+    @apply font-smono text-encore-dim text-[10px] md:text-xs tracking-[1px] uppercase -mt-6 mb-8;
   }
 
   #case-study code {

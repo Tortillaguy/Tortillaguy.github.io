@@ -12,6 +12,8 @@ export interface CaseStudy {
   /** Optional hero image filename in src/assets. */
   heroImage?: string;
   heroCaption?: string;
+  /** Show the hero image at its own aspect ratio instead of cropping it into the 440px banner. */
+  heroUncropped?: boolean;
   /** Optional YouTube video ID embedded as the hero, in place of heroImage. */
   heroVideo?: string;
   /** Optional KEY OUTCOMES panel rows. */
@@ -36,6 +38,9 @@ const caseStudies: CaseStudy[] = [
     role: "STAFF FULL-STACK ENGINEER (CONTRACT)",
     timeline: "SEPTEMBER 2026 — NOVEMBER 2026",
     stack: ["TANSTACK", "NODE.JS", "GEMINI"],
+    heroImage: "othelia-hero.jpg",
+    heroUncropped: true,
+    heroCaption: "OTHELIA.COM",
     outcomes: [
       "Took over the existing video ingestion pipeline with little onboarding, removed its redundant stages, and made it faster and more accurate for the October 2026 GA launch",
       "Built the TanStack server and web app, plus worker-processed jobs that turn footage into Gemini Vision frame descriptions for retrieval",
@@ -153,6 +158,7 @@ const caseStudies: CaseStudy[] = [
       "Built the WebGL light-field renderer that plays holograms in the browser, and a Storybook library that cut UI regressions about 40%",
       "Launched the company's first subscription product on Stripe, Webflow and Shopify, with 100+ paying subscribers at launch",
       "Built a ComfyUI + FastAPI text-to-hologram pipeline on Modal, months ahead of schedule",
+      "Built the IoT cloud infrastructure for the Looking Glass Go launch (load balancers, API routes, query structures); the Kickstarter raised $600,000+",
       "Built the Liteforms chatbot service (Python, LangChain, GPT-4, retrieval) that Accenture deployed at Marriott locations",
     ],
     outcomeStack: "REACT · NEXT.JS · GRAPHQL · TRPC · POSTGRESQL · WEBGL · PYTHON · MODAL",

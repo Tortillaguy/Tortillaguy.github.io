@@ -240,6 +240,7 @@ pnpm astro
    - Add a registry entry in `src/data/caseStudies.ts` in the correct chronological position (crumb numbers and prev/next derive from array order)
    - If it's a job, add/update the matching `src/data/engineering.ts` row — roles/years must agree between the two files
    - Trailing "Tech Stack / Role / Key Outcomes" markdown blocks are forbidden — that metadata lives in the registry
+   - Inline images: `![alt](../../assets/<file>)` (Astro optimizes to webp, but markdown images get no srcset), so downscale sources to 1600px wide first; credit third-party photos with `<p class="cs-caption">…</p>` right after the image
 
 2. **Adding Productions or Art**
    - `src/data/productions.ts` / `src/data/art.ts`; images to `src/assets/` (webp preferred); use `images: []` on a production for a multi-photo featured card
