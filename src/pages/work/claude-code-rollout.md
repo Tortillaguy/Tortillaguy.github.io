@@ -48,4 +48,4 @@ The goal is the same as it was at First Resonance: a shared way of working with 
 
 ## Talk to me
 
-If your team has Claude Code licenses but no shared way of using them, [get in touch](/dev#contact) or email [hello@cacho.dev](mailto:hello@cacho.dev).
+If your team has Claude Code licenses but no shared way of using them, email [hello@cacho.dev](mailto:hello@cacho.dev).

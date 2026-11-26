@@ -1,24 +1,16 @@
 ---
-const isDev = Astro.url.pathname.replace(/\/$/, "") === "/dev";
-const nav = isDev
-  ? [
-      ["OFFERS", "/dev#offers"],
-      ["WORK", "/dev#work"],
-      ["PROCESS", "/dev#process"],
-      ["CONTACT", "/dev#contact"],
-    ]
-  : [
-      ["EXPERIENCE", "/#engineering"],
-      ["ART", "/#art"],
-      ["SHOWS", "/#shows"],
-      ["ABOUT", "/#about"],
-      ["CONTACT", "/#contact"],
-    ];
+const nav = [
+  ["EXPERIENCE", "/#engineering"],
+  ["ART", "/#art"],
+  ["SHOWS", "/#shows"],
+  ["ABOUT", "/#about"],
+  ["CONTACT", "/#contact"],
+];
 ---
 
 <header class="flex items-center justify-between gap-4 px-5 md:px-12 h-[52px] md:h-[76px]">
   <div class="flex items-center gap-4 md:gap-6">
-    <a href={isDev ? "/dev" : "/#home"} class="font-plex font-semibold text-sm tracking-[2px] text-encore-fg">CACHO.DEV</a>
+    <a href="/#home" class="font-plex font-semibold text-sm tracking-[2px] text-encore-fg">CACHO.DEV</a>
   </div>
   <nav class="hidden md:flex items-center gap-9">
     {
@@ -29,5 +21,5 @@ const nav = isDev
       ))
     }
   </nav>
-  <a href={isDev ? "/dev#contact" : "/#contact"} class="md:hidden font-plex text-xs tracking-[2px] text-encore-accent">CONTACT</a>
+  <a href="/#contact" class="md:hidden font-plex text-xs tracking-[2px] text-encore-accent">CONTACT</a>
 </header>
