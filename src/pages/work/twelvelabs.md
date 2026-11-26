@@ -4,7 +4,7 @@ layout: ../../layouts/BlogPost.astro
 
 I joined TwelveLabs in April 2026, a couple of months before Rodeo went public. TwelveLabs builds video foundation models, and Rodeo was its first application-layer product: a video editor where an agent makes edits for you.
 
-The team was four full-stack engineers, a product lead and a project manager. I was hired as a frontend engineer and ended up working across the whole product, from the editor UI to the agent's tools to the evals that graded it.
+The team was four full-stack engineers, a product lead and a project manager. I was hired as a frontend engineer and ended up as the de facto tech lead for Rodeo's architecture. I wrote the technical design docs for the editor, the agent-tool interface and the export pipeline, plus the Figma specs and coding standards the other engineers built from. I also designed the integration interface for the Jockey team's features, and mentored an intern through the editor UI.
 
 ## The editor
 
@@ -20,9 +20,9 @@ Those tools connect to the rest of the platform through GraphQL. When a user exp
 
 ## Evals
 
-The evals tested editing operations directly. Ask the agent to split a clip in half, then check the resulting OTIO timeline against what the edit should have produced. Because the timeline is structured data, an edit is either right or wrong, and the grading doesn't depend on someone's opinion of the cut.
+The evals tested editing operations directly. Ask the agent to split a clip in half, then check the resulting OTIO timeline against what the edit should have produced. Because the timeline is structured data, an edit is either right or wrong. For output that isn't, like the chatbot's answers, the evals graded against rubrics and reference sets. Everything ran in Inspect AI, with results tracked in Langfuse.
 
-Over the project, the agent's pass rate on those evals went from about 60% to about 90%. I built evals for the Rodeo chatbot as well.
+Over the project, the agent's pass rate on the editing evals went from about 60% to about 90%.
 
 ## Launch
 

@@ -16,7 +16,7 @@ We started with a one-to-one migration: every GraphQL operation in ION became an
 
 The second piece was an agent built in Python with LangChain, running on the same MCP server. It reads the UI state of the page the user has open and can update that state live. Instead of answering in a chat box, it changes what's on the screen.
 
-The model ran as its own service, and I put a guardrails LLM in front of it to catch prompt injection and other attempts to misuse it before a request reached the agent.
+The model ran as its own service, and I designed its security model. A guardrails LLM screened every request for prompt injection before it reached the agent, the caller's JWT was passed through to every tool call, and PostgreSQL row-level security limited what each call could touch. React and Next.js components and GraphQL APIs let it carry out changes, and Inspect AI evals checked its behavior.
 
 Both pieces used the same server, so a tool added for one was available to the other.
 

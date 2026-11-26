@@ -8,18 +8,16 @@ export interface EngRow {
   image?: string;
 }
 
-export const engQuote =
-  "I don't just run the show — I build the software behind it. Holographic content platforms, AR festival stages, realtime asset pipelines.";
-
-export const engMeta = "8+ YRS FULL-STACK / REALTIME / AI";
+export const engMeta = "10+ YRS FULL-STACK / REALTIME / AI";
 
 const engineering: EngRow[] = [
-  { company: "OTHELIA", role: "STAFF FULL-STACK ENGINEER (CONTRACT) — VIDEO INGESTION + RETRIEVAL, GA LAUNCH", years: "2026", tags: ["TANSTACK", "NODE.JS", "GEMINI"], href: "/work/othelia" },
+  { company: "OTHELIA", role: "STAFF FULL-STACK ENGINEER (CONTRACT) — VIDEO INGESTION + RETRIEVAL, GA LAUNCH", years: "2026", tags: ["TANSTACK", "NODE.JS", "GEMINI"], href: "/work/othelia", image: "othelia.png" },
   { company: "TWELVE LABS", role: "STAFF FULL-STACK ENGINEER — AGENTIC VIDEO EDITOR (RODEO)", years: "2026", tags: ["REACT", "GRAPHQL", "FFMPEG"], href: "/work/twelvelabs", image: "twelvelabs.png" },
-  { company: "FIRST RESONANCE", role: "STAFF AI CONTEXT ENGINEER — FIRST AI HIRE, MCP + AGENT TOOLING", years: "2025 — 2026", tags: ["MCP", "PYTHON", "LANGCHAIN"], href: "/work/first-resonance", image: "first-resonance.png" },
+  { company: "FIRST RESONANCE", role: "STAFF SOFTWARE ENGINEER — FIRST AI HIRE, MCP + AGENT TOOLING", years: "2025 — 2026", tags: ["MCP", "PYTHON", "LANGCHAIN"], href: "/work/first-resonance", image: "first-resonance.png" },
   { company: "NAPSTER", role: "SENIOR FULL-STACK ENGINEER", years: "2025", tags: ["REACT", "NEXTJS", "AWS"], href: "/work/infinite-reality", image: "infinite-reality.webp" },
   { company: "LOOKING GLASS FACTORY", role: "SENIOR FULL-STACK — BLOCKS.GLASS, 100K+ HOLOGRAMS; AI FOR ACCENTURE + MARRIOTT", years: "2023 — 2025", tags: ["REACT", "WEBGL", "POSTGRES"], href: "/work/lkg", image: "lkg.webp" },
   { company: "VERTEBRAE → SNAPCHAT", role: "FULL-STACK DEVELOPER — ACQUIRED 2021", years: "2020 — 2022", tags: ["PYTHON", "BLENDER", "WEBGL"], href: "/work/vertebrae", image: "snap.jpg" },
+  { company: "GENIES", role: "SENIOR UNITY DEVELOPER — AVATAR APP + 3D ASSET PIPELINE", years: "2020", tags: ["UNITY", "PYTHON", "MOBILE"], href: "/work/genies", image: "genies.jpg" },
   { company: "MPC × MAGIC LEAP", role: "VR ENGINEER — SPOTIFY FOR MAGIC LEAP; AR/VR FOR NATIONAL GEOGRAPHIC", years: "2018 — 2019", tags: ["C++", "MAGIC LEAP SDK"], href: "/work/mpc", image: "magicleap.webp" },
   { company: "INTEL TRUE VR", role: "FULL-STACK ENGINEER — VR SPORTS, ADOPTED FOR NBC'S 2018 OLYMPICS", years: "2017 — 2018", tags: ["UNITY", "FFMPEG", "VR"], href: "/work/intel", image: "intel.png" },
   { company: "COACHELLA AR", role: "LEAD SOFTWARE ENGINEER — PORTALSXR, TEAM OF 6; COACHELLA + MUSIC MIDTOWN", years: "2019", tags: ["UNITY", "AR", "MOBILE"], href: "/work/coachella", image: "coachella.png" },

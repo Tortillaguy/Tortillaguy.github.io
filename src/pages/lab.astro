@@ -1,0 +1,67 @@
+---
+import { Image } from "astro:assets";
+import BaseHead from "../components/BaseHead.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import heroImage from "../assets/hero.jpg";
+---
+
+<!doctype html>
+<html lang="en" class="bg-encore-bg">
+  <head>
+    <BaseHead title="Adrian Cacho – Lab" description="HTML-in-canvas experiments." />
+    <meta name="robots" content="noindex" />
+  </head>
+
+  <MainLayout>
+    <section
+      id="lab-hero"
+      class="relative h-[calc(100svh-52px)] md:h-[calc(100svh-76px)] min-h-[600px] max-h-[1100px] overflow-hidden"
+    >
+      <Image
+        src={heroImage}
+        alt="Festival stage under light beams with crowd silhouettes"
+        class="absolute inset-0 w-full h-full object-cover"
+        widths={[390, 800, 1440, 2400]}
+        sizes="100vw"
+        loading="eager"
+      />
+      <div
+        class="absolute inset-0"
+        style="background: linear-gradient(180deg, rgba(10,10,10,0) 35%, rgba(10,10,10,0.8) 80%, #0A0A0A 100%);"
+      >
+      </div>
+
+      <div id="type-layer" class="absolute inset-0 w-full h-full flex flex-col justify-between">
+        <div class="h-11 md:h-16"></div>
+        <div class="px-5 md:px-12 font-grotesk font-medium leading-[0.95] text-[36px] md:text-[64px]">
+          <p class="fringe-sm md:fringe text-encore-fg m-0" data-fringe="text-encore-fg m-0">LIGHT,</p>
+          <p class="fringe-sm md:fringe text-encore-fg m-0" data-fringe="text-encore-fg m-0">MOTION,</p>
+          <p class="text-encore-accent m-0">&amp; CODE.</p>
+        </div>
+        <h1 class="font-display text-encore-fg leading-[0.82] m-0 px-5 pb-7 text-[96px] sm:hidden">
+          ADRIAN<br />CACHO
+        </h1>
+        <h1 class="hidden sm:block font-display text-encore-fg leading-[0.82] m-0 text-center text-[clamp(96px,18vw,265px)] whitespace-nowrap">
+          ADRIAN CACHO
+        </h1>
+      </div>
+    </section>
+
+    <section class="px-5 md:px-12 py-12 max-w-[720px] font-smono text-encore-dim text-[12px] tracking-[1px] leading-relaxed">
+      <p id="lab-status" class="m-0">CHECKING FOR HTML-IN-CANVAS…</p>
+      <p class="m-0 pt-3">
+        The type above is real, selectable HTML. In browsers with HTML-in-canvas it is drawn into a WebGL
+        texture, and the cyan/magenta fringe is computed per pixel in a shader instead of a CSS text-shadow:
+        it widens around the cursor and when you scroll. Elsewhere it falls back to the CSS version.
+      </p>
+    </section>
+  </MainLayout>
+</html>
+
+<script>
+  import { enhance } from "../scripts/shaderFringe";
+  const status = document.getElementById("lab-status")!;
+  status.textContent = enhance(document.getElementById("lab-hero")!, document.getElementById("type-layer")!)
+    ? "HTML-IN-CANVAS ACTIVE: TYPE IS DRAWN THROUGH A WEBGL SHADER."
+    : "FALLBACK: NO HTML-IN-CANVAS IN THIS BROWSER, SHOWING THE CSS FRINGE.";
+</script>

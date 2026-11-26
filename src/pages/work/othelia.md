@@ -2,7 +2,7 @@
 layout: ../../layouts/BlogPost.astro
 ---
 
-Othelia is a seed-stage startup building narrative intelligence for story franchises. A studio puts its scripts, story bibles and footage in one place, then asks questions across all of it. The platform had opened in beta in October 2025, with an exclusive in [Variety](https://variety.com/2025/tv/news/othelia-launches-ai-storytelling-platform-1236562404/). I joined on contract in September 2026 to get it to general availability, which it reached that October.
+Othelia is a seed-stage startup building narrative intelligence for story franchises. A studio puts its scripts, story bibles and footage in one place, then asks questions across all of it. The platform had opened in beta in October 2025, with an exclusive in [Variety](https://variety.com/2025/tv/news/othelia-launches-ai-storytelling-platform-1236562404/). It [works with Amazon MGM Studios across multiple tentpole franchises](https://aws.amazon.com/marketplace/pp/prodview-v7dbttm53vwfe). I joined on contract in September 2026 to get it to general availability, which it reached that October.
 
 ## Starting cold
 

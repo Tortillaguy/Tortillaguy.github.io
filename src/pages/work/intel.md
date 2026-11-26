@@ -10,11 +10,11 @@ I developed the True VR app in Unity and C#, the player viewers used to watch ga
 
 ## The pipeline
 
-Separately, I built the pipeline that produced and published the videos, in Python and FFmpeg on AWS. It transcoded captured footage into the formats each platform needed, including stereoscopic video with a separate stream per eye and adaptive bitrate for viewers on slower connections. It published to the True VR app and also to Facebook 360 and YouTube VR.
+Separately, I built the pipeline that produced and published the videos, in Python and FFmpeg on AWS. It transcoded captured footage into the formats each platform needed, including stereoscopic video with a separate stream per eye and adaptive bitrate for viewers on slower connections. It published to the True VR app and also to Facebook 360 and YouTube VR. More than 500 videos went through it, and editor turnaround dropped by 95%.
 
 ## The CMS
 
-I also led the team that built the CMS behind it, where the content team managed live events, archived games and highlight reels.
+I also led the team of four that built the CMS behind it, in PHP, jQuery and Angular, where the content team managed 300+ pieces of VR and 360 media across live events, archived games and highlight reels. I designed the database schema and REST API too, which fed personalized content in the app based on each viewer's preferences and subscriptions.
 
 ## PyeongChang 2018
 

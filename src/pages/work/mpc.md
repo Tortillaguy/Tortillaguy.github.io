@@ -13,3 +13,7 @@ I left MPC in February 2019. The app [shipped on Magic Leap World on 13 November
 ## National Geographic
 
 The other project was an AR app for National Geographic that ran on phones and tablets. It placed a dinosaur on a real surface in front of you and worked as an interactive guide to its anatomy. You could explore the parts of the dinosaur, with audio cues and timelines explaining each one.
+
+## Pipelines
+
+I also wrote Python automation for MPC's VFX departments, moving assets between Maya, Nuke and the in-house renderers. It cut manual file handling by 50%.
