@@ -8,7 +8,7 @@ export interface EngRow {
   image?: string;
 }
 
-export const engMeta = "8+ YRS FULL-STACK / REALTIME / AI";
+export const engMeta = "10+ YRS FULL-STACK / REALTIME / AI";
 
 const engineering: EngRow[] = [
   { company: "OTHELIA", role: "STAFF FULL-STACK ENGINEER (CONTRACT) — VIDEO INGESTION + RETRIEVAL, GA LAUNCH", years: "2026", tags: ["TANSTACK", "NODE.JS", "GEMINI"], href: "/work/othelia" },
