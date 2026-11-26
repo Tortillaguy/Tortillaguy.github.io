@@ -11,7 +11,7 @@ export interface EngRow {
 export const engMeta = "10+ YRS FULL-STACK / REALTIME / AI";
 
 const engineering: EngRow[] = [
-  { company: "OTHELIA", role: "STAFF FULL-STACK ENGINEER (CONTRACT) — VIDEO INGESTION + RETRIEVAL, GA LAUNCH", years: "2026", tags: ["TANSTACK", "NODE.JS", "GEMINI"], href: "/work/othelia" },
+  { company: "OTHELIA", role: "STAFF FULL-STACK ENGINEER (CONTRACT) — VIDEO INGESTION + RETRIEVAL, GA LAUNCH", years: "2026", tags: ["TANSTACK", "NODE.JS", "GEMINI"], href: "/work/othelia", image: "othelia.png" },
   { company: "TWELVE LABS", role: "STAFF FULL-STACK ENGINEER — AGENTIC VIDEO EDITOR (RODEO)", years: "2026", tags: ["REACT", "GRAPHQL", "FFMPEG"], href: "/work/twelvelabs", image: "twelvelabs.png" },
   { company: "FIRST RESONANCE", role: "STAFF AI CONTEXT ENGINEER — FIRST AI HIRE, MCP + AGENT TOOLING", years: "2025 — 2026", tags: ["MCP", "PYTHON", "LANGCHAIN"], href: "/work/first-resonance", image: "first-resonance.png" },
   { company: "NAPSTER", role: "SENIOR FULL-STACK ENGINEER", years: "2025", tags: ["REACT", "NEXTJS", "AWS"], href: "/work/infinite-reality", image: "infinite-reality.webp" },

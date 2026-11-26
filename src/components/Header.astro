@@ -14,28 +14,11 @@ const nav = isDev
       ["ABOUT", "/#about"],
       ["CONTACT", "/#contact"],
     ];
-const views = [
-  ["WORK", "/", !isDev],
-  ["HIRE", "/dev", isDev],
-] as const;
 ---
 
 <header class="flex items-center justify-between gap-4 px-5 md:px-12 h-[52px] md:h-[76px]">
   <div class="flex items-center gap-4 md:gap-6">
     <a href={isDev ? "/dev" : "/#home"} class="font-plex font-semibold text-sm tracking-[2px] text-encore-fg">CACHO.DEV</a>
-    <div class="flex border border-encore-line font-plex text-[10px] md:text-xs tracking-[2px]" aria-label="Site view">
-      {
-        views.map(([label, href, active]) => (
-          <a
-            href={href}
-            aria-current={active ? "page" : undefined}
-            class={`px-2 py-1 transition-colors ${active ? "bg-encore-accent text-encore-bg" : "text-encore-dim hover:text-encore-fg"}`}
-          >
-            {label}
-          </a>
-        ))
-      }
-    </div>
   </div>
   <nav class="hidden md:flex items-center gap-9">
     {
