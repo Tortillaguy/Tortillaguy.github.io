@@ -16,6 +16,16 @@ I also built the company's first subscription product, connecting Stripe, Webflo
 
 Blocks also got a generation pipeline: a remote ComfyUI server behind a FastAPI backend, running on Modal, so the site could ask for a hologram from a text prompt and get back an asset ready to view. It shipped months ahead of schedule.
 
+## Looking Glass Go
+
+In December 2023 Looking Glass launched Go, a palm-sized holographic display, on Kickstarter. It reached its $50,000 goal [within an hour](https://petapixel.com/2023/12/05/looking-glass-go-puts-intelligent-3d-holograms-in-the-palm-of-your-hand) and closed with [over $600,000](https://lookingglassfactory.com/blog/january-2024-wrap-up) from about 2,365 backers.
+
+I built the IoT cloud infrastructure that supports Go devices: the load balancers, the API routes and the query structures behind them.
+
+<div class="cs-video"><iframe src="https://www.youtube-nocookie.com/embed/wefvzabaxvY?rel=0" title="Looking Glass Go (2023)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+<p class="cs-caption">Looking Glass Go launch video — Looking Glass</p>
+
 ## Liteforms at Marriott
 
 Liteforms were Looking Glass's conversational holograms, characters on a display that you can talk to. They [launched in May 2023](https://techcrunch.com/2023/05/23/looking-glass-taps-chatgpt-for-holograms-you-can-talk-to). I built the chatbot service behind them in Python with LangChain and GPT-4, using retrieval so answers came from a brand's own material.

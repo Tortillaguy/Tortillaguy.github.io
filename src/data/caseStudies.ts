@@ -153,6 +153,7 @@ const caseStudies: CaseStudy[] = [
       "Built the WebGL light-field renderer that plays holograms in the browser, and a Storybook library that cut UI regressions about 40%",
       "Launched the company's first subscription product on Stripe, Webflow and Shopify, with 100+ paying subscribers at launch",
       "Built a ComfyUI + FastAPI text-to-hologram pipeline on Modal, months ahead of schedule",
+      "Built the IoT cloud infrastructure for the Looking Glass Go launch (load balancers, API routes, query structures); the Kickstarter raised $600,000+",
       "Built the Liteforms chatbot service (Python, LangChain, GPT-4, retrieval) that Accenture deployed at Marriott locations",
     ],
     outcomeStack: "REACT · NEXT.JS · GRAPHQL · TRPC · POSTGRESQL · WEBGL · PYTHON · MODAL",
