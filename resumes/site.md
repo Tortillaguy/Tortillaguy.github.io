@@ -43,7 +43,7 @@ Senior Full Stack Engineer with 8+ years building production applications servin
 - Built internal Claude Code infrastructure (skills, rules, automated tooling) enabling company-wide AI-assisted engineering
 - Built an LLM agent (Python, LangChain) for the company website, running on the same custom MCP server
 
-### Napster Inc. | Remote (Los Angeles)
+### Napster Corporation | Remote (Los Angeles)
 
 **Senior Full Stack Developer** | March 2025 - July 2025
 

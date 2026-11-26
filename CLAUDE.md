@@ -31,12 +31,12 @@ Adrian Cacho (also known as "Cacho") is an innovative creative technologist with
   - Built the agentic video editor UI for Rodeo, TwelveLabs' first application-layer product
   - Built backend agent tools, GraphQL integrations, and server-side ffmpeg video export
   - Built evaluation systems for the agentic editor and the Rodeo chatbot
-- **Staff AI Engineer** at First Resonance - December 2025 to April 2026
+- **Staff AI Context Engineer** at First Resonance - December 2025 to April 2026
   - The company's first AI engineer hire
   - Built an MCP server exposing manufacturing/supply-chain operations to identify production bottlenecks
   - Built internal Claude Code infrastructure (skills, rules, automated tooling) for company-wide AI-assisted engineering
   - Built a Python/LangChain LLM agent for the company website on that same MCP server
-- **Senior Full-Stack Engineer** at Napster Inc. (formerly Infinite Reality) - March 2025 to July 2025
+- **Senior Full-Stack Engineer** at Napster Corporation (formerly Infinite Reality) - March 2025 to July 2025
 - **Senior Full-Stack Engineer** at Looking Glass Factory - May 2023 to March 2025
   - Architected blocks.glass, the first-ever content sharing platform for holograms
   - Handled over 100,000 digital asset deployments
@@ -101,6 +101,7 @@ Adrian Cacho (also known as "Cacho") is an innovative creative technologist with
 
 ### Technology Stack
 - **Framework:** Astro 7 (Static Site Generator) — no framework JS on the homepage (one inline hero-reel script)
+- **React island:** `@astrojs/react` exists ONLY for `src/components/CardViewer.tsx`, the React Three Fiber card viewer ported from `PokeMoon-DeFi/nft-frontend`. `BlogPost.astro` hydrates it `client:visible` when a `caseStudies.ts` entry has `models` (GLBs in `public/models/<slug>/`); ~300 KB gz, loaded on that page only. Never import React into homepage sections
 - **Styling:** Tailwind CSS 3 with custom `encore.*` design tokens (`tailwind.config.cjs`), wired via plain PostCSS (`postcss.config.cjs`) — the deprecated `@astrojs/tailwind` integration and DaisyUI were removed in the Astro 7 upgrade (Aug 2026)
 - **Images:** `astro:assets` with responsive `widths`/`sizes` throughout
 - **Content:** Markdown case studies rendered through a data-driven layout
@@ -188,7 +189,7 @@ Featured Proper NYE '25 triptych (three vertical photos) + Disguise VP Accelerat
 Six pieces in an asymmetric mosaic (Letting Go, Pyro Demo, Hardstyle Visuals, Oblivion V2, Light It Up, Crystals). Each card is two lines: the name, then the `art.ts` tags rendered in natural case as the card's blurb (`Octane · Blender · EmberGen`) — there is no separate right-aligned mono tags line, and no prose provenance note (`mosaicNote` was removed from `artCaseStudies.ts`). Cards link INTERNALLY to `/art/<slug>` case studies (no `target="_blank"`) — the outbound Instagram/Spotify/SoundCloud link now lives on the case-study page's WATCH THE PIECE panel, so a visitor lands on owned content first. All 12 entries in `art.ts` have a page; only these six are surfaced in the mosaic, the other six are reachable via prev/next.
 
 ### 03 ENGINEERING
-Centered quote + credibility rows (company/role left, green years + tags right) linking to `/work/*` case studies. Rows with an optional `image` in `engineering.ts` render that asset as a background band: full row width on mobile, a `left-[36.4%] w-[40%]` band in the empty gutter on desktop. The horizontal vignette is a CSS `mask-image` (NOT a gradient overlay — the row's `hover:bg-encore-surface` has to show through the faded edges), and brightness is deliberately asymmetric — `0.22` on mobile, where text sits on top of the image, `0.5` on desktop, where it doesn't. All rows carry an asset except Othelia (newest, added Nov 2026, no case study yet: no `href`, no `image`). TwelveLabs (`twelvelabs.png`) and First Resonance (`first-resonance.png`) are crops of the companies' own public marketing imagery — the Rodeo launch key art and an ION Factory OS dashboard shot — since neither case study ships a first-party photo. The band flatters near-black sources with a centred subject — `twelvelabs.png` is the reference (already ~3.8:1, background at the page's own black, so the vignette disappears and the subject reads as floating in the row) — and punishes light, text-dense screenshots: `first-resonance.png` and `infinite-reality.webp` are the two weak ones, sliced mid-glyph and lighter than the rows around them. Linked rows carry an always-visible green `→` (far right; nudges right on hover while the company name lerps to accent). Every row except Othelia is linked (Coachella AR, the last unlinked row as of Aug 2026, now points at `/work/coachella`). Framing: "the VJ who builds the software behind the show."
+Centered quote + credibility rows (company/role left, green years + tags right) linking to `/work/*` case studies. Rows with an optional `image` in `engineering.ts` render that asset as a background band: full row width on mobile, a `left-[36.4%] w-[40%]` band in the empty gutter on desktop. The horizontal vignette is a CSS `mask-image` (NOT a gradient overlay — the row's `hover:bg-encore-surface` has to show through the faded edges), and brightness is deliberately asymmetric — `0.22` on mobile, where text sits on top of the image, `0.5` on desktop, where it doesn't. All rows carry an asset except Othelia (newest, added Nov 2026; linked to `/work/othelia` but no `image` yet). TwelveLabs (`twelvelabs.png`) and First Resonance (`first-resonance.png`) are crops of the companies' own public marketing imagery — the Rodeo launch key art and an ION Factory OS dashboard shot — since neither case study ships a first-party photo. The band flatters near-black sources with a centred subject — `twelvelabs.png` is the reference (already ~3.8:1, background at the page's own black, so the vignette disappears and the subject reads as floating in the row) — and punishes light, text-dense screenshots: `first-resonance.png` and `infinite-reality.webp` are the two weak ones, sliced mid-glyph and lighter than the rows around them. Linked rows carry an always-visible green `→` (far right; nudges right on hover while the company name lerps to accent). Every row is linked (Coachella AR, the last unlinked row as of Aug 2026, now points at `/work/coachella`). Framing: "the VJ who builds the software behind the show."
 
 ### 04 ABOUT
 Iceland portrait (top-anchored crop) beside the rewritten bio with pulled-lead treatment; mono meta `VENICE, CA`.
@@ -197,7 +198,7 @@ Iceland portrait (top-anchored crop) beside the rewritten bio with pulled-lead t
 Straight copy, green `HELLO@CACHO.DEV →` CTA, socials (Instagram/LinkedIn/Resume), three-item mono footer.
 
 ### /work/* Case Studies
-Eleven markdown write-ups in the Encore case-study template (see Case-Study System above). Adding one = add the md file AND a registry entry in `caseStudies.ts` — unregistered slugs render without hero/crumb/nav.
+Thirteen markdown write-ups in the Encore case-study template (see Case-Study System above). Adding one = add the md file AND a registry entry in `caseStudies.ts` — unregistered slugs render without hero/crumb/nav.
 
 ### /art/* Case Studies
 Twelve markdown write-ups in the Encore art template, one per `art.ts` piece. Adding one = add `src/pages/art/<slug>.md` (layout `../../layouts/ArtPost.astro`) AND an `artCaseStudies.ts` entry AND point the matching `art.ts` `link` at `/art/<slug>`. Bodies carry `<!-- TODO(adrian): ... -->` placeholders wherever a statement of personal intent belongs — they were written from the image, the toolchain, and the release target only, so intent was deliberately left for Adrian rather than invented.
@@ -314,7 +315,7 @@ Augmented Reality, Virtual Reality, Web3, CI/CD, DevOps, LookDev, Art Pipelines,
 - **Add a production/art piece:** `src/data/productions.ts` / `src/data/art.ts`
 - **Change colors/type:** `tailwind.config.cjs` tokens + `src/styles/global.css` utilities
 - **Change section layout:** the section file in `src/sections/` — then sync the pen file
-- **Update the resume:** edit `resumes/site.md`, run `pnpm resume:site` (never edit the PDF)
+- **Update the resume:** the live `public/assets/Resume.pdf` is a Typst CV built in `~/repos/ai-job-search/cv/` and copied in. Do NOT run `pnpm resume:site` — it overwrites the PDF with the older markdown-converter output
 
 ---
 
@@ -323,7 +324,7 @@ Augmented Reality, Virtual Reality, Web3, CI/CD, DevOps, LookDev, Art Pipelines,
 - On Astro 7 (upgraded from 4 in Aug 2026: `ViewTransitions` → `ClientRouter`, markdown now rendered by Sätteri, Tailwind 3 via `postcss.config.cjs`). Astro 7 requires Node >= 22.12 — the deploy workflow's `withastro/action@v4` defaults to Node 22, keep them compatible
 - Site features custom animations that may need performance optimization for mobile
 - `pnpm-workspace.yaml` (`allowBuilds` for esbuild/sharp) is required - `pnpm build` fails at the install preflight without it
-- `public/assets/Resume.pdf` (linked from Contact) is generated from `resumes/site.md` via `pnpm resume:site`. Edit the markdown, never the PDF. Keep it to 2 pages
+- `public/assets/Resume.pdf` (linked from Contact) has been a Typst-built CV (2 pages) since Nov 2026, NOT generated from `resumes/site.md`. `resumes/site.md` + `pnpm resume:site` are legacy; running it is a regression
 - The tailored variants in `resumes/` (`3D.md`, `frontend.md`, `full-stack.md`) are still stale - no TwelveLabs or First Resonance. Note `full-stack.md` also carries a wrong title line ("Senior Unity Developer | 3D Graphics Engineer")
 - `public/assets/Experience.pdf` is a LinkedIn profile export, not generated by the converter
 - The Aug 2026 dependency refresh deleted all orphaned pre-Encore code (React/Three/Svelte components, Skills/Projects sections, DaisyUI). `About.astro` is live (mounted as section 04). Homepage client JS remains: hero-reel inline script + Astro's ClientRouter/prefetch

@@ -5,6 +5,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 import { ClientRouter } from "astro:transitions";
 import { Image } from "astro:assets";
 import caseStudies from "../data/caseStudies";
+import CardViewer from "../components/CardViewer";
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "../assets/*.{webp,jpg,jpeg,png}",
@@ -79,7 +80,28 @@ const meta = cs
     }
 
     {
-      cs && heroImg && (
+      cs?.heroVideo && (
+        <section class="px-5 pt-2 md:px-12">
+          <div class="overflow-hidden border border-encore-line aspect-video bg-black">
+            <iframe
+              src={`https://www.youtube-nocookie.com/embed/${cs.heroVideo}?rel=0`}
+              title={cs.heroCaption ?? cs.title}
+              class="w-full h-full"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            />
+          </div>
+          {cs.heroCaption && (
+            <p class="font-smono text-encore-dim text-[10px] md:text-xs tracking-[1px] m-0 pt-2 md:pt-3">{cs.heroCaption}</p>
+          )}
+        </section>
+      )
+    }
+
+    {
+      cs && heroImg && !cs.heroVideo && (
         <section class="px-5 pt-2 md:px-12">
           <div class="overflow-hidden border border-encore-line">
             <Image
@@ -93,6 +115,16 @@ const meta = cs
           {cs.heroCaption && (
             <p class="font-smono text-encore-dim text-[10px] md:text-xs tracking-[1px] m-0 pt-2 md:pt-3">{cs.heroCaption}</p>
           )}
+        </section>
+      )
+    }
+
+    {
+      cs?.models && (
+        <section class="px-5 pt-2 md:px-12">
+          <div class="overflow-hidden border border-encore-line">
+            <CardViewer client:visible models={cs.models} />
+          </div>
         </section>
       )
     }

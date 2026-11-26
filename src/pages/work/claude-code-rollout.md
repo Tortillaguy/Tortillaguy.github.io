@@ -14,11 +14,7 @@ The fix is to give the tool the team's accumulated judgment once, in a form ever
 
 ## What I built
 
-I built the company's internal Claude Code infrastructure for AI-assisted engineering across the org:
-
-- **Skills:** packaged, repeatable procedures for the work the codebase actually demanded, so a task got done the team's way by default.
-- **Rules:** the standing conventions and constraints, written down once instead of retyped into every prompt.
-- **Automated tooling:** the glue that made the standard path the easy path.
+I built the company's internal Claude Code setup: skills, rules and automated tooling shared across the engineering org. The skills covered PR review, UI review, context management and improving CLAUDE.md files. The rules covered migrations and CI.
 
 Because everyone worked from the same skills and rules, an improvement to one of them reached every engineer using it.
 
@@ -28,7 +24,7 @@ During the same period I built an MCP server over the company's manufacturing an
 
 Building the infrastructure was the smaller half of the work. The larger half was enablement.
 
-- **Onboarding:** I personally onboarded 12 engineers onto the AI-assisted workflows. I estimate the engineering org at about 20 people, so that is roughly 60% of the team.
+- **Onboarding:** I onboarded 12 engineers in groups, one team at a time. Each session started with how that team already worked, and then I suggested where AI tools could fit into that workflow. I estimate the engineering org at about 20 people, so that is roughly 60% of the team.
 - **Documentation:** I wrote the internal docs and guides the team worked from.
 - **Standards:** I set the standards that became how AI-assisted engineering was done at the company.
 
@@ -38,7 +34,7 @@ The signal I watched for was use. Over time, engineers were reaching for the ski
 
 AI-assisted engineering went from an individual habit to a shared practice with written standards, documentation, and tooling behind it.
 
-Pull-request volume also rose about tenfold after the rollout. I would not credit that to the rollout alone: the engineering org was shrinking over the same period. I report it as what happened, not as a measured productivity gain.
+Pull-request volume also rose about tenfold after the rollout, going by GitHub's stats. I would not credit that to the rollout alone: the engineering org was shrinking over the same period. I report it as what happened, not as a measured productivity gain.
 
 ## What a Claude Code rollout looks like for your team
 

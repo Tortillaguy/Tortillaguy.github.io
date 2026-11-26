@@ -14,14 +14,24 @@
     "resume:site": "npx tsx ./scripts/resume-converter.ts --pdf resumes/site.md -o ./public/assets/Resume.pdf"
   },
   "dependencies": {
+    "@astrojs/react": "^7.1.9",
     "@astrojs/sitemap": "^3.7.5",
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.2",
+    "@react-three/postprocessing": "^3.2.2",
     "astro": "^7.4.12",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
     "sharp": "^0.35.5",
     "tailwindcss": "^3.4.19",
+    "three": "^0.187.0",
     "typescript": "^5.9.3"
   },
   "devDependencies": {
     "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.187.0",
     "autoprefixer": "^10.6.2",
     "docx": "^9.15.4",
     "pdf-lib": "^1.17.1",
