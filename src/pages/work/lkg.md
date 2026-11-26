@@ -20,6 +20,10 @@ Blocks also got a generation pipeline: a remote ComfyUI server behind a FastAPI 
 
 Liteforms were Looking Glass's conversational holograms, characters on a display that you can talk to. They [launched in May 2023](https://techcrunch.com/2023/05/23/looking-glass-taps-chatgpt-for-holograms-you-can-talk-to). I built the chatbot service behind them in Python with LangChain and GPT-4, using retrieval so answers came from a brand's own material.
 
+![A Liteform character on a Looking Glass display](../../assets/liteforms.jpg)
+
+<p class="cs-caption">Liteforms on a Looking Glass display — photo: Looking Glass</p>
+
 Accenture deployed it as an activation at Marriott locations. That's a different bar from a demo. A demo can get something wrong and nobody minds; a hologram talking to hotel guests can't.
 
 [blocks.glass →](https://blocks.glass/)
