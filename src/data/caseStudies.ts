@@ -12,6 +12,8 @@ export interface CaseStudy {
   /** Optional hero image filename in src/assets. */
   heroImage?: string;
   heroCaption?: string;
+  /** Show the hero image at its own aspect ratio instead of cropping it into the 440px banner. */
+  heroUncropped?: boolean;
   /** Optional YouTube video ID embedded as the hero, in place of heroImage. */
   heroVideo?: string;
   /** Optional KEY OUTCOMES panel rows. */
@@ -37,6 +39,7 @@ const caseStudies: CaseStudy[] = [
     timeline: "SEPTEMBER 2026 — NOVEMBER 2026",
     stack: ["TANSTACK", "NODE.JS", "GEMINI"],
     heroImage: "othelia-hero.jpg",
+    heroUncropped: true,
     heroCaption: "OTHELIA.COM",
     outcomes: [
       "Took over the existing video ingestion pipeline with little onboarding, removed its redundant stages, and made it faster and more accurate for the October 2026 GA launch",

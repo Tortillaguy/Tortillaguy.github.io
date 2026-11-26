@@ -107,7 +107,7 @@ const meta = cs
             <Image
               src={heroImg}
               alt={cs.heroCaption ?? cs.title}
-              class="w-full h-[220px] md:h-[440px] object-cover"
+              class={cs.heroUncropped ? "w-full h-auto" : "w-full h-[220px] md:h-[440px] object-cover"}
               widths={[390, 800, 1440]}
               sizes="100vw"
             />
